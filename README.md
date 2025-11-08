@@ -1,8 +1,6 @@
 #  Guion de Prácticas – Ley de Ohm y Circuitos Eléctricos de Corriente Continua
 
 **Módulo:** Montaje y Mantenimiento de Equipos – SMR1  
-**Alumno/a:** ____________________________  **Fecha:** ___________________  
-**Centro:** IES ___________________________  
 
 *"Entender la electricidad es dominar la energía del futuro."*
 
@@ -83,7 +81,7 @@ La Ley de Ohm establece una relación directa entre la tensión, la corriente y 
 
 ---
 
-## ⚙️ 5. Circuitos en paralelo
+## 5. Circuitos en paralelo
 
 **Características:**
 
@@ -108,7 +106,7 @@ La Ley de Ohm establece una relación directa entre la tensión, la corriente y 
 
 ---
 
-## 🔩 6. Circuitos mixtos (serie + paralelo)
+## 6. Circuitos mixtos (serie + paralelo)
 
 **Características:**
 
@@ -133,7 +131,7 @@ La Ley de Ohm establece una relación directa entre la tensión, la corriente y 
 
 ---
 
-## 🧮 7. Tabla resumen general de resultados
+## 7. Tabla resumen general de resultados
 
 | Tipo de circuito | Fórmula R<sub>T</sub>                     | Corriente constante | Tensión constante |
 |-----------------|-----------------------------------------|------------------|-----------------|
@@ -143,7 +141,7 @@ La Ley de Ohm establece una relación directa entre la tensión, la corriente y 
 
 ---
 
-## 🧠 8. Conclusión final
+## 8. Conclusión final
 
 - La Ley de Ohm relaciona voltaje, corriente y resistencia.  
 - En los circuitos en serie, la corriente es la misma en todos los elementos.  
@@ -152,5 +150,5 @@ La Ley de Ohm establece una relación directa entre la tensión, la corriente y 
 
 ---
 
-🪛 **Montaje y Mantenimiento de Equipos – SMR1**  
-Profesor | Ezequiel Llarena Borges
+**Montaje y Mantenimiento de Equipos | SMR1**  
+Profesor: Ezequiel Llarena Borges
