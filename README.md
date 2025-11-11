@@ -6,7 +6,7 @@
 
 ---
 
-##  1. Tabla resumen de magnitudes eléctricas
+##  1. Magnitudes eléctricas
 
 | Magnitud              | Símbolo | Unidad (SI) | Símbolo unidad | Fórmula principal |
 |-----------------------|---------|-------------|----------------|-----------------|
@@ -19,7 +19,7 @@
 
 ---
 
-## 2. Principales símbolos eléctricos (ANSI / IEC)
+## 2. Símbolos eléctricos (ANSI / IEC)
 
 | Componente / Dispositivo | Símbolo ANSI | Símbolo IEC | Descripción                          |
 |-------------------------|-------------|-------------|--------------------------------------|
@@ -35,7 +35,7 @@
 
 ---
 
-##  3. Ejercicios básicos – Ley de Ohm
+##  3. Ejercicios básicos | Ley de Ohm
 
 **Instrucciones:** Calcula la magnitud desconocida en cada caso. Expresa el resultado con dos decimales.
 
@@ -53,7 +53,7 @@ La Ley de Ohm establece una relación directa entre la tensión, la corriente y 
 
 ---
 
-##  4. Circuitos en serie
+##  4. Circuitos en serie  
 
 **Características:**
 
@@ -87,10 +87,9 @@ La Ley de Ohm establece una relación directa entre la tensión, la corriente y 
 
 - La tensión es igual en todas las ramas.  
 - La corriente total es la suma de las corrientes parciales.  
-- La resistencia total se calcula como:  
-  $$
-  \frac{1}{R_T} = \frac{1}{R_1} + \frac{1}{R_2} + \frac{1}{R_3}
-  $$
+- La **resistencia total** o equvalente se calcula como:
+
+  $\frac{1}{R_T} = \frac{1}{R_1} + \frac{1}{R_2} + \frac{1}{R_3}$
 
 **Ejercicios:**
 
