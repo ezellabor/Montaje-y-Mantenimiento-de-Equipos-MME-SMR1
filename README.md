@@ -1,7 +1,7 @@
 #  Unidad 1 | Ley de Ohm y Circuitos Eléctricos de Corriente Continua
 > "Entender la electricidad es dominar la energía del futuro."
 
-**Módulo:** Montaje y Mantenimiento de Equipos – SMR1    
+**Módulo:** Montaje y Mantenimiento de Equipos (SMR1)    
 **Profesor:** Ezequiel Llarena Borges  
 
 ---
