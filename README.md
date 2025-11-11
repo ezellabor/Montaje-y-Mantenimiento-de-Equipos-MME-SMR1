@@ -1,8 +1,8 @@
-#  Guion de Prácticas – Ley de Ohm y Circuitos Eléctricos de Corriente Continua
+#  Unidad 1 | Ley de Ohm y Circuitos Eléctricos de Corriente Continua
+> "Entender la electricidad es dominar la energía del futuro."
 
-**Módulo:** Montaje y Mantenimiento de Equipos – SMR1  
-
-*"Entender la electricidad es dominar la energía del futuro."*
+**Módulo:** Montaje y Mantenimiento de Equipos – SMR1    
+**Profesor:** Ezequiel Llarena Borges  
 
 ---
 
