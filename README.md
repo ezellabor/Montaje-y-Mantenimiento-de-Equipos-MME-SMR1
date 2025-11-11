@@ -92,7 +92,7 @@ La Ley de Ohm establece una relación directa entre la tensión, la corriente y 
 **Fórmula:**  
 
 - $\frac{1}{R_T} = \frac{1}{R_1} + \frac{1}{R_2} + \frac{1}{R_3}$
-- - $V = \text{constante}$  
+- $V = \text{constante}$  
 
 **Ejercicios:**
 
