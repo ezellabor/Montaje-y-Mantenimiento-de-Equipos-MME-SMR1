@@ -130,7 +130,7 @@ La Ley de Ohm establece una relación directa entre la tensión, la corriente y 
 
 ---
 
-## 7. Tabla resumen general de resultados
+## 7. Síntesis
 
 | Tipo de circuito | Fórmula R<sub>T</sub>                     | Corriente constante | Tensión constante |
 |-----------------|-----------------------------------------|------------------|-----------------|
@@ -140,7 +140,7 @@ La Ley de Ohm establece una relación directa entre la tensión, la corriente y 
 
 ---
 
-## 8. Conclusión final
+## 8. Conclusión 
 
 - La Ley de Ohm relaciona voltaje, corriente y resistencia.  
 - En los circuitos en serie, la corriente es la misma en todos los elementos.  
