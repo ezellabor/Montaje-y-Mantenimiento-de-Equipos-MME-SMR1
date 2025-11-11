@@ -152,5 +152,5 @@ La Ley de Ohm establece una relación directa entre la tensión, la corriente y 
 
 ---
 
-<center> **Montaje y Mantenimiento de Equipos | SMR1**  </center>
+**Montaje y Mantenimiento de Equipos | SMR1**  
 <center>Profesor: Ezequiel Llarena Borges</center>
