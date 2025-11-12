@@ -108,7 +108,7 @@ La Ley de Ohm establece una relación directa entre la tensión, la corriente y 
 
 ---
 
-## 6. Circuitos mixtos (serie + paralelo)
+## 6. Circuitos mixtos
 
 **Características:**
 
