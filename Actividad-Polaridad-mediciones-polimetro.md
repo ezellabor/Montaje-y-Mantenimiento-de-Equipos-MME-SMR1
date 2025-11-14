@@ -17,6 +17,7 @@
 
 ## Acceso al tablero Miro  
 Escanea el siguiente código QR o haz clic en el enlace:  
+
 ![QR Miro](https://api.qrserver.com/v1/create-qr-code/?size=200x200&data=https://miro.com/app/board/uXjVJ2bphYw=/?share_link_id=421887262922)  
 [Entrar al tablero Miro](https://miro.com/app/board/uXjVJ2bphYw=/?share_link_id=421887262922)
 
