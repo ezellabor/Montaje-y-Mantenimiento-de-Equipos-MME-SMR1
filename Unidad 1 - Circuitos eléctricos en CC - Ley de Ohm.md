@@ -1,17 +1,18 @@
 #  Unidad 1 | Ley de Ohm y Circuitos Eléctricos de Corriente Continua
-> "Entender la electricidad es dominar la energía del futuro."
-
 **Módulo:** Montaje y Mantenimiento de Equipos (SMR1)    
-**Profesor:** Ezequiel Llarena Borges  
+**Profesor:** Ezequiel Llarena Borges
 
 ---
+
 
 ### Ley de Ohm  
 Esta ley afirma que la **intensidad de la corriente (I)** que circula por un conductor eléctrico es *directamente proporcional* a la **diferencia de potencial (V)** y, paralelamente, *inversamente proporcional* a la **resistencia (R).**
 
-![Triangulo Ley Ohm][](/ley-ohm-triangle.jpg)
+![Triangulo Ley Ohm](/ley-ohm-triangle.jpg)
 
-##  1. Magnitudes eléctricas
+---
+
+###  1. Magnitudes eléctricas
 
 | Magnitud              | Símbolo | Unidad (SI) | Símbolo unidad | Fórmula principal |
 |-----------------------|---------|-------------|----------------|-----------------|
