@@ -6,6 +6,11 @@
 
 ---
 
+### Ley de Ohm  
+Esta ley afirma que la **intensidad de la corriente (I)** que circula por un conductor eléctrico es *directamente proporcional* a la **diferencia de potencial (V)** y, paralelamente, *inversamente proporcional* a la **resistencia (R).**
+
+![Triangulo Ley Ohm][]
+
 ##  1. Magnitudes eléctricas
 
 | Magnitud              | Símbolo | Unidad (SI) | Símbolo unidad | Fórmula principal |
