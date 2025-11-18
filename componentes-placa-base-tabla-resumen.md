@@ -1,5 +1,6 @@
-## Componentes de placa base
-# Esquema
+# Arquitectura: componentes de placa base
+## Esquema-Resumen
+---
 
 | Archivo        | Componente | Imagen        | Descripción corta           | Lista de funciones         | Tabla de parámetros            | Tabla de evolución           |
 | -------------- | ---------- | ------------- | --------------------------- | -------------------------- | ------------------------------ | ---------------------------- |
