@@ -1,4 +1,4 @@
-# MME-CMO311| Ley de Ohm y Circuitos Eléctricos de Corriente Continua
+#| Ley de Ohm y Circuitos Eléctricos de Corriente Continua (MME-CMO311)
 **MóduloS:** Montaje y Mantenimiento de Equipos (SMR-I) y Aplicaciones informáticas aplicado a circuitos electrónicos (SMR-I)
 **Profesor:** Ezequiel Llarena Borges
 
