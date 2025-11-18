@@ -1,13 +1,13 @@
 # Arquitectura: componentes de placa base
 ## Esquema-Resumen
 
-| Archivo        | Componente | Imagen        | Descripción corta           | Lista de funciones         | Tabla de parámetros            | Tabla de evolución           |
-| -------------- | ---------- | ------------- | --------------------------- | -------------------------- | ------------------------------ | ---------------------------- |
-| `ram.html`     | RAM        | `ram.png`     | Memoria de acceso aleatorio | leer/escribir datos        | Tamaño, velocidad, canales     | EDO → DDR4 → DDR5            |
-| `chipset.html` | Chipset    | `chipset.png` | Controlador principal       | gestión buses, periféricos | Tipo, versión, TDP             | Chipsets antiguos → modernos |
-| `storage.html` | Storage    | `storage.png` | Almacenamiento              | leer/escribir datos        | Capacidad, interfaz, velocidad | PATA → SATA → M.2            |
-| `io.html`      | (I/O)      | `io.png`      | Puertos de entrada/salida   | USB, HDMI, Ethernet        | Tipo, versión                  | PS/2 → USB 2.0 → USB 3.2     |
-| `psu.html`     | PSU        | `psu.png`     | Fuente de alimentación      | Suministra energía         | Potencia, eficiencia           | AT → ATX → modular           |
-| `pcie.html`    | PCIe       | `pcie.png`    | Slot de expansión           | GPU, tarjetas de red       | Versión, lanes                 | PCI → PCI-X → PCIe 1-5       |
-| `rom.html`     | ROM        | `rom.png`     | BIOS/UEFI                   | Inicializa sistema         | Tamaño, versión                | BIOS clásico → UEFI          |
-| `cmos.html`    | CMOS       | `cmos.png`    | Batería CMOS                | Mantiene configuración     | Voltaje, duración              | Pilas CR2032                 |
+| Componente | Descripción                 | Funciones         | Parámetros críticos            | Evolución           |
+| ---------- | --------------------------- | -------------------------- | ------------------------------ | ---------------------------- |
+| RAM        | Memoria de acceso aleatorio | leer/escribir datos        | Tamaño, velocidad, canales     | EDO → DDR4 → DDR5            |
+| Chipset    | Controlador principal       | gestión buses, periféricos | Tipo, versión, TDP             | Chipsets antiguos → modernos |
+| Storage    | Almacenamiento              | leer/escribir datos        | Capacidad, interfaz, velocidad | PATA → SATA → M.2            |
+| (I/O)      | Puertos de entrada/salida   | USB, HDMI, Ethernet        | Tipo, versión                  | PS/2 → USB 2.0 → USB 3.2     |
+| PSU        | Fuente de alimentación      | Suministra energía         | Potencia, eficiencia           | AT → ATX → modular           |
+| PCIe       | Slot de expansión           | GPU, tarjetas de red       | Versión, lanes                 | PCI → PCI-X → PCIe 1-5       |
+| BIOS       | BIOS/UEFI                   | Inicializa sistema         | Tamaño, versión                | BIOS clásico → UEFI          |
+| CMOS       | Batería CMOS                | Mantiene configuración     | Voltaje, duración              | Pilas CR2032                 |
