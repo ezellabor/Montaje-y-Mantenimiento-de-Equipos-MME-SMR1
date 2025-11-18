@@ -56,8 +56,8 @@ Esta ley afirma que la **intensidad de la corriente (I)** que circula por un con
 | 5         | ?     | 0.5   | 100   | $V = I \times R$ |
 
 >**Conclusión**  
->La Ley de Ohm establece una relación directa entre la tensión, la corriente y la resistencia:     
->- A mayor resistencia → menor corriente para una misma tensión.
+>La Ley de Ohm establece una **relación directa** entre la tensión **(V), la corriente (I) y la resistencia (R):**    
+>[ ]- a mayor resistencia → menor corriente para una misma tensión.
 
 ---
 
@@ -85,7 +85,8 @@ Esta ley afirma que la **intensidad de la corriente (I)** que circula por un con
 | 4         | 100    | 220    | 330    | 12              | ?               | ?     |
 | 5         | 1 kΩ   | 1 kΩ   | 1 kΩ   | 9               | ?               | ?     |
 
-**Esquema tipo:**  
+**Esquema tipo:** 
+![Circuito en serie](img/circuito-serie.jpg)
 
 ---
 
@@ -113,7 +114,7 @@ Esta ley afirma que la **intensidad de la corriente (I)** que circula por un con
 | 5         | 470    | 680    | 1 kΩ   | 9               | ?               | ?              |
 
 **Esquema tipo:**  
-
+![Circuito en paralelp](img/circuito-paralelo.jpg)
 ---
 
 ## 6. Circuitos mixtos
