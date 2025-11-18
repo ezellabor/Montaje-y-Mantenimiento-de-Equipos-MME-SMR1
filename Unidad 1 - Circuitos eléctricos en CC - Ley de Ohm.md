@@ -143,10 +143,10 @@ _Tabla de resultados:_
 | Mixto           | Combinación de ambas                     | —                | —               |
 
 ##
-$- La Ley de Ohm relaciona voltaje, corriente y resistencia.$  
-$- En los circuitos en serie, la corriente es la misma en todos los elementos.$  
-$- En los circuitos en paralelo, la tensión es igual en todas las ramas.$  
-$- En los circuitos mixtos, se aplican ambas leyes combinadas.$
+>- La Ley de Ohm relaciona voltaje, corriente y resistencia. 
+>- En los circuitos en serie, la corriente es la misma en todos los elementos. 
+>- En los circuitos en paralelo, la tensión es igual en todas las ramas.
+>- En los circuitos mixtos, se aplican ambas leyes combinadas.
 
 ---
 
