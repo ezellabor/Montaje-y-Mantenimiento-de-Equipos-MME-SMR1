@@ -1,197 +1,166 @@
 <!DOCTYPE html>
 <html lang="es">
 <head>
-<meta charset="utf-8" />
-<meta name="viewport" content="width=device-width, initial-scale=1">
-<title>Componentes de la Placa Base — Resumen Moderno</title>
+<meta charset="UTF-8">
+<title>Componentes Principales de una Placa Base</title>
 
 <style>
-  :root {
-    --background: #f7f7f7;
-    --card: #ffffff;
-    --text: #1a1a1a;
-    --text-secondary: #666;
-    --accent: #c59850; /* dorado/cobre elegante */
-    --border: #e3e3e3;
-    --radius: 14px;
-    --shadow: 0 10px 26px rgba(0, 0, 0, 0.04);
-    --mono: "JetBrains Mono", Consolas, Monaco, monospace;
-  }
+    body {
+        font-family: "Inter", Arial, sans-serif;
+        background: #f4f6f8;
+        margin: 0;
+        padding: 40px;
+        display: flex;
+        justify-content: center;
+    }
 
-  body {
-    margin: 0;
-    background: var(--background);
-    font-family: "Inter", system-ui, -apple-system, Segoe UI, Roboto, sans-serif;
-    display: flex;
-    justify-content: center;
-    padding: 50px 16px;
-    color: var(--text);
-  }
+    .table-container {
+        background: #ffffff;
+        padding: 28px;
+        border-radius: 14px;
+        box-shadow: 0 6px 22px rgba(0, 0, 0, 0.08);
+        width: 95%;
+        max-width: 1100px;
+        animation: fadein 0.4s ease-in-out;
+    }
 
-  .wrapper {
-    max-width: 1100px;
-    width: 100%;
-    background: var(--card);
-    border-radius: var(--radius);
-    box-shadow: var(--shadow);
-    border: 1px solid var(--border);
-    padding: 32px;
-  }
+    h2 {
+        text-align: center;
+        margin-bottom: 25px;
+        color: #253748;
+        font-size: 26px;
+        letter-spacing: 0.7px;
+        font-weight: 600;
+    }
 
-  header {
-    padding-bottom: 25px;
-    border-bottom: 1px solid var(--border);
-    text-align: center;
-  }
+    table {
+        width: 100%;
+        border-collapse: collapse;
+        font-size: 15.5px;
+    }
 
-  header h1 {
-    margin: 0 0 8px 0;
-    font-size: 26px;
-    font-weight: 650;
-    letter-spacing: -0.5px;
-  }
+    thead {
+        background: #253748;
+        color: #ffffff;
+    }
 
-  header p {
-    margin: 0;
-    color: var(--text-secondary);
-    font-size: 15px;
-  }
+    th, td {
+        padding: 13px 14px;
+        text-align: left;
+        border-bottom: 1px solid #dde3e8;
+        vertical-align: top;
+    }
 
-  table {
-    width: 100%;
-    border-collapse: collapse;
-    margin-top: 28px;
-  }
+    tr:nth-child(even) {
+        background: #f7fafc;
+    }
 
-  thead th {
-    text-align: left;
-    padding: 14px 10px;
-    font-size: 14px;
-    font-weight: 600;
-    color: var(--accent);
-    border-bottom: 2px solid var(--accent);
-  }
+    tr:hover {
+        background: #e7eef5;
+        transition: .2s;
+    }
 
-  tbody td {
-    border-bottom: 1px solid var(--border);
-    padding: 14px 10px;
-    vertical-align: top;
-    font-size: 15px;
-  }
+    strong { color: #1b2d40; font-weight: 700; }
+    em { color: #264b64; font-style: italic; }
+    code {
+        background: #eaf1f7;
+        padding: 3px 6px;
+        border-radius: 4px;
+        font-size: 14px;
+        font-family: Consolas, monospace;
+        color: #1b3f5f;
+        font-weight: 600;
+    }
 
-  tbody tr:hover {
-    background: #fafafa;
-  }
-
-  /* Estilos solicitados por categoría */
-  .name { font-weight: 700; }
-  .func { font-style: italic; color: var(--text-secondary); }
-  code.spec, code.param {
-    background: #fff7e6;
-    border: 1px solid #f2e3c4;
-    padding: 2px 5px;
-    border-radius: 4px;
-    font-family: var(--mono);
-    font-size: 13px;
-  }
-  .evol { color: var(--accent); font-weight: 600; }
-
-  .note {
-    margin-top: 18px;
-    font-size: 14px;
-    color: var(--text-secondary);
-    text-align: right;
-  }
+    @keyframes fadein {
+        from { opacity: 0; transform: translateY(10px); }
+        to { opacity: 1; transform: translateY(0); }
+    }
 </style>
 </head>
 
 <body>
-<div class="wrapper">
-  <header>
-    <h1>Componentes principales de la placa base</h1>
-    <p>Tabla profesional con función, especificaciones actuales, parámetros clave y evolución tecnológica</p>
-  </header>
+<div class="table-container">
+<h2>Componentes Principales de una Placa Base</h2>
 
-  <table>
-    <thead>
-      <tr>
-        <th>Componente</th>
-        <th>Función</th>
-        <th>Especificaciones actuales</th>
-        <th>Parámetros clave</th>
-        <th>Evolución</th>
-      </tr>
-    </thead>
+<table>
+<thead>
+<tr>
+    <th>Nombre componente</th>
+    <th>Función</th>
+    <th>Especificaciones actuales</th>
+    <th>Parámetros clave</th>
+    <th>Evolución</th>
+</tr>
+</thead>
 
-    <tbody>
-      <tr>
-        <td><span class="name">Microprocesador (CPU)</span></td>
-        <td><span class="func">Procesar instrucciones y datos del sistema</span></td>
-        <td><code class="spec">x86-64, 3–5 GHz, hasta 16 núcleos</code></td>
-        <td><code class="param">Cores, hilos, caché, TDP, turbo</code></td>
-        <td><span class="evol">Pentium → Core → Ryzen → Ryzen 9</span></td>
-      </tr>
+<tbody>
+<tr>
+<td><strong>Microprocesador (CPU)</strong></td>
+<td><em>Ejecuta las instrucciones del sistema y de las aplicaciones</em></td>
+<td><code>Intel 12-14 Gen / AMD Ryzen 5–9</code></td>
+<td><code>núcleos, hilos, frecuencia, caché</code></td>
+<td>Core i7 → Core i9 / Ryzen 5 → Ryzen 9</td>
+</tr>
 
-      <tr>
-        <td><span class="name">Memoria RAM</span></td>
-        <td><span class="func">Almacenar temporalmente datos e instrucciones</span></td>
-        <td><code class="spec">DDR5, 5200–8000 MHz, 8–64 GB</code></td>
-        <td><code class="param">Capacidad, frecuencia, latencia, canales</code></td>
-        <td><span class="evol">DDR3 → DDR4 → DDR5</span></td>
-      </tr>
+<tr>
+<td><strong>RAM</strong></td>
+<td><em>Almacena datos temporales para acceso rápido</em></td>
+<td><code>DDR5 (4800–6400 MHz)</code></td>
+<td><code>frecuencia, latencia, capacidad, canales</code></td>
+<td>DDR3 → DDR4 → DDR5</td>
+</tr>
 
-      <tr>
-        <td><span class="name">Chipset</span></td>
-        <td><span class="func">Coordinar comunicación entre CPU y periféricos</span></td>
-        <td><code class="spec">PCIe 5.0, USB-C, NVMe, OC</code></td>
-        <td><code class="param">Líneas PCIe, puertos USB/SATA, soporte OC</code></td>
-        <td><span class="evol">Integrado → PCIe 4.0 → PCIe 5.0</span></td>
-      </tr>
+<tr>
+<td><strong>Chipset</strong></td>
+<td><em>Controla la comunicación entre los componentes</em></td>
+<td><code>Z790 / B650 / X670</code></td>
+<td><code>conectividad, PCIe, VRM, puertos</code></td>
+<td>Z690 → Z790 / X570 → X670</td>
+</tr>
 
-      <tr>
-        <td><span class="name">Memoria secundaria</span></td>
-        <td><span class="func">Almacenamiento permanente de la información</span></td>
-        <td><code class="spec">NVMe SSD 1–4 TB, 3500–7000 MB/s</code></td>
-        <td><code class="param">Capacidad, interfaz, lectura/escritura</code></td>
-        <td><span class="evol">HDD → SATA SSD → NVMe SSD</span></td>
-      </tr>
+<tr>
+<td><strong>Memoria secundaria</strong></td>
+<td><em>Almacena datos permanentes</em></td>
+<td><code>SSD NVMe PCIe 4.0 / 5.0</code></td>
+<td><code>velocidad lectura/escritura, TBW, interfaz</code></td>
+<td>HDD → SATA SSD → NVMe PCIe 4.0 → 5.0</td>
+</tr>
 
-      <tr>
-        <td><span class="name">Tarjetas de expansión</span></td>
-        <td><span class="func">Ampliar capacidades: GPU, red, sonido, captura</span></td>
-        <td><code class="spec">PCIe 4.0/5.0, NIC 10 GbE, GPU dedicada</code></td>
-        <td><code class="param">Ancho PCIe, consumo, compatibilidad</code></td>
-        <td><span class="evol">PCI → PCIe 3.0 → PCIe 5.0</span></td>
-      </tr>
+<tr>
+<td><strong>Tarjetas de expansión</strong></td>
+<td><em>Añaden funciones adicionales al sistema</em></td>
+<td><code>PCIe 4.0 / 5.0 — GPU RTX, NIC 10GbE, WiFi 6E</code></td>
+<td><code>n.º de líneas PCIe, ancho de banda, consumo</code></td>
+<td>PCI → PCIe 3.0 → PCIe 4.0 → 5.0</td>
+</tr>
 
-      <tr>
-        <td><span class="name">BIOS / UEFI</span></td>
-        <td><span class="func">Inicializar hardware y cargar configuraciones</span></td>
-        <td><code class="spec">UEFI GUI, TPM 2.0, Secure Boot</code></td>
-        <td><code class="param">Modo Legacy/UEFI, actualizaciones</code></td>
-        <td><span class="evol">BIOS → UEFI</span></td>
-      </tr>
+<tr>
+<td><strong>BIOS / UEFI</strong></td>
+<td><em>Inicializa el hardware y carga el sistema operativo</em></td>
+<td><code>UEFI con Secure Boot</code></td>
+<td><code>modo de arranque, soporte NVMe, TPM</code></td>
+<td>BIOS → UEFI</td>
+</tr>
 
-      <tr>
-        <td><span class="name">CMOS</span></td>
-        <td><span class="func">Guardar ajustes del sistema de arranque</span></td>
-        <td><code class="spec">CMOS + batería CR2032</code></td>
-        <td><code class="param">Fecha/hora, arranque, parámetros base</code></td>
-        <td><span class="evol">CMOS tradicional → NVRAM</span></td>
-      </tr>
+<tr>
+<td><strong>CMOS</strong></td>
+<td><em>Almacena configuración básica del sistema</em></td>
+<td><code>Memoria CMOS + Batería CR2032</code></td>
+<td><code>hora/fecha, arranque, voltajes</code></td>
+<td>Mantenimiento de CMOS clásico → Config CMOS en UEFI</td>
+</tr>
 
-      <tr>
-        <td><span class="name">PSU (Fuente de alimentación)</span></td>
-        <td><span class="func">Suministrar energía estable al sistema</span></td>
-        <td><code class="spec">ATX 650–1200 W, 80 PLUS Gold/Platinum</code></td>
-        <td><code class="param">Potencia, eficiencia, conectores</code></td>
-        <td><span class="evol">No certificada → Bronze → Platinum/Titanium</span></td>
-      </tr>
-    </tbody>
-  </table>
-
-  <div class="note">Las especificaciones son orientativas y dependen del fabricante y modelo.</div>
+<tr>
+<td><strong>PSU (Fuente alimentación)</strong></td>
+<td><em>Suministra energía estable al sistema</em></td>
+<td><code>ATX 750–1200W 80+ Gold / Platinum</code></td>
+<td><code>vatios, eficiencia, protecciones, modular</code></td>
+<td>Bronze → Gold → Platinum → Titanium</td>
+</tr>
+</tbody>
+</table>
 </div>
+
 </body>
 </html>
-
