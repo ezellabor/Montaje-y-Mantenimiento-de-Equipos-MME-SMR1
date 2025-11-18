@@ -1,5 +1,4 @@
-# Arquitectura: componentes de placa base
-## Esquema-Resumen
+># Placas Base
 
 | Componente | Descripción                 | Funciones         | Parámetros críticos            | Evolución           |
 | ---------- | --------------------------- | -------------------------- | ------------------------------ | ---------------------------- |
