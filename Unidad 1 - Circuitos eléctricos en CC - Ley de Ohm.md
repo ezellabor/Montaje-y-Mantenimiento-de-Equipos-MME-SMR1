@@ -43,7 +43,7 @@ Calcula la magnitud desconocida en cada caso. Expresa el resultado con dos decim
 | 4         | 5     | 0.02  | `?`     | $R = \frac{V}{I}$  |
 | 5         | `?`     | 0.5   | 100   | $V = I \cdot R$ |
 
-### 2.3. Conclusión
+### 2.2. Conclusión
 La Ley de Ohm establece una **relación directa** entre la tensión **(V), la corriente (I) y la resistencia (R)**    
 >- [ ] a mayor resistencia → menor corriente para una misma tensión.
 
@@ -113,8 +113,8 @@ La Ley de Ohm establece una **relación directa** entre la tensión **(V), la co
 
 ### 5.1. Características
 
-- Combinan partes en serie y partes en paralelo.  
-- Calcular primero las resistencias en paralelo, luego sumar en serie.
+- _Combinan partes en serie y partes en paralelo._  
+- _Calcular primero las resistencias en paralelo, luego sumar en serie._
 
 ### 5.2. Ejercicios
 
