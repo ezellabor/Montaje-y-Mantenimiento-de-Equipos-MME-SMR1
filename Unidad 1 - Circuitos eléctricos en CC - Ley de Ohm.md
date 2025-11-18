@@ -1,5 +1,5 @@
-#  Unidad 1 | Ley de Ohm y Circuitos Eléctricos de Corriente Continua
-**Módulo:** Montaje y Mantenimiento de Equipos (SMR1)    
+# MME-CMO311| Ley de Ohm y Circuitos Eléctricos de Corriente Continua
+**MóduloS:** Montaje y Mantenimiento de Equipos (SMR-I) y Aplicaciones informáticas aplicado a circuitos electrónicos (SMR-I)
 **Profesor:** Ezequiel Llarena Borges
 
 ---
