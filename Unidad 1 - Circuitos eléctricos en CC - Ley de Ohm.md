@@ -1,7 +1,8 @@
 # | Ley de Ohm y Circuitos Eléctricos en CC/DC
 *Sistemas Microinformáticos y Redes* 
 >- MME-SMRI - Montaje y Mantenimiento de Equipos 
->- CMO311/SMRI - Informática aplicada a sistemas electrónicos (Robótica) 
+>- CMO311/SMRI - Informática aplicada a sistemas electrónicos (Robótica)
+># 
 >**Profesor:** Ezequiel Llarena Borges
 
 
