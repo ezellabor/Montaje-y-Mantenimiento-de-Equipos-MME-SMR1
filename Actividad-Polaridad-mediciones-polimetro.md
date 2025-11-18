@@ -23,5 +23,5 @@ Escanea el siguiente código QR o haz clic en el enlace:
 
 ---
 
-> **Pie de página**  
-> Módulo: Montaje y Mantenimiento de Equipos — SMR1 — Prof. Ezequiel Llarena Borges  
+
+>Montaje y Mantenimiento de Equipos (SMR) Prof. Ezequiel Llarena Borges  
