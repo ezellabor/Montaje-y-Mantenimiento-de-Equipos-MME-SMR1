@@ -23,7 +23,7 @@ Esta ley afirma que la **intensidad de la corriente (I)** que circula por un con
 |-----------------------|---------|-------------|----------------|-----------------|
 | Tensión o Voltaje     | V       | Voltio      | V              | $V = I \cdot R$ |
 | Corriente eléctrica   | I       | Amperio     | A              | $I = \frac{V}{R}$      |
-| Resistencia eléctrica | R       | Ohmio       | Ω              | $R = \frac{V}{I}      |
+| Resistencia eléctrica | R       | Ohmio       | Ω              | $R = \frac{V}{I}$      |
 | Potencia eléctrica    | P       | Vatio       | W              | $P = V \cdot I$ |
 | Energía eléctrica     | E       | Julio       | J              | $E = P \cdot t$ |
 | Tiempo                | t       | Segundo     | s              | —                |
@@ -52,10 +52,10 @@ Esta ley afirma que la **intensidad de la corriente (I)** que circula por un con
 
 | Ejercicio | V (V) | I (A) | R (Ω) | Cálculo    |
 |-----------|-------|-------|-------|------------|
-| 1         | 12    | 2     | ?     | $R = V / I$  |
-| 2         | ?     | 1.5   | 10    | $I = V / R$  |
-| 3         | 24    | ?     | 12    | $I = V / R$  |
-| 4         | 5     | 0.02  | ?     | $R = V / I$  |
+| 1         | 12    | 2     | ?     | $R = \frac{V}{R}$  |
+| 2         | ?     | 1.5   | 10    | $I = \frac{V}{R}$  |
+| 3         | 24    | ?     | 12    | $I =\frac{V}{R}$  |
+| 4         | 5     | 0.02  | ?     | $R = \frac{V}{R}$  |
 | 5         | ?     | 0.5   | 100   | $V = I \cdot R$ |
 
 >**Conclusión**  
