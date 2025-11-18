@@ -53,9 +53,9 @@ La Ley de Ohm establece una **relación directa** entre la tensión **(V), la co
 
 ### 3.1. Características
 
-- La corriente es igual en todos los componentes.  
-- La tensión total es la suma de las tensiones parciales.  
-- La resistencia total es la suma de todas las resistencias.  
+- _La corriente es igual en todos los componentes._  
+- _La tensión total es la suma de las tensiones parciales._  
+- _La resistencia total es la suma de todas las resistencias._  
 
 ### 3.2. Síntesis
 
@@ -83,9 +83,9 @@ La Ley de Ohm establece una **relación directa** entre la tensión **(V), la co
 
 ### 4.1. Características
 
-- La tensión es igual en todas las ramas.  
-- La corriente total es la suma de las corrientes parciales.  
-- La **resistencia total** o **equvalente** se calcula como: $\frac{1}{R_T} = \frac{1}{R_1} + \frac{1}{R_2} + \frac{1}{R_3}$
+- _La tensión es igual en todas las ramas._  
+- _La corriente total es la suma de las corrientes parciales._  
+- _La **resistencia total** o **equvalente** se calcula como:_ $\frac{1}{R_T} = \frac{1}{R_1} + \frac{1}{R_2} + \frac{1}{R_3}$
 
 ### 4.2. Síntesis
 
@@ -114,7 +114,7 @@ La Ley de Ohm establece una **relación directa** entre la tensión **(V), la co
 ### 5.1. Características
 
 - _Combinan partes en serie y partes en paralelo._  
-- _Calcular primero las resistencias en paralelo, luego sumar en serie._
+- _Se calculan primero las resistencias en paralelo, a continuación se suman en serie._
 
 ### 5.2. Ejercicios
 
