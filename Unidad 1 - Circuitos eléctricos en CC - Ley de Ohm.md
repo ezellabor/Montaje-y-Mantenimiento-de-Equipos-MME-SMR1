@@ -57,7 +57,7 @@ Esta ley afirma que la **intensidad de la corriente (I)** que circula por un con
 
 >**Conclusión**  
 >La Ley de Ohm establece una **relación directa** entre la tensión **(V), la corriente (I) y la resistencia (R):**    
->[ ]- a mayor resistencia → menor corriente para una misma tensión.
+>[] - a mayor resistencia → menor corriente para una misma tensión.
 
 ---
 
