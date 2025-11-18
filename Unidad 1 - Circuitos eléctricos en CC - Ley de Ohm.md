@@ -69,7 +69,7 @@ Esta ley afirma que la **intensidad de la corriente (I)** que circula por un con
 - La tensión total es la suma de las tensiones parciales.  
 - La resistencia total es la suma de todas las resistencias.  
 
-**Fórmulas:**
+**Síntesis**
 
 - $R_T = R_1 + R_2 + R_3$  
 - $V_T = V_1 + V_2 + V_3$  
