@@ -100,7 +100,7 @@ Esta ley afirma que la **intensidad de la corriente (I)** que circula por un con
 - La corriente total es la suma de las corrientes parciales.  
 - La **resistencia total** o equvalente se calcula como:
 
-**Fórmula:**  
+**Síntesis**  
 
 - $\frac{1}{R_T} = \frac{1}{R_1} + \frac{1}{R_2} + \frac{1}{R_3}$
 - $V = \text{constante}$  
@@ -116,7 +116,7 @@ Esta ley afirma que la **intensidad de la corriente (I)** que circula por un con
 | 5         | 470    | 680    | 1 kΩ   | 9               | ?               | ?              |
 
 **Esquema tipo**  
-![Circuito en paralelp](img/circuito-paralelo.jpg)
+![Circuito en paralelo](img/circuito-paralelo.jpg)
 ---
 
 ## 6. Circuitos mixtos
@@ -130,9 +130,9 @@ Esta ley afirma que la **intensidad de la corriente (I)** que circula por un con
 
 | Ejercicio | Descripción | Datos | Cálculos requeridos |
 |-----------|------------|-------|-------------------|
-| 1         | R₁ = 10 Ω en serie con (R₂ = 20 Ω ‖ R₃ = 30 Ω), V<sub>T</sub> = 12 V | — | R<sub>T</sub>, I<sub>T</sub>, V en cada resistencia |
-| 2         | (R₁ = 100 Ω ‖ R₂ = 200 Ω) en serie con R₃ = 50 Ω, V<sub>T</sub> = 9 V | — | R<sub>T</sub>, I<sub>T</sub>, V₃ |
-| 3         | (R₁ = 47 Ω + R₂ = 33 Ω) en paralelo con R₃ = 100 Ω, V<sub>T</sub> = 12 V | — | R<sub>T</sub>, corrientes parciales |
+| 1         | R₁ en serie con (R₂ ‖ R₃) | R₁ = 10 Ω, R₂ = 20 Ω, R₃ = 30 Ω, V<sub>T</sub> = 12 V  | R<sub>T</sub>, I<sub>T</sub>, V en cada resistencia |
+| 2         | (R₁ ‖ R₂) en serie con R₃ | R₁ = 100 Ω, R₂ = 200 Ω, R₃ = 50 Ω, V<sub>T</sub> = 9 V | R<sub>T</sub>, I<sub>T</sub>, V₃ |
+| 3         | (R₁ en serie con R₂) ‖ R₃ | R₁ = 47 Ω, R₂ = 33 Ω, R₃ = 100 Ω, V<sub>T</sub> = 12 V | R<sub>T</sub>, corrientes parciales |
 
 **Tabla de resultados:**
 
