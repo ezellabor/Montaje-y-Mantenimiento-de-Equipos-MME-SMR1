@@ -52,14 +52,13 @@ Esta ley afirma que la **intensidad de la corriente (I)** que circula por un con
 
 | Ejercicio | V (V) | I (A) | R (Ω) | Cálculo    |
 |-----------|-------|-------|-------|------------|
-| 1         | 12    | 2     | ?     | $R = \frac{V}{I}$  |
-| 2         | ?     | 1.5   | 10    | $I = \frac{V}{R}$  |
-| 3         | 24    | ?     | 12    | $I =\frac{V}{R}$  |
-| 4         | 5     | 0.02  | ?     | $R = \frac{V}{I}$  |
-| 5         | ?     | 0.5   | 100   | $V = I \cdot R$ |
+| 1         | 12    | 2     | `?`    | $R = \frac{V}{I}$  |
+| 2         | `?`     | 1.5   | 10    | $I = \frac{V}{R}$  |
+| 3         | 24    | `?`     | 12    | $I =\frac{V}{R}$  |
+| 4         | 5     | 0.02  | `?`     | $R = \frac{V}{I}$  |
+| 5         | `?`     | 0.5   | 100   | $V = I \cdot R$ |
 
->**Conclusión**  
->La Ley de Ohm establece una **relación directa** entre la tensión **(V), la corriente (I) y la resistencia (R):**    
+>**Conclusión:** La Ley de Ohm establece una **relación directa** entre la tensión **(V), la corriente (I) y la resistencia (R)**    
 >- [ ] a mayor resistencia → menor corriente para una misma tensión.
 
 ---
