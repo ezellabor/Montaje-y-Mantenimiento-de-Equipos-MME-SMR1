@@ -22,8 +22,8 @@ Esta ley afirma que la **intensidad de la corriente (I)** que circula por un con
 | Magnitud              | Símbolo | Unidad (SI) | Símbolo unidad | Fórmula principal |
 |-----------------------|---------|-------------|----------------|-----------------|
 | Tensión o Voltaje     | V       | Voltio      | V              | $V = I \cdot R$ |
-| Corriente eléctrica   | I       | Amperio     | A              | $I = V / R$      |
-| Resistencia eléctrica | R       | Ohmio       | Ω              | $R = V / I$      |
+| Corriente eléctrica   | I       | Amperio     | A              | $I = \frac{V}{R}$      |
+| Resistencia eléctrica | R       | Ohmio       | Ω              | $R = \frac{V}{I}      |
 | Potencia eléctrica    | P       | Vatio       | W              | $P = V \cdot I$ |
 | Energía eléctrica     | E       | Julio       | J              | $E = P \cdot t$ |
 | Tiempo                | t       | Segundo     | s              | —                |
