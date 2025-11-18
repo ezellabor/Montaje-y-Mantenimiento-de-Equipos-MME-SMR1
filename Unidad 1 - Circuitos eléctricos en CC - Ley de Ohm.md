@@ -8,7 +8,7 @@
 
 
 ### Ley de Ohm  
-- $V = I * R 
+- $V = I * R$ 
 
 Esta ley afirma que la **intensidad de la corriente (I)** que circula por un conductor eléctrico es *directamente proporcional* a la **diferencia de potencial (V)** y, paralelamente, *inversamente proporcional* a la **resistencia (R).**
 
