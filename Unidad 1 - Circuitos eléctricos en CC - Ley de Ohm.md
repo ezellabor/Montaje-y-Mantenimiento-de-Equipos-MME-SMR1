@@ -116,7 +116,10 @@ La Ley de Ohm establece una **relación directa** entre la tensión **(V), la co
 - _Combinan partes en serie y partes en paralelo._  
 - _Se calculan primero las resistencias en paralelo, a continuación se suman en serie._
 
-### 5.2. Ejercicios
+### 5.2. Esquema tipo
+![Circuito en serie](img/circuito-serie.jpg)
+
+### 5.3. Ejercicios
 
 | Ejercicio | Descripción | Datos | Cálculos requeridos |
 |-----------|------------|-------|-------------------|
