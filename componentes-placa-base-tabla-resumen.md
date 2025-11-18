@@ -1,17 +1,5 @@
 ># Placas Base
 
-| Componente | Descripción                 | Funciones         | Parámetros críticos            | Evolución           |
-| ---------- | --------------------------- | -------------------------- | ------------------------------ | ---------------------------- |
-| **RAM**      | _Memoria de acceso aleatorio_   | - leer/escribir datos        | `Tamaño, velocidad, canales`     | EDO → DDR4 → DDR5            |
-| **Chipset**  | _Controlador principal_         | - gestión buses, periféricos | `Tipo, versión, TDP`             | Chipsets antiguos → modernos |
-| **Storage**  | _Almacenamiento_                | - leer/escribir datos        | `Capacidad, interfaz, velocidad` | PATA → SATA → M.2            |
-| **I/O**      | _Puertos de entrada/salida_     | - USB, HDMI, Ethernet        | `Tipo, versión`                  | PS/2 → USB 2.0 → USB 3.2     |
-| **PSU**      | _Fuente de alimentación_        | - Suministra energía         | `Potencia, eficiencia`           | AT → ATX → modular           |
-| **PCIe**    | _Slot de expansión_             | - GPU, tarjetas de red       | `Versión, lanes`                 | PCI → PCI-X → PCIe 1-5       |
-| **BIOS/UEFI** | _Rutina arranque de sistema_     | - Inicializa sistema         | `Tamaño, versión`                | BIOS clásico → UEFI          |
-| **CMOS**     | _Batería CMOS_                  | - Mantiene configuración     | `Voltaje, duración`              | Pilas CR2032                 |
-
----
 
 | Nombre componente                       | Función                                                                | Especificaciones actuales                                   | Parámetros clave                                      | Evolución                                            |
 | --------------------------------------- | ---------------------------------------------------------------------- | ----------------------------------------------------------- | ----------------------------------------------------- | ---------------------------------------------------- |
@@ -20,6 +8,7 @@
 | **Chipset**                             | *Gestionar la comunicación entre CPU y periféricos del sistema.*       | `Soporte PCIe 5.0, USB-C, NVMe, overclocking según modelo`  | `Líneas PCIe, puertos SATA/USB, soporte OC`           | Intel H/Z → AMD A/B/X                                |
 | **Memoria secundaria (almacenamiento)** | *Guardar datos de manera permanente.*                                  | `NVMe SSD 1–4 TB, velocidad 3500–7000 MB/s`                 | `Capacidad, velocidad lectura/escritura, interfaz`    | HDD → SATA SSD → NVMe SSD                            |
 | **Tarjetas de expansión**               | *Ampliar capacidades (gráfica, red, sonido, capturadoras...).*         | `PCIe 4.0/5.0, GPU dedicadas, NIC 10 GbE`                   | `Banda PCIe, consumo, compatibilidad`                 | PCI → PCIe 3.0 → PCIe 5.0                            |
+| **I/O**               | *Puertos de entrada/salida.*         | `- USB, HDMI, Ethernet`               | `velocidad transferencia datos`      | PS/2 → USB 2.0 → USB 3.2                            |
 | **BIOS / UEFI**                         | *Inicializar hardware y configurar parámetros del sistema al iniciar.* | `UEFI con interfaz gráfica, Secure Boot, TPM 2.0`           | `Modo UEFI/Legacy, actualización, compatibilidad CPU` | BIOS → UEFI                                          |
 | **CMOS**                                | *Almacenar ajustes de arranque del firmware.*                          | `Memoria CMOS con batería CR2032`                           | `Fecha/hora, configuración boot, voltajes básicos`    | CMOS clásico → UEFI con NVRAM                        |
 | **PSU (Fuente de alimentación)**        | *Suministrar energía eléctrica estable a todos los componentes.*       | `ATX 650–1200 W, certificación 80 PLUS Gold/Platinum`       | `Potencia, estabilidad, eficiencia, conectores`       | No certificadas → 80 Plus Bronze → Platinum/Titanium |
