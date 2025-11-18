@@ -8,7 +8,7 @@
 
 
 
-### Ley de Ohm  
+## Ley de Ohm  
 >$V = I \cdot R$ 
 
 Esta ley afirma que la **intensidad de la corriente (I)** que circula por un conductor eléctrico es *directamente proporcional* a la **diferencia de potencial (V)** y, paralelamente, *inversamente proporcional* a la **resistencia (R).**
@@ -17,7 +17,7 @@ Esta ley afirma que la **intensidad de la corriente (I)** que circula por un con
 
 ---
 
-###  1. Magnitudes eléctricas
+##  1. Magnitudes eléctricas
 
 | Magnitud              | Símbolo | Unidad (SI) | Símbolo unidad | Fórmula principal |
 |-----------------------|---------|-------------|----------------|-----------------|
@@ -79,24 +79,24 @@ La Ley de Ohm establece una **relación directa** entre la tensión **(V), la co
 
 ---
 
-## 5. Circuitos en paralelo
+## 4. Circuitos en paralelo
 
-### 5.1. Características
+### 4.1. Características
 
 - La tensión es igual en todas las ramas.  
 - La corriente total es la suma de las corrientes parciales.  
 - La **resistencia total** o **equvalente** se calcula como: $\frac{1}{R_T} = \frac{1}{R_1} + \frac{1}{R_2} + \frac{1}{R_3}$
 
-### 5.2. Síntesis
+### 4.2. Síntesis
 
 - $\frac{1}{R_T} = \frac{1}{R_1} + \frac{1}{R_2} + \frac{1}{R_3}$
 - $V = \text{constante}$  
 
-### 5.3. Esquema tipo
+### 4.3. Esquema tipo
 
 ![Circuito en paralelo](img/circuito-paralelo.jpg)
 
-### 5.4. Ejercicios
+### 4.4. Ejercicios
 
 | Ejercicio | R₁ (Ω) | R₂ (Ω) | R₃ (Ω) | V<sub>T</sub> (V) | R<sub>T</sub> (Ω) | I<sub>T</sub> (A) |
 |-----------|--------|--------|--------|-----------------|-----------------|----------------|
@@ -109,14 +109,14 @@ La Ley de Ohm establece una **relación directa** entre la tensión **(V), la co
 
 ---
 
-## 6. Circuitos mixtos
+## 5. Circuitos mixtos
 
-**Características:**
+### 5.1. Características
 
 - Combinan partes en serie y partes en paralelo.  
 - Calcular primero las resistencias en paralelo, luego sumar en serie.
 
-**Ejercicios:**
+### 5.2. Ejercicios
 
 | Ejercicio | Descripción | Datos | Cálculos requeridos |
 |-----------|------------|-------|-------------------|
@@ -124,7 +124,7 @@ La Ley de Ohm establece una **relación directa** entre la tensión **(V), la co
 | 2         | (R₁ ‖ R₂) en serie con R₃ | R₁ = 100 Ω, R₂ = 200 Ω, R₃ = 50 Ω, V<sub>T</sub> = 9 V | R<sub>T</sub>, I<sub>T</sub>, V₃ |
 | 3         | (R₁ en serie con R₂) ‖ R₃ | R₁ = 47 Ω, R₂ = 33 Ω, R₃ = 100 Ω, V<sub>T</sub> = 12 V | R<sub>T</sub>, corrientes parciales |
 
-**Tabla de resultados:**
+_Tabla de resultados:_
 
 | Ejercicio | R<sub>T</sub> (Ω) | I<sub>T</sub> (A) | V<sub>R₁</sub> | V<sub>R₂</sub> | V<sub>R₃</sub> |
 |-----------|-----------------|-----------------|----------------|----------------|----------------|
@@ -134,7 +134,7 @@ La Ley de Ohm establece una **relación directa** entre la tensión **(V), la co
 
 ---
 
-## 7. Síntesis
+## 6. Síntesis y conclusion final
 
 | Tipo de circuito | Fórmula R<sub>T</sub>                     | Corriente constante | Tensión constante |
 |-----------------|-----------------------------------------|------------------|-----------------|
@@ -142,14 +142,11 @@ La Ley de Ohm establece una **relación directa** entre la tensión **(V), la co
 | Paralelo        | $\frac{1}{R_T} = \frac{1}{R_1} + \frac{1}{R_2} + \frac{1}{R_3}$  | — | V |
 | Mixto           | Combinación de ambas                     | —                | —               |
 
----
-
-## 8. Conclusión 
-
-- La Ley de Ohm relaciona voltaje, corriente y resistencia.  
-- En los circuitos en serie, la corriente es la misma en todos los elementos.  
-- En los circuitos en paralelo, la tensión es igual en todas las ramas.  
-- En los circuitos mixtos, se aplican ambas leyes combinadas.
+##
+$- La Ley de Ohm relaciona voltaje, corriente y resistencia.$  
+$- En los circuitos en serie, la corriente es la misma en todos los elementos.$  
+$- En los circuitos en paralelo, la tensión es igual en todas las ramas.$  
+$- En los circuitos mixtos, se aplican ambas leyes combinadas.$
 
 ---
 
