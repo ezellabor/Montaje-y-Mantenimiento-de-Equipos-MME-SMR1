@@ -1,1 +1,141 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+<meta charset="utf-8" />
+<meta name="viewport" content="width=device-width,initial-scale=1" />
+<title>Componentes principales de la placa base — Resumen</title>
+<style>
+  :root{
+    --bg:#f4f7fa;
+    --card:#ffffff;
+    --muted:#6b7280;
+    --accent:#2b6cb0; /* azul suave */
+    --accent-2:#7aa7d9;
+    --border:#e6eef8;
+    --shadow: 0 6px 18px rgba(43,108,176,0.08);
+    --mono: "SFMono-Regular", Menlo, Monaco, Consolas, "Liberation Mono", monospace;
+    --radius:12px;
+  }
+  html,body{height:100%; margin:0; background:linear-gradient(180deg, var(--bg), #eef6fb);}
+  body{font-family: Inter, system-ui, -apple-system, "Segoe UI", Roboto, "Helvetica Neue", Arial; color:#17202a;
+        display:flex; align-items:center; justify-content:center; padding:40px;}
+  .container{width:100%; max-width:1100px; background:var(--card); border-radius:var(--radius);
+             box-shadow:var(--shadow); border:1px solid var(--border); padding:28px;}
+  header{display:flex; align-items:center; gap:16px; margin-bottom:18px;}
+  .logo{
+    width:58px; height:58px; border-radius:10px; background:linear-gradient(135deg,var(--accent),var(--accent-2));
+    display:flex; align-items:center; justify-content:center; color:white; font-weight:700; font-size:18px;
+  }
+  h1{font-size:20px; margin:0 0 0 0;}
+  p.lead{margin:4px 0 18px 0; color:var(--muted); font-size:14px;}
+  table{width:100%; border-collapse:collapse; background:transparent;}
+  thead th{ text-align:left; font-size:13px; color:var(--muted); padding:12px 12px; border-bottom:1px solid var(--border);}
+  tbody td{padding:14px 12px; vertical-align:top; border-bottom:1px dashed #eef6fb;}
+  tbody tr:hover{background:linear-gradient(90deg, rgba(43,108,176,0.03), rgba(122,167,217,0.01));}
+  /* styles requested: names bold, functions italic, specs & params in code */
+  .name{font-weight:700; color:#0f1724;}
+  .func{font-style:italic; color:var(--muted);}
+  code.spec, code.param{background:#f5fbff; padding:4px 6px; border-radius:6px; font-family:var(--mono); font-size:13px; color:#0b486f;}
+  .evol{color:#155e75; font-weight:600;}
+  .hint{color:var(--muted); font-size:13px;}
+  .foot{margin-top:18px; color:var(--muted); font-size:13px;}
+  @media (max-width:880px){
+    body{padding:18px;}
+    .container{padding:18px;}
+    thead th, tbody td{padding:10px 8px; font-size:14px;}
+  }
+</style>
+</head>
+<body>
+  <div class="container" role="main" aria-labelledby="titulo">
+    <header>
+      <div class="logo">MB</div>
+      <div>
+        <h1 id="titulo">Componentes principales de la placa base — Resumen</h1>
+        <p class="lead">Tabla sintetizada con función, especificaciones actuales, parámetros clave y evolución.</p>
+      </div>
+    </header>
+
+    <table aria-describedby="desc">
+      <thead>
+        <tr>
+          <th>Nombre componente</th>
+          <th>Función</th>
+          <th>Especificaciones actuales</th>
+          <th>Parámetros clave</th>
+          <th>Evolución</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr>
+          <td><span class="name">Microprocesador (CPU)</span></td>
+          <td><div class="func">Ejecutar instrucciones y procesar datos del sistema.</div></td>
+          <td><code class="spec">Arquitectura x86-64, hasta 16 núcleos, 3–5 GHz</code></td>
+          <td><code class="param">Cores, hilos, caché, TDP, frecuencia turbo</code></td>
+          <td><span class="evol">Pentium → Core → Ryzen → Ryzen 9</span></td>
+        </tr>
+
+        <tr>
+          <td><span class="name">Memoria RAM</span></td>
+          <td><div class="func">Almacenar temporalmente datos e instrucciones en uso.</div></td>
+          <td><code class="spec">DDR5, 5200–8000 MHz, 8–64 GB por módulo</code></td>
+          <td><code class="param">Capacidad, frecuencia, latencia, canales</code></td>
+          <td><span class="evol">DDR3 → DDR4 → DDR5</span></td>
+        </tr>
+
+        <tr>
+          <td><span class="name">Chipset</span></td>
+          <td><div class="func">Gestionar la comunicación entre CPU y periféricos del sistema.</div></td>
+          <td><code class="spec">Soporte PCIe 5.0, USB-C, NVMe, opciones OC</code></td>
+          <td><code class="param">Líneas PCIe, puertos SATA/USB, soporte OC</code></td>
+          <td><span class="evol">Modelos integrados → Soporte PCIe 4.0/5.0</span></td>
+        </tr>
+
+        <tr>
+          <td><span class="name">Memoria secundaria (almacenamiento)</span></td>
+          <td><div class="func">Guardar datos de manera permanente.</div></td>
+          <td><code class="spec">NVMe SSD 1–4 TB, 3500–7000 MB/s</code></td>
+          <td><code class="param">Capacidad, velocidad lectura/escritura, interfaz</code></td>
+          <td><span class="evol">HDD → SATA SSD → NVMe SSD</span></td>
+        </tr>
+
+        <tr>
+          <td><span class="name">Tarjetas de expansión</span></td>
+          <td><div class="func">Ampliar capacidades: gráfica, red, sonido, captura.</div></td>
+          <td><code class="spec">PCIe 4.0/5.0, GPU dedicadas, NIC 10 GbE</code></td>
+          <td><code class="param">Banda PCIe, consumo, compatibilidad</code></td>
+          <td><span class="evol">PCI → PCIe 3.0 → PCIe 5.0</span></td>
+        </tr>
+
+        <tr>
+          <td><span class="name">BIOS / UEFI</span></td>
+          <td><div class="func">Inicializar hardware y configurar parámetros en arranque.</div></td>
+          <td><code class="spec">UEFI con GUI, Secure Boot, TPM 2.0</code></td>
+          <td><code class="param">Modo UEFI/Legacy, actualizaciones, compatibilidad</code></td>
+          <td><span class="evol">BIOS → UEFI</span></td>
+        </tr>
+
+        <tr>
+          <td><span class="name">CMOS</span></td>
+          <td><div class="func">Almacenar ajustes de arranque del firmware.</div></td>
+          <td><code class="spec">Memoria CMOS con batería CR2032</code></td>
+          <td><code class="param">Fecha/hora, configuración boot, voltajes básicos</code></td>
+          <td><span class="evol">CMOS clásico → UEFI con NVRAM</span></td>
+        </tr>
+
+        <tr>
+          <td><span class="name">PSU (Fuente de alimentación)</span></td>
+          <td><div class="func">Suministrar energía estable a todos los componentes.</div></td>
+          <td><code class="spec">ATX 650–1200 W, 80 PLUS Gold/Platinum</code></td>
+          <td><code class="param">Potencia, eficiencia, conectores, railes</code></td>
+          <td><span class="evol">No certificadas → 80 PLUS Bronze → Platinum/Titanium</span></td>
+        </tr>
+
+      </tbody>
+    </table>
+
+    <p id="desc" class="foot">Nota: las <code class="spec">especificaciones</code> son ejemplos representativos y pueden variar según fabricantes y modelos. La columna <strong>Evolución</strong> muestra tendencias generales.</p>
+  </div>
+</body>
+</html>
 
