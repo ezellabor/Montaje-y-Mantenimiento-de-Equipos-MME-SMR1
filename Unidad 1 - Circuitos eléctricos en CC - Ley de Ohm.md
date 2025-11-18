@@ -20,11 +20,11 @@ Esta ley afirma que la **intensidad de la corriente (I)** que circula por un con
 
 | Magnitud              | Símbolo | Unidad (SI) | Símbolo unidad | Fórmula principal |
 |-----------------------|---------|-------------|----------------|-----------------|
-| Tensión o Voltaje     | V       | Voltio      | V              | $V = I \times R$ |
+| Tensión o Voltaje     | V       | Voltio      | V              | $V = I \cdot R$ |
 | Corriente eléctrica   | I       | Amperio     | A              | $I = V / R$      |
 | Resistencia eléctrica | R       | Ohmio       | Ω              | $R = V / I$      |
-| Potencia eléctrica    | P       | Vatio       | W              | $P = V \times I$ |
-| Energía eléctrica     | E       | Julio       | J              | $E = P \times t$ |
+| Potencia eléctrica    | P       | Vatio       | W              | $P = V \cdot I$ |
+| Energía eléctrica     | E       | Julio       | J              | $E = P \cdot t$ |
 | Tiempo                | t       | Segundo     | s              | —                |
 
 ---
@@ -55,7 +55,7 @@ Esta ley afirma que la **intensidad de la corriente (I)** que circula por un con
 | 2         | ?     | 1.5   | 10    | $I = V / R$  |
 | 3         | 24    | ?     | 12    | $I = V / R$  |
 | 4         | 5     | 0.02  | ?     | $R = V / I$  |
-| 5         | ?     | 0.5   | 100   | $V = I \times R$ |
+| 5         | ?     | 0.5   | 100   | $V = I \cdot R$ |
 
 >**Conclusión**  
 >La Ley de Ohm establece una **relación directa** entre la tensión **(V), la corriente (I) y la resistencia (R):**    
@@ -115,7 +115,7 @@ Esta ley afirma que la **intensidad de la corriente (I)** que circula por un con
 | 4         | 150    | 220    | 330    | 5               | ?               | ?              |
 | 5         | 470    | 680    | 1 kΩ   | 9               | ?               | ?              |
 
-**Esquema tipo:**  
+**Esquema tipo**  
 ![Circuito en paralelp](img/circuito-paralelo.jpg)
 ---
 
@@ -163,5 +163,5 @@ Esta ley afirma que la **intensidad de la corriente (I)** que circula por un con
 
 ---
 
-**Montaje y Mantenimiento de Equipos | SMR1**  
-<center>Profesor: Ezequiel Llarena Borges</center>
+**Montaje y Mantenimiento de Equipos - SMRI**  
+```Profesor: Ezequiel Llarena Borges```
