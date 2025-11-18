@@ -13,7 +13,7 @@
 
 Esta ley afirma que la **intensidad de la corriente (I)** que circula por un conductor eléctrico es *directamente proporcional* a la **diferencia de potencial (V)** y, paralelamente, *inversamente proporcional* a la **resistencia (R).**
 
-![Triangulo Ley Ohm](/ley-ohm-triangle.jpg)
+![Triangulo Ley Ohm](img/ley-ohm-triangle.jpg)
 
 ---
 
@@ -30,25 +30,10 @@ Esta ley afirma que la **intensidad de la corriente (I)** que circula por un con
 
 ---
 
-## 2. Símbolos eléctricos (ANSI / IEC)
+##  2. Ejercicios básicos | Ley de Ohm
 
-| Componente / Dispositivo | Símbolo ANSI | Símbolo IEC | Descripción                          |
-|-------------------------|-------------|-------------|--------------------------------------|
-| Fuente de tensión continua | ⎓           | ─⎓─         | Generador de corriente continua      |
-| Resistencia             | ⏤⏤⏤⏤       | ─///─       | Oposición al paso de corriente       |
-| Interruptor             | —o/ o—      | ─o/ o─      | Abre o cierra el circuito           |
-| Lámpara o LED           | (X) o ⊙     | ◉ o ⊙→      | Elemento luminoso                   |
-| Conductor o hilo        | ─────       | ─────       | Unión entre componentes             |
-| Unión de conductores    | •           | •           | Punto de conexión                    |
-| Tierra o masa           | ⏚           | ⏚           | Conexión a masa                      |
-| Fusible                 | ⎯⎯⎯         | ─⎯⎯─       | Protección contra sobrecorrientes   |
-| Motor DC                | M           | Ⓜ           | Conversión de energía eléctrica en mecánica |
-
----
-
-##  3. Ejercicios básicos | Ley de Ohm
-
-**Instrucciones:** Calcula la magnitud desconocida en cada caso. Expresa el resultado con dos decimales.
+### 2.1. Indicaciones
+Calcula la magnitud desconocida en cada caso. Expresa el resultado con dos decimales.
 
 | Ejercicio | V (V) | I (A) | R (Ω) | Cálculo    |
 |-----------|-------|-------|-------|------------|
@@ -58,26 +43,30 @@ Esta ley afirma que la **intensidad de la corriente (I)** que circula por un con
 | 4         | 5     | 0.02  | `?`     | $R = \frac{V}{I}$  |
 | 5         | `?`     | 0.5   | 100   | $V = I \cdot R$ |
 
->**Conclusión:** La Ley de Ohm establece una **relación directa** entre la tensión **(V), la corriente (I) y la resistencia (R)**    
+### 2.3. Conclusión
+La Ley de Ohm establece una **relación directa** entre la tensión **(V), la corriente (I) y la resistencia (R)**    
 >- [ ] a mayor resistencia → menor corriente para una misma tensión.
 
 ---
 
-##  4. Circuitos en serie  
+##  3. Circuitos en serie  
 
-**Características:**
+### 3.1. Características
 
 - La corriente es igual en todos los componentes.  
 - La tensión total es la suma de las tensiones parciales.  
 - La resistencia total es la suma de todas las resistencias.  
 
-**Síntesis**
+### 3.2. Síntesis
 
 - $R_T = R_1 + R_2 + R_3$  
 - $V_T = V_1 + V_2 + V_3$  
 - $I = \text{constante}$  
 
-**Ejercicios:**
+### 3.3. Esquema tipo
+![Circuito en serie](img/circuito-serie.jpg)
+
+### 3.4. Ejercicios
 
 | Ejercicio | R₁ (Ω) | R₂ (Ω) | R₃ (Ω) | V<sub>T</sub> (V) | R<sub>T</sub> (Ω) | I (A) |
 |-----------|--------|--------|--------|-----------------|-----------------|-------|
@@ -87,25 +76,27 @@ Esta ley afirma que la **intensidad de la corriente (I)** que circula por un con
 | 4         | 100    | 220    | 330    | 12              | ?               | ?     |
 | 5         | 1 kΩ   | 1 kΩ   | 1 kΩ   | 9               | ?               | ?     |
 
-**Esquema tipo:** 
-![Circuito en serie](img/circuito-serie.jpg)
 
 ---
 
 ## 5. Circuitos en paralelo
 
-**Características:**
+### 5.1. Características
 
 - La tensión es igual en todas las ramas.  
 - La corriente total es la suma de las corrientes parciales.  
-- La **resistencia total** o equvalente se calcula como:
+- La **resistencia total** o **equvalente** se calcula como: $\frac{1}{R_T} = \frac{1}{R_1} + \frac{1}{R_2} + \frac{1}{R_3}$
 
-**Síntesis**  
+### 5.2. Síntesis
 
 - $\frac{1}{R_T} = \frac{1}{R_1} + \frac{1}{R_2} + \frac{1}{R_3}$
 - $V = \text{constante}$  
 
-**Ejercicios:**
+### 5.3. Esquema tipo
+
+![Circuito en paralelo](img/circuito-paralelo.jpg)
+
+### 5.4. Ejercicios
 
 | Ejercicio | R₁ (Ω) | R₂ (Ω) | R₃ (Ω) | V<sub>T</sub> (V) | R<sub>T</sub> (Ω) | I<sub>T</sub> (A) |
 |-----------|--------|--------|--------|-----------------|-----------------|----------------|
@@ -115,8 +106,7 @@ Esta ley afirma que la **intensidad de la corriente (I)** que circula por un con
 | 4         | 150    | 220    | 330    | 5               | ?               | ?              |
 | 5         | 470    | 680    | 1 kΩ   | 9               | ?               | ?              |
 
-**Esquema tipo**  
-![Circuito en paralelo](img/circuito-paralelo.jpg)
+
 ---
 
 ## 6. Circuitos mixtos
