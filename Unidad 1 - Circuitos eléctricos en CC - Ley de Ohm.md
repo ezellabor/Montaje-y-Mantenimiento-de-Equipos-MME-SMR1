@@ -1,8 +1,10 @@
 # | Ley de Ohm y Circuitos Eléctricos en CC/DC (MME-CMO311)
-**MóduloS:** Montaje y Mantenimiento de Equipos (SMR-I) y Aplicaciones informáticas aplicado a circuitos electrónicos (SMR-I)
-**Profesor:** Ezequiel Llarena Borges
+**Módulos:** 
+- Montaje y Mantenimiento de Equipos (SMR-I)
+- Aplicaciones informáticas aplicado a circuitos electrónicos (SMR-I)
+>**Profesor:** Ezequiel Llarena Borges
 
----
+
 
 
 ### Ley de Ohm  
