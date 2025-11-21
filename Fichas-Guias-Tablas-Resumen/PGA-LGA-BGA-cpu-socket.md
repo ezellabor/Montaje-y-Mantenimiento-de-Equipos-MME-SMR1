@@ -6,7 +6,7 @@
 |-------|--------------------|
 | **PGA**   | El CPU tiene pines |
 | **LGA**   | La placa madre tiene pines |
-| **BGA**   | El chip está soldado directamente a la placa (no removible) |
+| **BGA**   | El chip está soldado directamente a la placa (no extraíble) |
 
 ---
 
