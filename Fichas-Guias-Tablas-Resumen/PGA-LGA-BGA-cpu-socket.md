@@ -21,7 +21,7 @@
 ---
 
 
-## Resumen de conceptos clave
+## Resumen 
 >- **PGA** → Pines en el CPU, socket con agujeros, fácil de cambiar, pines frágiles.
 >- **LGA** → Pines en el socket, CPU robusto, alta densidad, socket delicado.
 >- **BGA** → Sin socket, soldado, rendimiento máximo, no reemplazable.
