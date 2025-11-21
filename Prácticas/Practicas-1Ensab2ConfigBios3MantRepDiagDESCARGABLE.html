@@ -1,0 +1,585 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>MÓDULO: MONTAJE Y MANTENIMIENTO DE EQUIPOS (MME)</title>
+    <!-- Incluir las librerías necesarias -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jspdf/2.5.1/jspdf.umd.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/html2canvas/1.4.1/html2canvas.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/docx/7.1.0/docx.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/FileSaver.js/2.0.5/FileSaver.min.js"></script>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            line-height: 1.6;
+            margin: 20px;
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 20px;
+            background-color: #f5f5f5;
+        }
+        .container {
+            background-color: white;
+            padding: 30px;
+            border-radius: 10px;
+            box-shadow: 0 0 10px rgba(0,0,0,0.1);
+        }
+        .header {
+            text-align: center;
+            border-bottom: 3px solid #2c3e50;
+            padding-bottom: 20px;
+            margin-bottom: 30px;
+        }
+        .practice {
+            margin-bottom: 40px;
+            padding: 20px;
+            border: 2px solid #3498db;
+            border-radius: 8px;
+            background-color: #f8f9fa;
+            position: relative;
+        }
+        .practice h2 {
+            color: #2c3e50;
+            border-bottom: 2px solid #3498db;
+            padding-bottom: 10px;
+        }
+        table {
+            width: 100%;
+            border-collapse: collapse;
+            margin: 15px 0;
+        }
+        table, th, td {
+            border: 1px solid #ddd;
+        }
+        th, td {
+            padding: 12px;
+            text-align: left;
+        }
+        th {
+            background-color: #3498db;
+            color: white;
+        }
+        tr:nth-child(even) {
+            background-color: #f2f2f2;
+        }
+        .checklist-table td:first-child {
+            width: 70%;
+        }
+        .checklist-table td:nth-child(2) {
+            width: 15%;
+            text-align: center;
+        }
+        .checklist-table td:nth-child(3) {
+            width: 15%;
+        }
+        .materials, .safety, .procedure {
+            margin: 20px 0;
+            padding: 15px;
+            background-color: #e8f4fc;
+            border-radius: 5px;
+        }
+        .checkbox {
+            transform: scale(1.5);
+            margin-right: 10px;
+        }
+        .student-form {
+            background-color: #e8f4fc;
+            padding: 20px;
+            border-radius: 8px;
+            margin: 20px 0;
+        }
+        .quick-reference {
+            background-color: #fff3cd;
+            padding: 15px;
+            border-radius: 5px;
+            margin: 15px 0;
+        }
+        input[type="text"] {
+            width: 100%;
+            padding: 8px;
+            margin: 5px 0;
+            border: 1px solid #ddd;
+            border-radius: 4px;
+        }
+        textarea {
+            width: 100%;
+            padding: 8px;
+            margin: 5px 0;
+            border: 1px solid #ddd;
+            border-radius: 4px;
+            min-height: 80px;
+            resize: vertical;
+        }
+        .download-buttons {
+            text-align: center;
+            margin: 20px 0;
+            padding: 15px;
+            background-color: #e8f4fc;
+            border-radius: 8px;
+        }
+        .btn {
+            background-color: #3498db;
+            color: white;
+            padding: 12px 24px;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+            margin: 0 10px;
+            font-size: 16px;
+            transition: background-color 0.3s;
+        }
+        .btn:hover {
+            background-color: #2980b9;
+        }
+        .btn-pdf {
+            background-color: #e74c3c;
+        }
+        .btn-pdf:hover {
+            background-color: #c0392b;
+        }
+        .btn-word {
+            background-color: #2ecc71;
+        }
+        .btn-word:hover {
+            background-color: #27ae60;
+        }
+        .practice-number {
+            position: absolute;
+            top: 10px;
+            right: 10px;
+            background-color: #3498db;
+            color: white;
+            padding: 5px 10px;
+            border-radius: 5px;
+            font-weight: bold;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="header">
+            <h1>MÓDULO: MONTAJE Y MANTENIMIENTO DE EQUIPOS (MME)</h1>
+            <p>CFGM - Sistemas Microinformáticos y Redes</p>
+        </div>
+
+        <!-- PRÁCTICA 1 -->
+        <div class="practice" id="practice1">
+            <div class="practice-number">Práctica 1</div>
+            <h2>Ensamblaje de un equipo informático funcional</h2>
+            
+            <table>
+                <tr><th>Aspecto</th><th>Detalles</th></tr>
+                <tr><td><strong>Título:</strong></td><td>Ensamblaje de un Equipo Informático Funcional</td></tr>
+                <tr><td><strong>RA a Cubrir:</strong></td><td>RA1: Ensamblar y configurar equipos informáticos</td></tr>
+                <tr><td><strong>Objetivo:</strong></td><td>Montar componentes internos de PC de forma segura</td></tr>
+                <tr><td><strong>Duración Estimada:</strong></td><td>2-3 horas</td></tr>
+            </table>
+
+            <div class="materials">
+                <h3>1. Materiales Necesarios</h3>
+                <ul>
+                    <li><strong>Kit de componentes:</strong> Caja, Placa base, CPU, Pasta térmica, RAM, Fuente de alimentación, Discos</li>
+                    <li><strong>Herramientas:</strong> Pulsera antiestática, Destornilladores, Bridas</li>
+                    <li><strong>Documentación:</strong> Manual de la placa base</li>
+                </ul>
+            </div>
+
+            <div class="student-form" id="form-practice1">
+                <h3>Ficha de Trabajo del Alumno - Práctica 1</h3>
+                
+                <div class="student-info">
+                    <p><strong>Nombre del Alumno/Grupo:</strong> <input type="text" id="studentName1" placeholder="Escriba su nombre/grupo"></p>
+                    <p><strong>Fecha:</strong> <input type="text" id="date1" placeholder="DD/MM/AAAA"></p>
+                    <p><strong>Equipo Asignado (Nº Serie/ID):</strong> <input type="text" id="equipment1" placeholder="Número de equipo"></p>
+                </div>
+
+                <table class="checklist-table">
+                    <tr>
+                        <th>Tarea a Realizar</th>
+                        <th>Checklist</th>
+                        <th>Notas / Incidencias</th>
+                    </tr>
+                    <tr>
+                        <td><strong>Seguridad:</strong> Uso de pulsera antiestática</td>
+                        <td><input type="checkbox" class="checkbox" id="task1-1"></td>
+                        <td><input type="text" id="notes1-1" placeholder="Observaciones"></td>
+                    </tr>
+                    <tr>
+                        <td><strong>Paso 1:</strong> CPU y Disipador instalados</td>
+                        <td><input type="checkbox" class="checkbox" id="task1-2"></td>
+                        <td><input type="text" id="notes1-2" placeholder="Observaciones"></td>
+                    </tr>
+                    <tr>
+                        <td><strong>Paso 2:</strong> RAM instalada correctamente</td>
+                        <td><input type="checkbox" class="checkbox" id="task1-3"></td>
+                        <td><input type="text" id="notes1-3" placeholder="Observaciones"></td>
+                    </tr>
+                    <tr>
+                        <td><strong>Paso 3:</strong> I/O Shield colocado</td>
+                        <td><input type="checkbox" class="checkbox" id="task1-4"></td>
+                        <td><input type="text" id="notes1-4" placeholder="Observaciones"></td>
+                    </tr>
+                    <tr>
+                        <td><strong>Paso 4:</strong> Placa base fijada</td>
+                        <td><input type="checkbox" class="checkbox" id="task1-5"></td>
+                        <td><input type="text" id="notes1-5" placeholder="Observaciones"></td>
+                    </tr>
+                    <tr>
+                        <td><strong>Paso 5:</strong> Fuente instalada</td>
+                        <td><input type="checkbox" class="checkbox" id="task1-6"></td>
+                        <td><input type="text" id="notes1-6" placeholder="Observaciones"></td>
+                    </tr>
+                    <tr>
+                        <td><strong>Paso 6:</strong> Almacenamiento instalado</td>
+                        <td><input type="checkbox" class="checkbox" id="task1-7"></td>
+                        <td><input type="text" id="notes1-7" placeholder="Observaciones"></td>
+                    </tr>
+                    <tr>
+                        <td><strong>Paso 7:</strong> Cables alimentación conectados</td>
+                        <td><input type="checkbox" class="checkbox" id="task1-8"></td>
+                        <td><input type="text" id="notes1-8" placeholder="Observaciones"></td>
+                    </tr>
+                    <tr>
+                        <td><strong>Paso 8:</strong> Panel frontal conectado</td>
+                        <td><input type="checkbox" class="checkbox" id="task1-9"></td>
+                        <td><input type="text" id="notes1-9" placeholder="Observaciones"></td>
+                    </tr>
+                    <tr>
+                        <td><strong>Paso 9:</strong> Tarjeta gráfica instalada</td>
+                        <td><input type="checkbox" class="checkbox" id="task1-10"></td>
+                        <td><input type="text" id="notes1-10" placeholder="Observaciones"></td>
+                    </tr>
+                    <tr>
+                        <td><strong>Paso 10:</strong> Gestión de cables</td>
+                        <td><input type="checkbox" class="checkbox" id="task1-11"></td>
+                        <td><input type="text" id="notes1-11" placeholder="Observaciones"></td>
+                    </tr>
+                    <tr>
+                        <td><strong>Test Final:</strong> Equipo enciende y muestra BIOS</td>
+                        <td><input type="checkbox" class="checkbox" id="task1-12"></td>
+                        <td><input type="text" id="notes1-12" placeholder="Observaciones"></td>
+                    </tr>
+                </table>
+
+                <div class="download-buttons">
+                    <button class="btn btn-pdf" onclick="downloadPDF(1)">📥 Descargar PDF - Práctica 1</button>
+                    <button class="btn btn-word" onclick="downloadWord(1)">📥 Descargar Word - Práctica 1</button>
+                </div>
+            </div>
+        </div>
+
+        <!-- PRÁCTICA 2 -->
+        <div class="practice" id="practice2">
+            <div class="practice-number">Práctica 2</div>
+            <h2>Configuración Inicial de BIOS/UEFI y Dual-Boot</h2>
+            
+            <table>
+                <tr><th>Aspecto</th><th>Detalles</th></tr>
+                <tr><td><strong>Título:</strong></td><td>Configuración de Firmware e Instalación Multi-Sistema</td></tr>
+                <tr><td><strong>RA a Cubrir:</strong></td><td>RA1, RA2: Instalar software de base</td></tr>
+                <tr><td><strong>Objetivo:</strong></td><td>Configurar BIOS e instalar Windows y Linux</td></tr>
+                <tr><td><strong>Duración Estimada:</strong></td><td>3-4 horas</td></tr>
+            </table>
+
+            <div class="student-form" id="form-practice2">
+                <h3>Ficha de Trabajo del Alumno - Práctica 2</h3>
+                
+                <div class="student-info">
+                    <p><strong>Nombre del Alumno/Grupo:</strong> <input type="text" id="studentName2" placeholder="Escriba su nombre/grupo"></p>
+                    <p><strong>Fecha:</strong> <input type="text" id="date2" placeholder="DD/MM/AAAA"></p>
+                    <p><strong>Sistemas Operativos:</strong> 
+                        Windows <input type="text" id="winVersion" placeholder="Versión" style="width: 100px;"> 
+                        / Linux <input type="text" id="linuxDistro" placeholder="Distribución" style="width: 100px;">
+                    </p>
+                </div>
+
+                <table class="checklist-table">
+                    <tr>
+                        <th>Tarea a Realizar</th>
+                        <th>Checklist</th>
+                        <th>Notas / Incidencias</th>
+                    </tr>
+                    <tr>
+                        <td><strong>Paso 1:</strong> Acceso a BIOS/UEFI</td>
+                        <td><input type="checkbox" class="checkbox" id="task2-1"></td>
+                        <td><input type="text" id="notes2-1" placeholder="Tecla utilizada"></td>
+                    </tr>
+                    <tr>
+                        <td><strong>Paso 2:</strong> Fecha/Hora y Orden de Arranque</td>
+                        <td><input type="checkbox" class="checkbox" id="task2-2"></td>
+                        <td><input type="text" id="notes2-2" placeholder="Observaciones"></td>
+                    </tr>
+                    <tr>
+                        <td><strong>Paso 3:</strong> Instalación de Windows</td>
+                        <td><input type="checkbox" class="checkbox" id="task2-3"></td>
+                        <td><input type="text" id="notes2-3" placeholder="Tamaño partición"></td>
+                    </tr>
+                    <tr>
+                        <td><strong>Paso 4:</strong> Instalación de Linux</td>
+                        <td><input type="checkbox" class="checkbox" id="task2-4"></td>
+                        <td><input type="text" id="notes2-4" placeholder="Tamaño partición"></td>
+                    </tr>
+                    <tr>
+                        <td><strong>Paso 5:</strong> Menú Dual-Boot (GRUB)</td>
+                        <td><input type="checkbox" class="checkbox" id="task2-5"></td>
+                        <td><input type="text" id="notes2-5" placeholder="Observaciones"></td>
+                    </tr>
+                    <tr>
+                        <td><strong>Paso 6:</strong> Sistemas arrancan correctamente</td>
+                        <td><input type="checkbox" class="checkbox" id="task2-6"></td>
+                        <td><input type="text" id="notes2-6" placeholder="Observaciones"></td>
+                    </tr>
+                    <tr>
+                        <td><strong>Paso 7:</strong> Drivers instalados en Windows</td>
+                        <td><input type="checkbox" class="checkbox" id="task2-7"></td>
+                        <td><input type="text" id="notes2-7" placeholder="Drivers instalados"></td>
+                    </tr>
+                    <tr>
+                        <td><strong>Resultado Final:</strong> Sistemas funcionales</td>
+                        <td><input type="checkbox" class="checkbox" id="task2-8"></td>
+                        <td><input type="text" id="notes2-8" placeholder="Evaluación final"></td>
+                    </tr>
+                </table>
+
+                <div class="download-buttons">
+                    <button class="btn btn-pdf" onclick="downloadPDF(2)">📥 Descargar PDF - Práctica 2</button>
+                    <button class="btn btn-word" onclick="downloadWord(2)">📥 Descargar Word - Práctica 2</button>
+                </div>
+            </div>
+        </div>
+
+        <!-- PRÁCTICA 3 -->
+        <div class="practice" id="practice3">
+            <div class="practice-number">Práctica 3</div>
+            <h2>Diagnóstico, Mantenimiento Preventivo y Reparación</h2>
+            
+            <table>
+                <tr><th>Aspecto</th><th>Detalles</th></tr>
+                <tr><td><strong>Título:</strong></td><td>Laboratorio de Averías: Detección y Solución</td></tr>
+                <tr><td><strong>RA a Cubrir:</strong></td><td>RA3: Diagnosticar y reparar averías</td></tr>
+                <tr><td><strong>Objetivo:</strong></td><td>Desarrollar habilidades de diagnóstico</td></tr>
+                <tr><td><strong>Duración Estimada:</strong></td><td>2-3 horas</td></tr>
+            </table>
+
+            <div class="student-form" id="form-practice3">
+                <h3>Informe Final del Técnico - Práctica 3</h3>
+                
+                <div class="student-info">
+                    <p><strong>Nombre del Alumno/Grupo:</strong> <input type="text" id="studentName3" placeholder="Escriba su nombre/grupo"></p>
+                    <p><strong>Fecha:</strong> <input type="text" id="date3" placeholder="DD/MM/AAAA"></p>
+                    <p><strong>OT (Orden de Trabajo) Nº:</strong> <input type="text" id="otNumber" placeholder="Número de OT"></p>
+                </div>
+
+                <p><strong>1. Síntoma Reportado por el "Cliente":</strong></p>
+                <textarea id="symptoms" placeholder="Describa el síntoma reportado..."></textarea>
+
+                <p><strong>2. Proceso de Diagnóstico Realizado:</strong></p>
+                <textarea id="diagnosis" placeholder="Describa el proceso de diagnóstico..."></textarea>
+
+                <p><strong>3. Informe Final del Técnico:</strong></p>
+                <table>
+                    <tr>
+                        <th>Apartado</th>
+                        <th>Descripción Específica del Caso</th>
+                    </tr>
+                    <tr>
+                        <td><strong>Avería Identificada:</strong></td>
+                        <td>
+                            <input type="checkbox" class="checkbox" id="fault-identified">
+                            <input type="text" id="fault-desc" placeholder="Descripción de la avería" style="width: 90%;">
+                        </td>
+                    </tr>
+                    <tr>
+                        <td><strong>Solución Aplicada:</strong></td>
+                        <td>
+                            <input type="checkbox" class="checkbox" id="solution-applied">
+                            <input type="text" id="solution-desc" placeholder="Descripción de la solución" style="width: 90%;">
+                        </td>
+                    </tr>
+                    <tr>
+                        <td><strong>Verificación Final:</strong></td>
+                        <td>
+                            <input type="checkbox" class="checkbox" id="verification-done">
+                            <input type="text" id="verification-desc" placeholder="Resultado de la verificación" style="width: 90%;">
+                        </td>
+                    </tr>
+                </table>
+
+                <div class="download-buttons">
+                    <button class="btn btn-pdf" onclick="downloadPDF(3)">📥 Descargar PDF - Práctica 3</button>
+                    <button class="btn btn-word" onclick="downloadWord(3)">📥 Descargar Word - Práctica 3</button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <script>
+        // Función para descargar en PDF
+        function downloadPDF(practiceNumber) {
+            const { jsPDF } = window.jspdf;
+            const doc = new jsPDF();
+            
+            // Obtener datos del formulario
+            const studentName = document.getElementById(`studentName${practiceNumber}`).value || 'No especificado';
+            const date = document.getElementById(`date${practiceNumber}`).value || 'No especificada';
+            
+            // Configurar el documento PDF
+            doc.setFontSize(16);
+            doc.text(`Informe de Práctica ${practiceNumber} - MME`, 20, 20);
+            doc.setFontSize(12);
+            doc.text(`Alumno/Grupo: ${studentName}`, 20, 35);
+            doc.text(`Fecha: ${date}`, 20, 45);
+            
+            // Agregar contenido específico según la práctica
+            if (practiceNumber === 1) {
+                addPractice1Content(doc, studentName, date);
+            } else if (practiceNumber === 2) {
+                addPractice2Content(doc, studentName, date);
+            } else if (practiceNumber === 3) {
+                addPractice3Content(doc, studentName, date);
+            }
+            
+            // Descargar el PDF
+            doc.save(`Practica_${practiceNumber}_${studentName.replace(/\s+/g, '_')}.pdf`);
+        }
+
+        // Función para descargar en Word (simplificada)
+        function downloadWord(practiceNumber) {
+            const studentName = document.getElementById(`studentName${practiceNumber}`).value || 'No especificado';
+            const date = document.getElementById(`date${practiceNumber}`).value || 'No especificada';
+            
+            // Crear contenido básico para Word
+            let content = `INFORME DE PRÁCTICA ${practiceNumber} - MME\n\n`;
+            content += `Alumno/Grupo: ${studentName}\n`;
+            content += `Fecha: ${date}\n\n`;
+            
+            // Agregar checklist según la práctica
+            if (practiceNumber === 1) {
+                for (let i = 1; i <= 12; i++) {
+                    const task = document.getElementById(`task1-${i}`).checked ? '✓' : '✗';
+                    const notes = document.getElementById(`notes1-${i}`).value || '';
+                    const taskText = document.querySelector(`#task1-${i}`).closest('tr').cells[0].textContent;
+                    content += `${task} ${taskText}: ${notes}\n`;
+                }
+            } else if (practiceNumber === 2) {
+                for (let i = 1; i <= 8; i++) {
+                    const task = document.getElementById(`task2-${i}`).checked ? '✓' : '✗';
+                    const notes = document.getElementById(`notes2-${i}`).value || '';
+                    const taskText = document.querySelector(`#task2-${i}`).closest('tr').cells[0].textContent;
+                    content += `${task} ${taskText}: ${notes}\n`;
+                }
+            } else if (practiceNumber === 3) {
+                content += `Síntomas: ${document.getElementById('symptoms').value || 'No especificado'}\n\n`;
+                content += `Diagnóstico: ${document.getElementById('diagnosis').value || 'No especificado'}\n\n`;
+                content += `Avería: ${document.getElementById('fault-desc').value || 'No especificado'}\n`;
+                content += `Solución: ${document.getElementById('solution-desc').value || 'No especificado'}\n`;
+                content += `Verificación: ${document.getElementById('verification-desc').value || 'No especificado'}\n`;
+            }
+            
+            // Crear y descargar archivo .txt (simulación de Word)
+            const blob = new Blob([content], { type: 'text/plain;charset=utf-8' });
+            saveAs(blob, `Practica_${practiceNumber}_${studentName.replace(/\s+/g, '_')}.doc`);
+        }
+
+        // Funciones auxiliares para contenido específico de cada práctica
+        function addPractice1Content(doc, studentName, date) {
+            let yPosition = 60;
+            doc.text('CHECKLIST DE ENSAMBLAJE:', 20, yPosition);
+            yPosition += 10;
+            
+            for (let i = 1; i <= 12; i++) {
+                const task = document.getElementById(`task1-${i}`).checked ? '✓ COMPLETADO' : '✗ PENDIENTE';
+                const notes = document.getElementById(`notes1-${i}`).value || 'Sin observaciones';
+                const taskText = document.querySelector(`#task1-${i}`).closest('tr').cells[0].textContent;
+                
+                if (yPosition > 270) {
+                    doc.addPage();
+                    yPosition = 20;
+                }
+                
+                doc.text(`${taskText}: ${task}`, 20, yPosition);
+                yPosition += 7;
+                doc.text(`Observaciones: ${notes}`, 25, yPosition);
+                yPosition += 10;
+            }
+        }
+
+        function addPractice2Content(doc, studentName, date) {
+            let yPosition = 60;
+            doc.text('CHECKLIST DE CONFIGURACIÓN:', 20, yPosition);
+            yPosition += 10;
+            
+            for (let i = 1; i <= 8; i++) {
+                const task = document.getElementById(`task2-${i}`).checked ? '✓ COMPLETADO' : '✗ PENDIENTE';
+                const notes = document.getElementById(`notes2-${i}`).value || 'Sin observaciones';
+                const taskText = document.querySelector(`#task2-${i}`).closest('tr').cells[0].textContent;
+                
+                if (yPosition > 270) {
+                    doc.addPage();
+                    yPosition = 20;
+                }
+                
+                doc.text(`${taskText}: ${task}`, 20, yPosition);
+                yPosition += 7;
+                doc.text(`Observaciones: ${notes}`, 25, yPosition);
+                yPosition += 10;
+            }
+        }
+
+        function addPractice3Content(doc, studentName, date) {
+            let yPosition = 60;
+            
+            doc.text('INFORME TÉCNICO:', 20, yPosition);
+            yPosition += 10;
+            doc.text(`Síntomas reportados: ${document.getElementById('symptoms').value || 'No especificado'}`, 20, yPosition);
+            yPosition += 15;
+            doc.text(`Proceso de diagnóstico: ${document.getElementById('diagnosis').value || 'No especificado'}`, 20, yPosition);
+            yPosition += 15;
+            doc.text(`Avería identificada: ${document.getElementById('fault-desc').value || 'No especificado'}`, 20, yPosition);
+            yPosition += 10;
+            doc.text(`Solución aplicada: ${document.getElementById('solution-desc').value || 'No especificado'}`, 20, yPosition);
+            yPosition += 10;
+            doc.text(`Verificación final: ${document.getElementById('verification-desc').value || 'No especificado'}`, 20, yPosition);
+        }
+
+        // Función para guardar automáticamente los datos en localStorage
+        function autoSave() {
+            const inputs = document.querySelectorAll('input, textarea');
+            inputs.forEach(input => {
+                input.addEventListener('input', function() {
+                    localStorage.setItem(this.id, this.value);
+                });
+            });
+
+            const checkboxes = document.querySelectorAll('input[type="checkbox"]');
+            checkboxes.forEach(checkbox => {
+                checkbox.addEventListener('change', function() {
+                    localStorage.setItem(this.id, this.checked);
+                });
+            });
+        }
+
+        // Función para cargar datos guardados
+        function loadSavedData() {
+            const inputs = document.querySelectorAll('input, textarea');
+            inputs.forEach(input => {
+                const savedValue = localStorage.getItem(input.id);
+                if (savedValue !== null) {
+                    if (input.type === 'checkbox') {
+                        input.checked = (savedValue === 'true');
+                    } else {
+                        input.value = savedValue;
+                    }
+                }
+            });
+        }
+
+        // Inicializar cuando se carga la página
+        window.addEventListener('DOMContentLoaded', function() {
+            autoSave();
+            loadSavedData();
+        });
+    </script>
+</body>
+</html>
