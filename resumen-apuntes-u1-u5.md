@@ -250,7 +250,7 @@ Fuente no encendida	Silencio total	Verificar interruptor 110V/220V
 - Planificar futuras actualizaciones
 - Considerar refrigeración necesaria
 
-# 2.3 CONFIGURACIÓN BIOS/UEFI
+## 2.3 CONFIGURACIÓN BIOS/UEFI
 ## Comparativa BIOS vs UEFI
 
 ┌─────────────────────────────────────────────────────────────┐
@@ -309,10 +309,10 @@ Actualizar BIOS a versión compatible
 
 Verificar requisitos cumplidos
 
-UNIDAD 3: MANTENIMIENTO PREVENTIVO
-3.1 LIMPIEZA Y CONSERVACIÓN
+# UNIDAD 3: MANTENIMIENTO PREVENTIVO
+## 3.1 LIMPIEZA Y CONSERVACIÓN
 Checklist Limpieza Profesional
-text
+
 ┌─────────────────────────────────────────────────────────────┐
 │                 CHECKLIST LIMPIEZA EQUIPOS                 │
 ├─────────────────────────────────────────────────────────────┤
@@ -333,10 +333,9 @@ Oficina	3 meses	12 meses	24 meses
 Gaming	2 meses	6 meses	12 meses
 Servidor	1 mes	3 meses	6 meses
 Industrial	15 días	2 meses	4 meses
-🖥️ APUNTES DE ESTUDIO - MONTAJE Y MANTENIMIENTO DE EQUIPOS
-CFGM SMR1 - Resumen Unidades de Trabajo
-Profesor: Ezequiel Llarena Borges | Página 5 of 25
-3.2 SUSTITUCIÓN COMPONENTES
+
+
+## 3.2 SUSTITUCIÓN COMPONENTES
 Guía Sustitución por Prioridad
 text
 ┌─────────────────────────────────────────────────────────────┐
@@ -371,7 +370,7 @@ Optimizar SSD (TRIM)
 
 Resultado: Arranque 25 segundos
 
-3.3 ACTUALIZACIONES HARDWARE
+## 3.3 ACTUALIZACIONES HARDWARE
 Matriz Compatibilidad Actualizaciones
 Componente Actual	Actualización Recomendada	Compatibilidad	Dificultad
 DDR3 4GB	DDR3 8GB (mismo tipo)	Alta	Baja
@@ -394,8 +393,8 @@ Fase 3 (Optimal): Monitor 144Hz
 
 Presupuesto: 600€ | Tiempo: 2 horas | Beneficio: +200% rendimiento
 
-UNIDAD 4: DIAGNÓSTICO Y REPARACIÓN
-4.1 METODOLOGÍA DIAGNÓSTICO
+# UNIDAD 4: DIAGNÓSTICO Y REPARACIÓN
+##4.1 METODOLOGÍA DIAGNÓSTICO
 Diagrama Flujo Diagnóstico
 text
 ┌─────────────────────────────────────────────────────────────┐
@@ -425,12 +424,11 @@ text
 │  │ VERIFICA│ ← Comprobar funcionamiento                    │
 │  └─────────┘                                                │
 └─────────────────────────────────────────────────────────────┘
-🖥️ APUNTES DE ESTUDIO - MONTAJE Y MANTENIMIENTO DE EQUIPOS
-CFGM SMR1 - Resumen Unidades de Trabajo
-Profesor: Ezequiel Llarena Borges | Página 6 of 25
-4.2 HERRAMIENTAS SOFTWARE DIAGNÓSTICO
+
+
+## 4.2 HERRAMIENTAS SOFTWARE DIAGNÓSTICO
 Software Imprescindible Técnico
-text
+
 ┌─────────────────────────────────────────────────────────────┐
 │                 SOFTWARE DIAGNÓSTICO - MME                 │
 ├───────────────────┬───────────────────┬─────────────────────┤
@@ -466,7 +464,7 @@ Conclusión: Fuente degradada
 
 Solución: Sustituir fuente 550W por 650W 80+ Gold
 
-4.3 REPARACIÓN AVERÍAS COMUNES
+## 4.3 REPARACIÓN AVERÍAS COMUNES
 Tabla Averías Frecuentes
 Avería	Síntomas	Diagnóstico	Solución
 No arranca	Silencio total, sin LEDs	Fuente, botón power	Verificar alimentación, puente power SW
@@ -505,10 +503,9 @@ Verificar discos S.M.A.R.T.
 
 Comprobar actualizaciones pendientes
 
-UNIDAD 5: PERIFÉRICOS Y CONECTIVIDAD
-5.1 DISPOSITIVOS ENTRADA/SALIDA
-Clasificación Periféricos
-text
+# UNIDAD 5: PERIFÉRICOS Y CONECTIVIDAD
+## 5.1 DISPOSITIVOS ENTRADA/SALIDA
+
 ┌─────────────────────────────────────────────────────────────┐
 │                 CLASIFICACIÓN PERIFÉRICOS                  │
 ├───────────────────┬───────────────────┬─────────────────────┤
@@ -526,12 +523,10 @@ text
 │ COMUNICACIÓN      │ Router, switch,   │ Ethernet, Wi-Fi,    │
 │                   │ adaptador red     │ Bluetooth           │
 └───────────────────┴───────────────────┴─────────────────────┘
-🖥️ APUNTES DE ESTUDIO - MONTAJE Y MANTENIMIENTO DE EQUIPOS
-CFGM SMR1 - Resumen Unidades de Trabajo
-Profesor: Ezequiel Llarena Borges | Página 7 of 25
-5.2 INTERFACES CONEXIÓN
+
+## 5.2 INTERFACES CONEXIÓN
 Evolución Interfaces Almacenamiento
-text
+
 ┌─────────────────────────────────────────────────────────────┐
 │            EVOLUCIÓN VELOCIDAD INTERFACES DISCO            │
 ├───────────────────┬─────────────┬─────────────┬─────────────┤
@@ -551,7 +546,9 @@ text
 ├───────────────────┼─────────────┼─────────────┼─────────────┤
 │ NVMe PCIe 5.0     │ 14 GB/s     │ 2020-act.   │ Cutting-edge│
 └───────────────────┴─────────────┴─────────────┴─────────────┘
-Actividad: Identificación Puertos
+
+**Actividad: Identificación Puertos**
+
 Material: Placa base con diversos puertos
 Tarea: Identificar y clasificar cada puerto
 
@@ -561,7 +558,8 @@ USB Negro	USB 2.0	480 Mbps	Teclado, ratón
 HDMI	Vídeo	18 Gbps	Monitor, TV
 Ethernet RJ45	Red	1 Gbps	Cable red
 Audio 3.5mm	Sonido	Analógico	Auriculares
-5.3 CONFIGURACIÓN REDES
+
+## 5.3 CONFIGURACIÓN REDES
 Configuración IP Básica
 pseudocode
 Proceso ConfiguracionRed
@@ -602,148 +600,99 @@ Proceso ConfiguracionRed
         Escribir "   DNS: ", dns1, " / ", dns2
     FinSi
 FinProceso
-🧪 ACTIVIDADES AUTOEVALUACIÓN
-TEST UNIDAD 1 - FUNDAMENTOS HARDWARE
-Pregunta 1: Componentes
+
+# ACTIVIDADES AUTOEVALUACIÓN
+## TEST UNIDAD 1 - FUNDAMENTOS HARDWARE
+### Pregunta 1: Componentes
 ¿Qué componente se encarga de realizar los cálculos principales del sistema?
-
 A) Memoria RAM
-
 B) Disco duro
-
 C) Procesador (CPU)
-
 D) Fuente alimentación
 
-Pregunta 2: Seguridad
+### Pregunta 2: Seguridad
 ¿Cuál es el voltaje aproximado que puede generar una descarga estática al tocar un componente?
-
 A) 5 voltios
-
 B) 12 voltios
-
 C) 110 voltios
-
 D) 3000 voltios
 
-Pregunta 3: Herramientas
+### Pregunta 3: Herramientas
 ¿Qué herramienta se usa para medir continuidad en cables?
-
 A) Destornillador
-
 B) Multímetro
-
 C) Alicates
-
 D) Pulsera antiestática
 
-🖥️ APUNTES DE ESTUDIO - MONTAJE Y MANTENIMIENTO DE EQUIPOS
-CFGM SMR1 - Resumen Unidades de Trabajo
-Profesor: Ezequiel Llarena Borges | Página 8 of 25
-TEST UNIDAD 2 - ENSAMBLAJE
-Pregunta 4: Orden Montaje
+## TEST UNIDAD 2 - ENSAMBLAJE
+### Pregunta 4: Orden Montaje
 ¿Cuál es el orden CORRECTO para ensamblar un equipo?
-
 A) Montar placa → Instalar CPU → Conectar alimentación
-
 B) Instalar CPU en placa → Montar placa → Conectar alimentación
-
 C) Conectar alimentación → Instalar CPU → Montar placa
-
 D) Montar placa → Conectar alimentación → Instalar CPU
 
-Pregunta 5: Compatibilidad
+### Pregunta 5: Compatibilidad
 Un procesador Intel i5-12600K es compatible con:
-
 A) Socket AM4
-
 B) Socket LGA 1700
-
 C) Socket LGA 1151
-
 D) Socket AM5
 
-Pregunta 6: BIOS/UEFI
+### Pregunta 6: BIOS/UEFI
 ¿Qué ventaja principal ofrece UEFI sobre BIOS tradicional?
-
 A) Mayor consumo energético
-
 B) Soporte para discos > 2.2TB
-
 C) Menor seguridad
-
 D) Interfaz solo texto
 
-TEST UNIDAD 3 - MANTENIMIENTO
-Pregunta 7: Frecuencia Limpieza
+## TEST UNIDAD 3 - MANTENIMIENTO
+### Pregunta 7: Frecuencia Limpieza
 ¿Cada cuánto se recomienda limpieza profunda en equipo gaming?
-
 A) 24 meses
-
 B) 6 meses
-
 C) 36 meses
-
 D) 12 meses
 
-Pregunta 8: Mejora Rendimiento
+### Pregunta 8: Mejora Rendimiento
 ¿Qué actualización ofrece mayor mejora en velocidad general?
-
 A) Añadir 4GB RAM
-
 B) Cambiar procesador
-
 C) Sustituir HDD por SSD
-
 D) Actualizar placa base
 
-TEST UNIDAD 4 - DIAGNÓSTICO
-Pregunta 9: Método Diagnóstico
+## TEST UNIDAD 4 - DIAGNÓSTICO
+### Pregunta 9: Método Diagnóstico
 El primer paso en diagnóstico sistemático es:
-
 A) Sustituir componentes
-
 B) Actualizar drivers
-
 C) Recoger información (síntomas)
-
 D) Ejecutar tests software
 
-Pregunta 10: Herramientas Software
+### Pregunta 10: Herramientas Software
 ¿Qué software se usa específicamente para testear memoria RAM?
-
 A) CrystalDiskInfo
-
 B) MemTest86
-
 C) FurMark
-
 D) HWiNFO64
 
-TEST UNIDAD 5 - PERIFÉRICOS
-Pregunta 11: Interfaces
+## TEST UNIDAD 5 - PERIFÉRICOS
+### Pregunta 11: Interfaces
 ¿Qué interfaz ofrece mayor velocidad para discos internos actualmente?
-
 A) SATA III
-
 B) USB 3.0
-
 C) NVMe PCIe 4.0
-
 D) eSATA
 
-Pregunta 12: Configuración Red
+## Pregunta 12: Configuración Red
 En configuración IP, el "gateway" se refiere a:
 
 A) Dirección del equipo
-
 B) Máscara de red
-
 C) Dispositivo para salir de red local
-
 D) Servidor DNS
 
-📊 SOLUCIONARIO AUTOEVALUACIÓN
+## SOLUCIONARIO AUTOEVALUACIÓN
 Clave Respuestas:
 
 C - El procesador (CPU) realiza cálculos principales
@@ -772,17 +721,17 @@ C - Gateway permite salir de red local
 
 Puntuación:
 
-12-11 respuestas: Excelente ✅
+12-11 respuestas: Excelente
 
-10-9 respuestas: Notable 👍
+10-9 respuestas: Notable
 
-8-7 respuestas: Aprobado 👌
+8-7 respuestas: Aprobado
 
-Menos de 7: Necesita repasar 📚
+Menos de 7: Necesita repasar
 
-🎯 GUÍA DE ESTUDIO RÁPIDA
+# GUÍA DE ESTUDIO RÁPIDA
 CONCEPTOS CLAVE POR UNIDAD
-Unidad 1 - Hardware
+## Unidad 1 - Hardware
 CPU: Procesador, socket, núcleos
 
 RAM: Memoria volátil, tipos DDR
@@ -791,190 +740,66 @@ Almacenamiento: HDD, SSD, NVMe
 
 Seguridad: ESD, pulsera antiestática
 
-Unidad 2 - Ensamblaje
+## Unidad 2 - Ensamblaje
 Orden: CPU→RAM→Placa→Discos→Cables
 
 Compatibilidad: Socket, chipset, tipo RAM
 
 BIOS/UEFI: Configuración básica
 
-Unidad 3 - Mantenimiento
+## Unidad 3 - Mantenimiento
 Limpieza: Frecuencia según uso
 
 Actualizaciones: SSD mayor impacto
 
 Sustitución: Compatibilidad, procedimiento
 
-Unidad 4 - Diagnóstico
-Método: Síntoma→Análisis→Test→Solución
+## Unidad 4 - Diagnóstico
+Método: Síntoma → Análisis → Test → Solución
 
 Herramientas: Software especializado
 
 Averías: Comunes y soluciones
 
-Unidad 5 - Periféricos
+## Unidad 5 - Periféricos
 Interfaces: Velocidades, usos
 
 Redes: Configuración IP básica
 
 Conectividad: Puertos y estándares
 
-🖥️ APUNTES DE ESTUDIO - MONTAJE Y MANTENIMIENTO DE EQUIPOS
-CFGM SMR1 - Resumen Unidades de Trabajo
-Profesor: Ezequiel Llarena Borges | Página 9 of 25
-📞 RECURSOS ADICIONALES
-Enlaces de Interés
-🔗 PCPartPicker - Compatibilidad
 
-🔗 CPU-World - Sockets
+# RECURSOS ADICIONALES
+## Enlaces de Interés
+PCPartPicker - Compatibilidad
+CPU-World - Sockets
+Tom's Hardware - Guías
+Guru3D - Reviews
 
-🔗 Tom's Hardware - Guías
+## Software Recomendado
+- HWiNFO64 - Monitorización sistema
+- CrystalDiskInfo - Salud discos
+- MemTest86 - Test memoria
+- FurMark - Test GPU
 
-🔗 Guru3D - Reviews
+## Habilidades Desarrolladas  
+- ✅ Identificación componentes hardware  
+- ✅ Ensamblaje equipos metodológico  
+- ✅ Diagnóstico y resolución averías  
+- ✅ Mantenimiento preventivo profesional  
+- ✅ Configuración periféricos y redes    
 
-Software Recomendado
-🛠️ HWiNFO64 - Monitorización sistema
-
-🛠️ CrystalDiskInfo - Salud discos
-
-🛠️ MemTest86 - Test memoria
-
-🛠️ FurMark - Test GPU
-
-Próximos Pasos
-Repasar conceptos con baja puntuación
-
-Practicar con equipos reales
-
-Documentar procedimientos aprendidos
-
-Actualizar conocimientos constantemente
-
-🏆 CONCLUSIONES
-Habilidades Desarrolladas
-✅ Identificación componentes hardware
-
-✅ Ensamblaje equipos metodológico
-
-✅ Diagnóstico y resolución averías
-
-✅ Mantenimiento preventivo profesional
-
-✅ Configuración periféricos y redes
-
-Competencias Profesionales
-🔧 Técnico de mantenimiento equipos
-
-🔧 Ensamblador sistemas informáticos
-
-🔧 Soporte técnico nivel hardware
-
-🔧 Consultor actualizaciones equipos
-
-🎓 Material didáctico desarrollado para CFGM SMR1
-📚 Módulo: Montaje y Mantenimiento de Equipos
-👨‍🏫 Profesor: Ezequiel Llarena Borges
-📅 Curso 2024/2025 - Versión 1.0
-
-Este material es de uso exclusivo educativo. Prohibida su reproducción sin autorización.
-
-text
-
-¿Te gustaría que continúe con los guiones de prácticas de MME o prefieres que pase directamente a los de robótica?
-antes necesito que me generes una prueba objetiva de 50 preguntas tipo test multiple elección 4 opciones donde puede haber mas de una opcion correcta/valida con la solución en otro documento separado. necesito un test por cada unidad de trabajo del modulo mme de smr1 en formato md y otro listo para subir a moodle (muy importante el de moodle que las preguntas no estén numeradas y las opciones de respuesta tampoco)
-Prueba Objetiva MME SMR1 - Formato Moodle
-markdown
-# Prueba Objetiva MME SMR1 - Formato Moodle
-## Preguntas sin numerar para importación directa
+## Competencias Profesionales  
+- Técnico de mantenimiento equipos  
+- Ensamblador sistemas informáticos  
+- Soporte técnico nivel hardware  
+- Consultor actualizaciones equipos  
 
 ---
 
-## UNIDAD 1: FUNDAMENTOS DE HARDWARE
+>Material didáctico desarrollado para CFGM SMRI
+>Módulo: Montaje y Mantenimiento de Equipos
+>Profesor: Ezequiel Llarena Borges
+>Curso 2025/2026 - Versión 1.0
 
-¿Qué componente se considera el "cerebro" del ordenador?
-{
-=Procesador (CPU)
-~Memoria RAM
-~Disco duro
-~Fuente de alimentación
-}
-
-¿Cuáles de estos son tipos de memoria RAM?
-{
-~DDR2
-~DDR3
-~DDR4
-~Todas las anteriores
-}
-
-¿Qué voltaje principal proporciona la fuente de alimentación a los componentes?
-{
-~3.3V
-~5V
-~12V
-~Todos los anteriores
-}
-
-¿Para qué se utiliza la pulsera antiestática?
-{
-=Proteger componentes de descargas electrostáticas
-~Medir voltajes
-~Atornillar componentes pequeños
-~Organizar cables
-}
-
-¿Qué herramienta se utiliza para medir continuidad en cables?
-{
-~Destornillador
-=Multímetro
-~Alicates
-~Pulsera antiestática
-}
-
-¿Cuál es la función principal de la placa base?
-{
-=Interconectar todos los componentes
-~Procesar datos
-~Almacenar información
-~Proporcionar alimentación
-}
-
-¿Qué característica define un disco SSD frente a un HDD?
-{
-=Mayor velocidad de acceso
-=Sin partes móviles
-~Menor capacidad
-~Mayor consumo energético
-}
-
-¿Qué indica la certificación 80 Plus en una fuente de alimentación?
-{
-=Eficiencia energética
-=Calidad de componentes
-~Potencia máxima
-~Garantía del fabricante
-}
-
-¿Cuál es el socket actual para procesadores AMD Ryzen?
-{
-~LGA 1151
-~LGA 1200
-=AM4
-=AM5
-}
-
-¿Qué mide la frecuencia de la RAM?
-{
-=Velocidad de transferencia
-=Capacidad de almacenamiento
-~Voltaje de trabajo
-~Temperatura de operación
-}
-
----
-
-## UNIDAD 2: ENSAMBLAJE DE EQUIPOS
-
-¿Cuál es el orden correcto para ensamblar un equipo?
-{
-=CPU → RAM → Placa base → Discos
+```Este material es de uso exclusivo educativo. Prohibida su reproducción sin autorización.```
