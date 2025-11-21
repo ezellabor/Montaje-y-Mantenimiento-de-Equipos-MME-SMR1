@@ -75,10 +75,6 @@ text
 
 ---
 
-# 🖥️ APUNTES DE ESTUDIO - MONTAJE Y MANTENIMIENTO DE EQUIPOS
-## CFGM SMR1 - Resumen Unidades de Trabajo
-### Profesor: Ezequiel Llarena Borges | Página 2 de 25
-
 ## 1.2 ELECTRICIDAD Y SEGURIDAD
 
 ### Valores Eléctricos en PC
@@ -104,7 +100,8 @@ text
 - [ ] **Verificar orientación** antes de conectar
 
 ### Ejemplo Significativo: Descarga Estática
-```pseudocode
+
+<code>
 Proceso SimuladorDescargaEstatica
     // Demostración efectos descarga estática
     Definir voltaje_humano Como Real
@@ -124,9 +121,14 @@ Proceso SimuladorDescargaEstatica
         Escribir "   ¡Usa siempre pulsera antiestática!"
     FinSi
 FinProceso
-1.3 HERRAMIENTAS Y MEDICIONES
-Kit Básico Técnico PC
-text
+</code>
+
+
+
+# 1.3 HERRAMIENTAS Y MEDICIONES
+
+## 1.3.1 Kit Básico Técnico PC
+
 ┌─────────────────────────────────────────────────────────────┐
 │                 HERRAMIENTAS IMPRESCINDIBLES               │
 ├───────────────────┬───────────────────┬─────────────────────┤
@@ -144,13 +146,14 @@ text
 │ Pulsera anti-     │ Proteger compo-   │ Conectar a tierra   │
 │ estática          │ nentes ESD        │ antes de usar       │
 └───────────────────┴───────────────────┴─────────────────────┘
-Actividad Práctica: Medición Fuente
-Objetivo: Verificar voltajes de salida fuente
-Material: Multímetro, fuente ATX, puente para encender
 
-Procedimiento:
+### Actividad Práctica: Medición Fuente
 
-Conectar puente en cable verde y negro
+- Objetivo: Verificar voltajes de salida fuente
+- Material: Multímetro, fuente ATX, puente para encender
+- Procedimiento:
+
+ Conectar puente en cable verde y negro
 
 Encender fuente
 
@@ -170,11 +173,10 @@ Valores Esperados:
 
 +3.3V: 3.14V - 3.46V
 
-🖥️ APUNTES DE ESTUDIO - MONTAJE Y MANTENIMIENTO DE EQUIPOS
-CFGM SMR1 - Resumen Unidades de Trabajo
-Profesor: Ezequiel Llarena Borges | Página 3 de 25
-UNIDAD 2: ENSAMBLAJE DE EQUIPOS
-2.1 PROCESO DE MONTAJE
+
+# UNIDAD 2: ENSAMBLAJE DE EQUIPOS
+
+## 2.1 PROCESO DE MONTAJE
 Diagrama Flujo Ensamblaje
 text
 ┌─────────────────────────────────────────────────────────────┐
@@ -207,11 +209,12 @@ CPU mal orientado	No arranca, olor quemado	Verificar triángulo/muesca
 RAM no asentada	Pitidos, no vídeo	Presionar hasta click
 Cables panel frontal cruzados	No enciende botón	Consultar manual placa
 Fuente no encendida	Silencio total	Verificar interruptor 110V/220V
-2.2 COMPATIBILIDAD COMPONENTES
-Tabla Compatibilidad Sockets
-text
+
+## 2.2 COMPATIBILIDAD COMPONENTES
+### 2.2.1. Tabla Compatibilidad Sockets
+
 ┌─────────────────────────────────────────────────────────────┐
-│                 COMPATIBILIDAD CPU - PLACA                 │
+│                 COMPATIBILIDAD CPU - PLACA                  │
 ├──────────────┬──────────────┬──────────────┬────────────────┤
 │  FABRICANTE  │    SOCKET    │   EJEMPLOS   │  CHIPSETS      │
 ├──────────────┼──────────────┼──────────────┼────────────────┤
@@ -227,37 +230,29 @@ text
 │     AMD      │     AM5      │ Ryzen 5 7600,│ A620, B650,    │
 │              │              │ Ryzen 7 7700 │ X670           │
 └──────────────┴──────────────┴──────────────┴────────────────┘
-Actividad: Verificador Compatibilidad
-Nivel Básico:
+---
+### 2.2.2. Actividad: Verificador Compatibilidad
 
-Identificar socket procesador
+**Nivel Básico:**
 
-Verificar compatibilidad placa base
+- Identificar socket procesador
+- Verificar compatibilidad placa base
+- Comprobar tipo RAM compatible
 
-Comprobar tipo RAM compatible
+**Nivel Intermedio:**
+- Calcular consumo energético
+- Verificar actualización BIOS necesaria
+- Comprobar dimensiones caja
 
-Nivel Intermedio:
+**Nivel Avanzado:**
 
-Calcular consumo energético
+- Optimizar para rendimiento/precio
+- Planificar futuras actualizaciones
+- Considerar refrigeración necesaria
 
-Verificar actualización BIOS necesaria
+# 2.3 CONFIGURACIÓN BIOS/UEFI
+## Comparativa BIOS vs UEFI
 
-Comprobar dimensiones caja
-
-Nivel Avanzado:
-
-Optimizar para rendimiento/precio
-
-Planificar futuras actualizaciones
-
-Considerar refrigeración necesaria
-
-🖥️ APUNTES DE ESTUDIO - MONTAJE Y MANTENIMIENTO DE EQUIPOS
-CFGM SMR1 - Resumen Unidades de Trabajo
-Profesor: Ezequiel Llarena Borges | Página 4 de 25
-2.3 CONFIGURACIÓN BIOS/UEFI
-Comparativa BIOS vs UEFI
-text
 ┌─────────────────────────────────────────────────────────────┐
 │                  BIOS vs UEFI - DIFERENCIAS                │
 ├─────────────────────┬─────────────────────┬─────────────────┤
