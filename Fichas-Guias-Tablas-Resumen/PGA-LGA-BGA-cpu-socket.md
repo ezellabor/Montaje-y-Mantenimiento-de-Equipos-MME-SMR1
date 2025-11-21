@@ -1,5 +1,23 @@
 # Tipos de encapsulado: PGA, LGA y BGA
 
+---
+
+| Tipo  | Cómo identificarlo |
+|-------|--------------------|
+| **PGA**   | El CPU tiene pines |
+| **LGA**   | La placa madre tiene pines |
+| **BGA**   | El chip está soldado directamente a la placa (no removible) |
+
+---
+
+| Tipo  | Ejemplos reales |
+|-------|-----------------|
+| **PGA**   | AMD Athlon, FX; AMD Ryzen 1000–5000 (AM4); Microcontroladores AVR y PIC antiguos |
+| **LGA**   | Intel LGA 1151, 1200, 1700; Intel Xeon; AMD Ryzen 7000 (AM5) |
+| **BGA**   | GPUs Nvidia y AMD; Snapdragon, Apple A-series; Consolas PS5 y Xbox Series X; Chipsets y RAM LPDDR |
+
+---
+
 | Comparativa               | PGA (Pin Grid Array)                        | LGA (Land Grid Array)                                | BGA (Ball Grid Array)                                 |
 |-----------------------|---------------------------------------------|-------------------------------------------------------|--------------------------------------------------------|
 | **¿Dónde están los pines?** | En el **CPU**                              | En el **socket**                                      | No hay pines: **bolas de soldadura** bajo el chip     |
