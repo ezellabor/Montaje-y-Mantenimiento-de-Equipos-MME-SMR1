@@ -14,11 +14,21 @@
 
 | Tipo  | Ejemplos reales |
 |-------|-----------------|
-| **PGA**   | AMD Athlon, FX; AMD Ryzen 1000–5000 (AM4); Microcontroladores AVR y PIC antiguos |
+| **PGA**   | AMD Athlon, FX; AMD Ryzen 1000–5000 (AM4); Microcontroladores |
 | **LGA**   | Intel LGA 1151, 1200, 1700; Intel Xeon; AMD Ryzen 7000 (AM5) |
-| **BGA**   | GPUs Nvidia y AMD; Snapdragon, Apple A-series; Consolas PS5 y Xbox Series X; Chipsets y RAM LPDDR |
+| **BGA**   | GPUs Nvidia y AMD; Chipsets y RAM LPDDR; Snapdragon, Apple A-series; Consolas PS5 y Xbox Series X |
 
 ---
+
+| Tipo | Ventajas | Desventajas |
+|------|----------|-------------|
+| PGA  | - Fácil de instalar y reemplazar<br>- CPU más barato de fabricar | - Pines del CPU se doblan con facilidad<br>- Menor densidad de conexiones<br>- No ideal para frecuencias muy altas |
+| LGA  | - CPU robusto (sin pines)<br>- Alta densidad de contactos<br>- Mejor para altas frecuencias | - Socket delicado (pines finos)<br>- Más caro de fabricar |
+| BGA  | - Máxima densidad de conexiones<br>- Excelente disipación térmica<br>- Muy estable mecánicamente | - No reemplazable fácilmente<br>- Requiere reballing en caso de fallo<br>- Coste de fabricación alto |
+
+---
+
+
 
 | Comparativa               | PGA (Pin Grid Array)                        | LGA (Land Grid Array)                                | BGA (Ball Grid Array)                                 |
 |-----------------------|---------------------------------------------|-------------------------------------------------------|--------------------------------------------------------|
