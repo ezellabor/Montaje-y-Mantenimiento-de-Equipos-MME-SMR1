@@ -1,4 +1,4 @@
-># Placas Base
+># Principales componentes de la placa base
 
 
 | Componente                       | Función                                                                | Especificaciones actuales                                   | Parámetros clave                                      | Evolución                                            |
