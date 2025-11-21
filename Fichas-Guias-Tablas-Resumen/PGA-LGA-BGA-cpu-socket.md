@@ -22,7 +22,7 @@
 
 | Comparativa               | PGA (Pin Grid Array)                        | LGA (Land Grid Array)                                | BGA (Ball Grid Array)                                 |
 |-----------------------|---------------------------------------------|-------------------------------------------------------|--------------------------------------------------------|
-| **¿Dónde están los pines?** | En el **CPU**                              | En el **socket**                                      | No hay pines: **bolas de soldadura** bajo el chip     |
+| **¿Dónde están los pines?** | En la **CPU**                              | En el **socket**                                      | No hay pines: **bolas de soldadura** bajo el chip     |
 | **Tipo de contacto**      | Pines → agujeros                             | Pads planos → pines del socket                       | Bolas → PCB                                            |
 | **Desmontable**           | Sí                                           | Sí                                                    | No (soldado)                                           |
 | **Reemplazo por usuario** | Fácil                                        | Moderado                                              | Imposible sin reballing                                |
@@ -42,7 +42,7 @@
 
 
 ## Resumen 
->- **PGA** → Pines en el CPU, socket con agujeros, fácil de cambiar, pines frágiles.
+>- **PGA** → Pines en la CPU, socket con agujeros, fácil de cambiar, pines frágiles.
 >- **LGA** → Pines en el socket, CPU robusto, alta densidad, socket delicado.
 >- **BGA** → Sin socket, soldado, rendimiento máximo, no reemplazable.
 
