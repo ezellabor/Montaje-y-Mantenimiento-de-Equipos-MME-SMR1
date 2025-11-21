@@ -1,5 +1,9 @@
 # Tipos de encapsulado: PGA, LGA y BGA
 
+>- **PGA** (Pin Grid Array)  
+>- **LGA** (Land Grid Array)
+>- **BGA** (Ball Grid Array)
+
 ![encapsulado-pga-lga](../img/encapsulado-pga-lga.jpg)
 
 ---
