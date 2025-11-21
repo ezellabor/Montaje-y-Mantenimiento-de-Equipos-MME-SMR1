@@ -6,7 +6,7 @@
 
 | Tipo  | Cómo identificarlo |
 |-------|--------------------|
-| **PGA** (Pin Grid Array) | El CPU tiene pines |
+| **PGA** (Pin Grid Array) | La CPU tiene pines |
 | **LGA** (Land Grid Array) | La placa madre tiene pines |
 | **BGA** (Ball Grid Array) | El chip está soldado directamente a la placa (no extraíble) |
 
