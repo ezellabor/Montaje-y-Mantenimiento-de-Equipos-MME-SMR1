@@ -22,9 +22,10 @@
 
 | Tipo | Ventajas | Desventajas |
 |------|----------|-------------|
-| PGA  | - Fácil de instalar y reemplazar<br>- CPU más barato de fabricar | - Pines del CPU se doblan con facilidad<br>- Menor densidad de conexiones<br>- No ideal para frecuencias muy altas |
-| LGA  | - CPU robusto (sin pines)<br>- Alta densidad de contactos<br>- Mejor para altas frecuencias | - Socket delicado (pines finos)<br>- Más caro de fabricar |
-| BGA  | - Máxima densidad de conexiones<br>- Excelente disipación térmica<br>- Muy estable mecánicamente | - No reemplazable fácilmente<br>- Requiere reballing en caso de fallo<br>- Coste de fabricación alto |  
+| PGA  | Fácil de instalar y reemplazar; CPU más barato de fabricar | Pines del CPU se doblan con facilidad; Menor densidad de conexiones; No ideal para frecuencias muy altas |
+| LGA  | CPU robusto (sin pines); Alta densidad de contactos; Mejor para altas frecuencias | Socket delicado (pines finos); Más caro de fabricar |
+| BGA  | Máxima densidad de conexiones; Excelente disipación térmica; Muy estable mecánicamente | No reemplazable fácilmente; Requiere reballing en caso de fallo; Coste de fabricación alto |
+  
 ```Reballing es el proceso de reemplazar o reinstalar las bolas de soldadura (solder balls) de un chip BGA que se ha desoldado o tiene fallas en sus conexiones.```
 
 ---
