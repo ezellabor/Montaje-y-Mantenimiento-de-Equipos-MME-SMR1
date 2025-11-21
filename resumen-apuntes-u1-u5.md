@@ -1,4 +1,4 @@
-# Apuntes de estudio - Montaje y Mantenimineto de Equipos
+# Apuntes - Montaje y Mantenimineto de Equipos
 ## CFGM SMRI - Resumen Unidades de Trabajo
 ### Profesor: Ezequiel Llarena Borges | Página 1 de 25
 
