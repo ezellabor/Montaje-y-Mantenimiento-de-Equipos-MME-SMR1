@@ -1,6 +1,6 @@
 # Tipos de encapsulado: PGA, LGA y BGA
 
-![encapsulado-pga-lga](img/imagen.jpg)
+![encapsulado-pga-lga](../img/encapsulado-pga-lga.jpeg)
 
 ---
 
