@@ -1,7 +1,6 @@
 # Tipos de encapsulado: PGA, LGA y BGA
 
-## Comparativa
-|                       | PGA (Pin Grid Array)                        | LGA (Land Grid Array)                                | BGA (Ball Grid Array)                                 |
+| Comparativa               | PGA (Pin Grid Array)                        | LGA (Land Grid Array)                                | BGA (Ball Grid Array)                                 |
 |-----------------------|---------------------------------------------|-------------------------------------------------------|--------------------------------------------------------|
 | **¿Dónde están los pines?** | En el **CPU**                              | En el **socket**                                      | No hay pines: **bolas de soldadura** bajo el chip     |
 | **Tipo de contacto**      | Pines → agujeros                             | Pads planos → pines del socket                       | Bolas → PCB                                            |
