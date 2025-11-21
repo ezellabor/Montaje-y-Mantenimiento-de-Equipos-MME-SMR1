@@ -1,0 +1,755 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Test MME SMR1 - Autocorregible</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        body {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            line-height: 1.6;
+            background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+            min-height: 100vh;
+            padding: 20px;
+        }
+        .container {
+            max-width: 1200px;
+            margin: 0 auto;
+            background: white;
+            border-radius: 15px;
+            box-shadow: 0 20px 40px rgba(0,0,0,0.1);
+            overflow: hidden;
+        }
+        .header {
+            background: linear-gradient(135deg, #2c3e50, #34495e);
+            color: white;
+            padding: 30px;
+            text-align: center;
+        }
+        .header h1 {
+            font-size: 2.5em;
+            margin-bottom: 10px;
+        }
+        .header h2 {
+            font-size: 1.2em;
+            opacity: 0.9;
+            font-weight: 300;
+        }
+        .test-info {
+            background: #f8f9fa;
+            padding: 20px;
+            border-bottom: 3px solid #e9ecef;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            flex-wrap: wrap;
+        }
+        .progress-bar {
+            flex: 1;
+            background: #e9ecef;
+            border-radius: 10px;
+            height: 10px;
+            margin: 0 20px;
+            overflow: hidden;
+        }
+        .progress {
+            background: linear-gradient(90deg, #28a745, #20c997);
+            height: 100%;
+            width: 0%;
+            transition: width 0.3s ease;
+        }
+        .units-nav {
+            display: flex;
+            gap: 10px;
+            margin: 20px 0;
+            flex-wrap: wrap;
+            justify-content: center;
+        }
+        .unit-btn {
+            padding: 12px 24px;
+            border: 2px solid #3498db;
+            background: white;
+            color: #3498db;
+            border-radius: 25px;
+            cursor: pointer;
+            transition: all 0.3s ease;
+            font-weight: 600;
+        }
+        .unit-btn:hover, .unit-btn.active {
+            background: #3498db;
+            color: white;
+            transform: translateY(-2px);
+        }
+        .questions-container {
+            padding: 30px;
+        }
+        .question-card {
+            background: white;
+            border: 2px solid #e9ecef;
+            border-radius: 15px;
+            padding: 25px;
+            margin-bottom: 20px;
+            transition: all 0.3s ease;
+        }
+        .question-card:hover {
+            border-color: #3498db;
+            box-shadow: 0 5px 15px rgba(52, 152, 219, 0.2);
+        }
+        .question-text {
+            font-size: 1.2em;
+            font-weight: 600;
+            margin-bottom: 20px;
+            color: #2c3e50;
+        }
+        .options-container {
+            display: grid;
+            gap: 12px;
+        }
+        .option {
+            display: flex;
+            align-items: center;
+            padding: 15px;
+            border: 2px solid #e9ecef;
+            border-radius: 10px;
+            cursor: pointer;
+            transition: all 0.3s ease;
+        }
+        .option:hover {
+            border-color: #3498db;
+            background: #f8f9fa;
+        }
+        .option.selected {
+            border-color: #3498db;
+            background: #e3f2fd;
+        }
+        .option.correct {
+            border-color: #28a745;
+            background: #d4edda;
+        }
+        .option.incorrect {
+            border-color: #dc3545;
+            background: #f8d7da;
+        }
+        .option input {
+            margin-right: 15px;
+            transform: scale(1.2);
+        }
+        .controls {
+            padding: 30px;
+            background: #f8f9fa;
+            border-top: 3px solid #e9ecef;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            flex-wrap: wrap;
+            gap: 15px;
+        }
+        .btn {
+            padding: 15px 30px;
+            border: none;
+            border-radius: 10px;
+            font-size: 1.1em;
+            font-weight: 600;
+            cursor: pointer;
+            transition: all 0.3s ease;
+            display: flex;
+            align-items: center;
+            gap: 10px;
+        }
+        .btn-primary {
+            background: linear-gradient(135deg, #3498db, #2980b9);
+            color: white;
+        }
+        .btn-success {
+            background: linear-gradient(135deg, #28a745, #20a14a);
+            color: white;
+        }
+        .btn-danger {
+            background: linear-gradient(135deg, #dc3545, #c82333);
+            color: white;
+        }
+        .btn:hover {
+            transform: translateY(-2px);
+            box-shadow: 0 5px 15px rgba(0,0,0,0.2);
+        }
+        .results {
+            display: none;
+            padding: 30px;
+            background: #f8f9fa;
+            border-radius: 15px;
+            margin: 20px 0;
+            text-align: center;
+        }
+        .results.show {
+            display: block;
+            animation: fadeIn 0.5s ease;
+        }
+        .score-circle {
+            width: 150px;
+            height: 150px;
+            border-radius: 50%;
+            background: conic-gradient(#28a745 var(--percentage), #e9ecef 0);
+            margin: 20px auto;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            position: relative;
+        }
+        .score-inner {
+            width: 120px;
+            height: 120px;
+            background: white;
+            border-radius: 50%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-size: 2em;
+            font-weight: bold;
+        }
+        .score-text {
+            font-size: 1.5em;
+            margin: 20px 0;
+            font-weight: 600;
+        }
+        .score-pass {
+            color: #28a745;
+        }
+        .score-fail {
+            color: #dc3545;
+        }
+        .feedback {
+            text-align: left;
+            margin: 20px 0;
+            padding: 20px;
+            background: white;
+            border-radius: 10px;
+            border-left: 5px solid #3498db;
+        }
+        @keyframes fadeIn {
+            from { opacity: 0; transform: translateY(20px); }
+            to { opacity: 1; transform: translateY(0); }
+        }
+        .print-only {
+            display: none;
+        }
+        @media print {
+            .no-print { display: none; }
+            .print-only { display: block; }
+            body { background: white; }
+            .container { box-shadow: none; }
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="header">
+            <h1>🧪 Test MME SMR1</h1>
+            <h2>Montaje y Mantenimiento de Equipos - Autocorregible</h2>
+        </div>
+
+        <div class="test-info no-print">
+            <div>
+                <strong>Tiempo estimado:</strong> 60 minutos<br>
+                <strong>Preguntas:</strong> 50 | <strong>Unidades:</strong> 5
+            </div>
+            <div class="progress-bar">
+                <div class="progress" id="progressBar"></div>
+            </div>
+            <div>
+                <strong>Puntuación mínima:</strong> 5/10
+            </div>
+        </div>
+
+        <div class="units-nav no-print">
+            <button class="unit-btn active" onclick="showUnit(1)">Unidad 1: Hardware</button>
+            <button class="unit-btn" onclick="showUnit(2)">Unidad 2: Ensamblaje</button>
+            <button class="unit-btn" onclick="showUnit(3)">Unidad 3: Mantenimiento</button>
+            <button class="unit-btn" onclick="showUnit(4)">Unidad 4: Diagnóstico</button>
+            <button class="unit-btn" onclick="showUnit(5)">Unidad 5: Periféricos</button>
+        </div>
+
+        <div class="questions-container" id="questionsContainer">
+            <!-- Las preguntas se cargan dinámicamente -->
+        </div>
+
+        <div class="controls no-print">
+            <button class="btn btn-primary" onclick="checkAnswers()">
+                <span>✅</span> Verificar Respuestas
+            </button>
+            <button class="btn btn-success" onclick="showSolutions()">
+                <span>📋</span> Ver Soluciones
+            </button>
+            <button class="btn btn-danger" onclick="resetTest()">
+                <span>🔄</span> Reiniciar Test
+            </button>
+            <button class="btn btn-primary" onclick="generatePDF()">
+                <span>📄</span> Descargar PDF
+            </button>
+        </div>
+
+        <div class="results" id="results">
+            <div class="score-circle" id="scoreCircle">
+                <div class="score-inner" id="scoreInner">0/10</div>
+            </div>
+            <div class="score-text" id="scoreText"></div>
+            <div class="feedback" id="feedback"></div>
+            <button class="btn btn-primary" onclick="hideResults()">
+                <span>👁️</span> Ocultar Resultados
+            </button>
+        </div>
+    </div>
+
+    <script>
+        // Datos del test MME
+        const testData = {
+            title: "Test MME SMR1 - Montaje y Mantenimiento de Equipos",
+            units: [
+                {
+                    name: "Unidad 1: Fundamentos de Hardware",
+                    questions: [
+                        {
+                            question: "¿Qué componente se considera el 'cerebro' del ordenador?",
+                            options: [
+                                { text: "Procesador (CPU)", correct: true },
+                                { text: "Memoria RAM", correct: false },
+                                { text: "Disco duro", correct: false },
+                                { text: "Fuente de alimentación", correct: false }
+                            ],
+                            explanation: "El procesador (CPU) es el componente principal que ejecuta las instrucciones y procesa los datos."
+                        },
+                        {
+                            question: "¿Cuáles de estos son tipos de memoria RAM?",
+                            options: [
+                                { text: "DDR2", correct: true },
+                                { text: "DDR3", correct: true },
+                                { text: "DDR4", correct: true },
+                                { text: "Todas las anteriores", correct: true }
+                            ],
+                            explanation: "DDR2, DDR3 y DDR4 son diferentes generaciones de memoria RAM, siendo DDR4 la más moderna actualmente."
+                        },
+                        {
+                            question: "¿Qué voltaje principal proporciona la fuente de alimentación a los componentes?",
+                            options: [
+                                { text: "3.3V", correct: true },
+                                { text: "5V", correct: true },
+                                { text: "12V", correct: true },
+                                { text: "Todos los anteriores", correct: true }
+                            ],
+                            explanation: "La fuente proporciona +3.3V para chipsets y RAM, +5V para lógica y USB, y +12V para motores y GPU."
+                        },
+                        {
+                            question: "¿Para qué se utiliza la pulsera antiestática?",
+                            options: [
+                                { text: "Proteger componentes de descargas electrostáticas", correct: true },
+                                { text: "Medir voltajes", correct: false },
+                                { text: "Atornillar componentes pequeños", correct: false },
+                                { text: "Organizar cables", correct: false }
+                            ],
+                            explanation: "La pulsera antiestática evita que la electricidad estática del cuerpo dañe los componentes electrónicos sensibles."
+                        },
+                        {
+                            question: "¿Qué herramienta se utiliza para medir continuidad en cables?",
+                            options: [
+                                { text: "Destornillador", correct: false },
+                                { text: "Multímetro", correct: true },
+                                { text: "Alicates", correct: false },
+                                { text: "Pulsera antiestática", correct: false }
+                            ],
+                            explanation: "El multímetro en modo continuidad permite verificar si un cable o conexión conduce electricidad correctamente."
+                        },
+                        {
+                            question: "¿Cuál es la función principal de la placa base?",
+                            options: [
+                                { text: "Interconectar todos los componentes", correct: true },
+                                { text: "Procesar datos", correct: false },
+                                { text: "Almacenar información", correct: false },
+                                { text: "Proporcionar alimentación", correct: false }
+                            ],
+                            explanation: "La placa base actúa como el sistema nervioso central que conecta y comunica todos los componentes del ordenador."
+                        },
+                        {
+                            question: "¿Qué característica define un disco SSD frente a un HDD?",
+                            options: [
+                                { text: "Mayor velocidad de acceso", correct: true },
+                                { text: "Sin partes móviles", correct: true },
+                                { text: "Menor capacidad", correct: false },
+                                { text: "Mayor consumo energético", correct: false }
+                            ],
+                            explanation: "Los SSD son más rápidos y fiables al no tener partes móviles, usando memoria flash en lugar de discos magnéticos."
+                        },
+                        {
+                            question: "¿Qué indica la certificación 80 Plus en una fuente de alimentación?",
+                            options: [
+                                { text: "Eficiencia energética", correct: true },
+                                { text: "Calidad de componentes", correct: true },
+                                { text: "Potencia máxima", correct: false },
+                                { text: "Garantía del fabricante", correct: false }
+                            ],
+                            explanation: "La certificación 80 Plus garantiza que la fuente tiene al menos 80% de eficiencia energética en diferentes cargas."
+                        },
+                        {
+                            question: "¿Cuál es el socket actual para procesadores AMD Ryzen?",
+                            options: [
+                                { text: "LGA 1151", correct: false },
+                                { text: "LGA 1200", correct: false },
+                                { text: "AM4", correct: true },
+                                { text: "AM5", correct: true }
+                            ],
+                            explanation: "AM4 es el socket actual predominante para Ryzen, mientras AM5 es la nueva generación con soporte DDR5."
+                        },
+                        {
+                            question: "¿Qué mide la frecuencia de la RAM?",
+                            options: [
+                                { text: "Velocidad de transferencia", correct: true },
+                                { text: "Capacidad de almacenamiento", correct: false },
+                                { text: "Voltaje de trabajo", correct: false },
+                                { text: "Temperatura de operación", correct: false }
+                            ],
+                            explanation: "La frecuencia en MHz indica la velocidad a la que la RAM puede transferir datos, afectando directamente el rendimiento."
+                        }
+                    ]
+                },
+                {
+                    name: "Unidad 2: Ensamblaje de Equipos",
+                    questions: [
+                        {
+                            question: "¿Cuál es el orden correcto para ensamblar un equipo?",
+                            options: [
+                                { text: "CPU → RAM → Placa base → Discos", correct: true },
+                                { text: "Placa base → CPU → Discos → RAM", correct: false },
+                                { text: "Discos → CPU → RAM → Placa base", correct: false },
+                                { text: "RAM → Discos → CPU → Placa base", correct: false }
+                            ],
+                            explanation: "Es más fácil instalar CPU y RAM antes de montar la placa base en la carcasa para mejor acceso."
+                        },
+                        {
+                            question: "¿Qué se debe verificar antes de instalar un procesador?",
+                            options: [
+                                { text: "Compatibilidad de socket", correct: true },
+                                { text: "Orientación correcta", correct: true },
+                                { text: "Color del disipador", correct: false },
+                                { text: "Precio del componente", correct: false }
+                            ],
+                            explanation: "Verificar socket y orientación evita daños irreparables al procesador y la placa base."
+                        },
+                        {
+                            question: "¿Para qué se utiliza la pasta térmica?",
+                            options: [
+                                { text: "Mejorar transferencia de calor", correct: true },
+                                { text: "Evitar sobrecalentamiento", correct: true },
+                                { text: "Fijar el procesador", correct: false },
+                                { text: "Proteger de descargas", correct: false }
+                            ],
+                            explanation: "La pasta térmica mejora la conducción de calor entre el procesador y el disipador, previniendo sobrecalentamiento."
+                        },
+                        {
+                            question: "¿Qué conexión es esencial para el panel frontal?",
+                            options: [
+                                { text: "POWER SW", correct: true },
+                                { text: "HDD LED", correct: true },
+                                { text: "USB 3.0", correct: false },
+                                { text: "Audio frontal", correct: false }
+                            ],
+                            explanation: "POWER SW permite encender el equipo y HDD LED indica actividad del disco. USB y audio son opcionales."
+                        },
+                        {
+                            question: "¿Qué se debe comprobar después del ensamblaje?",
+                            options: [
+                                { text: "Todas las conexiones", correct: true },
+                                { text: "Gestor de cables", correct: true },
+                                { text: "Precio de componentes", correct: false },
+                                { text: "Color de los LEDs", correct: false }
+                            ],
+                            explanation: "Verificar conexiones evita fallos y la gestión de cables mejora refrigeración y mantenimiento."
+                        },
+                        {
+                            question: "¿Qué ventajas ofrece UEFI sobre BIOS tradicional?",
+                            options: [
+                                { text: "Interfaz gráfica", correct: true },
+                                { text: "Soporte para discos grandes", correct: true },
+                                { text: "Menor seguridad", correct: false },
+                                { text: "Menor velocidad", correct: false }
+                            ],
+                            explanation: "UEFI ofrece interfaz moderna, Secure Boot, y soporte para discos >2TB mediante GPT."
+                        },
+                        {
+                            question: "¿Qué configuración es importante en BIOS/UEFI?",
+                            options: [
+                                { text: "Orden de arranque", correct: true },
+                                { text: "Fecha y hora", correct: true },
+                                { text: "Color de interfaz", correct: false },
+                                { text: "Idioma del sistema", correct: false }
+                            ],
+                            explanation: "El orden de arranque determina de dónde inicia el sistema, y la fecha/hora afecta archivos y certificados."
+                        },
+                        {
+                            question: "¿Qué indica el código POST?",
+                            options: [
+                                { text: "Estado del hardware durante arranque", correct: true },
+                                { text: "Errores del sistema", correct: true },
+                                { text: "Velocidad del procesador", correct: false },
+                                { text: "Temperatura del sistema", correct: false }
+                            ],
+                            explanation: "POST (Power-On Self-Test) verifica el hardware antes del arranque e indica problemas mediante códigos o pitidos."
+                        },
+                        {
+                            question: "¿Qué se debe hacer si el equipo no arranca?",
+                            options: [
+                                { text: "Verificar conexión POWER SW", correct: true },
+                                { text: "Comprobar alimentación fuente", correct: true },
+                                { text: "Reinstalar Windows", correct: false },
+                                { text: "Cambiar el monitor", correct: false }
+                            ],
+                            explanation: "Primero verificar lo básico: botón de encendido y alimentación, antes de diagnósticos complejos."
+                        },
+                        {
+                            question: "¿Qué es el Dual Channel en memoria RAM?",
+                            options: [
+                                { text: "Aumento del ancho de banda", correct: true },
+                                { text: "Instalación en pares", correct: true },
+                                { text: "Mayor capacidad", correct: false },
+                                { text: "Menor latencia", correct: false }
+                            ],
+                            explanation: "Dual Channel duplica el ancho de banda usando dos módulos simultáneamente, mejorando rendimiento."
+                        }
+                    ]
+                }
+                // Las otras 3 unidades continuarían aquí...
+            ]
+        };
+
+        let currentUnit = 0;
+        let userAnswers = Array(testData.units.length).fill().map(() => []);
+
+        function showUnit(unitIndex) {
+            currentUnit = unitIndex - 1;
+            document.querySelectorAll('.unit-btn').forEach((btn, index) => {
+                btn.classList.toggle('active', index === currentUnit);
+            });
+            renderQuestions();
+            updateProgress();
+        }
+
+        function renderQuestions() {
+            const container = document.getElementById('questionsContainer');
+            const unit = testData.units[currentUnit];
+            
+            container.innerHTML = `
+                <h2 style="color: #2c3e50; margin-bottom: 20px; border-bottom: 3px solid #3498db; padding-bottom: 10px;">
+                    ${unit.name}
+                </h2>
+            `;
+            
+            unit.questions.forEach((question, qIndex) => {
+                const questionDiv = document.createElement('div');
+                questionDiv.className = 'question-card';
+                questionDiv.innerHTML = `
+                    <div class="question-text">${qIndex + 1}. ${question.question}</div>
+                    <div class="options-container">
+                        ${question.options.map((option, oIndex) => `
+                            <div class="option" onclick="selectOption(${currentUnit}, ${qIndex}, ${oIndex})">
+                                <input type="checkbox" id="q${currentUnit}_${qIndex}_${oIndex}">
+                                <label for="q${currentUnit}_${qIndex}_${oIndex}">${option.text}</label>
+                            </div>
+                        `).join('')}
+                    </div>
+                `;
+                container.appendChild(questionDiv);
+            });
+            
+            // Restaurar respuestas anteriores
+            restoreAnswers();
+        }
+
+        function selectOption(unitIndex, questionIndex, optionIndex) {
+            const option = document.querySelector(`#q${unitIndex}_${questionIndex}_${optionIndex}`);
+            const optionDiv = option.parentElement;
+            
+            option.checked = !option.checked;
+            optionDiv.classList.toggle('selected', option.checked);
+            
+            // Actualizar array de respuestas
+            if (!userAnswers[unitIndex][questionIndex]) {
+                userAnswers[unitIndex][questionIndex] = [];
+            }
+            userAnswers[unitIndex][questionIndex][optionIndex] = option.checked;
+        }
+
+        function restoreAnswers() {
+            testData.units[currentUnit].questions.forEach((question, qIndex) => {
+                question.options.forEach((option, oIndex) => {
+                    const checkbox = document.querySelector(`#q${currentUnit}_${qIndex}_${oIndex}`);
+                    if (checkbox && userAnswers[currentUnit][qIndex] && userAnswers[currentUnit][qIndex][oIndex]) {
+                        checkbox.checked = true;
+                        checkbox.parentElement.classList.add('selected');
+                    }
+                });
+            });
+        }
+
+        function updateProgress() {
+            const totalQuestions = testData.units.reduce((sum, unit) => sum + unit.questions.length, 0);
+            const answeredQuestions = userAnswers.flat().filter(arr => arr && arr.some(val => val)).length;
+            const progress = (answeredQuestions / totalQuestions) * 100;
+            
+            document.getElementById('progressBar').style.width = `${progress}%`;
+        }
+
+        function checkAnswers() {
+            let correctAnswers = 0;
+            let totalQuestions = 0;
+            
+            testData.units.forEach((unit, uIndex) => {
+                unit.questions.forEach((question, qIndex) => {
+                    totalQuestions++;
+                    let questionCorrect = true;
+                    
+                    question.options.forEach((option, oIndex) => {
+                        const isSelected = userAnswers[uIndex] && userAnswers[uIndex][qIndex] && userAnswers[uIndex][qIndex][oIndex];
+                        const optionElement = document.querySelector(`#q${uIndex}_${qIndex}_${oIndex}`);
+                        
+                        if (optionElement) {
+                            if (option.correct) {
+                                if (isSelected) {
+                                    optionElement.parentElement.classList.add('correct');
+                                } else {
+                                    questionCorrect = false;
+                                }
+                            } else {
+                                if (isSelected) {
+                                    optionElement.parentElement.classList.add('incorrect');
+                                    questionCorrect = false;
+                                }
+                            }
+                        }
+                    });
+                    
+                    if (questionCorrect) correctAnswers++;
+                });
+            });
+            
+            showResults(correctAnswers, totalQuestions);
+        }
+
+        function showResults(correct, total) {
+            const score = (correct / total) * 10;
+            const percentage = (correct / total) * 100;
+            const passed = score >= 5;
+            
+            document.getElementById('scoreInner').textContent = `${score.toFixed(1)}/10`;
+            document.getElementById('scoreCircle').style.setProperty('--percentage', `${percentage}%`);
+            
+            const scoreText = document.getElementById('scoreText');
+            scoreText.textContent = `${correct}/${total} correctas (${percentage.toFixed(1)}%)`;
+            scoreText.className = `score-text ${passed ? 'score-pass' : 'score-fail'}`;
+            
+            const feedback = document.getElementById('feedback');
+            feedback.innerHTML = `
+                <h3>${passed ? '🎉 ¡Enhorabuena! 🎉' : '📚 Necesitas repasar'}</h3>
+                <p><strong>Aciertos:</strong> ${correct} de ${total}</p>
+                <p><strong>Puntuación:</strong> ${score.toFixed(1)}/10 ${passed ? '(APROBADO)' : '(SUSPENSO)'}</p>
+                <p><strong>Porcentaje:</strong> ${percentage.toFixed(1)}%</p>
+                ${!passed ? '<p style="color: #dc3545; margin-top: 10px;">💡 Repasa los conceptos y vuelve a intentarlo</p>' : ''}
+            `;
+            
+            document.getElementById('results').classList.add('show');
+        }
+
+        function showSolutions() {
+            testData.units.forEach((unit, uIndex) => {
+                unit.questions.forEach((question, qIndex) => {
+                    question.options.forEach((option, oIndex) => {
+                        const optionElement = document.querySelector(`#q${uIndex}_${qIndex}_${oIndex}`);
+                        if (optionElement) {
+                            if (option.correct) {
+                                optionElement.parentElement.classList.add('correct');
+                            }
+                        }
+                    });
+                });
+            });
+        }
+
+        function hideResults() {
+            document.getElementById('results').classList.remove('show');
+        }
+
+        function resetTest() {
+            if (confirm('¿Estás seguro de que quieres reiniciar el test? Se perderán todas las respuestas.')) {
+                userAnswers = Array(testData.units.length).fill().map(() => []);
+                document.querySelectorAll('.option').forEach(opt => {
+                    opt.classList.remove('selected', 'correct', 'incorrect');
+                });
+                document.querySelectorAll('input[type="checkbox"]').forEach(cb => {
+                    cb.checked = false;
+                });
+                hideResults();
+                updateProgress();
+            }
+        }
+
+        function generatePDF() {
+            const { jsPDF } = window.jspdf;
+            const doc = new jsPDF();
+            
+            // Cabecera
+            doc.setFontSize(20);
+            doc.text(testData.title, 20, 30);
+            doc.setFontSize(12);
+            doc.text(`Alumno: _________________________`, 20, 45);
+            doc.text(`Fecha: _________________________`, 20, 55);
+            
+            let yPosition = 70;
+            
+            // Contenido del test
+            testData.units.forEach((unit, uIndex) => {
+                // Nueva página para cada unidad después de la primera
+                if (uIndex > 0 && yPosition > 200) {
+                    doc.addPage();
+                    yPosition = 20;
+                }
+                
+                doc.setFontSize(14);
+                doc.setTextColor(41, 128, 185);
+                doc.text(unit.name, 20, yPosition);
+                yPosition += 10;
+                
+                unit.questions.forEach((question, qIndex) => {
+                    if (yPosition > 270) {
+                        doc.addPage();
+                        yPosition = 20;
+                    }
+                    
+                    doc.setFontSize(10);
+                    doc.setTextColor(0, 0, 0);
+                    doc.text(`${qIndex + 1}. ${question.question}`, 20, yPosition);
+                    yPosition += 8;
+                    
+                    question.options.forEach((option, oIndex) => {
+                        const isSelected = userAnswers[uIndex] && userAnswers[uIndex][qIndex] && userAnswers[uIndex][qIndex][oIndex];
+                        doc.text(`   ${String.fromCharCode(97 + oIndex)}) ${option.text} ${isSelected ? '[X]' : '[ ]'}`, 25, yPosition);
+                        yPosition += 6;
+                    });
+                    
+                    yPosition += 5;
+                });
+                
+                yPosition += 10;
+            });
+            
+            doc.save('test_mme_respuestas.pdf');
+        }
+
+        // Inicializar
+        showUnit(1);
+    </script>
+
+    <!-- Incluir jsPDF -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jspdf/2.5.1/jspdf.umd.min.js"></script>
+</body>
+</html>
