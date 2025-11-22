@@ -1,11 +1,10 @@
 # Clasificación de los Microprocesadores
 
-### Los microprocesadores pueden clasificarse según distintos criterios técnicos. A continuación se presentan los **9 criterios principales de clasificación**:  
 > Compatibilidad implica:  
-> Mismo socket físico
-> Chipset soporte
-> Versión BIOS/UEFI válida
-> Perfil de energía adecuado
+>- Mismo socket físico
+>- Chipset soporte
+>- Versión BIOS/UEFI válida
+>- Perfil de energía adecuado  
 
 ---
 
