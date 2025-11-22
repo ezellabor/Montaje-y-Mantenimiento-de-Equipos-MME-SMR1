@@ -12,3 +12,20 @@
 | 7. Compatibilidad con **chipset**              | Debe estar diseñado para trabajar con un determinado chipset.     | Ej.: AMD **Ryzen → chipsets AM4 / AM5** — Intel **Core → B760 / Z790, etc.**                                      |
 | 8. Compatibilidad con **motherboard (socket)** | Determinado por el tipo de **zócalo físico** y **BIOS/UEFI**.     | Ej.: Intel **LGA1700**, AMD **AM5**, servidores **SP5**, etc.                                                     |
 
+---
+
+## Conceptos clave  
+
+- Un mismo número de GHz no implica el mismo rendimiento — depende de la arquitectura y tecnología.  
+- Los nanómetros no son tamaño físico exacto del transistor, sino el “nodo” del proceso litográfico.  
+- TDP no es consumo real, sino energía térmica que debe ser disipada.
+- Siempre debe haber coincidencia entre CPU ↔ chipset ↔ socket ↔ BIOS/UEFI para ser compatible.
+
+---
+
+Fabricante → Tecnología de fabricación (nm) → Tipo / Arquitectura
+                 ↓
+   Transistores → Frecuencia → Energía/TDP → Temperatura
+                 ↓
+Compatibilidad con chipset → Compatibilidad con motherboard/socket
+
