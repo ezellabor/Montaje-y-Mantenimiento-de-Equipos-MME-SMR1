@@ -29,7 +29,7 @@ La nomenclatura de Intel permite conocer **las características del procesador**
 
 ---
 
-## 🧮 Tabla rápida para interpretar procesadores
+## Tabla rápida para interpretar procesadores
 | Ejemplo | Gama | Generación | GPU | Particularidad |
 |---------|------|------------|-----|----------------|
 | i3-10100 | Baja | 10ª | Sí | Entrada |
@@ -40,7 +40,7 @@ La nomenclatura de Intel permite conocer **las características del procesador**
 
 ---
 
-## 📝 Ejercicio / cuestionario para alumnos
+## 📝 Ejercicio
 
 ### **A. Interpreta los siguientes procesadores**
 Completa la tabla:
