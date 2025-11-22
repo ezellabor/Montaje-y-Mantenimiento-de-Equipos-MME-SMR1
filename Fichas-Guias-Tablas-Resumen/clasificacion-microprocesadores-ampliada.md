@@ -166,7 +166,8 @@ Frecuencias altas (4.0 – 6.5 GHz e incluso +) → gaming y alto rendimiento.
 
 ---
 
-### 📌 Resumen
-`Tipo → Transistores → Frecuencia → Temperatura → Energía (TDP) → Fabricante → Tecnología (nm) → Chipset → Socket`
+## Resumen
 
-➡ Para elegir un procesador se deben considerar **todos** estos criterios en conjunto.
+```Tipo → Transistores → Frecuencia → Temperatura → Energía (TDP)```
+```Fabricante → Tecnología (nm) → Chipset → Socket``` 
+>Para elegir un procesador se deben considerar **todos** estos criterios en conjunto.
