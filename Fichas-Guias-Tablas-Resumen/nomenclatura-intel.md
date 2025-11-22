@@ -1,6 +1,6 @@
 
 # Nomenclatura de procesadores Intel
-> **Objetivo del ejercicio:** que el alumnado aprenda a **seleccionar y justificar procesadores según necesidades reales**.
+> **Objetivo del ejercicio:** aprender a **seleccionar y justificar procesadores según necesidades reales**.
 
 La nomenclatura de Intel permite conocer **las características del procesador** a partir de su nombre comercial.
 
