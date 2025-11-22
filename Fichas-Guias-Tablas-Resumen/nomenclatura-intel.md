@@ -3,10 +3,9 @@
 
 La nomenclatura de Intel permite conocer **las características del procesador** a partir de su nombre comercial.
 
->Ejemplo: Intel Core i7-12700K
+>Ejemplo: Intel Core i7-12700K  
 
-
-## 🔍 Partes del nombre
+### Partes del nombre
 | Parte | Ejemplo | Significado |
 |-------|---------|-------------|
 | **Marca** | Intel | Fabricante |
@@ -16,7 +15,7 @@ La nomenclatura de Intel permite conocer **las características del procesador**
 | **SKU / SKU Number** | **700** | Indica posición en la gama dentro de la generación |
 | **Sufijo** | **K** | Característica avanzada |
 
-### 🔠 Sufijos importantes Intel
+### Sufijos importantes Intel
 | Sufijo | Significado |
 |--------|-------------|
 | K | Overclock permitido (alto rendimiento) |
