@@ -1,9 +1,10 @@
 
 # Nomenclatura de procesadores Intel
+> **Objetivo del ejercicio:** que el alumnado aprenda a **seleccionar y justificar procesadores según necesidades reales**.
 
 La nomenclatura de Intel permite conocer **las características del procesador** a partir de su nombre comercial.
 
->Ejemplo: Intel Core i7-12700K  
+### Ejemplo: Intel Core i7-12700K  
 
 ### Partes del nombre
 | Parte | Ejemplo | Significado |
@@ -69,6 +70,5 @@ Busca dos procesadores Intel reales en una tienda y explica si encajarían mejor
 
 ---
 
-> **Objetivo del ejercicio:** que el alumnado aprenda a **seleccionar y justificar procesadores según necesidades reales**.
 
 
