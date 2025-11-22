@@ -1,3 +1,5 @@
+>Los microprocesadores son circuitos integrados encargados de ejecutar instrucciones y realizar cálculos dentro de un sistema informático.
+
 ## Clasificación de Microprocesadores
 
 | **Criterio de clasificación**                     | **Descripción / Qué distingue**                                   | **Ejemplos / Consideraciones**                                                                                    |
