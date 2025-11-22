@@ -56,12 +56,13 @@ Frecuencias medias (2.5 – 4.0 GHz) → equipos de uso general.
 
 Frecuencias altas (4.0 – 6.5 GHz e incluso +) → gaming y alto rendimiento.
 
-📍 Importante: dos procesadores con igual frecuencia pueden rendir de forma diferente según la arquitectura interna e IPC (Instructions Per Cycle).
+> **Importante:** dos procesadores con igual frecuencia pueden rendir de forma diferente según la arquitectura interna e IPC (Instructions Per Cycle).
 
 - MHz / GHz
 - Baja: 1.0–2.5 GHz
 - Media: 2.5–4.0 GHz
 - Alta: 4.0–6.5 GHz
+- 
 ⚠ La frecuencia por sí sola no define el rendimiento.
 
 ---
