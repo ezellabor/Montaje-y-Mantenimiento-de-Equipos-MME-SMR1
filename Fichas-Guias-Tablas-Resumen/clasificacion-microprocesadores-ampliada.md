@@ -154,7 +154,7 @@ Frecuencias altas (4.0 – 6.5 GHz e incluso +) → gaming y alto rendimiento.
 
 ## 9️⃣ Según compatibilidad con la motherboard (socket)
 
-| Fabricante           | Socket reciente     | Ejemplo de CPU           |
+| Fabri- cante           | Socket reciente     | Ejemplo de CPU           |
 | -------------------- | ------------------- | ------------------------ |
 | Intel                | **LGA1700**         | Core 12ª–14ª Gen         |
 | AMD                  | **AM5**             | Ryzen 7000               |
@@ -170,6 +170,10 @@ Frecuencias altas (4.0 – 6.5 GHz e incluso +) → gaming y alto rendimiento.
 
 ## Resumen
 
-```Tipo → Transistores → Frecuencia → Temperatura → Energía (TDP)```
-```Fabricante → Tecnología (nm) → Chipset → Socket``` 
+<code>
+- Tipo → Transistores → Frecuencia    
+- Temperatura → Energía (TDP) → Fabricante 
+- Tecnología (nm) → Chipset → Socket
+</code>  
+
 >Para elegir un procesador se deben considerar **todos** estos criterios en conjunto.
