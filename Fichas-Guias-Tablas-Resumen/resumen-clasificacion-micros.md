@@ -23,9 +23,9 @@
 
 ---
 
-Fabricante → Tecnología de fabricación (nm) → Tipo / Arquitectura
-                 ↓
-   Transistores → Frecuencia → Energía/TDP → Temperatura
-                 ↓
-Compatibilidad con chipset → Compatibilidad con motherboard/socket
+Fabricante → Tecnología de fabricación (nm) → Tipo / Arquitectura  
+                 ↓  
+   Transistores → Frecuencia → Energía/TDP → Temperatura  
+                 ↓  
+Compatibilidad con chipset → Compatibilidad con motherboard/socket  
 
