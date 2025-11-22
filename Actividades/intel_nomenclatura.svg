@@ -1,0 +1,71 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- intel_nomenclatura.svg
+     Gráfico didáctico: nomenclatura Intel (ej: Core i7-12700K) -->
+<svg xmlns="http://www.w3.org/2000/svg" width="1200" height="420" viewBox="0 0 1200 420" role="img" aria-labelledby="title desc">
+  <title id="title">Nomenclatura Intel - descomposición del nombre</title>
+  <desc id="desc">Diagrama que muestra las partes de un nombre de CPU Intel: familia, nivel, generación, SKU y sufijo</desc>
+
+  <rect x="12" y="12" width="1176" height="396" rx="14" fill="#f5f7fb" stroke="#d7e2f5" stroke-width="2"/>
+  
+  <!-- Header -->
+  <text x="40" y="60" font-family="Segoe UI, Arial, sans-serif" font-size="24" fill="#0b3b6f" font-weight="700">Descomposición de la nomenclatura Intel</text>
+  <text x="40" y="92" font-family="Segoe UI, Arial, sans-serif" font-size="16" fill="#2b3f55">
+    Ejemplo: <tspan font-weight="700">Intel Core i7-12700K</tspan>
+  </text>
+
+  <!-- Big name box -->
+  <rect x="40" y="110" width="1120" height="90" rx="10" fill="#ffffff" stroke="#cfe0fb" stroke-width="1"/>
+  <text x="70" y="160" font-family="Segoe UI, Arial, sans-serif" font-size="36" fill="#0b3b6f" font-weight="700">Intel Core <tspan fill="#1b5fbf">i7</tspan>-<tspan fill="#1b5fbf">12700</tspan><tspan fill="#b33f2c">K</tspan></text>
+
+  <!-- Partition lines -->
+  <line x1="260" y1="120" x2="260" y2="200" stroke="#e2eefc" stroke-width="2"/>
+  <line x1="400" y1="120" x2="400" y2="200" stroke="#e2eefc" stroke-width="2"/>
+  <line x1="680" y1="120" x2="680" y2="200" stroke="#e2eefc" stroke-width="2"/>
+  <line x1="1000" y1="120" x2="1000" y2="200" stroke="#e2eefc" stroke-width="2"/>
+
+  <!-- Labels under the big name -->
+  <text x="70" y="205" font-family="Segoe UI, Arial, sans-serif" font-size="14" fill="#123b61">Marca / Familia</text>
+  <text x="270" y="205" font-family="Segoe UI, Arial, sans-serif" font-size="14" fill="#123b61">Nivel (i3/i5/i7/i9)</text>
+  <text x="420" y="205" font-family="Segoe UI, Arial, sans-serif" font-size="14" fill="#123b61">Generación</text>
+  <text x="690" y="205" font-family="Segoe UI, Arial, sans-serif" font-size="14" fill="#123b61">SKU / Posición en la gama</text>
+  <text x="1010" y="205" font-family="Segoe UI, Arial, sans-serif" font-size="14" fill="#123b61">Sufijo (característica)</text>
+
+  <!-- Explanatory boxes -->
+  <g transform="translate(40,230)" font-family="Segoe UI, Arial, sans-serif">
+    <rect x="0" y="0" width="340" height="150" rx="8" fill="#ffffff" stroke="#d9e9ff"/>
+    <text x="14" y="26" font-size="15" font-weight="700" fill="#0b3b6f">Marca / Familia</text>
+    <text x="14" y="52" font-size="13" fill="#2b3f55">Indica el fabricante y la línea (ej.: Intel Core, Pentium, Xeon).</text>
+    <text x="14" y="74" font-size="13" fill="#2b3f55">La familia "Core" es la más común en PCs y portátiles.</text>
+
+    <rect x="380" y="0" width="340" height="150" rx="8" fill="#ffffff" stroke="#d9e9ff"/>
+    <text x="394" y="26" font-size="15" font-weight="700" fill="#0b3b6f">Nivel (i3 / i5 / i7 / i9)</text>
+    <text x="394" y="52" font-size="13" fill="#2b3f55">Indica la gama: i3 entrada, i5 intermedio, i7 alto, i9 entusiasta/profesional.</text>
+    <text x="394" y="74" font-size="13" fill="#2b3f55">No es absoluto: comparar SKU y generación también es crucial.</text>
+
+    <rect x="760" y="0" width="340" height="150" rx="8" fill="#ffffff" stroke="#d9e9ff"/>
+    <text x="774" y="26" font-size="15" font-weight="700" fill="#0b3b6f">Generación / SKU / Sufijo</text>
+    <text x="774" y="52" font-size="13" fill="#2b3f55">Generación → primeros dígitos después de la gama (ej.: 12 en 12700 = 12ª gen).</text>
+    <text x="774" y="74" font-size="13" fill="#2b3f55">SKU → indica la posición dentro de la generación (700 = gama alta de esa generación).</text>
+    <text x="774" y="96" font-size="13" fill="#2b3f55">Sufijo → letra final (K, F, U, H, etc.) que define características prácticas.</text>
+  </g>
+
+  <!-- Legend of common suffixes -->
+  <g transform="translate(40,390)">
+    <text x="0" y="-8" font-family="Segoe UI, Arial, sans-serif" font-size="13" fill="#0b3b6f" font-weight="700">Sufijos más comunes:</text>
+    <rect x="0" y="6" width="1160" height="12" fill="#f7fbff" stroke="#e0efff"/>
+    <g font-family="Segoe UI, Arial, sans-serif" font-size="12" fill="#1b3b5e">
+      <text x="8" y="26">K = desbloqueado (overclock).</text>
+      <text x="140" y="26">F = sin iGPU (requiere GPU dedicada).</text>
+      <text x="300" y="26">KF = K + F (desbloqueado sin iGPU).</text>
+      <text x="460" y="26">H = alto rendimiento (portátiles).</text>
+      <text x="640" y="26">U = ultra bajo consumo (portátiles).</text>
+      <text x="820" y="26">T = bajo consumo (escritorio).</text>
+      <text x="950" y="26">G = GPU específica (historical/partners).</text>
+    </g>
+  </g>
+
+  <!-- Footer -->
+  <text x="40" y="410" font-family="Segoe UI, Arial, sans-serif" font-size="11" fill="#6b7a8a">
+    Nota: La interpretación puede cambiar ligeramente con nuevas series; siempre comprobar ficha técnica del fabricante.
+  </text>
+</svg>

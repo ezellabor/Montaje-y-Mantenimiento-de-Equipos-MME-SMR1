@@ -1,0 +1,308 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+<meta charset="utf-8" />
+<meta name="viewport" content="width=device-width,initial-scale=1" />
+<title>Actividad autocorregible — Nomenclatura Intel</title>
+<style>
+  :root{
+    --bg:#f6f9ff; --card:#fff; --accent:#0b4db2; --muted:#556678;
+  }
+  body{ font-family: "Segoe UI", Arial, sans-serif; margin:0; background:var(--bg); color:var(--muted);}
+  .wrap{ max-width:1100px; margin:26px auto; padding:20px; }
+  header{ display:flex; gap:18px; align-items:center; }
+  h1{ margin:0; color:var(--accent); font-size:22px; }
+  p.lead{ margin:6px 0 18px 0; color:#2f455a; }
+  .card{ background:var(--card); padding:18px; border-radius:10px; box-shadow:0 6px 18px rgba(10,30,70,0.06); margin-bottom:16px; }
+  .two-col{ display:grid; grid-template-columns: 1fr 360px; gap:18px; align-items:start; }
+  table{ width:100%; border-collapse:collapse; }
+  th, td{ border:1px solid #e6eef9; padding:8px; text-align:center; }
+  th{ background:#f0f6ff; color:#0b3b6f; }
+  input[type="text"]{ width:100%; padding:6px; border-radius:6px; border:1px solid #dfeaf8; }
+  .btn{ background:var(--accent); color:#fff; padding:10px 14px; border-radius:8px; border:0; cursor:pointer; font-weight:700; }
+  .result{ padding:10px; border-radius:8px; margin-top:12px; display:none; }
+  .correct{ background:#e6fbef; color:#0f6b2b; border:1px solid #bfe9c7; }
+  .wrong{ background:#fff1f2; color:#8b1d2b; border:1px solid #f2c8cd; }
+  .explain{ font-size:13px; color:#284559; margin-top:6px; }
+  .score{ font-weight:800; color:var(--accent); }
+  .small{ font-size:13px; color:#5c6e7f; }
+  .footer{ text-align:right; font-size:13px; color:#6b7888; margin-top:10px; }
+  @media (max-width:980px){ .two-col{ grid-template-columns: 1fr; } .card{ padding:12px; } }
+</style>
+</head>
+<body>
+  <div class="wrap">
+    <header>
+      <div>
+        <h1>Actividad autocorregible — Nomenclatura Intel</h1>
+        <p class="lead">Interpreta nombres de procesadores y responde preguntas. Pulsa <strong>Comprobar</strong> para autocalificar.</p>
+      </div>
+      <div style="margin-left:auto;" class="small">Profesor: adapta preguntas si quieres</div>
+    </header>
+
+    <div class="two-col">
+      <!-- Left column: actividad -->
+      <div>
+
+        <div class="card" id="svgCard">
+          <!-- Inline SVG (preview) -->
+          <!-- Si prefieres usar el archivo externo, reemplaza por <object data="intel_nomenclatura.svg" type="image/svg+xml" width="100%"> -->
+          <!-- (SVG inline reducido para que el HTML sea autónomo) -->
+          <svg xmlns="http://www.w3.org/2000/svg" width="100%" height="200" viewBox="0 0 1200 420" aria-hidden="true" focusable="false">
+            <rect x="12" y="12" width="1176" height="396" rx="14" fill="#f5f7fb" stroke="#d7e2f5" stroke-width="2"/>
+            <text x="40" y="60" font-family="Segoe UI, Arial, sans-serif" font-size="24" fill="#0b3b6f" font-weight="700">Intel Core i7-12700K</text>
+            <text x="40" y="95" font-family="Segoe UI, Arial, sans-serif" font-size="14" fill="#2b3f55">Ejemplo: familia · generación · SKU · sufijo</text>
+          </svg>
+          <div class="small explain">Nota: ver el SVG completo (más detallado) en el archivo <code>intel_nomenclatura.svg</code>.</div>
+        </div>
+
+        <div class="card" id="exercise">
+          <h3 style="margin-top:0;color:#0b3b6f">A. Interpreta los siguientes procesadores</h3>
+          <p class="small">Rellena cada casilla y pulsa <strong>Comprobar</strong>.</p>
+          <table>
+            <thead>
+              <tr><th>Procesador</th><th>Generación</th><th>Gama</th><th>¿GPU integrada?</th><th>¿OC?</th><th>Tipo equipo</th></tr>
+            </thead>
+            <tbody>
+              <tr>
+                <td style="text-align:left">Intel Core i5-11400</td>
+                <td><input id="q1g" type="text" placeholder="ej: 11"></td>
+                <td><input id="q1gam" type="text" placeholder="ej: i5 / media"></td>
+                <td><input id="q1gpu" type="text" placeholder="Sí / No"></td>
+                <td><input id="q1oc" type="text" placeholder="Sí / No"></td>
+                <td><input id="q1type" type="text" placeholder="Ofimática / Gaming"></td>
+              </tr>
+              <tr>
+                <td style="text-align:left">Intel Core i7-10700K</td>
+                <td><input id="q2g" type="text"></td>
+                <td><input id="q2gam" type="text"></td>
+                <td><input id="q2gpu" type="text"></td>
+                <td><input id="q2oc" type="text"></td>
+                <td><input id="q2type" type="text"></td>
+              </tr>
+              <tr>
+                <td style="text-align:left">Intel Core i9-13900KF</td>
+                <td><input id="q3g" type="text"></td>
+                <td><input id="q3gam" type="text"></td>
+                <td><input id="q3gpu" type="text"></td>
+                <td><input id="q3oc" type="text"></td>
+                <td><input id="q3type" type="text"></td>
+              </tr>
+              <tr>
+                <td style="text-align:left">Intel Core i5-1240P</td>
+                <td><input id="q4g" type="text"></td>
+                <td><input id="q4gam" type="text"></td>
+                <td><input id="q4gpu" type="text"></td>
+                <td><input id="q4oc" type="text"></td>
+                <td><input id="q4type" type="text"></td>
+              </tr>
+              <tr>
+                <td style="text-align:left">Intel Core i3-10100F</td>
+                <td><input id="q5g" type="text"></td>
+                <td><input id="q5gam" type="text"></td>
+                <td><input id="q5gpu" type="text"></td>
+                <td><input id="q5oc" type="text"></td>
+                <td><input id="q5type" type="text"></td>
+              </tr>
+            </tbody>
+          </table>
+
+          <div style="margin-top:12px; display:flex; gap:8px; align-items:center;">
+            <button class="btn" id="check1">Comprobar sección A</button>
+            <div id="resA" class="result"></div>
+          </div>
+        </div>
+
+        <div class="card" id="partB">
+          <h3 style="margin-top:0;color:#0b3b6f">B. Preguntas teóricas (selecciona / escribe)</h3>
+          <ol>
+            <li>
+              ¿Qué indica la primera cifra después del guion?
+              <div><input id="b1" type="text" placeholder="ej: Generación (12 → 12ª gen)"></div>
+            </li>
+            <li style="margin-top:10px;">
+              ¿Qué significa el sufijo <strong>F</strong>?
+              <div>
+                <label><input name="b2" type="radio" value="a"> A) Inteligencia artificial integrada</label><br>
+                <label><input name="b2" type="radio" value="b"> B) Sin GPU integrada (requiere gráfica dedicada)</label><br>
+                <label><input name="b2" type="radio" value="c"> C) Versión para portátiles</label>
+              </div>
+            </li>
+            <li style="margin-top:10px;">
+              ¿Qué diferencia hay entre <strong>K</strong> y <strong>KF</strong>?
+              <div><input id="b3" type="text" placeholder="resumen corto"></div>
+            </li>
+            <li style="margin-top:10px;">
+              En un portátil de gran autonomía, ¿qué sufijo conviene más: <strong>H</strong>, <strong>U</strong> o <strong>K</strong>?
+              <div>
+                <select id="b4">
+                  <option value="">-- selecciona --</option>
+                  <option value="H">H (alto rendimiento)</option>
+                  <option value="U">U (ultra bajo consumo)</option>
+                  <option value="K">K (overclock)</option>
+                </select>
+              </div>
+            </li>
+            <li style="margin-top:10px;">
+              ¿Es buena idea elegir un procesador con sufijo <strong>F</strong> para un equipo gaming sin tarjeta gráfica dedicada?
+              <div>
+                <label><input type="radio" name="b5" value="si"> Sí</label>
+                &nbsp;&nbsp;
+                <label><input type="radio" name="b5" value="no"> No</label>
+              </div>
+            </li>
+          </ol>
+
+          <div style="margin-top:12px; display:flex; gap:8px; align-items:center;">
+            <button class="btn" id="checkB">Comprobar sección B</button>
+            <div id="resB" class="result"></div>
+          </div>
+
+        </div>
+
+        <div class="card">
+          <h3 style="margin-top:0;color:#0b3b6f">C. Reto (actividad fuera de línea)</h3>
+          <p class="small">Busca dos procesadores en una tienda online y explica en 2–3 líneas para qué equipo servirían (ofimática, gaming, portátil ultraligero, estación de trabajo).</p>
+        </div>
+
+      </div>
+
+      <!-- Right column: claves y ayuda -->
+      <aside>
+        <div class="card">
+          <h3 style="margin-top:0;color:#0b3b6f">Clave de corrección (calculada por la actividad)</h3>
+          <ul class="small">
+            <li><strong>i5-11400:</strong> Gen 11 → i5 (media) → GPU sí → OC no → Equipo: equipo de oficina / ofimática.</li>
+            <li><strong>i7-10700K:</strong> Gen 10 → i7 (alta) → GPU sí → OC sí (K) → Equipo: gaming/estación (sobremesa).</li>
+            <li><strong>i9-13900KF:</strong> Gen 13 → i9 (entusiasta) → GPU no (F) → OC sí (K) → Equipo: gaming con GPU dedicada / estación.</li>
+            <li><strong>i5-1240P:</strong> Gen 12 → i5 (portátil) → GPU integrada (sí) → OC no → Equipo: portátil ultraligero / productividad.</li>
+            <li><strong>i3-10100F:</strong> Gen 10 → i3 (básico) → GPU no (F) → OC no → Equipo: sobremesa con GPU dedicada (entrada).</li>
+          </ul>
+          <div class="explain">
+            <strong>Consejo docente:</strong> admite variaciones en "tipo de equipo" si la justificación es correcta.
+          </div>
+        </div>
+
+        <div class="card">
+          <h3 style="margin-top:0;color:#0b3b6f">Puntuación</h3>
+          <p class="small">Sección A: 10 puntos (2 por fila). Sección B: 10 puntos. Puntuación total: 20.</p>
+        </div>
+
+        <div class="card">
+          <h3 style="margin-top:0;color:#0b3b6f">Uso</h3>
+          <p class="small">Pulsa los botones "Comprobar" para autocorregir. Puedes editar los textos de corrección en el código JS si quieres adaptar la evaluación.</p>
+        </div>
+
+      </aside>
+    </div>
+
+    <div class="footer">Material: adaptado para ASIR — profesor/a puede modificar en 2 minutos.</div>
+  </div>
+
+<script>
+  // Helper: normalize answers
+  function clean(s){ return (s||'').toString().trim().toLowerCase(); }
+
+  // Section A correct answers (flexible)
+  const answersA = {
+    q1: {gen:'11', gam:'i5', gpu:'sí', oc:'no'},
+    q2: {gen:'10', gam:'i7', gpu:'sí', oc:'sí'},
+    q3: {gen:'13', gam:'i9', gpu:'no', oc:'sí'},
+    q4: {gen:'12', gam:'i5', gpu:'sí', oc:'no'},
+    q5: {gen:'10', gam:'i3', gpu:'no', oc:'no'}
+  };
+
+  function checkA(){
+    let score = 0;
+    let total = 10;
+    // row 1
+    const rowIds = [
+      ['q1g','q1gam','q1gpu','q1oc','q1type'],
+      ['q2g','q2gam','q2gpu','q2oc','q2type'],
+      ['q3g','q3gam','q3gpu','q3oc','q3type'],
+      ['q4g','q4gam','q4gpu','q4oc','q4type'],
+      ['q5g','q5gam','q5gpu','q5oc','q5type']
+    ];
+    for(let i=0;i<5;i++){
+      const key = 'q'+(i+1);
+      const gen = clean(document.getElementById(rowIds[i][0]).value);
+      const gam = clean(document.getElementById(rowIds[i][1]).value);
+      const gpu = clean(document.getElementById(rowIds[i][2]).value).replace('si','sí');
+      const oc  = clean(document.getElementById(rowIds[i][3]).value).replace('si','sí');
+      // check each expected (gen/gam/gpu/oc) -> award 0.5 point each (total 2 per row)
+      let rowScore = 0;
+      if(gen === answersA[key].gen) rowScore += 0.5;
+      // accept "i5" or "5" or "media"
+      const gamAccepted = [answersA[key].gam, answersA[key].gam.replace('i',''), (answersA[key].gam==='i5'?'media':'')].filter(Boolean);
+      if(gamAccepted.some(x=>x && gam.includes(x))) rowScore += 0.5;
+      if(gpu.includes(answersA[key].gpu)) rowScore += 0.5;
+      if(oc.includes(answersA[key].oc)) rowScore += 0.5;
+      // heuristic for type: teacher judgement; give 0.0-0.5 extra if reasonable keyword found
+      const typeVal = clean(document.getElementById(rowIds[i][4]).value);
+      const typeOk = (typeVal.includes('ofic')||typeVal.includes('ofim')||typeVal.includes('gaming')||typeVal.includes('port')||typeVal.includes('estación')||typeVal.includes('ultra'));
+      if(typeOk) rowScore += 0.5;
+      score += rowScore;
+    }
+    // Normalize: currently score max = 5rows * 2 = 10 points
+    // Show result
+    const res = document.getElementById('resA');
+    res.style.display = 'block';
+    res.className = 'result ' + (score>=7 ? 'correct' : (score>=4 ? 'wrong' : 'wrong'));
+    res.innerHTML = '<div><strong>Puntuación sección A:</strong> <span class="score">'+score.toFixed(1)+'</span> / 10</div>';
+    if(score < 10){
+      res.innerHTML += '<div class="explain">Revisa la clave en la columna derecha. Acepta variaciones en "tipo de equipo" si la justificación es correcta.</div>';
+    } else {
+      res.innerHTML += '<div class="explain">Perfecto — todas las respuestas correctas.</div>';
+    }
+  }
+
+  document.getElementById('check1').addEventListener('click', checkA);
+
+  // Section B checking
+  function checkB(){
+    let score = 0;
+    // 1) generación
+    const b1 = clean(document.getElementById('b1').value);
+    if(b1.includes('gener')||b1.match(/^(\d{1,2})$/) || b1.includes('12') || b1.includes('13') || b1.includes('10') || b1.includes('11')){
+      score += 2;
+    }
+    // 2) suffix F (radio)
+    const b2 = document.querySelector('input[name="b2"]:checked');
+    if(b2 && b2.value === 'b') score += 2;
+    // 3) K vs KF
+    const b3 = clean(document.getElementById('b3').value);
+    if((b3.includes('desbloq') || b3.includes('overclock') || b3.includes('k') ) && (b3.includes('sin') || b3.includes('no') || b3.includes('gpu') || b3.includes('sin gpu') || b3.includes('sin integrada') || b3.includes('f'))){
+      score += 2;
+    } else {
+      // partial credit for mentioning K only (overclock)
+      if(b3.includes('desbloq') || b3.includes('overclock')) score += 1;
+      if(b3.includes('sin') || b3.includes('gpu')) score += 1;
+    }
+    // 4) preferible para autonomía -> U
+    const b4 = document.getElementById('b4').value;
+    if(b4 === 'U') score += 2;
+    // 5) F in gaming without GPU -> should be No
+    const b5 = document.querySelector('input[name="b5"]:checked');
+    if(b5 && b5.value === 'no') score += 2;
+
+    const resB = document.getElementById('resB');
+    resB.style.display = 'block';
+    resB.className = 'result ' + (score>=14 ? 'correct' : (score>=8 ? 'wrong' : 'wrong'));
+    resB.innerHTML = '<div><strong>Puntuación sección B:</strong> <span class="score">'+score+'</span> / 10</div>';
+    // Provide brief feedback
+    let feedback = '<div class="explain">';
+    feedback += '<ul>';
+    feedback += '<li><strong>1.</strong> Indica la <em>generación</em> (ej: 12 → 12ª gen).</li>';
+    feedback += '<li><strong>2.</strong> <strong>F</strong> = sin GPU integrada; requiere tarjeta gráfica dedicada.</li>';
+    feedback += '<li><strong>3.</strong> <strong>K</strong> = desbloqueado (overclock). <strong>KF</strong> = desbloqueado <em>y</em> sin GPU integrada.</li>';
+    feedback += '<li><strong>4.</strong> <strong>U</strong> es el sufijo preferible para portátiles de gran autonomía (ultra bajo consumo).</li>';
+    feedback += '<li><strong>5.</strong> No conviene un sufijo F en un equipo gaming sin GPU dedicada (porque el procesador no tiene iGPU).</li>';
+    feedback += '</ul></div>';
+    resB.innerHTML += feedback;
+  }
+
+  document.getElementById('checkB').addEventListener('click', checkB);
+</script>
+
+</body>
+</html>
