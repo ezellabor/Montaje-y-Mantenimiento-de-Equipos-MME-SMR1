@@ -93,6 +93,38 @@ Mantener módulos limpios (polvo) y bien insertados.
 
 Comprobar compatibilidad antes de comprar.
 
+---
+
+✅ ¿Qué significa CL en la memoria RAM?
+
+CL = CAS Latency (latencia CAS)
+Es el número de ciclos que tarda la RAM en entregar un dato después de que el controlador de memoria lo pide.
+
+👉 Cuanto menor es el CL → más rápida es la respuesta.
+
+Ejemplo:
+
+CL16 responde antes que CL18, aunque tengan misma velocidad.
+
+---
+
+✅ ¿Qué significa MT/s?
+
+MT/s = MegaTransfers por segundo
+Es la unidad que mide la velocidad real de transferencia de la RAM.
+
+No es exactamente lo mismo que "MHz".
+
+📌 OJO:
+
+DDR4 3200 MHz → en realidad trabaja a 1600 MHz pero con doble transferencia → 3200 MT/s
+
+DDR significa Double Data Rate, por eso transmite 2 datos por ciclo.
+
+👉 MT/s es la medida correcta de velocidad de RAM, no MHz.
+
+
+
 
 ## 2.9. SINTESIS
 
@@ -103,6 +135,7 @@ Comprobar compatibilidad antes de comprar.
 >- FORMATO → DIMM / SO-DIMM
 >- VOLTAJE → 1.2–1.35 V
 >- USO → Sistema operativo, programas, datos temporales
+
 
 
 
