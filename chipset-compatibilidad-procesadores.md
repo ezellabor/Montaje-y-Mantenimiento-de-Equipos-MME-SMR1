@@ -6,7 +6,7 @@
 | Chipset                                      | CPU compatibles                       | Razones / Características                                                                 |
 |----------------------------------------------|---------------------------------------|---------------------------------------------------------------------------------------------|
 | **- Serie A (A520)**                           | ```AMD Athlon```                      | Básicas, económicas, **no soportan overclocking**.                                          |
-| **- Serie B (B550, B650/B650E, B850/B850E)**   | ```Ryzen serie X (gama media) <br> Ryzen serie G``` | Buen precio, **soportan overclocking**, PCIe 4.0.                                          |
+| **- Serie B (B550, B650/B650E, B850/B850E)**   | ```Ryzen serie X (gama media), Ryzen serie G``` | Buen precio, **soportan overclocking**, PCIe 4.0.                                          |
 | **- Serie X (X570, X670/X670E, X870/X870E)**   | ```Ryzen serie X (gama alta)```             | Mucha conectividad, PCIe 4.0 y 5.0, **VRM potentes**, soportan OC.                         |
 | **- Serie TRX50**                              | ```AMD Threadripper```                   | Plataforma entusiasta, **única opción disponible** para Threadripper.                      |
 
