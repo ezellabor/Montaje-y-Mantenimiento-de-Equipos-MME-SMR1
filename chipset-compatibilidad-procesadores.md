@@ -1,10 +1,8 @@
-# Chipsets: Compatibilidad  
+# Chipsets y compatibilidad con procesadores (Intel y AMD)
 
-## AMD vs Intel  
-
+---
 
 ## AMD
-
 | Chipset                                      | CPU compatibles                       | Razones / Características                                                                 |
 |----------------------------------------------|---------------------------------------|---------------------------------------------------------------------------------------------|
 | **Serie A (A520)**                           | AMD Athlon                            | Básicas, económicas, **no soportan overclocking**.                                          |
@@ -16,11 +14,9 @@
 
 ## Intel  
 
-| Chipset                      | CPU compatibles                              | Razones / Características                                                             |  
-+-----------------------------+|----------------------------------------------|-----------------------------------------------------------------------------------------+|
+ Chipset                      | CPU compatibles                             | Razones / Características                                                             |
+|------------------------------|----------------------------------------------|-----------------------------------------------------------------------------------------|
 | **Serie H (H610)**           | Intel Pentium y Celeron                      | Opción más barata de Intel.                                                            |
 | **Serie B / Serie H (B760 / H760)** | Intel Core i3, i5, i7 (bloqueados)      | Precio equilibrado, PCIe 4.0, buena conectividad, soporte para DDR5.                   |
-| **Serie Z (Z790 / Z890)**    | Intel Core i5, i7, i9 (K y KF)               | **Única que soporta overclocking**, PCIe 5.0, PCIe 4.0 y RAM DDR5.  
+| **Serie Z (Z790 / Z890)**    | Intel Core i5, i7, i9 (K y KF)               | **Única que soporta overclocking**, PCIe 5.0, PCIe 4.0 y RAM DDR5.            |  
 
-
-|
