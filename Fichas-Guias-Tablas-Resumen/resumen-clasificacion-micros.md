@@ -1,10 +1,10 @@
->Los microprocesadores son circuitos integrados encargados de ejecutar instrucciones y realizar cálculos dentro de un sistema informático.
+>Los **microprocesadores** son circuitos integrados encargados de ejecutar instrucciones y realizar cálculos dentro de un sistema informático.
 
 ## Clasificación de Microprocesadores
 
 | **Criterio de clasificación**                     | **Descripción / Qué distingue**                                   | **Ejemplos / Consideraciones**                                                                                    |
 | ------------------------------------------------- | ----------------------------------------------------------------- | ----------------------------------------------------------------------------------------------------------------- |
-| **Según el tipo**                                 | Tipo de arquitectura y propósito del procesador.                  | *CISC* (x86), *RISC* (ARM), *SoC*, *APU*, *CPU*, *Microcontroladores*.                                            |
+| Según **tipo arquitectura**                      | Tipo de arquitectura y propósito del procesador.                  | *CISC* (x86), *RISC* (ARM), *SoC*, *APU*, *CPU*, *Microcontroladores*.                                            |
 | (1) Cantidad de **transistores**                | Influye en capacidad de cálculo, eficiencia y miniaturización.    | Evolución histórica: miles → millones → **miles de millones (billions)**.                                         |
 | (2) **Frecuencia** de reloj                     | Número de ciclos por segundo para procesar instrucciones.         | Se mide en **GHz**. Un mayor valor no siempre implica mejor rendimiento si la arquitectura es diferente.          |
 | (3) **Temperatura** operativa                   | Rango térmico que puede soportar sin perder rendimiento o fallar. | Procesadores móviles y embebidos → bajas temperaturas; estaciones y gaming → requieren sistemas de refrigeración. |
