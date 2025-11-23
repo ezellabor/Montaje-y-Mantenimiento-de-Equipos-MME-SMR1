@@ -1,4 +1,5 @@
-# Chipsets: Compatibilidad
+# Chipsets: Compatibilidad  
+
 ```AMD vs Intel**
 
 ## AMD
