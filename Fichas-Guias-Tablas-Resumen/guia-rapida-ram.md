@@ -8,3 +8,12 @@
 | **Ancho de banda**            | Velocidad de transferencia      | Aumenta con MT/s                                                                       | DDR5-6000 → ancho de banda muy alto |
 | **Latencia real (ns)**        | Tiempo de respuesta             | Menor = más rápida respondiendo                                                        | DDR4-3200 CL16 → ~10 ns             |
 | **Comparación típica**        | Ancho de banda vs latencia      | DDR5: mayor ancho de banda, peor latencia pura                                         | DDR5-6000 CL36 ≈ 12 ns              |
+
+
+- **MHz:** frecuencia real del reloj.
+- **MT/s:** velocidad efectiva (doble de MHz en DDR).
+- **CL:** número de ciclos de espera.
+
+>Rendimiento óptimo:
+>
+>👉 Más MT/s + Menos CL = Mejor rendimiento general
