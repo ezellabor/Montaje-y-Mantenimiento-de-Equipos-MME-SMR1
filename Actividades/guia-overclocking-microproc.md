@@ -9,7 +9,7 @@
 
 ---
 
-## **2. Consecuencias del Overclocking**
+## **2. Consecuencias del overclocking**
 
 ### **Ventajas:**
 - Mayor velocidad de procesamiento.
