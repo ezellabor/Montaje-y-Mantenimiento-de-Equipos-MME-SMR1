@@ -27,6 +27,11 @@
 | **Voltaje** | DDR4: 1.2V, DDR5: 1.1V | XMP/EXPO puede subir voltaje para overclock seguro |
 | **Canales** | Single, Dual, Quad | • Single → Más lento<br>• Dual → Recomendado<br>• Quad → Estaciones y servidores |
 
+| Sigla   | Significa             | Traducción                               |
+| ------- | --------------------- | ---------------------------------------- |
+| **CAS** | Column Address Strobe | Pulso/orden para seleccionar una columna |
+| **CL**  | CAS Latency           | Latencia de ese comando                  |
+
 
 ## 2.2 - Factores físicos
 
@@ -124,7 +129,11 @@ DDR significa Double Data Rate, por eso transmite 2 datos por ciclo.
 👉 MT/s es la medida correcta de velocidad de RAM, no MHz.
 
 
-
+## 2.9. Diferencias entre ATX, Micro-ATX y Mini-ITX  
+Factor de forma	ATX	Micro-ATX
+Dimensiones	30,5 x 24,4 cm	24,4 x 24,4 cm
+Ranuras RAM	4 a 8 ranuras	2 a4 ranuras
+Ranuras PCIe	4 a 7 ranuras	2 a 3 ranuras
 
 ## 2.9. SINTESIS
 
