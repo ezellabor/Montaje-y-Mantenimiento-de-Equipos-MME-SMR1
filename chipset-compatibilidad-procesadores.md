@@ -2,7 +2,7 @@
 
 ---
 
-##|   Procesadores AMD
+## |   Procesadores AMD
 | Chipset                                      | CPU compatibles                       | Razones / Características                                                                 |
 |----------------------------------------------|---------------------------------------|---------------------------------------------------------------------------------------------|
 | **Serie A (A520)**                           | ```AMD Athlon```                      | Básicas, económicas, **no soportan overclocking**.                                          |
