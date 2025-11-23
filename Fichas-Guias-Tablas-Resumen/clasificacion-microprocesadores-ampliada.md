@@ -2,15 +2,16 @@
 ---
 
 ### Clasificación de micros según:
-- Tipo (arquitectura y proposito)
+- Tipo (arquitectura y propósito)
 - Número de transistores
 - Frecuencia del reloj
-- Temperatura y dispación térmica
+- Temperatura y disipación térmica
 - Fabricante
 - Tecnología (nanómetros)
 - TDP
 - Compatibilidad con Chipset
 - Compatibilidad con socket (PCB)
+##
 
 > **Compatibilidad** implica:  
 >- Mismo socket físico
@@ -20,7 +21,7 @@
 
 ---
 
-## 1️⃣ Según el tipo (arquitectura y propósito)
+## 1️⃣ Tipo de Arquitectura y propósito
 
 | Tipo                                       | Descripción                                                                       | Usos habituales                                 |
 | ------------------------------------------ | --------------------------------------------------------------------------------- | ----------------------------------------------- |
@@ -31,16 +32,16 @@
 | **Microcontroladores (MCU)**               | Procesador con memoria y periféricos integrados para control dedicado.            | Electrónica, automatización e IoT.              |
 | **Procesadores de alto rendimiento (HPC)** | Multinúcleo de muy alta potencia para cálculo intensivo.                          | Servidores y supercomputación.                  |
 
-- CISC (x86 / x64)
-- RISC (ARM)
-- SoC (System on Chip)
-- APU (CPU + GPU integrada)
-- Microcontroladores (MCU)
-- HPC / servidores
+>- CISC (x86 / x64)
+>- RISC (ARM)
+>- SoC (System on Chip)
+>- APU (CPU + GPU integrada)
+>- Microcontroladores (MCU)
+>- HPC / servidores
 
 ---
 
-## 2️⃣ Según la cantidad de transistores
+## 2️⃣ Cantidad de transistores
 
 | Época | Nº de transistores               | Ejemplo                  |
 | ----- | -------------------------------- | ------------------------ |
@@ -56,20 +57,15 @@
 
 ---
 
-## 3️⃣ Según la frecuencia de reloj
+## 3️⃣ Frecuencia de reloj
 
-Indica los ciclos por segundo que ejecuta la CPU.
-
-Se mide en MHz o GHz.
-
-Frecuencias bajas (1.0 – 2.5 GHz) → dispositivos móviles y eficiencia energética.
-
-Frecuencias medias (2.5 – 4.0 GHz) → equipos de uso general.
-
-Frecuencias altas (4.0 – 6.5 GHz e incluso +) → gaming y alto rendimiento.
-
-> **Importante:**
-> dos procesadores con igual frecuencia pueden rendir de forma diferente según la arquitectura interna e **IPC** (Instructions Per Cycle).
+- Indica los ciclos por segundo que ejecuta la CPU.
+- Se mide en MHz o GHz.
+- Frecuencias bajas (1.0 – 2.5 GHz) → dispositivos móviles y eficiencia energética.
+- Frecuencias medias (2.5 – 4.0 GHz) → equipos de uso general.
+- Frecuencias altas (4.0 – 6.5 GHz e incluso +) → gaming y alto rendimiento.
+  
+⚠ Dos procesadores con igual frecuencia pueden rendir de forma diferente según la arquitectura interna e **IPC** (Instructions Per Cycle).
 
 - MHz / GHz
 - Baja: 1.0–2.5 GHz
@@ -80,7 +76,7 @@ Frecuencias altas (4.0 – 6.5 GHz e incluso +) → gaming y alto rendimiento.
 
 ---
 
-## 4️⃣ Según la temperatura operativa / disipación térmica
+## 4️⃣ Temperatura operativa / disipación térmica
 
 | Categoría  | Temperatura permitida | Características                         |
 | ---------- | --------------------- | --------------------------------------- |
@@ -89,32 +85,20 @@ Frecuencias altas (4.0 – 6.5 GHz e incluso +) → gaming y alto rendimiento.
 | Alta       | 85–100+ °C            | Gaming, estaciones, servidores          |
 | Industrial | -40 – 125 °C          | Sistemas embebidos en entornos extremos |
 
+---
 
-- Baja (móviles)
-- Moderada (PC)
-- Alta (gaming/servidores)
-- Industrial (–40 a 125 °C)
+## 5️⃣ Consumo de energía (TDP)
+
+|| Rango TDP             | Aplicación típica          |
+| ---------------------- | -------------------------- |
+| Bajo: l5 – 25 W        | Móviles / ultrabooks / ARM |
+| Medio: 35 – 65 W       | Sobremesa general          |
+| Alto:  95 – 150+ W     | Gaming / estaciones        |
+| Muy alto: 200 – 400+ W | Servidores / HPC           |
 
 ---
 
-## 5️⃣ Según el consumo de energía (TDP)
-
-| Rango TDP    | Aplicación típica          |
-| ------------ | -------------------------- |
-| 5 – 25 W     | Móviles / ultrabooks / ARM |
-| 35 – 65 W    | Sobremesa general          |
-| 95 – 150+ W  | Gaming / estaciones        |
-| 200 – 400+ W | Servidores / HPC           |
-
-
-- Bajo: 5–25 W
-- Medio: 35–65 W
-- Alto: 95–150+ W
-- Muy alto: 200–400+ W (HPC)
-
----
-
-## 6️⃣ Según el fabricante
+## 6️⃣ Fabricante
 
 | Fabricante             | Mercado principal                    | Arquitectura      |
 | ---------------------- | ------------------------------------ | ----------------- |
@@ -127,12 +111,10 @@ Frecuencias altas (4.0 – 6.5 GHz e incluso +) → gaming y alto rendimiento.
 | **RISC-V fabricantes** | Variado                              | RISC-V            |
 
 
-- Intel, AMD, ARM, Apple, Qualcomm, IBM, RISC-V
-
 ---
 
 
-## 7️⃣ Según la tecnología de fabricación (nodos en nm)
+## 7️⃣ Tecnología de fabricación (nodos en nm)
 
 | Año aproximado | Nodos comunes                        |
 | -------------- | ------------------------------------ |
@@ -140,13 +122,11 @@ Frecuencias altas (4.0 – 6.5 GHz e incluso +) → gaming y alto rendimiento.
 | 2010–2020      | 32 nm → 22 nm → 14 nm → 10 nm → 7 nm |
 | 2020–2025      | **5 nm → 4 nm → 3 nm → 2 nm**        |
 
-
-- 90 nm → 45 nm → 14 nm → 7 nm → 5 nm → 3 nm → **2 nm**
-- Nodos más pequeños = +transistores –energía –temperatura
+>- Nodos más pequeños:  + transistores – energía – temperatura
 
 ---
 
-## 8️⃣ Según compatibilidad con el chipset
+## 8️⃣ Compatibilidad con Chipset
 
 | Marca | Generación CPU | Chipsets compatibles       |
 | ----- | -------------- | -------------------------- |
@@ -158,25 +138,16 @@ Frecuencias altas (4.0 – 6.5 GHz e incluso +) → gaming y alto rendimiento.
 
 ⚠ Una CPU puede no funcionar con un chipset aun si el socket coincide — depende de soporte del fabricante y BIOS/UEFI.
 
-- AMD AM4 → A320 / B450 / X570…
-- AMD AM5 → A620 / B650 / X670…
-- Intel 12ª–14ª Gen → B660 / Z690 / Z790…
-
 ---
 
-## 9️⃣ Según compatibilidad con la motherboard (socket)
+## 9️⃣ Compatibilidad con placabase (socket)
 
-| Fabri- cante           | Socket reciente     | Ejemplo de CPU           |
+| Fabricante           | Socket reciente     | Ejemplo de CPU           |
 | -------------------- | ------------------- | ------------------------ |
 | Intel                | **LGA1700**         | Core 12ª–14ª Gen         |
 | AMD                  | **AM5**             | Ryzen 7000               |
 | AMD                  | **AM4**             | Ryzen 1000–5000          |
 | Workstation/Servidor | SP5, sTR5, LGA4677… | EPYC, Threadripper, Xeon |
-
-
-- Intel LGA1700
-- AMD AM5 / AM4
-- Servidores: SP5, sTR5, LGA4677, etc.
 
 ---
 
