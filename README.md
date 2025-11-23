@@ -1,6 +1,6 @@
 # SMRI | Montaje y Mantenimiento de Equipos 
 
-![Arquitectura-Von-Neumann] (img/arquitectura_von_newmann.png)  
+![Arquitectura-Von-Neumann](img/arquitectura_von_newmann.png)  
 
 
 >Profesor: Ezequiel Llarena Borges
