@@ -2,7 +2,7 @@
 # Memoria Principal: Randon Access Memory (RAM)
 
 
-## Tipos
+## 1 - Tipos
 
 | Generación | Año aprox | Velocidad típica | Voltaje |
 | ---------- | --------- | ---------------- | ------- |
@@ -15,9 +15,9 @@
 
 > DDR no es compatible entre generaciones (muesca distinta).
 
-## Parámetros clave 
+## 2 - Parámetros clave 
 
-# 📊 Especificaciones de RAM
+### 2.1 - Especificaciones de RAM  
 
 | Característica | Valores Típicos | Recomendación por Uso |
 |---------------|-----------------|----------------------|
@@ -28,12 +28,85 @@
 | **Canales** | Single, Dual, Quad | • Single → Más lento<br>• Dual → Recomendado<br>• Quad → Estaciones y servidores |
 
 
-## Factores físicos
+## 2.2 - Factores físicos
 
 | Formato     | Uso        | Imagen mental        |
 | ----------- | ---------- | -------------------- |
 | **DIMM**    | Sobremesa  | Módulo largo (13 cm) |
 | **SO-DIMM** | Portátiles | Módulo corto (7 cm)  |
+
+
+## 2.3 - Identificar/reconocer una RAM
+
+**Pegatina del fabricante**   
+
+- Tipo → DDR3 / DDR4 / DDR5
+- Velocidad → 3200 MHz, 5200 MT/s…
+- Latencia → CL16, CL40…
+- Capacidad → 8 GB / 16 GB
+- Voltaje → 1.2 V, 1.35 V (XMP)
+
+## 2.4 COMPATIBILIDAD
+
+Depende de:
+
+Placa base (chipset)
+
+Tipo soportado (DDR3/4/5)
+
+Frecuencia máxima
+
+Slots disponibles
+
+CPU (controlador de memoria integrado)
+
+❌ No puedes mezclar DDR3 con DDR4, ni DDR4 con DDR5.
+❌ Mezclar módulos distintos funciona, pero baja al rendimiento más bajo.
+
+---
+
+## 2.5 FALLOS TIPICOS DE LA RAM
+
+Pantallazos azules (BSOD)
+
+Bloqueos aleatorios
+
+Reinicios
+
+Programas que fallan sin motivo
+
+No arranca / pitidos de BIOS
+
+🔧 Herramienta: MemTest86 (diagnóstico completo)
+
+
+## 2.6. BUENAS PRACTICAS
+8. Buenas prácticas
+
+Usar dual channel (2 módulos iguales).
+
+No mezclar marcas/modelos si puedes evitarlo.
+
+Activar XMP/EXPO en BIOS para rendimiento real.
+
+Mantener módulos limpios (polvo) y bien insertados.
+
+Comprobar compatibilidad antes de comprar.
+
+
+## 2.9. SINTESIS
+
+>- TIPO → DDR4 / DDR5  
+>- VELOCIDAD → MHz / MT/s
+>- LATENCIA → CL
+>- CANAL → Single / Dual
+>- FORMATO → DIMM / SO-DIMM
+>- VOLTAJE → 1.2–1.35 V
+>- USO → Sistema operativo, programas, datos temporales
+
+
+
+
 
 
 
