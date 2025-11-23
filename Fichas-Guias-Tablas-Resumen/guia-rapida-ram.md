@@ -1,3 +1,7 @@
+# TABLA RESUMEN —  RAM (CL, MHz, MT/s)
+---
+
+
 | **Concepto**                  | **Significado**                 | **Detalle técnico / Fórmula**                                                          | **Ejemplo**                         |
 | ----------------------------- | ------------------------------- | -------------------------------------------------------------------------------------- | ----------------------------------- |
 | **MHz (Frecuencia real)**     | Reloj real de la RAM            | Indica cuántos ciclos por segundo ejecuta. Las DDR hacen *2 transferencias por ciclo*. | 1600 MHz                            |
