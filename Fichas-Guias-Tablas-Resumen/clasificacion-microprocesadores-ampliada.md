@@ -1,6 +1,16 @@
-# Clasificación de los Microprocesadores
+# Microprocesadores
+### Clasificación de micros según:
+- Tipo (arquitectura y proposito)
+- Número de transistores
+- Frecuencia del reloj
+- Temperatura y dispación térmica
+- Fabricante
+- Tecnología (nanómetros)
+- TDP
+- Compatibilidad con Chipset
+- Compatibilidad con socket (PCB)
 
-> Compatibilidad implica:  
+> **Compatibilidad** implica:  
 >- Mismo socket físico
 >- Chipset soporte
 >- Versión BIOS/UEFI válida
