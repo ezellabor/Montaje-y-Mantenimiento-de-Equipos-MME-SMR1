@@ -1,4 +1,6 @@
-# Microprocesadores
+# Microprocesadores  
+---
+
 ### Clasificación de micros según:
 - Tipo (arquitectura y proposito)
 - Número de transistores
