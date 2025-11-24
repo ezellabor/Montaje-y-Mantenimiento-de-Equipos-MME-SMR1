@@ -1,6 +1,6 @@
 
-# Nomenclatura de procesadores Intel
-> **Objetivo del ejercicio:** aprender a **seleccionar y justificar procesadores según necesidades reales**.
+# 1. Nomenclatura de procesadores Intel
+> **Objetivo:** aprender a **seleccionar y justificar procesadores según necesidades reales**.
 
 La nomenclatura de Intel permite conocer **las características del procesador** a partir de su nombre comercial.
 
@@ -40,6 +40,16 @@ La nomenclatura de Intel permite conocer **las características del procesador**
 | i7-11800H | Alta | 11ª | Sí | Alto rendimiento portátil |
 
 ---
+
+# 2. Núcleos P y E de Intel  
+
+| Tipo de Procesador | Significado | Características Principales | Aplicaciones Típicas |
+|-------------------|-------------|----------------------------|----------------------|
+| **P-Cores** (Núcleos de Rendimiento) | "P" de **Performance** (Rendimiento) | • Núcleos grandes físicamente<br>• Mayor velocidad de reloj<br>• Mayor consumo energético<br>• Soporta Hyper-Threading (2 hilos/núcleo)<br>• Caché L2 independiente por núcleo | • Videojuegos<br>• Aplicaciones CAD<br>• Edición profesional (foto/vídeo)<br>• Tareas de alta exigencia computacional |
+| **E-Cores** (Núcleos de Eficiencia) | "E" de **Efficiency** (Eficiencia) | • Núcleos más pequeños<br>• Menor velocidad de reloj<br>• Consumo energético reducido<br>• Sin Hyper-Threading<br>• Agrupados en módulos de 4 núcleos<br>• Caché L2 compartida por módulo | • Navegación web<br>• Contenido multimedia<br>• Aplicaciones de ofimática<br>• Tareas de fondo<br>• Soporte en streaming y codificación |  
+
+---
+
 
 ## 📝 Ejercicio
 
