@@ -10,16 +10,7 @@
 - Tecnología (nanómetros)
 - TDP
 - Compatibilidad con Chipset
-- Compatibilidad con socket (PCB)
-##
-
-> **Compatibilidad** implica:  
->- Mismo socket físico
->- Chipset soporte
->- Versión BIOS/UEFI válida
->- Perfil de energía adecuado  
-
----
+- Compatibilidad con socket (PCB)  
 
 ## 1️⃣ Tipo de Arquitectura y propósito
 
@@ -128,8 +119,13 @@
 | AMD   | Ryzen AM5      | A620 / B650 / X670…        |
 | Intel | 12ª–14ª Gen    | B660 / Z690 / B760 / Z790  |  
 
-# 
+> **Compatibilidad** implica:  
+>- Mismo socket físico
+>- Chipset soporte
+>- Versión BIOS/UEFI válida
+>- Perfil de energía adecuado  
 
+#
 ⚠ Una CPU puede no funcionar con un chipset aun si el socket coincide — depende de soporte del fabricante y BIOS/UEFI.
 
 ---
