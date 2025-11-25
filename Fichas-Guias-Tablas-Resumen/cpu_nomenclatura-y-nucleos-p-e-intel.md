@@ -77,6 +77,11 @@ Busca dos procesadores Intel reales en una tienda online y explica si encajaría
 
 ---
 
+![multithreading](../img/multithreading-nucleo-cpu.png)
+
+
+
+
 
 
 
