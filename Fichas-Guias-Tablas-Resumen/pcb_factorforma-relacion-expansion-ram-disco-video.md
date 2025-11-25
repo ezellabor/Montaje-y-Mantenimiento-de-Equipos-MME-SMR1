@@ -1,7 +1,7 @@
 # Factor de forma  
 ---  
 
-![factor-forma](../img/pcb-tam-factor-forma.pcb)  
+![factor-forma](../img/tam-pcb-factor-forma.pcb)  
 
 ---
 
