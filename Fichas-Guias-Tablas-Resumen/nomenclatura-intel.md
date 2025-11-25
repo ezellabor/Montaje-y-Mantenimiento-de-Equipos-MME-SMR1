@@ -70,7 +70,7 @@ Busca dos procesadores Intel reales en una tienda online y explica si encajaría
 
 # 2. Núcleos P y E de Intel  
 
-| Tipo de Procesador | Significado | Características Principales | Aplicaciones Típicas |
+| Tipo de Procesador | Significado | Características | Aplicaciones típicas |
 |-------------------|-------------|----------------------------|----------------------|
 | **P-Cores** (Núcleos de Rendimiento) | "P" de **Performance** (Rendimiento) | • Núcleos grandes físicamente<br>• Mayor velocidad de reloj<br>• Mayor consumo energético<br>• Soporta Hyper-Threading (2 hilos/núcleo)<br>• Caché L2 independiente por núcleo | • Videojuegos<br>• Aplicaciones CAD<br>• Edición profesional (foto/vídeo)<br>• Tareas de alta exigencia computacional |
 | **E-Cores** (Núcleos de Eficiencia) | "E" de **Efficiency** (Eficiencia) | • Núcleos más pequeños<br>• Menor velocidad de reloj<br>• Consumo energético reducido<br>• Sin Hyper-Threading<br>• Agrupados en módulos de 4 núcleos<br>• Caché L2 compartida por módulo | • Navegación web<br>• Contenido multimedia<br>• Aplicaciones de ofimática<br>• Tareas de fondo<br>• Soporte en streaming y codificación |  
