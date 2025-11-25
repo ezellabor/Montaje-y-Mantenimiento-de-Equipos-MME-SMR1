@@ -16,7 +16,7 @@
 | -------- | --------------------- | ---------------------------------------- |
 | **MT/s** | MT/s = MegaTransfers por segundo | Es la unidad que mide la velocidad real de transferencia de la RAM |
 
->**Nota importante:**  
+>**IMPORTANTE:**  
 >- MT/s NO es exactamente lo mismo que MHz.
 >- MT/s es la medida correcta de velocidad de RAM, no MHz.
 >- DDR4 3200 MHz → en realidad trabaja a 1600 MHz pero con doble transferencia → 3200 MT/s.
