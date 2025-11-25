@@ -17,7 +17,7 @@
 
 
 
-### 2. Especificaciones Técnicas
+### 2. Especificaciones técnicas
 
 | Característica | Full-Tower | Mid-Tower | Mini-Tower | Chasis Rack | SFF |
 |----------------|------------|-----------|------------|-------------|-----|
@@ -50,7 +50,7 @@
 | **Cable management** | Servidores rack | Torre | SFF |
 | **Durabilidad** | Entornos industriales | General | Oficina |
 
-### 5. Materiales y Construcción
+### 5. Materiales y construcción
 
 | Material | Ventajas | Desventajas | Uso Típico |
 |----------|----------|-------------|------------|
