@@ -1,5 +1,6 @@
+# Memoria Principal: Randon Access Memory (RAM)  
 
-# Memoria Principal: Randon Access Memory (RAM)
+![modulo-ram](../img/modulo-ram-boceto.jpg)  
 
 
 ## 1. Tipos
