@@ -1,6 +1,6 @@
 # Microprocesadores  
 
-### Clasificación de micros según:
+### Clasificación según:
 - Tipo (arquitectura y propósito)
 - Número de transistores
 - Frecuencia del reloj
