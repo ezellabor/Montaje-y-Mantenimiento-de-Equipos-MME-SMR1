@@ -19,14 +19,14 @@ La nomenclatura de Intel permite conocer **las características del procesador**
 ### Sufijos Intel
 | Sufijo | Significado |
 |--------|-------------|
-| K | Overclock permitido (alto rendimiento) |
-| KF | K + sin GPU integrada |
-| F | Sin GPU integrada |
-| T | Bajo consumo |
-| H | Alto rendimiento para portátiles (High Performance) |
-| P | Sin gráficos de bajo consumo |
-| U | Ultra bajo consumo (portátiles) |
-| G | Con gráfica dedicada Radeon integrada (laptops) |
+| **K** | Overclock permitido (alto rendimiento) |
+| **KF** | Overclock permitido + sin GPU integrada |
+| **F** | Sin GPU integrada |
+| **T** | Bajo consumo |
+| **H** | Alto rendimiento para portátiles (High Performance) |
+| **P** | Sin gráficos de bajo consumo |
+| **U** | Ultra bajo consumo (portátiles) |
+| **G** | Con gráfica dedicada Radeon integrada (laptops) |
 
 ---
 
