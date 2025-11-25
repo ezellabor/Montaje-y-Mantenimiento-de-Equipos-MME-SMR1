@@ -26,7 +26,7 @@
 ---
 
 
-## 2.1. Especificaciones clave 
+## 2. Especificaciones clave 
 
 | Parámetro | Valores típicos | Recomendación por uso |
 |---------------|-----------------|----------------------|
@@ -44,7 +44,7 @@
 >Cuanto menor es el CL → más rápida es la respuesta.  
 >_Ejemplo:_ CL16 responde antes que CL18, aunque tengan misma velocidad.
 
-## 2.2. Factores físicos
+## 3. Factores físicos
 
 | Formato     | Uso        | Imagen mental        |
 | ----------- | ---------- | -------------------- |
@@ -52,17 +52,16 @@
 | **SO-DIMM** | Portátiles | Módulo corto (7 cm)  |
 
 
-## 2.3. Identificación de una RAM
+## 4. Identificación de una RAM
 
-**Pegatina del fabricante**   
-
+Etiqueta del fabricante:  
 - Tipo → DDR3 / DDR4 / DDR5
 - Velocidad → 3200 MHz, 5200 MT/s…
 - Latencia → CL16, CL40…
 - Capacidad → 8 GB / 16 GB
 - Voltaje → 1.2 V, 1.35 V (XMP)
 
-## 2.4. Compatibilidad
+## 5. Compatibilidad
 
 Factores clave:  
 - Placa base (chipset)  
@@ -76,7 +75,7 @@ Factores clave:
 
 ---
 
-## 2.5. Fallos típicos de la RAM
+## 6. Fallos típicos de la RAM
 
 - Pantallazos azules (BSOD)
 - Bloqueos aleatorios
@@ -88,7 +87,7 @@ Factores clave:
 
 ---
 
-## 2.6. Buenas prácticas  
+## 7. Buenas prácticas  
 
 - Usar dual channel (2 módulos iguales)
 - No mezclar marcas/modelos si puedes evitarlo
@@ -98,7 +97,7 @@ Factores clave:
 
 ---
 
-## 2.7. Síntesis  
+## 8. Síntesis  
 
 >- TIPO → DDR4 / DDR5  
 >- VELOCIDAD → MHz / MT/s
