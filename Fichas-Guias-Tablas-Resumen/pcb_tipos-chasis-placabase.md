@@ -30,7 +30,7 @@
 
 ### 3. Selección por uso
 
-| Aplicación MME | Chasis Recomendado | Formato Placa | Razón |
+| Aplicación | Chasis recomendado | Formato placa | Razón |
 |----------------|-------------------|---------------|-------|
 | **Servidor alto rendimiento** | Rack 2U-4U | E-ATX, ATX | Refrigeración optimizada, expansión |
 | **Estación trabajo** | Full-Tower, Mid-Tower | ATX, E-ATX | Espacio para tarjetas adicionales |
@@ -41,7 +41,7 @@
 
 ### 4. Consideraciones específicas
 
-| Factor | Alta Prioridad | Media Prioridad | Baja Prioridad |
+| Factor | Alta prioridad | Media prioridad | Baja prioridad |
 |--------|----------------|-----------------|----------------|
 | **Ventilación** | Servidores 24/7 | Workstations | Sistemas office |
 | **Expansión** | Estaciones trabajo | Servidores | Sistemas embebidos |
@@ -52,7 +52,7 @@
 
 ### 5. Materiales y construcción
 
-| Material | Ventajas | Desventajas | Uso Típico |
+| Material | Ventajas | Desventajas | Uso típico |
 |----------|----------|-------------|------------|
 | **Acero** | Durabilidad, costo | Peso, corrosión | Torre, rack gama media |
 | **Aluminio** | Ligero, disipación | Costo, menos rígido | Gama alta, SFF |
@@ -62,7 +62,7 @@
 
 ### 6. Compatibilidad de formatos
 
-| Formato Placa | Dimensiones | Chasis Compatibles |
+| Formato Placa | Dimensiones | Chasis compatibles |
 |---------------|-------------|-------------------|
 | **Mini-ITX** | 170x170 mm | SFF, Mini-Tower, Mid-Tower, Full-Tower |
 | **Micro-ATX** | 244x244 mm | Mini-Tower, Mid-Tower, Full-Tower, Rack |
@@ -72,7 +72,7 @@
 
 ### 7. Características de refrigeración
 
-| Tipo Chasis | Ventiladores Frontales | Ventiladores Superiores | Ventiladores Traseros | Radiadores |
+| Tipo chasis | Ventiladores frontales | Ventiladores superiores | Ventiladores traseros | Radiadores |
 |-------------|------------------------|-------------------------|-----------------------|------------|
 | **Full-Tower** | 3-4 x 120/140mm | 2-3 x 120/140mm | 1-2 x 120/140mm | 360-480mm |
 | **Mid-Tower** | 2-3 x 120/140mm | 2 x 120/140mm | 1 x 120/140mm | 240-360mm |
@@ -83,7 +83,7 @@
 
 ### 8. Recomendaciones
 
-| Escenario | Elección Óptima | Alternativa |
+| Escenario | Elección óptima | Alternativa |
 |-----------|-----------------|-------------|
 | **Máxima expansión** | Full-Tower o Rack 4U | Mid-Tower |
 | **Espacio limitado** | SFF o Mini-Tower | Mini-Tower |
