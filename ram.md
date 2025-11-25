@@ -64,16 +64,15 @@
 
 ## 2.4. Compatibilidad
 
-Depende de:
-
+Factores clave:  
 - Placa base (chipset)  
 - Tipo soportado (DDR3/4/5)
 - Frecuencia máxima
 - Slots disponibles
 - CPU (controlador de memoria integrado)
 
->- No puedes mezclar DDR3 con DDR4, ni DDR4 con DDR5.
->- Mezclar módulos distintos funciona, pero baja al rendimiento más bajo.
+>- No mezclar DDR3 con DDR4, ni DDR4 con DDR5.
+>- Mezclar módulos distintos funciona, pero baja al rendimient.
 
 ---
 
@@ -85,7 +84,7 @@ Depende de:
 - Programas que fallan sin motivo
 - No arranca / pitidos de BIOS
 
->Herramienta: MemTest86 (diagnóstico completo)
+>Recomendación: Herramienta _MemTest86_ (diagnóstico completo)
 
 ---
 
@@ -99,13 +98,7 @@ Depende de:
 
 ---
 
-## 2.9. Diferencias entre ATX, Micro-ATX y Mini-ITX  
-Factor de forma	ATX	Micro-ATX
-Dimensiones	30,5 x 24,4 cm	24,4 x 24,4 cm
-Ranuras RAM	4 a 8 ranuras	2 a4 ranuras
-Ranuras PCIe	4 a 7 ranuras	2 a 3 ranuras
-
-## 2.9. SINTESIS
+## 2.7. Síntesis  
 
 >- TIPO → DDR4 / DDR5  
 >- VELOCIDAD → MHz / MT/s
