@@ -18,4 +18,4 @@
 >- **Micro-ATX** → equilibrio entre tamaño y capacidad.  
 >- **Mini-ITX** → muy compacto, pero menos ranuras y expansión.
 
-
+![factor-forma](../img/formfactors.gif)  
