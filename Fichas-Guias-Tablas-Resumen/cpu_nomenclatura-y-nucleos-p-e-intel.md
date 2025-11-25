@@ -12,8 +12,8 @@ La nomenclatura de Intel permite conocer **las características del procesador**
 | **Marca** | Intel | Fabricante |
 | **Familia** | Core | Línea del procesador |
 | **Nivel** | i3 / i5 / i7 / i9 | Gama (baja / media / alta / entusiasta) |
-| **Generación** | 12**700K** → *12ª gen* | Cada año aprox. cambia |
-| **SKU / SKU Number** | **700** | Indica posición en la gama dentro de la generación |
+| **Generación** | **12**700K → *12ª gen* | Cada año aprox. cambia |
+| **SKU** | **700** | Indica la posición en la gama dentro de la generación |
 | **Sufijo** | **K** | Característica avanzada |
 
 ### Sufijos Intel
