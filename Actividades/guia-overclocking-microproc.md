@@ -40,6 +40,11 @@
 - **Herramientas de software:** Programas como **Intel Extreme Tuning Utility (XTU)**, **AMD Ryzen Master**, o ajustes en la BIOS/UEFI.
 - **Conocimientos básicos:** Saber cómo acceder a la BIOS y ajustar voltajes y frecuencias.
 
+>**Nota importante:**
+El overclocking también se puede realizar aumentando la frecuencia del reloj base o BCLK. Es el reloj principal de la placa base que controla prácticamente todos los >componentes, como CPU, RAM, PCIe y Chipset. Si aumentamos este reloj, estamos aumentado la frecuencia de otros componentes que incluso tienen el multiplicador bloqueado, aunque >conlleva aún más riesgos y es un método muy inestable.
+>
+>El **Undervolting** por su parte, es justo lo contrario, disminuir el voltaje para evitar que un procesador haga thermal throttling. Es una práctica usada en portátiles o >tarjeta >gráficas con sistemas de refrigeración ineficaces.
+
 ---
 
 ## **5. Procedimiento paso a paso para overclocking de un microprocesador**
