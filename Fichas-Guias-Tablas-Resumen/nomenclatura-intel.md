@@ -41,6 +41,33 @@ La nomenclatura de Intel permite conocer **las características del procesador**
 
 ---
 
+### **3.1. Interpreta los siguientes procesadores:**
+
+| Procesador | Generación | Gama | ¿Tiene GPU integrada? | ¿Permite overclock? | Tipo de equipo apropiado |
+|------------|------------|------|------------------------|---------------------|---------------------------|
+| Intel Core i5-11400 | | | | | |
+| Intel Core i7-10700K | | | | | |
+| Intel Core i9-13900KF | | | | | |
+| Intel Core i5-1240P | | | | | |
+| Intel Core i3-10100F | | | | | |
+
+### **3.2. Cuestiones**
+1. ¿Qué indica la cifra inicial después del guion (ej: 12700 → 12)?
+2. ¿Qué significa el sufijo **F**?
+3. ¿Qué diferencia hay entre **K** y **KF**?
+4. ¿Qué tipo de procesador es mejor para un portátil de gran autonomía: H, U o K? ¿Por qué?
+5. Un ordenador de juegos sin gráfica dedicada ¿debería evitar los procesadores con sufijo **F**? Explica.
+
+### **3.3. Reto**
+Busca dos procesadores Intel reales en una tienda online y explica si encajarían mejor en:
+- Equipo de oficina
+- Equipo gaming
+- Estación de trabajo profesional
+- Portátil ultraligero
+
+---
+
+
 # 2. Núcleos P y E de Intel  
 
 | Tipo de Procesador | Significado | Características Principales | Aplicaciones Típicas |
@@ -51,33 +78,6 @@ La nomenclatura de Intel permite conocer **las características del procesador**
 ---
 
 
-## 📝 Ejercicio
-
-### **1. Interpreta los siguientes procesadores:**
-
-| Procesador | Generación | Gama | ¿Tiene GPU integrada? | ¿Permite overclock? | Tipo de equipo apropiado |
-|------------|------------|------|------------------------|---------------------|---------------------------|
-| Intel Core i5-11400 | | | | | |
-| Intel Core i7-10700K | | | | | |
-| Intel Core i9-13900KF | | | | | |
-| Intel Core i5-1240P | | | | | |
-| Intel Core i3-10100F | | | | | |
-
-### **2. Cuestiones**
-1. ¿Qué indica la cifra inicial después del guion (ej: 12700 → 12)?
-2. ¿Qué significa el sufijo **F**?
-3. ¿Qué diferencia hay entre **K** y **KF**?
-4. ¿Qué tipo de procesador es mejor para un portátil de gran autonomía: H, U o K? ¿Por qué?
-5. Un ordenador de juegos sin gráfica dedicada ¿debería evitar los procesadores con sufijo **F**? Explica.
-
-### **3. Reto**
-Busca dos procesadores Intel reales en una tienda online y explica si encajarían mejor en:
-- Equipo de oficina
-- Equipo gaming
-- Estación de trabajo profesional
-- Portátil ultraligero
-
----
 
 
 
