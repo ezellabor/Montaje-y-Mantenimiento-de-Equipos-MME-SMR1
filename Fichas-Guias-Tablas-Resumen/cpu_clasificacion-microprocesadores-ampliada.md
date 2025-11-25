@@ -1,5 +1,4 @@
 # Microprocesadores  
----
 
 ### Clasificación de micros según:
 - Tipo (arquitectura y propósito)
@@ -10,7 +9,9 @@
 - Tecnología (nanómetros)
 - TDP
 - Compatibilidad con Chipset
-- Compatibilidad con socket (PCB)  
+- Compatibilidad con socket (PCB)
+
+  ---
 
 ## 1️⃣ Tipo de Arquitectura y propósito
 
