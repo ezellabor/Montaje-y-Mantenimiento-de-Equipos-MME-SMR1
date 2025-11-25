@@ -1,4 +1,4 @@
-# Parámetros clave RAM (CL, MHz, MT/s)
+# Parámetros clave memorias RAM  
 ---
 
 
