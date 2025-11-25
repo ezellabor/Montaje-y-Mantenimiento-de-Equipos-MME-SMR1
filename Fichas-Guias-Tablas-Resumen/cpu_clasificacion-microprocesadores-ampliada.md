@@ -1,6 +1,6 @@
 # Microprocesadores  
 
-### Clasificación según:
+### Clasificación según:  
 - Tipo (arquitectura y propósito)
 - Número de transistores
 - Frecuencia del reloj
@@ -9,7 +9,7 @@
 - Tecnología (nanómetros)
 - TDP
 - Compatibilidad con Chipset
-- Compatibilidad con socket (PCB)
+- Compatibilidad con socket (PCB)  
 
   ---
 
