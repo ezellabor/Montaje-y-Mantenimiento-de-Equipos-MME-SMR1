@@ -41,8 +41,8 @@
 | **CAS**  | Column Address Strobe | Pulso/orden para seleccionar una columna |
 | **CL**   | CAS Latency (latencia CAS) | Es el número de ciclos que tarda la RAM en entregar un dato después de que el controlador de memoria lo pide. |  
 
->Cuanto menor es el CL → más rápida es la respuesta.
->Ejemplo: CL16 responde antes que CL18, aunque tengan misma velocidad.
+>Cuanto menor es el CL → más rápida es la respuesta.  
+>_Ejemplo:_ CL16 responde antes que CL18, aunque tengan misma velocidad.
 
 ## 2.2. Factores físicos
 
