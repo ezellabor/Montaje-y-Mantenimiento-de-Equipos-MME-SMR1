@@ -16,7 +16,7 @@ La nomenclatura de Intel permite conocer **las características del procesador**
 | **SKU / SKU Number** | **700** | Indica posición en la gama dentro de la generación |
 | **Sufijo** | **K** | Característica avanzada |
 
-### Sufijos importantes Intel
+### Sufijos Intel
 | Sufijo | Significado |
 |--------|-------------|
 | K | Overclock permitido (alto rendimiento) |
