@@ -23,4 +23,9 @@
 | Sistema operativo | Videojuegos | Laptops | Reconocimiento facial |
 | Navegación web | Renderizado 3D | PCs económicas | Asistentes de voz |
 | Aplicaciones ofimáticas | Machine Learning | Consolas | Procesamiento de sensores |
-| Cálculos complejos | Minería de cripto | Sistemas embebidos | Filtros de cámara |
+| Cálculos complejos | Minería de cripto | Sistemas embebidos | Filtros de cámara |  
+
+---
+
+**Montaje y Mantenimiento de Equipos - SMRI**  
+```Profesor: Ezequiel Llarena Borges```
