@@ -16,19 +16,19 @@
 | -------- | --------------------- | ---------------------------------------- |
 | **MT/s** | MT/s = MegaTransfers por segundo | Es la unidad que mide la velocidad real de transferencia de la RAM |
 
-**OJO:**  
-- MT/s NO es exactamente lo mismo que MHz.
-- MT/s es la medida correcta de velocidad de RAM, no MHz.
-- DDR4 3200 MHz → en realidad trabaja a 1600 MHz pero con doble transferencia → 3200 MT/s.
-- DDR significa Double Data Rate, por eso transmite 2 datos por ciclo.
-- DDR no es compatible entre generaciones (muesca distinta).
+>**Nota importante:**  
+>- MT/s NO es exactamente lo mismo que MHz.
+>- MT/s es la medida correcta de velocidad de RAM, no MHz.
+>- DDR4 3200 MHz → en realidad trabaja a 1600 MHz pero con doble transferencia → 3200 MT/s.
+>- DDR significa Double Data Rate, por eso transmite 2 datos por ciclo.
+>- DDR no es compatible entre generaciones (muesca distinta).
 
 ---
 
 
-## 2.1. Parámetros (Especificaciones) clave 
+## 2.1. Especificaciones clave 
 
-| Característica | Valores típicos | Recomendación por uso |
+| Parámetro | Valores típicos | Recomendación por uso |
 |---------------|-----------------|----------------------|
 | **Capacidad** | 4 GB, 8 GB, 16 GB, 32-64 GB | • 4 GB → Básico<br>• 8 GB → Uso general<br>• 16 GB → Gaming/Productividad<br>• 32-64 GB → Edición/Máquinas virtuales |
 | **Frecuencia** | 3200 MHz, 3600 MHz, 5200 MHz | Mayor frecuencia = Mayor ancho de banda |
