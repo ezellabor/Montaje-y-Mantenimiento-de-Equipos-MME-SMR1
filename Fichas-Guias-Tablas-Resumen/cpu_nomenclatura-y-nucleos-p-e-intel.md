@@ -14,7 +14,7 @@ La nomenclatura de Intel permite conocer **las características del procesador**
 | **Nivel** | i3 / i5 / i7 / i9 | Gama (baja / media / alta / entusiasta) |
 | **Generación** | **12**700K → *12ª gen* | Cada año aprox. cambia |
 | **SKU** | 12**700**K → *700* | Indica la posición en la gama dentro de la generación |
-| **Sufijo** | 12700**K** → *K* | Característica avanzada |
+| **Sufijo** | 12700**K** → *K* | Característica avanzada: K = Overclocking permitido |
 
 ### Sufijos Intel
 | Sufijo | Significado |
