@@ -71,7 +71,7 @@ Factores clave:
 - CPU (controlador de memoria integrado)
 
 >- No mezclar DDR3 con DDR4, ni DDR4 con DDR5.
->- Mezclar módulos distintos funciona, pero baja al rendimient.
+>- Mezclar módulos distintos funciona, pero baja al rendimiento.
 
 ---
 
