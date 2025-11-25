@@ -73,7 +73,7 @@ Busca dos procesadores Intel reales en una tienda online y explica si encajaría
 | Tipo de Procesador | Significado | Características | Aplicaciones típicas |
 |-------------------|-------------|----------------------------|----------------------|
 | **P-Cores** (Performance) | Núcleos de **Rendimiento** | • Núcleos grandes físicamente<br>• Mayor velocidad de reloj<br>• Mayor consumo energético<br>• Soporta Hyper-Threading (2 hilos/núcleo)<br>• Caché L2 independiente por núcleo | • Videojuegos<br>• Aplicaciones CAD<br>• Edición profesional (foto/vídeo)<br>• Tareas de alta exigencia computacional |
-| **E-Cores** (Efficiency) | Núcleos de **Eficiencia** | • Núcleos más pequeños<br>• Menor velocidad de reloj<br>• Consumo energético reducido<br>• Sin Hyper-Threading<br>• Agrupados en módulos de 4 núcleos<br>• Caché L2 compartida por módulo | • Navegación web<br>• Contenido multimedia<br>• Aplicaciones de ofimática<br>• Tareas de fondo<br>• Soporte en streaming y codificación |  
+| **E-Cores** (Efficiency) | Núcleos de **Eficiencia** | • Núcleos más pequeños<br>• Menor velocidad de reloj<br>• Consumo energético reducido<br>• Sin Hyper-Threading<br>• Agrupados en módulos de 4 núcleos<br>• Caché L2 compartida por módulo | • Navegación web<br>• Contenido multimedia<br>• Aplicaciones de ofimática<br>• Tareas en segundo plano<br>• Soporte en streaming y codificación |  
 
 ---
 
