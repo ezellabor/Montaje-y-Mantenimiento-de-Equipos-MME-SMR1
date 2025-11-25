@@ -43,9 +43,9 @@
 #
 
 >**Nota importante:**
->El overclocking también se puede realizar aumentando la frecuencia del reloj base o **BCLK.** Es el reloj principal de la placa base que controla prácticamente todos los >componentes, como CPU, RAM, PCIe y Chipset. Si aumentamos este reloj, estamos aumentado la frecuencia de otros componentes que incluso tienen el multiplicador bloqueado, aunque >conlleva aún más riesgos y es un método muy inestable.
->
->El **Undervolting** por su parte, es justo lo contrario, disminuir el voltaje para evitar que un procesador haga _thermal throttling_. Es una práctica usada en portátiles o >tarjetas gráficas con sistemas de refrigeración ineficaces.
+>El overclocking también se puede realizar aumentando la frecuencia del reloj base o **BCLK.** Es el reloj principal de la placa base que controla prácticamente todos los   >componentes, como CPU, RAM, PCIe y Chipset. Si aumentamos este reloj, estamos aumentado la frecuencia de otros componentes que incluso tienen el multiplicador bloqueado, aunque   >conlleva aún más riesgos y es un método muy inestable.  
+>  
+>El **Undervolting** por su parte, es justo lo contrario, disminuir el voltaje para evitar que un procesador haga _thermal throttling_. Es una práctica usada en portátiles o   >tarjetas gráficas con sistemas de refrigeración ineficaces.
 
 ---
 
