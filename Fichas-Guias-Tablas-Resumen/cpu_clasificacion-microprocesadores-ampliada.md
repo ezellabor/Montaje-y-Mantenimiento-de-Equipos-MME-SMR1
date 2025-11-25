@@ -120,15 +120,6 @@
 | AMD   | Ryzen AM5      | A620 / B650 / X670…        |
 | Intel | 12ª–14ª Gen    | B660 / Z690 / B760 / Z790  |  
 
-> **Compatibilidad** implica:  
->- Mismo socket físico
->- Chipset soporte
->- Versión BIOS/UEFI válida
->- Perfil de energía adecuado  
-
-#
-⚠ Una CPU puede no funcionar con un chipset aun si el socket coincide — depende de soporte del fabricante y BIOS/UEFI.
-
 ---
 
 ## 9️⃣ Compatibilidad con placabase (socket)
@@ -141,6 +132,15 @@
 | Workstation/Servidor | SP5, sTR5, LGA4677… | EPYC, Threadripper, Xeon |
 
 ---
+
+> **Compatibilidad** implica:  
+>- Mismo socket físico
+>- Chipset soporte
+>- Versión BIOS/UEFI válida
+>- Perfil de energía adecuado  
+
+#
+⚠ Una CPU puede no funcionar con un chipset aun si el socket coincide — depende de soporte del fabricante y BIOS/UEFI.
 
 ## Resumen
 
