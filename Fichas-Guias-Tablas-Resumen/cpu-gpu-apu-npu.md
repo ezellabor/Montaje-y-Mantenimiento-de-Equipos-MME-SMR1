@@ -1,13 +1,13 @@
-# Comparativa: CPU vs GPU vs APU vs NPU
+# CPU vs GPU vs APU vs NPU
 
-| Componente | Nombre Completo | Función Principal | Arquitectura | Ventajas | Casos de Uso |
-|------------|-----------------|-------------------|--------------|----------|-------------|
-| **CPU** | _Central Processing Unit_ | Procesamiento general | Pocos núcleos complejos, Alta frecuencia | Versatilidad, Buen single-thread | Sistema operativo, Aplicaciones generales |
-| **GPU** | _Graphics Processing Unit_ | Procesamiento gráfico/paralelo | Miles de núcleos simples, Alto paralelismo | Rendimiento masivo en paralelo, | Videojuegos, Renderizado Machine Learning |
-| **APU** | _Accelerated Processing Unit_ | Procesamiento combinado | CPU + GPU en un solo chip | Eficiencia energética, Costo reducido | Laptops, Consolas, PCs económicas |
-| **NPU** | _Neural Processing Unit_ | Procesamiento neuronal | Arquitectura especializada IA | Baja latencia, Bajo consumo | IA local, Reconocimiento facial, Procesamiento de sensores |
+| Componente | Nombre Completo | Función Principal |
+|------------|-----------------|-------------------|
+| **CPU** | _Central Processing Unit_ | Procesamiento general |
+| **GPU** | _Graphics Processing Unit_ | Procesamiento gráfico/paralelo |
+| **APU** | _Accelerated Processing Unit_ | CPU + GPU en un solo chip |
+| **NPU** | _Neural Processing Unit_ | Procesamiento neuronal |  
 
-# Características Clave
+# Comparativa
 
 | Componente | Arquitectura | Especialización | Ventajas | Desventajas | Ejemplos |
 |------------|--------------|-----------------|----------|-------------|----------|
