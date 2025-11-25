@@ -32,12 +32,6 @@
 | **Microcontroladores (MCU)**               | Procesador con memoria y periféricos integrados para control dedicado.            | Electrónica, automatización e IoT.              |
 | **Procesadores de alto rendimiento (HPC)** | Multinúcleo de muy alta potencia para cálculo intensivo.                          | Servidores y supercomputación.                  |
 
->- CISC (x86 / x64)
->- RISC (ARM)
->- SoC (System on Chip)
->- APU (CPU + GPU integrada)
->- Microcontroladores (MCU)
->- HPC / servidores
 
 ---
 
