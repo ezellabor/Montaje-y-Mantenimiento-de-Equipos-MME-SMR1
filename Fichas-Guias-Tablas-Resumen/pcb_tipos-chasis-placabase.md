@@ -7,7 +7,7 @@
 | **Full-Tower** | E-ATX, ATX, Micro-ATX | 55-75 cm alto | Máxima expansión, excelente refrigeración | Muy voluminoso, pesado | Estaciones trabajo, servidores |
 | **Mid-Tower** | ATX, Micro-ATX, Mini-ITX | 45-55 cm alto | Balance ideal, buen flujo aire | Limitado para configuraciones extremas | Uso general, gaming |
 | **Mini-Tower** | Micro-ATX, Mini-ITX | 35-45 cm alto | Compacto, ahorro espacio | Poca expansión, refrigeración limitada | Oficina, HTPC |
-| **SFF** | Mini-ITX, Thin Mini-ITX | 20-35 cm alto | Mínimo espacio, portabilidad | Difícil mantenimiento, upgrade limitado | Embedded systems, kioskos |
+| **SFF** (Small Form Factor) | Mini-ITX, Thin Mini-ITX | 20-35 cm alto | Mínimo espacio, portabilidad | Difícil mantenimiento, upgrade limitado | Embedded systems, kioskos |
 | **Desktop/Horizontal** | ATX, Micro-ATX | 15-20 cm alto x 40-50 cm ancho | Perfil bajo, estabilidad | Ventilación restringida | Entornos empresariales |
 | **Rack 1U** | ATX, Micro-ATX | 4.4 cm alto x 48 cm ancho | Maximiza espacio rack | Refrigeración crítica, altura limitada | Servidores, telecom |
 | **Rack 2U** | ATX, E-ATX | 8.8 cm alto x 48 cm ancho | Balance espacio/refrigeración | Mayor espacio rack | Servidores aplicaciones |
