@@ -1,5 +1,6 @@
 # Tipos de chasis para placas base  
-## Comparativa de chasis
+
+### 1. Comparativa de chasis
 
 | Tipo de Chasis | Formato PCB       | Dimensiones       | Ventajas | Desventajas | Aplicación     |
 |----------------|-------------------|-------------------|----------|-------------|----------------|
@@ -16,7 +17,7 @@
 
 
 
-## Especificaciones Técnicas
+### 2. Especificaciones Técnicas
 
 | Característica | Full-Tower | Mid-Tower | Mini-Tower | Chasis Rack | SFF |
 |----------------|------------|-----------|------------|-------------|-----|
@@ -27,7 +28,7 @@
 | **PSU compatible** | ATX, EPS | ATX | ATX, SFX | ATX, redundante | SFX, TFX |
 | **Peso vacío** | 10-25 kg | 6-15 kg | 4-10 kg | 10-30 kg | 2-6 kg |
 
-## Selección por uso
+### 3. Selección por uso
 
 | Aplicación MME | Chasis Recomendado | Formato Placa | Razón |
 |----------------|-------------------|---------------|-------|
@@ -38,7 +39,7 @@
 | **Laboratorio/testing** | Rack 2U, Desktop | ATX, Micro-ATX | Fácil acceso, mantenimiento |
 | **Kiosko/digital signage** | SFF, All-in-One | Mini-ITX | Estético, mínimo espacio |
 
-## Consideraciones específicas
+### 4. Consideraciones específicas
 
 | Factor | Alta Prioridad | Media Prioridad | Baja Prioridad |
 |--------|----------------|-----------------|----------------|
@@ -49,7 +50,7 @@
 | **Cable management** | Servidores rack | Torre | SFF |
 | **Durabilidad** | Entornos industriales | General | Oficina |
 
-## Materiales y Construcción
+### 5. Materiales y Construcción
 
 | Material | Ventajas | Desventajas | Uso Típico |
 |----------|----------|-------------|------------|
@@ -59,17 +60,7 @@
 | **Plástico ABS** | Ligero, diseño | Fragilidad, calor | Paneles frontales |
 | **Vidrio templado** | Estética | Peso, fragilidad | Torre gaming |
 
-## Recomendaciones Finales
-
-| Escenario | Elección Óptima | Alternativa |
-|-----------|-----------------|-------------|
-| **Máxima expansión** | Full-Tower o Rack 4U | Mid-Tower |
-| **Espacio limitado** | SFF o Mini-Tower | Mini-Tower |
-| **Entorno profesional** | Rack 2U-3U | Mid-Tower |
-| **Presupuesto ajustado** | Mid-Tower acero | Mini-Tower |
-| **Portabilidad** | SFF aluminio | Mini-Tower |
-
-## Compatibilidad de Formatos
+### 6. Compatibilidad de formatos
 
 | Formato Placa | Dimensiones | Chasis Compatibles |
 |---------------|-------------|-------------------|
@@ -79,7 +70,7 @@
 | **E-ATX** | 330x305 mm | Full-Tower, Rack 3U+ |
 | **SSI-EEB** | 330x305 mm | Full-Tower, Rack 4U |
 
-## Características de Refrigeración
+### 7. Características de refrigeración
 
 | Tipo Chasis | Ventiladores Frontales | Ventiladores Superiores | Ventiladores Traseros | Radiadores |
 |-------------|------------------------|-------------------------|-----------------------|------------|
@@ -88,4 +79,14 @@
 | **Mini-Tower** | 1-2 x 120mm | 1-2 x 120mm | 1 x 120mm | 120-240mm |
 | **SFF** | 1-2 x 80-120mm | 0-1 x 80-120mm | 1 x 80-120mm | 120mm max |
 | **Rack 2U** | 2-3 x 80mm | N/A | 2 x 80mm | Limitado |
-| **Rack 4U** | 3-4 x 120mm | N/A | 2-3 x 120mm | 240-360mm |
+| **Rack 4U** | 3-4 x 120mm | N/A | 2-3 x 120mm | 240-360mm |  
+
+### 8. Recomendaciones
+
+| Escenario | Elección Óptima | Alternativa |
+|-----------|-----------------|-------------|
+| **Máxima expansión** | Full-Tower o Rack 4U | Mid-Tower |
+| **Espacio limitado** | SFF o Mini-Tower | Mini-Tower |
+| **Entorno profesional** | Rack 2U-3U | Mid-Tower |
+| **Presupuesto ajustado** | Mid-Tower acero | Mini-Tower |
+| **Portabilidad** | SFF aluminio | Mini-Tower |
