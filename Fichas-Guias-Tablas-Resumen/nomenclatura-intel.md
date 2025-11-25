@@ -4,7 +4,7 @@
 
 La nomenclatura de Intel permite conocer **las características del procesador** a partir de su nombre comercial.
 
-### Ejemplo: Intel Core i7-12700K  
+**Ejemplo:** Intel Core i7-12700K  
 
 ### Partes del nombre
 | Parte | Ejemplo | Significado |
