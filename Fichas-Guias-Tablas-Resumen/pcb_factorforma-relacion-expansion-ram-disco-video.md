@@ -1,7 +1,11 @@
 # Factor de forma  
+---  
+
+![PCB-factor-forma](img/tamaño-pcb-factor-forma.png)  
+
 ---
 
-### Diferencias entre ATX, Micro-ATX y Mini-ITX y relación con RAM-PCIe-SATA
+### Comparativa ATX|Micro-ATX|Mini-ITX y relación con RAM-PCIe-SATA
 | Característica     | ATX                  | Micro-ATX            | Mini-ITX            |
 |--------------------|----------------------|-----------------------|----------------------|
 | **Dimensiones**    | 30,5 × 24,4 cm       | 24,4 × 24,4 cm        | 17 × 17 cm           |
