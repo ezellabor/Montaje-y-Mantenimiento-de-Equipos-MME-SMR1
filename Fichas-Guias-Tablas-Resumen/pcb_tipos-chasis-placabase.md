@@ -12,7 +12,7 @@
 | **Rack 2U** | ATX, E-ATX | 8.8 cm alto x 48 cm ancho | Balance espacio/refrigeración | Mayor espacio rack | Servidores aplicaciones |
 | **Rack 4U** | E-ATX, SSI-EEB | 17.5 cm alto x 48 cm ancho | Máxima expansión en rack | Ocupa mucho espacio rack | Workstations, storage |  
 
-![factor-de-forma](../img/formfactors.png)
+![factor-de-forma](../img/formfactors.gif)
 
 
 
