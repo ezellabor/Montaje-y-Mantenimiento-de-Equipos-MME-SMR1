@@ -10,7 +10,11 @@
 | **Desktop/Horizontal** | ATX, Micro-ATX | 15-20 cm alto x 40-50 cm ancho | Perfil bajo, estabilidad | Ventilación restringida | Entornos empresariales |
 | **Rack 1U** | ATX, Micro-ATX | 4.4 cm alto x 48 cm ancho | Maximiza espacio rack | Refrigeración crítica, altura limitada | Servidores, telecom |
 | **Rack 2U** | ATX, E-ATX | 8.8 cm alto x 48 cm ancho | Balance espacio/refrigeración | Mayor espacio rack | Servidores aplicaciones |
-| **Rack 4U** | E-ATX, SSI-EEB | 17.5 cm alto x 48 cm ancho | Máxima expansión en rack | Ocupa mucho espacio rack | Workstations, storage |
+| **Rack 4U** | E-ATX, SSI-EEB | 17.5 cm alto x 48 cm ancho | Máxima expansión en rack | Ocupa mucho espacio rack | Workstations, storage |  
+
+![factor-de-forma](../img/formfactors.png)
+
+
 
 ## Especificaciones Técnicas
 
