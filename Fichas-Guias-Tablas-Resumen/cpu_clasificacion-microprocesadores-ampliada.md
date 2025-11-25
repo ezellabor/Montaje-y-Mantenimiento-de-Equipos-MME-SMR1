@@ -73,16 +73,18 @@
 
 ---
 
-## 5️⃣ Consumo de energía (TDP)
+## 5️⃣ Consumo de energía (TDP)  
 
-|| Rango TDP             | Aplicación típica          |
+| Rango TDP              | Aplicación típica          |
 | ---------------------- | -------------------------- |
 | Bajo: l5 – 25 W        | Móviles / ultrabooks / ARM |
 | Medio: 35 – 65 W       | Sobremesa general          |
 | Alto:  95 – 150+ W     | Gaming / estaciones        |
-| Muy alto: 200 – 400+ W | Servidores / HPC           |
+| Muy alto: 200 – 400+ W | Servidores / HPC           |  
+
 
 ---
+
 
 ## 6️⃣ Fabricante
 
@@ -139,15 +141,14 @@
 >- Versión BIOS/UEFI válida
 >- Perfil de energía adecuado  
 
-#
-⚠ Una CPU puede no funcionar con un chipset aun si el socket coincide — depende de soporte del fabricante y BIOS/UEFI.
+⚠ Una CPU puede no funcionar con un chipset aun si el socket coincide — depende de soporte del fabricante y BIOS/UEFI.  
+
+#  
 
 ## Resumen
 
-<code>
 - Tipo → Transistores → Frecuencia    
 - Temperatura → Energía (TDP) → Fabricante 
-- Tecnología (nm) → Chipset → Socket
-</code>  
+- Tecnología (nm) → Chipset → Socket  
 
 >Para elegir un procesador se deben considerar **todos** estos criterios en conjunto.
