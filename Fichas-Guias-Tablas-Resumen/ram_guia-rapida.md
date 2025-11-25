@@ -1,4 +1,4 @@
-# TABLA RESUMEN —  RAM (CL, MHz, MT/s)
+# Parámetros clave RAM (CL, MHz, MT/s)
 ---
 
 
