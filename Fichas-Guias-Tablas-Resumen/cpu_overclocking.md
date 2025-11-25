@@ -1,8 +1,10 @@
-# Overclocking: Ejemplos Actuales (2024–2025)
+# Overclocking: 
+_Ejemplos actuales (2024–2025)_
 
-## 1. Procesadores Intel (12ª, 13ª y 14ª Gen – Alder Lake, Raptor Lake, Raptor Lake Refresh)
+## 1. Procesadores Intel 
+(12ª, 13ª y 14ª Gen – Alder Lake, Raptor Lake, Raptor Lake Refresh)
 
-### Modelos “K” y “KF” (sí permiten overclock)
+### Modelos “K” y “KF” (permiten overclock)
 - **Intel Core i5-12600K / 13600K / 14600K**
   - Muy populares para OC.
   - Suelen llegar a **5.3–5.5 GHz** con buena refrigeración.
@@ -17,7 +19,8 @@
 
 ---
 
-## 2. Procesadores AMD Ryzen (Serie 5000, 7000 y 9000)
+## 2. Procesadores AMD Ryzen
+(Serie 5000, 7000 y 9000)
 
 ### Ryzen 5000 (AM4)
 - **Ryzen 5 5600X — 4.8 GHz → 4.9–5.0 GHz** OC típico.
@@ -40,13 +43,13 @@
 
 ---
 
-## 🔌 Sockets usados por AMD
+## Sockets usados por AMD
 - **AM4** → Ryzen 1000, 2000, 3000, 5000 
 - **AM5** → Ryzen 7000, 9000
 
 ---
 
-## Idea clave 
+## Ideas clave 
 ➡️ *No todos los procesadores permiten overclock.* 
 - **Intel:** solo modelos con **K / KF** y placas **Z690 / Z790**. 
 - **AMD:** todos permiten algo de OC salvo algunos modelos 3D, pero las placas **B650/X670** y superiores son ideales.
@@ -59,5 +62,6 @@
 - Se hace desde la **BIOS/UEFI**, subiendo multiplicador y ajustando voltajes.
 
 - Pros: más rendimiento. 
-- Contras: más calor, más consumo, menos vida útil, riesgo de inestabilidad. 
-- Los **procesadores dependen del socket**, no al revés.
+- Contras: más calor, más consumo, menos vida útil, riesgo de inestabilidad.
+  
+<!--- Los **procesadores dependen del socket**, no al revés.-->
