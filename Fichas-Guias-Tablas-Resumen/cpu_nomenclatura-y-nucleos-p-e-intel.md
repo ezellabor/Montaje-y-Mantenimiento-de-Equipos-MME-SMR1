@@ -58,13 +58,6 @@ La nomenclatura de Intel permite conocer **las características del procesador**
 4. ¿Qué tipo de procesador es mejor para un portátil de gran autonomía: H, U o K? ¿Por qué?
 5. Un ordenador de juegos sin gráfica dedicada ¿debería evitar los procesadores con sufijo **F**? Explica.
 
-### **3.3. Reto**
-Busca dos procesadores Intel reales en una tienda online y explica si encajarían mejor en:
-- Equipo de oficina
-- Equipo gaming
-- Estación de trabajo profesional
-- Portátil ultraligero
-
 ---
 
 
@@ -78,6 +71,8 @@ Busca dos procesadores Intel reales en una tienda online y explica si encajaría
 ---
 
 ![multithreading](../img/multithreading-nucleo-cpu.png)
+
+![nucleo-cache](../img/nucleos-cache-l1-l2-l3.png)
 
 
 
