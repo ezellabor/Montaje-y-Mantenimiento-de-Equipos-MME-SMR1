@@ -40,9 +40,7 @@
 ### 2.3. Ryzen 9000 (AM5, 2024-2025)
 - Similar a los 7000, pero más eficientes.
 - **Ryzen 7 9700X** → mejora el OC con menos temperatura.
-- **Ryzen 9 9950X** → 5.7–5.8 GHz con refrigeración top.
-
----
+- **Ryzen 9 9950X** → 5.7–5.8 GHz con refrigeración top.  
 
 ### 2.4. Sockets (AMD)
 - **AM4** → Ryzen 1000, 2000, 3000, 5000 
