@@ -74,14 +74,6 @@
 
 ---
 
-## **6. Ejemplo visual: Videotutorial**
-- [Overclocking para principiantes (Intel)](https://www.youtube.com/watch?v=example_link)
-- [Overclocking en AMD Ryzen](https://www.youtube.com/watch?v=example_link)
-
-*(Nota: Reemplaza `example_link` con enlaces reales de YouTube, como los de **JayzTwoCents** o **Linus Tech Tips**).*
-
----
-
 ## **7. Consejos finales**
 - Empieza con incrementos pequeños: Aumenta la frecuencia en pasos de 100-200 MHz y prueba la estabilidad.
 - No excedas los límites térmicos: Mantén las temperaturas por debajo de 85°C bajo carga.
