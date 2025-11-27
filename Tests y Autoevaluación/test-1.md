@@ -2,7 +2,7 @@
 
 ## Instrucciones
 - **Duración:** 60 minutos
-- **Preguntas:** 50 (10 por unidad)
+- **Nº Preguntas:** 10
 - **Puntuación mínima:** 5/10 para aprobar
 - **Tipo:** Múltiple opción (puede haber más de una correcta)
 
