@@ -21,7 +21,7 @@
 >- MT/s NO es exactamente lo mismo que MHz.
 >- MT/s es la medida correcta de velocidad de RAM, no MHz.
 >- DDR4 3200 MHz → en realidad trabaja a 1600 MHz pero con doble transferencia → 3200 MT/s.
->- DDR significa Double Data Rate, por eso transmite 2 datos por ciclo.
+>- DDR significa Double Data Rate o tasa doble de datos, por eso transmite 2 datos por ciclo.
 >- DDR no es compatible entre generaciones (muesca distinta).
 
 ---
