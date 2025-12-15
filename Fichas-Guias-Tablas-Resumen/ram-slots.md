@@ -1,6 +1,7 @@
 # Memoria RAM
+```Ficha resumen```
 
-## ¿Qué es la RAM?
+
 La RAM (Random Access Memory) es la memoria donde el ordenador guarda datos temporales mientras está en uso.  
 Cuanta más RAM y mejor configurada esté, mejor rendimiento tendrá el sistema.
 
