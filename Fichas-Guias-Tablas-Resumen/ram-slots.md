@@ -1,4 +1,4 @@
-# Memoria RAM – Resumen básico
+# Memoria RAM
 
 ## ¿Qué es la RAM?
 La RAM (Random Access Memory) es la memoria donde el ordenador guarda datos temporales mientras está en uso.  
