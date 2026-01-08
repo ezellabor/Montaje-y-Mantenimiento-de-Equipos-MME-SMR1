@@ -1,0 +1,211 @@
+# Ejercicio Práctico: Configuración de Equipos 
+
+<code>Montaje y Mantenimiento de Equipos (MME) | SMRR1 | Profesor: Ezequiel Llarena Borges</code>  
+
+---
+
+## Descripción del ejercicio
+
+En este ejercicio práctico deberás seleccionar los componentes hardware necesarios para montar tres equipos informáticos diferentes, adaptados a distintos perfiles de usuario y presupuestos. Utilizarás la herramienta online **PC Part Picker** para crear cada configuración.
+
+---
+
+## Objetivos
+
+- Identificar las necesidades hardware según el perfil de usuario
+- Seleccionar componentes compatibles entre sí
+- Ajustarse a un presupuesto establecido
+- Justificar las decisiones técnicas tomadas
+- Utilizar herramientas profesionales de configuración de equipos
+
+---
+
+## Herramienta a utilizar
+
+**PC Part Picker**: https://es.pcpartpicker.com/list/
+
+Esta herramienta te ayudará a:
+- Verificar la compatibilidad entre componentes
+- Comparar precios de diferentes tiendas
+- Calcular el consumo energético estimado
+- Generar enlaces permanentes para compartir tus configuraciones
+
+---
+
+## Configuraciones a realizar
+
+### **Configuración 1: PC de Oficina Básico**
+
+**Perfil de usuario:** Trabajador de oficina que utiliza el equipo para tareas administrativas básicas.
+
+**Uso principal:**
+- Suite ofimática (Word, Excel, PowerPoint)
+- Navegación web y correo electrónico
+- Videoconferencias ocasionales
+- Gestión de documentos PDF
+
+**Presupuesto máximo:** 450€
+
+**Componentes mínimos obligatorios:**
+- Procesador
+- Placa base
+- Memoria RAM
+- Almacenamiento
+- Fuente de alimentación
+- Carcasa
+
+---
+
+### **Configuración 2: PC Multimedia para el Hogar**
+
+**Perfil de usuario:** Usuario doméstico que consume y crea contenido multimedia.
+
+**Uso principal:**
+- Streaming de vídeo (Netflix, YouTube) en calidad Full HD
+- Edición básica de fotos y vídeos
+- Gaming casual (juegos ligeros)
+- Navegación web intensiva con múltiples pestañas
+- Almacenamiento de fotos, vídeos y música
+
+**Presupuesto máximo:** 750€
+
+**Componentes mínimos obligatorios:**
+- Procesador
+- Placa base
+- Memoria RAM
+- Almacenamiento (considerar espacio suficiente)
+- Fuente de alimentación
+- Carcasa
+- Tarjeta gráfica (opcional pero recomendada)
+
+---
+
+### **Configuración 3: Estación de Trabajo para Diseño**
+
+**Perfil de usuario:** Diseñador gráfico freelance que trabaja con software profesional.
+
+**Uso principal:**
+- Adobe Photoshop, Illustrator, InDesign
+- Edición de vídeo con Adobe Premiere o DaVinci Resolve
+- Modelado 3D básico
+- Multitarea intensiva con múltiples aplicaciones abiertas
+- Trabajo con archivos de gran tamaño
+
+**Presupuesto máximo:** 1.200€
+
+**Componentes mínimos obligatorios:**
+- Procesador de alto rendimiento
+- Placa base compatible
+- Memoria RAM (mínimo 16GB recomendado)
+- Almacenamiento SSD rápido
+- Fuente de alimentación adecuada al consumo
+- Carcasa con buena ventilación
+- Tarjeta gráfica dedicada
+
+---
+
+## Criterios de evaluación
+
+Cada configuración será evaluada según:
+
+| Criterio | Puntuación |
+|----------|------------|
+| **Compatibilidad** - Todos los componentes son compatibles entre sí | 25% |
+| **Adecuación al uso** - Los componentes cumplen con las necesidades descritas | 30% |
+| **Presupuesto** - Se ajusta al límite establecido (no lo supera) | 20% |
+| **Equilibrio** - Balance adecuado entre componentes (sin cuellos de botella evidentes) | 15% |
+| **Presentación** - Enlaces correctos y funcionando | 10% |
+
+**Puntuación total:** 100 puntos 
+
+---
+
+## Entrega del ejercicio
+
+### **Formato de entrega:**
+
+Crea un documento (Word, PDF o texto) que incluya:
+
+1. **Portada** con:
+   - Nombre del alumno/alumnos
+   - Grupo
+   - Fecha de entrega
+
+2. **Para cada configuración:**
+   - Título de la configuración (Oficina / Multimedia / Diseño)
+   - **Enlace permanente de PC Part Picker**
+   - Breve justificación de las elecciones (3-5 líneas explicando por qué elegiste esos componentes)
+   - Precio total final
+
+### **Ejemplo de formato:**
+```
+CONFIGURACIÓN 1: PC DE OFICINA BÁSICO
+
+Enlace PC Part Picker: https://es.pcpartpicker.com/list/XXXXXX
+
+Justificación:
+He elegido un procesador Intel Core i3 porque ofrece suficiente 
+rendimiento para tareas ofimáticas con un precio ajustado. 
+La memoria RAM de 8GB es suficiente para trabajar con varios 
+documentos y navegador abiertos simultáneamente...
+
+Precio total: 445€
+```
+
+---
+
+## Consejos útiles
+
+✅ **Compatibilidad del socket:** Asegúrate de que el procesador y la placa base tienen el mismo socket
+
+✅ **Consumo energético:** PC Part Picker calcula el consumo estimado. La fuente debe tener al menos 100W más de margen
+
+✅ **Memoria RAM:** Verifica que la placa base soporta la velocidad (MHz) de la RAM elegida
+
+✅ **Tamaño de la carcasa:** Comprueba que la placa base cabe en la carcasa (ATX, Micro-ATX, Mini-ITX)
+
+✅ **Almacenamiento:** Los SSD son más rápidos que los HDD tradicionales, especialmente para el sistema operativo
+
+✅ **Tarjeta gráfica:** Muchos procesadores incluyen gráficos integrados suficientes para uso básico
+
+---
+
+## Recursos adicionales
+
+- **Tutorial PC Part Picker:** Explora la web para familiarizarte con la herramienta
+- **Comparativas de procesadores:** Busca benchmarks para comparar rendimiento
+- **Calculadoras de PSU:** PC Part Picker incluye cálculo automático de consumo
+
+---
+
+## Modalidad de trabajo
+
+- **Individual** o **parejas** (máximo 2 personas)
+- Si trabajáis en pareja, ambos nombres deben aparecer en la entrega
+- Se valorará el trabajo colaborativo y la toma de decisiones conjunta
+
+---
+
+## Plazo de entrega
+
+**Fecha límite:** [Indicar fecha]
+
+**Forma de entrega:** [Indicar plataforma: Moodle, email, etc.]
+
+---
+
+## ❓ Preguntas frecuentes
+
+**P: ¿Puedo superar el presupuesto?**  
+R: No. Parte del ejercicio consiste en ajustarse al presupuesto máximo establecido.
+
+**P: ¿Es obligatorio registrarse en PC Part Picker?**  
+R: No es obligatorio, pero es recomendable para guardar tus configuraciones y poder editarlas.
+
+**P: ¿Puedo añadir componentes adicionales?**  
+R: Sí, siempre que no superes el presupuesto y sean componentes útiles para el perfil de uso.
+
+**P: ¿Qué pasa si PC Part Picker marca incompatibilidades?**  
+R: Debes revisar los componentes y cambiar los que generen conflictos hasta lograr una configuración compatible.
+
+---
