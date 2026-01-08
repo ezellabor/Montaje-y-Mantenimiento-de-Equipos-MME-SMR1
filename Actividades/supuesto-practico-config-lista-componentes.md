@@ -189,7 +189,7 @@ Esta herramienta te ayudará a:
 
 ---
 
-## 7. Criterios de evaluación
+## 8. Criterios de evaluación
 
 Cada configuración será evaluada según:
 
