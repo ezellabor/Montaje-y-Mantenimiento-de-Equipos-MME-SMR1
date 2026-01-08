@@ -6,7 +6,9 @@
 
 ## Descripción del ejercicio
 
-En este ejercicio práctico deberás seleccionar los componentes hardware necesarios para montar tres equipos informáticos diferentes, adaptados a distintos perfiles de usuario y presupuestos. Utilizarás la herramienta online **PC Part Picker** para crear cada configuración.
+En esta actividad deberás seleccionar los componentes hardware necesarios para montar tres equipos informáticos diferentes, adaptados a distintos perfiles de usuario y presupuestos. Utilizarás la herramienta online **PC Part Picker** para crear cada configuración.  
+Esta actividad simula un caso real de asesoramiento técnico. La capacidad de seleccionar componentes adecuados a necesidades específicas y presupuesto es una competencia profesional valiosa en el sector de montaje y mantenimiento de equipos.
+
 
 ---
 
@@ -139,17 +141,58 @@ Crea un documento (Word, PDF o texto) que incluya:
 
 ### **Ejemplo de formato:**
 ```
-CONFIGURACIÓN 1: PC DE OFICINA BÁSICO
+## CONFIGURACIÓN: [Número y nombre de la configuración]
 
-Enlace PC Part Picker: https://es.pcpartpicker.com/list/XXXXXX
+### Presupuesto objetivo: ______€
+### Presupuesto final: ______€
+### Diferencia: ______€
 
-Justificación:
-He elegido un procesador Intel Core i3 porque ofrece suficiente 
-rendimiento para tareas ofimáticas con un precio ajustado. 
-La memoria RAM de 8GB es suficiente para trabajar con varios 
-documentos y navegador abiertos simultáneamente...
+### Componentes seleccionados:
 
-Precio total: 445€
+1. **Procesador**: 
+   - Modelo: 
+   - Precio: 
+   - Justificación: 
+
+2. **Placa base**: 
+   - Modelo: 
+   - Precio: 
+   - Justificación: 
+
+3. **Memoria RAM**: 
+   - Modelo: 
+   - Precio: 
+   - Justificación: 
+
+4. **Almacenamiento**: 
+   - Modelo: 
+   - Precio: 
+   - Justificación: 
+
+5. **Tarjeta gráfica** (si aplica): 
+   - Modelo: 
+   - Precio: 
+   - Justificación: 
+
+6. **Fuente de alimentación**: 
+   - Modelo: 
+   - Precio: 
+   - Justificación: 
+
+7. **Carcasa**: 
+   - Modelo: 
+   - Precio: 
+   - Justificación: 
+
+### Compatibilidades verificadas:
+- [ ] Socket CPU compatible
+- [ ] Tamaño placa base vs carcasa
+- [ ] Potencia PSU suficiente
+- [ ] Refrigeración adecuada
+- [ ] Conectividad necesaria (Wi-Fi, USB, etc.)
+
+### Análisis coste-beneficio:
+[Breve párrafo explicando las decisiones tomadas]
 ```
 
 ---
