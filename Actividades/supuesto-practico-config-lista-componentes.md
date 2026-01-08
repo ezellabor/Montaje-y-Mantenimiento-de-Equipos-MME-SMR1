@@ -1,4 +1,4 @@
-# Ejercicio Práctico: Configuración de Equipos según tipo de usuario y presupuesto
+# Actividad: Configuración de Equipos según tipo de usuario y presupuesto
 
 <code>Montaje y Mantenimiento de Equipos (MME) | SMR1 | Profesor: Ezequiel Llarena Borges</code>  
 
