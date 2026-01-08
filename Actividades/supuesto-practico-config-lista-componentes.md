@@ -248,5 +248,5 @@ Cada configuración será evaluada según:
 | **Adecuación al uso** - Los componentes cumplen con las necesidades descritas | 30% |
 | **Presupuesto** - Se ajusta al límite establecido (no lo supera) | 20% |
 | **Equilibrio** - Balance adecuado entre componentes (sin cuellos de botella evidentes) | 15% |
-| **Presentación** - Enlaces correctos y funcionando | 10% |
+| **Presentación** - Entrega en tiempo y forma| 10% |
 
