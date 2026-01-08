@@ -168,16 +168,14 @@ Esta herramienta te ayudará a:
 
 ---  
 
-## Modalidad de trabajo
+## 6. Modalidad de trabajo
 
 - **Individual** o **parejas** (máximo 2 personas)
-- Si trabajáis en pareja, ambos nombres deben aparecer en la entrega
-- Se valorará el trabajo colaborativo y la toma de decisiones conjunta
 
 ---
 
 
-## Consejos útiles
+## 7. Consejos útiles
 
 ✅ **Compatibilidad del socket:** Asegúrate de que el procesador y la placa base tienen el mismo socket
 
@@ -189,9 +187,24 @@ Esta herramienta te ayudará a:
 
 ✅ **Almacenamiento:** Los SSD son más rápidos que los HDD tradicionales, especialmente para el sistema operativo
 
-✅ **Tarjeta gráfica:** Muchos procesadores incluyen gráficos integrados suficientes para uso básico
+✅ **Tarjeta gráfica:** Muchos procesadores incluyen gráficos integrados suficientes para uso básico  
+
 
 ---
+
+## 7. Criterios de evaluación
+
+Cada configuración será evaluada según:
+
+| Criterio | Peso |
+|----------|------------|
+| **Compatibilidad** - Todos los componentes son compatibles entre sí | 25% |
+| **Adecuación al uso** - Los componentes cumplen con las necesidades descritas | 30% |
+| **Presupuesto** - Se ajusta al límite establecido (no lo supera) | 20% |
+| **Equilibrio** - Balance adecuado entre componentes (sin cuellos de botella evidentes) | 15% |
+| **Presentación** - Entrega en tiempo y forma| 10% |  
+
+---  
 
 ## ❓ Preguntas frecuentes
 
@@ -206,18 +219,4 @@ R: Sí, siempre que no superes el presupuesto y sean componentes útiles para el
 
 **P: ¿Qué pasa si PC Part Picker marca incompatibilidades?**  
 R: Debes revisar los componentes y cambiar los que generen conflictos hasta lograr una configuración compatible.
-
----
-
-## Criterios de evaluación
-
-Cada configuración será evaluada según:
-
-| Criterio | Peso |
-|----------|------------|
-| **Compatibilidad** - Todos los componentes son compatibles entre sí | 25% |
-| **Adecuación al uso** - Los componentes cumplen con las necesidades descritas | 30% |
-| **Presupuesto** - Se ajusta al límite establecido (no lo supera) | 20% |
-| **Equilibrio** - Balance adecuado entre componentes (sin cuellos de botella evidentes) | 15% |
-| **Presentación** - Entrega en tiempo y forma| 10% |
 
