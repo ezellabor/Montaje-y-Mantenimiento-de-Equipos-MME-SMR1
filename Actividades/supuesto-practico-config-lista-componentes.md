@@ -19,7 +19,6 @@ En esta actividad deberás seleccionar los componentes hardware necesarios para 
 - Seleccionar componentes compatibles entre sí
 - Ajustarse a un presupuesto establecido
 - Justificar las decisiones técnicas tomadas
-- Utilizar herramientas profesionales de configuración de equipos
 
 ---
 
@@ -162,8 +161,6 @@ Esta herramienta te ayudará a:
 - [ ] Refrigeración adecuada
 - [ ] Conectividad necesaria (Wi-Fi, USB, etc.)
 
-### Análisis coste-beneficio:
-[Breve párrafo explicando las decisiones tomadas]
 ```
 
 ---  
