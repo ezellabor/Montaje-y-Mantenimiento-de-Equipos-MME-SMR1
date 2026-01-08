@@ -8,7 +8,7 @@
 
 En esta actividad deberás seleccionar los componentes hardware necesarios para montar tres equipos informáticos diferentes, adaptados a distintos perfiles de usuario y presupuestos. Utilizarás la herramienta online **PC Part Picker** para crear cada **configuración**.  
 
->Esta actividad simula un caso real de asesoramiento técnico. La capacidad de seleccionar componentes adecuados a necesidades específicas y presupuesto es una competencia profesional valiosa en el sector de montaje y mantenimiento de equipos.
+>Esta actividad simula un caso real de asesoramiento técnico. La capacidad de seleccionar componentes adecuados a necesidades específicas y presupuesto es una competencia profesional importante en el sector de montaje y mantenimiento de equipos.
 
 
 ---
