@@ -1,6 +1,6 @@
 # Ejercicio Práctico: Configuración de Equipos 
 
-<code>Montaje y Mantenimiento de Equipos (MME) | SMRR1 | Profesor: Ezequiel Llarena Borges</code>  
+<code>Montaje y Mantenimiento de Equipos (MME) | SMR1 | Profesor: Ezequiel Llarena Borges</code>  
 
 ---
 
