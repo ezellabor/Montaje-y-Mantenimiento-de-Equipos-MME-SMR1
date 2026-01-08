@@ -6,8 +6,9 @@
 
 ## Descripción del ejercicio
 
-En esta actividad deberás seleccionar los componentes hardware necesarios para montar tres equipos informáticos diferentes, adaptados a distintos perfiles de usuario y presupuestos. Utilizarás la herramienta online **PC Part Picker** para crear cada configuración.  
-Esta actividad simula un caso real de asesoramiento técnico. La capacidad de seleccionar componentes adecuados a necesidades específicas y presupuesto es una competencia profesional valiosa en el sector de montaje y mantenimiento de equipos.
+En esta actividad deberás seleccionar los componentes hardware necesarios para montar tres equipos informáticos diferentes, adaptados a distintos perfiles de usuario y presupuestos. Utilizarás la herramienta online **PC Part Picker** para crear cada **configuración**.  
+
+>Esta actividad simula un caso real de asesoramiento técnico. La capacidad de seleccionar componentes adecuados a necesidades específicas y presupuesto es una competencia >profesional valiosa en el sector de montaje y mantenimiento de equipos.
 
 
 ---
@@ -36,7 +37,7 @@ Esta herramienta te ayudará a:
 
 ## Configuraciones a realizar
 
-### **Configuración 1: PC de Oficina Básico**
+### **Configuración 1: pc de oficina básico**
 
 **Perfil de usuario:** Trabajador de oficina que utiliza el equipo para tareas administrativas básicas.
 
@@ -58,7 +59,7 @@ Esta herramienta te ayudará a:
 
 ---
 
-### **Configuración 2: PC Multimedia para el Hogar**
+### **Configuración 2: pc multimedia uso domésticor**
 
 **Perfil de usuario:** Usuario doméstico que consume y crea contenido multimedia.
 
@@ -82,7 +83,7 @@ Esta herramienta te ayudará a:
 
 ---
 
-### **Configuración 3: Estación de Trabajo para Diseño**
+### **Configuración 3: estación de trabajo para diseño**
 
 **Perfil de usuario:** Diseñador gráfico freelance que trabaja con software profesional.
 
@@ -103,22 +104,6 @@ Esta herramienta te ayudará a:
 - Fuente de alimentación adecuada al consumo
 - Carcasa con buena ventilación
 - Tarjeta gráfica dedicada
-
----
-
-## Criterios de evaluación
-
-Cada configuración será evaluada según:
-
-| Criterio | Puntuación |
-|----------|------------|
-| **Compatibilidad** - Todos los componentes son compatibles entre sí | 25% |
-| **Adecuación al uso** - Los componentes cumplen con las necesidades descritas | 30% |
-| **Presupuesto** - Se ajusta al límite establecido (no lo supera) | 20% |
-| **Equilibrio** - Balance adecuado entre componentes (sin cuellos de botella evidentes) | 15% |
-| **Presentación** - Enlaces correctos y funcionando | 10% |
-
-**Puntuación total:** 100 puntos 
 
 ---
 
@@ -252,3 +237,16 @@ R: Sí, siempre que no superes el presupuesto y sean componentes útiles para el
 R: Debes revisar los componentes y cambiar los que generen conflictos hasta lograr una configuración compatible.
 
 ---
+
+## Criterios de evaluación
+
+Cada configuración será evaluada según:
+
+| Criterio | Peso |
+|----------|------------|
+| **Compatibilidad** - Todos los componentes son compatibles entre sí | 25% |
+| **Adecuación al uso** - Los componentes cumplen con las necesidades descritas | 30% |
+| **Presupuesto** - Se ajusta al límite establecido (no lo supera) | 20% |
+| **Equilibrio** - Balance adecuado entre componentes (sin cuellos de botella evidentes) | 15% |
+| **Presentación** - Enlaces correctos y funcionando | 10% |
+
