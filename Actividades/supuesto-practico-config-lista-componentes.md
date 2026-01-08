@@ -4,7 +4,7 @@
 
 ---
 
-## Descripción del ejercicio
+## 1. Descripción del ejercicio
 
 En esta actividad deberás seleccionar los componentes hardware necesarios para montar tres equipos informáticos diferentes, adaptados a distintos perfiles de usuario y presupuestos. Utilizarás la herramienta online **PC Part Picker** para crear cada **configuración**.  
 
@@ -13,7 +13,7 @@ En esta actividad deberás seleccionar los componentes hardware necesarios para 
 
 ---
 
-## Objetivos
+## 2. Objetivos
 
 - Identificar las necesidades hardware según el perfil de usuario
 - Seleccionar componentes compatibles entre sí
@@ -23,7 +23,7 @@ En esta actividad deberás seleccionar los componentes hardware necesarios para 
 
 ---
 
-## Herramienta a utilizar
+## 3. Herramienta a utilizar
 
 **PC Part Picker**: https://es.pcpartpicker.com/list/
 
@@ -35,9 +35,9 @@ Esta herramienta te ayudará a:
 
 ---
 
-## Configuraciones a realizar
+## 4. Configuraciones a realizar
 
-### **Configuración 1: pc de oficina básico**
+### 4.1 **Configuración 1: PC de oficina básico**
 
 **Perfil de usuario:** Trabajador de oficina que utiliza el equipo para tareas administrativas básicas.
 
@@ -59,7 +59,7 @@ Esta herramienta te ayudará a:
 
 ---
 
-### **Configuración 2: pc multimedia uso domésticor**
+### 4.2. **Configuración 2: PC multimedia uso domésticor**
 
 **Perfil de usuario:** Usuario doméstico que consume y crea contenido multimedia.
 
@@ -83,7 +83,7 @@ Esta herramienta te ayudará a:
 
 ---
 
-### **Configuración 3: estación de trabajo para diseño**
+### 4.3. **Configuración 3: Estación de trabajo para diseño**
 
 **Perfil de usuario:** Diseñador gráfico freelance que trabaja con software profesional.
 
@@ -107,24 +107,10 @@ Esta herramienta te ayudará a:
 
 ---
 
-## Entrega del ejercicio
+## 5. Entregables
 
-### **Formato de entrega:**
-
-Crea un documento (Word, PDF o texto) que incluya:
-
-1. **Portada** con:
-   - Nombre del alumno/alumnos
-   - Grupo
-   - Fecha de entrega
-
-2. **Para cada configuración:**
-   - Título de la configuración (Oficina / Multimedia / Diseño)
-   - **Enlace permanente de PC Part Picker**
-   - Breve justificación de las elecciones (3-5 líneas explicando por qué elegiste esos componentes)
-   - Precio total final
-
-### **Ejemplo de formato:**
+1. Por cada configuración: enlace permamente a lista de componentes creada con PC Part Picker
+2. Documento PDF con las tres configuraciones elegidas:  
 ```
 ## CONFIGURACIÓN: [Número y nombre de la configuración]
 
@@ -180,7 +166,16 @@ Crea un documento (Word, PDF o texto) que incluya:
 [Breve párrafo explicando las decisiones tomadas]
 ```
 
+---  
+
+## Modalidad de trabajo
+
+- **Individual** o **parejas** (máximo 2 personas)
+- Si trabajáis en pareja, ambos nombres deben aparecer en la entrega
+- Se valorará el trabajo colaborativo y la toma de decisiones conjunta
+
 ---
+
 
 ## Consejos útiles
 
@@ -195,30 +190,6 @@ Crea un documento (Word, PDF o texto) que incluya:
 ✅ **Almacenamiento:** Los SSD son más rápidos que los HDD tradicionales, especialmente para el sistema operativo
 
 ✅ **Tarjeta gráfica:** Muchos procesadores incluyen gráficos integrados suficientes para uso básico
-
----
-
-## Recursos adicionales
-
-- **Tutorial PC Part Picker:** Explora la web para familiarizarte con la herramienta
-- **Comparativas de procesadores:** Busca benchmarks para comparar rendimiento
-- **Calculadoras de PSU:** PC Part Picker incluye cálculo automático de consumo
-
----
-
-## Modalidad de trabajo
-
-- **Individual** o **parejas** (máximo 2 personas)
-- Si trabajáis en pareja, ambos nombres deben aparecer en la entrega
-- Se valorará el trabajo colaborativo y la toma de decisiones conjunta
-
----
-
-## Plazo de entrega
-
-**Fecha límite:** [Indicar fecha]
-
-**Forma de entrega:** [Indicar plataforma: Moodle, email, etc.]
 
 ---
 
