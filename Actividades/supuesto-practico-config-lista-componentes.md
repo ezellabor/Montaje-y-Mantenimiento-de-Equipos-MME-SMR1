@@ -82,7 +82,7 @@ Esta herramienta te ayudará a:
 
 ---
 
-### **Configuración 3: Estación de trabajo para diseño**
+### **Configuración 3: Equipo de trabajo para diseño**
 
 **Perfil de usuario:** Diseñador gráfico freelance que trabaja con software profesional.
 
