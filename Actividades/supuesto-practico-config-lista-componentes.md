@@ -36,7 +36,7 @@ Esta herramienta te ayudará a:
 
 ## 4. Configuraciones a realizar
 
-### **Configuración 1: PC de oficina básico**
+### **Configuración 1: Equipo de oficina básico**
 
 **Perfil de usuario:** Trabajador de oficina que utiliza el equipo para tareas administrativas básicas.
 
@@ -58,7 +58,7 @@ Esta herramienta te ayudará a:
 
 ---
 
-### **Configuración 2: PC multimedia uso doméstico**
+### **Configuración 2: Equipo multimedia uso doméstico**
 
 **Perfil de usuario:** Usuario doméstico que consume y crea contenido multimedia.
 
