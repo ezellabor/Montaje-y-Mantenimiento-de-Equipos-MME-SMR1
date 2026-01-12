@@ -58,7 +58,7 @@ Esta herramienta te ayudará a:
 
 ---
 
-### **Configuración 2: PC multimedia uso domésticor**
+### **Configuración 2: PC multimedia uso doméstico**
 
 **Perfil de usuario:** Usuario doméstico que consume y crea contenido multimedia.
 
