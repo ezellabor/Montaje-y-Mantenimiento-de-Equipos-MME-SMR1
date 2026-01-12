@@ -36,7 +36,7 @@ Esta herramienta te ayudará a:
 
 ## 4. Configuraciones a realizar
 
-### 4.1 **Configuración 1: PC de oficina básico**
+### **Configuración 1: PC de oficina básico**
 
 **Perfil de usuario:** Trabajador de oficina que utiliza el equipo para tareas administrativas básicas.
 
@@ -58,7 +58,7 @@ Esta herramienta te ayudará a:
 
 ---
 
-### 4.2. **Configuración 2: PC multimedia uso domésticor**
+### **Configuración 2: PC multimedia uso domésticor**
 
 **Perfil de usuario:** Usuario doméstico que consume y crea contenido multimedia.
 
@@ -82,7 +82,7 @@ Esta herramienta te ayudará a:
 
 ---
 
-### 4.3. **Configuración 3: Estación de trabajo para diseño**
+### **Configuración 3: Estación de trabajo para diseño**
 
 **Perfil de usuario:** Diseñador gráfico freelance que trabaja con software profesional.
 
@@ -110,7 +110,7 @@ Esta herramienta te ayudará a:
 
 1. Por cada configuración: enlace permamente a lista de componentes creada con PC Part Picker
 2. Documento PDF con las tres configuraciones elegidas:  
-```
+
 ## CONFIGURACIÓN: [Número y nombre de la configuración]
 
 ### Presupuesto objetivo: ______€
@@ -160,8 +160,6 @@ Esta herramienta te ayudará a:
 - [ ] Potencia PSU suficiente
 - [ ] Refrigeración adecuada
 - [ ] Conectividad necesaria (Wi-Fi, USB, etc.)
-
-```
 
 ---  
 
