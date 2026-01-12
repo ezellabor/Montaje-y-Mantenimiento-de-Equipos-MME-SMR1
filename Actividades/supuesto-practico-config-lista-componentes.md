@@ -201,7 +201,7 @@ Cada configuración será evaluada según:
 
 ---  
 
-## ❓ Preguntas frecuentes
+## Preguntas frecuentes
 
 **P: ¿Puedo superar el presupuesto?**  
 R: No. Parte del ejercicio consiste en ajustarse al presupuesto máximo establecido.
