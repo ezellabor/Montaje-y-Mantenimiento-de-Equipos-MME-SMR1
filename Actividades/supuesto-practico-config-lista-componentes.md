@@ -21,7 +21,7 @@ En esta actividad deberás seleccionar los componentes hardware necesarios para 
 
 ---
 
-## 3. Herramientas de apoyo para hacer las configuraciones
+## 3. Herramientas para hacer las configuraciones
 
 **PC Part Picker**: https://es.pcpartpicker.com/list/
 
