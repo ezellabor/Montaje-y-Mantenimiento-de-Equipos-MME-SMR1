@@ -33,13 +33,13 @@ Esta herramienta te ayudará a:
 
 ---  
 
-### Verificación de compatibilidad Procesador-Socket  
+### Compatibilidad Procesador-Socket  
 
 <img width="1492" height="681" alt="image" src="https://github.com/user-attachments/assets/8bfc4560-6438-44af-85ca-00893632168d" />  
 
 ### Tipos de licencia para sistema operativo  
 
-# Tabla comparativa de licencias de sistemas operativos
+# Comparativa de licencias de sistemas operativos
 
 | Característica | Linux (Ubuntu) | Windows 11 Retail | Windows 11 OEM | Windows 11 Volume | Windows sin activar |
 |----------------|----------------|-------------------|----------------|-------------------|---------------------|
