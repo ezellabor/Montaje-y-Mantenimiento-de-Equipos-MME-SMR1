@@ -34,7 +34,7 @@ Esta herramienta te ayudará a:
 
 ---  
 
-### Tabla de compatibilidad Socket-CPU  
+### Tabla de compatibilidad Procesador-Socket  
 
 <img width="1492" height="681" alt="image" src="https://github.com/user-attachments/assets/8bfc4560-6438-44af-85ca-00893632168d" />
 
