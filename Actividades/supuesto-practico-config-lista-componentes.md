@@ -63,7 +63,6 @@ Esta herramienta te ayudará a:
 | Soporte | Comunidad + Canonical | Microsoft | Microsoft (limitado) | Microsoft + soporte extendido | No incluye soporte |
 | Portabilidad (Live/USB) | Muy alta | No | No | No | No |
 | Formato/Empaquetado | ISO descargable | Clave digital/USB | Preinstalada en BIOS | Instalaciones en empresa | Instalación sin clave |
-| ISO descargable | Clave digital/USB | Preinstalada en BIOS | MAK/KMS | MAK/KMS | No activado (modo evaluación) |
 | Activación | No requiere | Obligatoria | Centralizada | Centralizada | No activado (modo evaluación) |
 | Uso recomendado | Estudiantes/servidores | Hogar/entusiastas | Equipos premontados | Empresas/centros | Pruebas, laboratorio |
 | Tipo de licencia | GPL libre | Comercial | Comercial OEM | Comercial corporativa | Sin licencia (restricciones) |
