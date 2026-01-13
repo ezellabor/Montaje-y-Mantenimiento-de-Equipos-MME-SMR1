@@ -33,10 +33,26 @@ Esta herramienta te ayudará a:
 
 ---  
 
-### Tabla de compatibilidad Procesador-Socket  
+### Verificación de compatibilidad Procesador-Socket  
 
-<img width="1492" height="681" alt="image" src="https://github.com/user-attachments/assets/8bfc4560-6438-44af-85ca-00893632168d" />
+<img width="1492" height="681" alt="image" src="https://github.com/user-attachments/assets/8bfc4560-6438-44af-85ca-00893632168d" />  
 
+### Tipos de licencia para sistema operativo  
+
+# Tabla comparativa de licencias de sistemas operativos
+
+| Característica | Linux (Ubuntu) | Windows 11 Retail | Windows 11 OEM | Windows 11 Volume | Windows sin activar |
+|----------------|----------------|-------------------|----------------|-------------------|---------------------|
+| Precio | 0 € (gratuito) | 120–160 € aprox. | 40–80 € aprox. | Variable por contrato | 0 € |
+| Transferible a otro PC | Sí | Sí | No, ligada a placa base | Sí, según contrato | No aplica |
+| Soporte | Comunidad + Canonical | Microsoft | Microsoft (limitado) | Microsoft + soporte extendido | No incluye soporte |
+| Portabilidad (Live/USB) | Muy alta | No | No | No | No |
+| Actualizaciones | Gratuitas y continuas | Gratuitas | Gratuitas | Centralizadas | Limitadas pero activas |
+| Formato/Empaquetado | ISO descargable | Clave digital/USB | Preinstalada en BIOS | MAK/KMS | Instalación sin clave |
+| Activación | No requiere | Obligatoria | Automática | Centralizada | No activado (modo evaluación) |
+| Uso recomendado | Estudiantes/servidores | Hogar/entusiastas | Equipos premontados | Empresas/centros | Pruebas, laboratorio, aprendizaje |
+| Tipo de licencia | GPL libre | Comercial | Comercial OEM | Comercial corporativa | Sin licencia (restricciones) |
+| Limitaciones | Ninguna | Ninguna | Ligada al hardware | Requiere gestión TI | Marca de agua + sin personalización |  
 
 ## 4. Configuraciones a realizar
 
