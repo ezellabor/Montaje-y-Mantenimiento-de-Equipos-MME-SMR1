@@ -32,7 +32,12 @@ Esta herramienta te ayudará a:
 - Calcular el consumo energético estimado
 - Generar enlaces permanentes para compartir tus configuraciones
 
----
+---  
+
+### Tabla de compatibilidad Socket-CPU  
+
+<img width="1492" height="681" alt="image" src="https://github.com/user-attachments/assets/8bfc4560-6438-44af-85ca-00893632168d" />
+
 
 ## 4. Configuraciones a realizar
 
