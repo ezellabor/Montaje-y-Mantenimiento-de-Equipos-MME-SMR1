@@ -68,8 +68,9 @@ Si tienes 2 módulos de RAM, colócalos en las ranuras del mismo color
 
 ## Compatibilidad DDR3, DDR4 y DDR5
 
-Los distintos tipos de RAM **no son compatibles entre sí**.  
-Cada placa base solo admite un tipo concreto.
+- Los distintos tipos de RAM **no son compatibles entre sí** (la tecnología DDR4, no podrá soportar módulos DDR5).
+- Cada tipo de memoria tiene diferentes ubicaciones de muesca (importantes para la instalación) y las placas madre soportan sólo una ubicación de muesca.
+- Las placas base son generalmente capaces de soportar sólo un tipo de tecnología de memoria.
 
 ---
 
