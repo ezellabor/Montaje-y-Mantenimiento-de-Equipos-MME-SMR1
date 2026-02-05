@@ -58,11 +58,11 @@ Si tienes 2 módulos de RAM, colócalos en las ranuras del mismo color
 
 ## Cómo diferenciarlas rápidamente
 
-| Tipo | Pines | Muesca | Detalle distintivo | Fecha Lanzamiento | Capacidad/Módulo
-|------|-------|--------|--------------------|-------------------|-----------------|
-| DDR3 | 240   | Casi centrada | Más antigua | 2007 | 1GB-8GB |
-| DDR4 | 288   | Desplazada | Muy común | 2014 | 8GB-16GB |
-| DDR5 | 288   | Más desplazada | Chip PMIC visible |2020 | 16GB-128GB)
+| Tipo | Pines | Muesca | Detalle distintivo | Capacidad/Módulo |
+|------|-------|--------|--------------------|------------------|
+| DDR3 | 240   | Casi centrada | Más antigua | 1GB-8GB |
+| DDR4 | 288   | Desplazada | Muy común | 8GB-16GB |
+| DDR5 | 288   | Más desplazada | Chip PMIC visible | 16GB-128GB |
 
 ---
 
