@@ -30,13 +30,6 @@ Si tienes 2 módulos de RAM, colócalos en las ranuras del mismo color
 
 ---
 
-## Compatibilidad DDR3, DDR4 y DDR5
-
-Los distintos tipos de RAM **no son compatibles entre sí**.  
-Cada placa base solo admite un tipo concreto.
-
----
-
 ### DDR3
 - Año aproximado: 2007–2014
 - 240 pines
@@ -73,17 +66,17 @@ Cada placa base solo admite un tipo concreto.
 
 ---
 
-## Consejos prácticos
+## Compatibilidad DDR3, DDR4 y DDR5
 
-- Nunca fuerces un módulo de RAM.
-- Si no encaja fácilmente, no es compatible.
-- Consulta siempre las especificaciones de la placa base.
-- Busca: `modelo placa base + memory support`.
+Los distintos tipos de RAM **no son compatibles entre sí**.  
+Cada placa base solo admite un tipo concreto.
 
 ---
 
-## Resumen rápido
+## Recomendaciones
 
+- Nunca fuerces un módulo de RAM (si no encaja fácilmente, no es compatible)
+- Consulta siempre las especificaciones de la placa base.
 - Usa ranuras del mismo color para Dual Channel.
 - No mezcles DDR3, DDR4 y DDR5.
 - La placa base determina qué RAM puedes usar.
