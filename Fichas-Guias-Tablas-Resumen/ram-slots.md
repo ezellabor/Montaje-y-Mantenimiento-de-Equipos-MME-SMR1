@@ -12,6 +12,8 @@ Cuanta más RAM y mejor configurada esté, mejor rendimiento tendrá el sistema.
 - La RAM se instala en ranuras DIMM de la placa base.
 - Cada módulo es independiente, pero pueden trabajar en conjunto.
 - La placa base determina el tipo y la cantidad máxima soportada.
+- Factor de forma **SO-DIMM**: placa base incorpora módulos de RAM extraíbles para ampliar fácilmente.
+- **Row of Chips**: los módulos de RAM están soldados a la placa base y no se podrá ampliar.
 
 ---
 
@@ -28,7 +30,7 @@ Si tienes 2 módulos de RAM, colócalos en las ranuras del mismo color
 
 ---
 
-## Tipos de memoria RAM: DDR3, DDR4 y DDR5
+## Compatibilidad DDR3, DDR4 y DDR5
 
 Los distintos tipos de RAM **no son compatibles entre sí**.  
 Cada placa base solo admite un tipo concreto.
@@ -57,6 +59,7 @@ Cada placa base solo admite un tipo concreto.
 - Muesca en distinta posición
 - Incluye chip PMIC (gestión de energía)
 - Mayor velocidad y eficiencia
+- Voltaje típico: 1.1 V
 
 ---
 
