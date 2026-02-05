@@ -17,7 +17,7 @@ Cuanta más RAM y mejor configurada esté, mejor rendimiento tendrá el sistema.
 
 ---
 
-## Ranuras de distinto color (Dual Channel)
+## Dual Channel
 
 Las ranuras de distinto color indican los **canales de memoria**.
 
@@ -54,7 +54,7 @@ Cada placa base solo admite un tipo concreto.
 ---
 
 ### DDR5
-- Desde 2021 en adelante
+- El estándar actual (desde 2021)
 - 288 pines (no compatible con DDR4)
 - Muesca en distinta posición
 - Incluye chip PMIC (gestión de energía)
@@ -65,11 +65,11 @@ Cada placa base solo admite un tipo concreto.
 
 ## Cómo diferenciarlas rápidamente
 
-| Tipo | Pines | Muesca | Detalle distintivo |
-|------|-------|--------|--------------------|
-| DDR3 | 240   | Casi centrada | Más antigua |
-| DDR4 | 288   | Desplazada | Muy común |
-| DDR5 | 288   | Más desplazada | Chip PMIC visible |
+| Tipo | Pines | Muesca | Detalle distintivo | Fecha Lanzamiento | Capacidad/Módulo
+|------|-------|--------|--------------------|-------------------|-----------------|
+| DDR3 | 240   | Casi centrada | Más antigua | 2007 | 1GB-8GB |
+| DDR4 | 288   | Desplazada | Muy común | 2014 | 8GB-16GB |
+| DDR5 | 288   | Más desplazada | Chip PMIC visible |2020 | 16GB-128GB)
 
 ---
 
