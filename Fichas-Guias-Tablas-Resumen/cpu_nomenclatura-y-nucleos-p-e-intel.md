@@ -6,7 +6,7 @@ La nomenclatura de Intel permite conocer **las características del procesador**
 
 **Ejemplo:** Intel Core i7-12700K  
 
-### Partes del nombre
+### 1.1. Partes del nombre
 | Parte | Ejemplo | Significado |
 |-------|---------|-------------|
 | **Marca** | Intel | Fabricante |
@@ -16,7 +16,7 @@ La nomenclatura de Intel permite conocer **las características del procesador**
 | **SKU** | 12**700**K → *700* | Indica la posición en la gama dentro de la generación |
 | **Sufijo** | 12700**K** → *K* | Característica avanzada: K = Overclocking permitido |
 
-### Sufijos Intel
+### 1.2. Sufijos Intel
 | Sufijo | Significado |
 |--------|-------------|
 | **K** | Overclock permitido (alto rendimiento) |
@@ -30,7 +30,7 @@ La nomenclatura de Intel permite conocer **las características del procesador**
 
 ---
 
-## Tabla rápida para interpretar procesadores Intel
+## 1.3. Tabla rápida para interpretar procesadores Intel
 | Ejemplo | Gama | Generación | GPU | Particularidad |
 |---------|------|------------|-----|----------------|
 | i3-10100 | Baja | 10ª | Sí | Entrada |
@@ -41,7 +41,7 @@ La nomenclatura de Intel permite conocer **las características del procesador**
 
 ---
 
-### **3.1. Interpreta los siguientes procesadores:**
+### **1.4. Interpreta los siguientes procesadores:**
 
 | Procesador | Generación | Gama | ¿Tiene GPU integrada? | ¿Permite overclock? | Tipo de equipo apropiado |
 |------------|------------|------|------------------------|---------------------|---------------------------|
@@ -51,7 +51,7 @@ La nomenclatura de Intel permite conocer **las características del procesador**
 | Intel Core i5-1240P | | | | | |
 | Intel Core i3-10100F | | | | | |
 
-### **3.2. Cuestiones**
+### **1.5. Cuestiones**
 1. ¿Qué indica la cifra inicial después del guion (ej: 12700 → 12)?
 2. ¿Qué significa el sufijo **F**?
 3. ¿Qué diferencia hay entre **K** y **KF**?
