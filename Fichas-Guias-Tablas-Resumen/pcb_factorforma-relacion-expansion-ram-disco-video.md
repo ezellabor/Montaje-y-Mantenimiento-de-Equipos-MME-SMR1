@@ -14,7 +14,7 @@
 | **Puertos SATA**   | 6 a 8 puertos        | 4 a 6 puertos         | 2 a 4 puertos        |
 
 ### Resumen
->- **ATX** → mayor tamaño, más RAM, más expansión.  
+>- **ATX** → mayor tamaño, más RAM, mayor expansión.  
 >- **Micro-ATX** → equilibrio entre tamaño y capacidad.  
 >- **Mini-ITX** → muy compacto, pero menos ranuras y expansión.
 
