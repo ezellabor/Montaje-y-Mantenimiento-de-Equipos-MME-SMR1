@@ -24,9 +24,9 @@ Las ranuras de distinto color indican los **canales de memoria**.
 - La mayoría de placas base usan **Dual Channel**.
 - Cada canal suele tener dos ranuras del mismo color.
 
-**Regla básica:**
-Si tienes 2 módulos de RAM, colócalos en las ranuras del mismo color  
-(normalmente A2 y B2) para activar el Dual Channel y mejorar el rendimiento.
+### Regla básica activación Dual Channel
+>Si tienes 2 módulos de RAM, colócalos en las ranuras del mismo color  
+>(normalmente A2 y B2) para activar el Dual Channel y mejorar el rendimiento.
 
 ---
 
