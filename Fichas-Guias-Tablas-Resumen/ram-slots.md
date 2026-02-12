@@ -2,18 +2,18 @@
 ```Ficha resumen```
 
 
-La RAM (Random Access Memory) es la memoria donde el ordenador guarda datos temporales mientras está en uso.  
+La **RAM (Random Access Memory)** es la memoria donde el ordenador guarda datos temporales mientras está en uso.  
 Cuanta más RAM y mejor configurada esté, mejor rendimiento tendrá el sistema.
 
 ---
 
 ## Módulos y ranuras (slots DIMM)
 
-- La RAM se instala en ranuras DIMM de la placa base.
+- La RAM se instala en ranuras **DIMM** de la placa base.
 - Cada módulo es independiente, pero pueden trabajar en conjunto.
-- La placa base determina el tipo y la cantidad máxima soportada.
-- Factor de forma **SO-DIMM**: placa base incorpora módulos de RAM extraíbles para ampliar fácilmente.
-- **Row of Chips**: los módulos de RAM están soldados a la placa base y no se podrá ampliar.
+- La placa base y su **factor de forma** determinan el tipo y la cantidad máxima de RAM soportada.
+- Factor de forma **SO-DIMM**: placa base incorpora módulos de RAM **extraíbles** para ampliar fácilmente.
+- **Row of Chips** (Fila de chips): los módulos RAM están **soldados** a la placa base y no se podrá ampliar.
 
 ---
 
@@ -56,13 +56,13 @@ Si tienes 2 módulos de RAM, colócalos en las ranuras del mismo color
 
 ---
 
-## Cómo diferenciarlas rápidamente
+## Cómo reconocer módulo RAM visualmente
 
 | Tipo | Pines | Muesca | Detalle distintivo | Capacidad/Módulo |
 |------|-------|--------|--------------------|------------------|
-| DDR3 | 240   | Casi centrada | Más antigua | 1GB-8GB |
-| DDR4 | 288   | Desplazada | Muy común | 8GB-16GB |
-| DDR5 | 288   | Más desplazada | Chip PMIC visible | 16GB-128GB |
+| **DDR3** | 240   | Casi centrada | Más antigua | 1GB-8GB |
+| **DDR4** | 288   | Desplazada | Muy común | 8GB-16GB |
+| **DDR5** | 288   | Más desplazada | Chip PMIC visible | 16GB-128GB |
 
 ---
 
@@ -77,7 +77,7 @@ Si tienes 2 módulos de RAM, colócalos en las ranuras del mismo color
 ## Recomendaciones
 
 - Nunca fuerces un módulo de RAM (si no encaja fácilmente, no es compatible)
-- Consulta siempre las especificaciones de la placa base.
-- Usa ranuras del mismo color para Dual Channel.
+- Consulta siempre las **especificaciones y/o manual** de la placa base.
+- Usa ranuras del **mismo color** para Dual Channel.
 - No mezcles DDR3, DDR4 y DDR5.
 - La placa base determina qué RAM puedes usar.
