@@ -57,9 +57,8 @@ Independientemente del formato, el trabajo debe cubrir estos 4 bloques técnicos
 ---
 
 ## 4. Fecha y forma de entrega
-* **Fecha límite:** [Insertar Fecha]
-* **Plataforma:** [Moodle/Email/GitHub]
-* **Nombre del archivo:** `MME_RA7_Apellido_Nombre.ext`
+* **Fecha límite:** 04-03-2026
+* **Plataforma:** Aula virtual Moodle
 
 ---
-> **Nota del Prof. Ezequiel:** *"Recordad que un buen técnico de SMR no solo sabe arreglar el PC, sino que es capaz de mantener todo el ecosistema de periféricos que lo rodea. Sed precisos en las descripciones técnicas."*
+> **Nota del Prof. Ezequiel:** *"Recordad que un buen técnico de montaje y mantenimiento no solo sabe arreglar el PC, sino que es capaz de mantener todo el ecosistema de periféricos que lo rodea. Sed precisos en las descripciones técnicas."*
