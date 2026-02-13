@@ -3,12 +3,7 @@
 ![Grupo](https://img.shields.io/badge/Grupo-SMR1-blue?style=for-the-badge)
 ![Profesor](https://img.shields.io/badge/Profesor-Ezequiel_Llarena_Borges-blue?style=for-the-badge)  
 ```Trabajo práctico individual```  
-# Mantenimiento y Configuración de Periféricos (RA7)
-**Módulo:** Montaje y Mantenimiento de Equipos (MME)  
-**Curso:** SMR1
-**Prof.** Ezequiel Llarena Borges
-
----
+# Mantenimiento y Configuración de Periféricos
 
 ## Objetivo del trabajo individual
 El alumno deberá demostrar su capacidad para identificar averías, realizar mantenimiento preventivo y seleccionar periféricos adecuados según las necesidades del cliente, cumpliendo con los criterios de evaluación del RA7.
