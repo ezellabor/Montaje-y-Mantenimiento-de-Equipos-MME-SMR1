@@ -69,7 +69,7 @@ Activar si se usan máquinas virtuales.
 
 ## 6. Simulador de BIOS/UEFI online de Lenovo  
 
-![Simulador BIOS/UEFI online}(https://download.lenovo.com/bsco/index.html)
+![Simulador BIOS/UEFI online](https://download.lenovo.com/bsco/index.html)
 
 
 
