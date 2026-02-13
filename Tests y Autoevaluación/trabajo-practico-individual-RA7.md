@@ -11,9 +11,9 @@ El alumno deberá demostrar su capacidad para identificar averías, realizar man
 
 ---
 
-## 1. Opciones de Formato (Elegir una)
+## 1. Opciones de formato de presentación  
 
-Elige el formato que más te guste para presentar tu proyecto:
+Elige el formato para presentar tu proyecto:
 
 1.  **Manual de Taller (Síntoma-Causa-Avería):** Un documento técnico tipo "enciclopedia" con tablas de resolución de problemas para impresoras y periféricos de entrada.
 2.  **Videotutorial de Mantenimiento:** Grabación de una intervención técnica real o simulada realizando limpieza, cambio de consumibles y mantenimiento preventivo.
@@ -23,7 +23,7 @@ Elige el formato que más te guste para presentar tu proyecto:
 
 ---
 
-## 2. Contenidos Obligatorios (Qué debe incluir el trabajo)
+## 2. Contenidos mínimos (Qué debe incluir el trabajo)
 
 Independientemente del formato, el trabajo debe cubrir estos 4 bloques técnicos:
 
@@ -45,7 +45,7 @@ Independientemente del formato, el trabajo debe cubrir estos 4 bloques técnicos
 
 ---
 
-## 📊 3. Criterios de Evaluación (Rúbrica)
+## 3. Criterios de Evaluación (Rúbrica)
 
 | Criterio | Excelente (9-10) | Bien (5-8) | Insuficiente (<5) |
 | :--- | :--- | :--- | :--- |
@@ -56,7 +56,7 @@ Independientemente del formato, el trabajo debe cubrir estos 4 bloques técnicos
 
 ---
 
-## 📅 4. Fecha y Modo de Entrega
+## 4. Fecha y forma de entrega
 * **Fecha límite:** [Insertar Fecha]
 * **Plataforma:** [Moodle/Email/GitHub]
 * **Nombre del archivo:** `MME_RA7_Apellido_Nombre.ext`
