@@ -5,8 +5,10 @@
 ```Trabajo práctico individual```  
 # Mantenimiento y Configuración de Periféricos
 
-## Objetivo del trabajo individual
-El alumno deberá demostrar su capacidad para identificar averías, realizar mantenimiento preventivo y seleccionar periféricos adecuados según las necesidades del cliente, cumpliendo con los criterios de evaluación del RA7.
+## Objetivos  
+- Identificar averías
+- Realizar mantenimiento preventivo
+- Seleccionar periféricos adecuados según las necesidades del cliente, cumpliendo con los criterios de evaluación del RA7
 
 ##  
 
