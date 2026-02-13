@@ -1,4 +1,5 @@
-# Trabajo práctico individual: Mantenimiento y Configuración de Periféricos (RA7)
+```Trabajo práctico individual```  
+# Mantenimiento y Configuración de Periféricos (RA7)
 **Módulo:** Montaje y Mantenimiento de Equipos (MME)  
 **Curso:** SMR1
 **Prof.** Ezequiel Llarena Borges
