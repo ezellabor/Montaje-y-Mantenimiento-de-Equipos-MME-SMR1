@@ -1,4 +1,4 @@
-# BIOS / UEFI – Infografía Técnica
+# BIOS / UEFI 
 
 ![Nivel](https://img.shields.io/badge/Nivel-SMR1-blue)
 ![Módulo](https://img.shields.io/badge/Módulo-Montaje%20y%20Mantenimiento-lightgrey)
@@ -6,7 +6,7 @@
 
 ---
 
-## ¿Qué es la BIOS?
+## 1. ¿Qué es la BIOS?
 
 La **BIOS (Basic Input/Output System)** es un firmware almacenado en memoria ROM/Flash que:
 
@@ -19,7 +19,7 @@ La versión moderna es **UEFI (Unified Extensible Firmware Interface).**
 
 ---
 
-## BIOS vs UEFI
+## 2. BIOS vs UEFI
 
 | Característica | BIOS Legacy | UEFI |
 |---------------|------------|------|
@@ -30,7 +30,7 @@ La versión moderna es **UEFI (Unified Extensible Firmware Interface).**
 
 ---
 
-## POST (Power-On Self Test)
+## 3. POST (Power-On Self Test)
 
 Secuencia automática al encender el equipo:
 
@@ -40,7 +40,7 @@ Secuencia automática al encender el equipo:
 4. Discos
 5. Periféricos
 
-### Errores típicos BIOS
+## 4. Errores típicos BIOS
 
 - Pitidos continuos → RAM mal colocada
 - No detecta disco → Modo SATA incorrecto
@@ -48,7 +48,7 @@ Secuencia automática al encender el equipo:
 
 ---
 
-## Configuración básica 
+## 5. Configuración básica 
 
 ### Boot Order
 USB → SSD → HDD
@@ -65,7 +65,13 @@ USB → SSD → HDD
 ### Virtualización
 Activar si se usan máquinas virtuales.
 
----
+---  
+
+## 6. Simulador de BIOS/UEFI online de Lenovo  
+
+!(Simulador BIOS/UEFI online)[https://download.lenovo.com/bsco/index.html]
+
+
 
 
 
