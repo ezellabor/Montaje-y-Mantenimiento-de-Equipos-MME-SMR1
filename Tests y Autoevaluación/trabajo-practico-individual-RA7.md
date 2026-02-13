@@ -53,7 +53,7 @@ Independientemente del formato, el trabajo debe cubrir estos 4 bloques técnicos
 | **Conocimiento de Equipos** | Diferencia perfectamente equipos domésticos de profesionales. | Confunde algunas prestaciones de equipos de gama alta. | No distingue tipos de periféricos. |
 | **Presentación** | Formato profesional, sin faltas y bien estructurado. | Formato correcto pero con errores de organización. | Entrega descuidada o incompleta. |
 
----
+##  
 
 ### 4. Fecha y forma de entrega
 * **Fecha límite:** 04-03-2026
