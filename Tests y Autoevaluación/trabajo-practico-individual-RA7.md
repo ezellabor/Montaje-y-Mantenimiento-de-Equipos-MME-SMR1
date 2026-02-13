@@ -1,3 +1,7 @@
+![Módulo](https://img.shields.io/badge/Módulo-Montaje_y_Mantenimiento_de_Equipos-brown?style=for-the-badge)
+![RA7](https://img.shields.io/badge/RA7-Trabajo_práctico_individual-brown?style=for-the-badge)
+![Grupo](https://img.shields.io/badge/Grupo-SMR1-blue?style=for-the-badge)
+![Profesor](https://img.shields.io/badge/Profesor-Ezequiel_Llarena_Borges-blue?style=for-the-badge)  
 ```Trabajo práctico individual```  
 # Mantenimiento y Configuración de Periféricos (RA7)
 **Módulo:** Montaje y Mantenimiento de Equipos (MME)  
