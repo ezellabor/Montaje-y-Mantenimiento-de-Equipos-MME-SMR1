@@ -50,19 +50,19 @@ Secuencia automática al encender el equipo:
 
 ## 5. Configuración básica 
 
-### Boot Order
+#### Boot order
 USB → SSD → HDD
 
-### Modo SATA
+#### Modo SATA
 - IDE (obsoleto)
 - AHCI (recomendado)
 - RAID
 
-### Secure Boot
+#### Secure boot
 - Activado: solo sistemas firmados
 - Desactivado: instalaciones manuales
 
-### Virtualización
+#### Virtualización
 Activar si se usan máquinas virtuales.
 
 ---  
