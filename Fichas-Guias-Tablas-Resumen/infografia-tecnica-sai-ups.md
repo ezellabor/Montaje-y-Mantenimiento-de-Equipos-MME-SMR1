@@ -1,4 +1,4 @@
-# SAI / UPS – Infografía Técnica 
+# SAI - UPS
 
 ![Nivel](https://img.shields.io/badge/Nivel-SMR1-blue)
 ![Módulo](https://img.shields.io/badge/Módulo-Montaje%20y%20Mantenimiento-lightgrey)
