@@ -15,7 +15,7 @@ El alumno deberá demostrar su capacidad para identificar averías, realizar man
 
 ---
 
-## 1. Opciones de formato de presentación  
+### 1. Opciones de formato de presentación  
 
 Elige el formato para presentar tu proyecto:
 
@@ -27,29 +27,29 @@ Elige el formato para presentar tu proyecto:
 
 ---
 
-## 2. Contenidos mínimos (Qué debe incluir el trabajo)
+### 2. Contenidos mínimos
 
 Independientemente del formato, el trabajo debe cubrir estos 4 bloques técnicos:
 
-### Bloque A: Periféricos de Impresión y Copia
+#### Bloque A: Periféricos de Impresión y Copia
 * **Mecánica y Consumibles:** Explicar el proceso de sustitución de tóner/cartuchos y la solución de atascos de papel o problemas de rodillos (problemas mecánicos).
 * **Equipos Profesionales:** Identificar diferencias entre una impresora doméstica, una fotocopiadora de oficina y sistemas de filmado/imprenta digital profesional.
 
 
-### Bloque B: Periféricos de Entrada y Captura
+#### Bloque B: Periféricos de Entrada y Captura
 * **Reparación:** Identificar fallos comunes en teclados (membrana/mecánicos) y ratones (limpieza de sensores/clics).
 * **Captura de Imagen:** Comparar prestaciones (resolución, FPS, sensor) de webcams, cámaras réflex y cámaras de vídeo según su uso (streaming, fotografía pro, videovigilancia).
 
 
-### Bloque C: Periféricos Multimedia
+#### Bloque C: Periféricos Multimedia
 * **Aplicaciones:** Asociar prestaciones de altavoces, pantallas interactivas, tabletas digitalizadoras y proyectores con entornos específicos (diseño gráfico, aulas, cine en casa).
 
-### Bloque D: Mantenimiento Preventivo
+#### Bloque D: Mantenimiento Preventivo
 * **Protocolo:** Listado de técnicas para alargar la vida útil: limpieza de cabezales, calibración de escáneres, soplado de polvo en teclados y actualización de drivers.
 
 ---
 
-## 3. Criterios de Evaluación (Rúbrica)
+### 3. Criterios de evaluación
 
 | Criterio | Excelente (9-10) | Bien (5-8) | Insuficiente (<5) |
 | :--- | :--- | :--- | :--- |
@@ -60,9 +60,9 @@ Independientemente del formato, el trabajo debe cubrir estos 4 bloques técnicos
 
 ---
 
-## 4. Fecha y forma de entrega
+### 4. Fecha y forma de entrega
 * **Fecha límite:** 04-03-2026
 * **Plataforma:** Aula virtual Moodle
 
 ---
-> **Nota del Prof. Ezequiel:** *"Recordad que un buen técnico de montaje y mantenimiento no solo sabe arreglar el PC, sino que es capaz de mantener todo el ecosistema de periféricos que lo rodea. Sed precisos en las descripciones técnicas."*
+> *"Recuerden que un buen técnico de montaje y mantenimiento no solo sabe arreglar el PC, sino que es capaz de mantener todo el ecosistema de periféricos que lo rodea. Sean precisos en las descripciones técnicas."*
