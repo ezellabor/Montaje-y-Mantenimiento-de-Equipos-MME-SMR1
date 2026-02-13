@@ -8,7 +8,7 @@
 ## Objetivo del trabajo individual
 El alumno deberá demostrar su capacidad para identificar averías, realizar mantenimiento preventivo y seleccionar periféricos adecuados según las necesidades del cliente, cumpliendo con los criterios de evaluación del RA7.
 
----
+##  
 
 ### 1. Opciones de formato de presentación  
 
@@ -20,7 +20,7 @@ Elige el formato para presentar tu proyecto:
 4.  **Exposición Oral (Masterclass):** Presentación ante la clase defendiendo el uso de periféricos multimedia y sistemas de filmado profesional.
 5.  **Wiki de Periféricos SMR:** Creación de un sitio web o documento hipervinculado con fichas técnicas y protocolos de sustitución de consumibles.
 
----
+##
 
 ### 2. Contenidos mínimos
 
@@ -42,7 +42,7 @@ Independientemente del formato, el trabajo debe cubrir estos 4 bloques técnicos
 #### Bloque D: Mantenimiento Preventivo
 * **Protocolo:** Listado de técnicas para alargar la vida útil: limpieza de cabezales, calibración de escáneres, soplado de polvo en teclados y actualización de drivers.
 
----
+##
 
 ### 3. Criterios de evaluación
 
@@ -59,5 +59,5 @@ Independientemente del formato, el trabajo debe cubrir estos 4 bloques técnicos
 * **Fecha límite:** 04-03-2026
 * **Plataforma:** Aula virtual Moodle
 
----
+##
 > *"Recuerden que un buen técnico de montaje y mantenimiento no solo sabe arreglar el PC, sino que es capaz de mantener todo el ecosistema de periféricos que lo rodea. Sean precisos en las descripciones técnicas."*
