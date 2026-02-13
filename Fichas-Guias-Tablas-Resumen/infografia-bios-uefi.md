@@ -8,14 +8,14 @@
 
 ## ¿Qué es la BIOS?
 
-La BIOS (Basic Input/Output System) es un firmware almacenado en memoria ROM/Flash que:
+La **BIOS (Basic Input/Output System)** es un firmware almacenado en memoria ROM/Flash que:
 
 - Inicializa el hardware
 - Ejecuta el POST
 - Permite configurar el sistema
 - Carga el sistema operativo
 
-La versión moderna es UEFI (Unified Extensible Firmware Interface).
+La versión moderna es **UEFI (Unified Extensible Firmware Interface).**
 
 ---
 
@@ -48,7 +48,7 @@ Secuencia automática al encender el equipo:
 
 ---
 
-## Configuración básica en clase
+## Configuración básica 
 
 ### Boot Order
 USB → SSD → HDD
@@ -67,5 +67,5 @@ Activar si se usan máquinas virtuales.
 
 ---
 
-# 🖥 Versión Visual Rápida
+
 
