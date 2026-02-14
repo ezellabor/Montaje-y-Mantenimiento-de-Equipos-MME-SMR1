@@ -1,8 +1,9 @@
-# Flashcards de Repaso: Seguridad, PRL y Medio Ambiente
+# Flashcards de repaso  
+```Seguridad, PRL y Medio Ambiente```  
 **Módulo:** Montaje y Mantenimiento de Equipos (MME) - SMR1  
 **Profesor:** Ezequiel Llarena Borges  
 
-Este documento sirve como material de repaso rápido para el examen y el Kahoot del bloque de Seguridad y Residuos.
+```Este documento sirve como material de repaso rápido para el examen y el Kahoot del bloque de Seguridad y Residuos.```  
 
 ---
 
