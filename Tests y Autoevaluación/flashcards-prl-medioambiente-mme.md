@@ -78,19 +78,22 @@ La **Ley 31/1995** de Prevención de Riesgos Laborales (LPRL).
 
 > **¿Qué significan las siglas RAEE?**
 > <details>
-> <summary>Ver respuesta</summary>
+> <summary>Ver respuesta</summary>  
+  
 > **Residuos de Aparatos Eléctricos y Electrónicos**.
 > </details>
 
 > **¿Dónde se debe depositar una placa base o un monitor viejo?**
 > <details>
-> <summary>Ver respuesta</summary>
+> <summary>Ver respuesta</summary>  
+  
 > En un **Punto Limpio** o a través de un gestor de residuos autorizado. Nunca al contenedor gris.
 > </details>
 
 > **¿Por qué no se pueden tirar las pilas a la basura común?**
 > <details>
-> <summary>Ver respuesta</summary>
+> <summary>Ver respuesta</summary>  
+  
 > Por su alto contenido en **metales pesados** (Mercurio, Cadmio, Litio) que son altamente contaminantes.
 > </details>
 
