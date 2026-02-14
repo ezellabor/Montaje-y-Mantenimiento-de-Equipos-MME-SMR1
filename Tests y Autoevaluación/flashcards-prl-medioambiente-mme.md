@@ -9,21 +9,21 @@
 
 ## Bloque 1: Legislación y Normativa
 
-> **¿Cuál es la ley principal de prevención en España?**
-> <details>
-> <summary> Ver respuesta</summary>  
-> La **Ley 31/1995** de Prevención de Riesgos Laborales (LPRL).
-> </details>
+**¿Cuál es la ley principal de prevención en España?**
+<details>
+<summary> Ver respuesta</summary>  
+La **Ley 31/1995** de Prevención de Riesgos Laborales (LPRL).
+</details>
 
 > **¿El trabajador está obligado a usar los EPIs?**
-> <details>
-> <summary> Ver respuesta</summary>
-> **SÍ**. Es una obligación legal del trabajador utilizar correctamente los medios de protección facilitados por la empresa.
-> </details>
+<details>
+<summary> Ver respuesta</summary> 
+**SÍ**. Es una obligación legal del trabajador utilizar correctamente los medios de protección facilitados por la empresa.
+</details>
 
 ---
 
-## ⚡ Bloque 2: Identificación de Riesgos
+## Bloque 2: Identificación de Riesgos
 
 > **¿Qué peligro tiene una fuente de alimentación desenchufada?**
 > <details>
@@ -45,7 +45,7 @@
 
 ---
 
-## 💺 Bloque 3: Medidas Preventivas y Ergonomía
+## Bloque 3: Medidas Preventivas y Ergonomía
 
 > **¿A qué altura debe situarse el borde superior del monitor?**
 > <details>
@@ -74,7 +74,7 @@
 
 ---
 
-## ♻️ Bloque 4: Protección Ambiental y RAEE
+## Bloque 4: Protección Ambiental y RAEE
 
 > **¿Qué significan las siglas RAEE?**
 > <details>
@@ -104,10 +104,10 @@
 
 ---
 
-## 💡 Tips Técnicos para el Taller
+## Tips Técnicos para el Taller
 * **Electricidad Estática:** Usa siempre **pulsera antiestática** antes de tocar componentes internos.
 * **Cargas de peso:** Levanta cajas flexionando las **rodillas**, nunca doblando la espalda.
 * **Símbolo RAEE:** Un contenedor tachado con una X indica que el producto no debe ir a la basura doméstica.
 
 ---
-_Material preparado para el repositorio de clase - SMR1 MME_
+
