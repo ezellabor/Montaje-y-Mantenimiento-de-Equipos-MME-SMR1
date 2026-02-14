@@ -1,10 +1,11 @@
 # Flashcards interactivas: Seguridad, PRL y Medio Ambiente  
-**Módulo:** Montaje y Mantenimiento de Equipos (MME)  
-**Profesor:** Ezequiel Llarena Borges   
+![Módulo](https://img.shields.io/badge/Módulo-Montaje_y_Mantenimiento_de_equipos-red?style=for-the-badge)
+![Grupo](https://img.shields.io/badge/Grupo-SMR1-darkgrey?style=for-the-badge)
+![Prof.](https://img.shields.io/badge/Prof.-Ezequiel_Llarena_Borges-blue?style=for-the-badge)  
 
 > **Instrucciones:** Pulsa en " Ver respuesta" para comprobar si has acertado.
 
----
+##  
 
 ## Bloque 1: Legislación y Normativa
 
