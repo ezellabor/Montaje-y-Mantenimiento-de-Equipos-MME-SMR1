@@ -7,6 +7,7 @@
 
 ---
 
+<!--  
 ## Bloque 1: Legislación y Normativa
 
 **¿Cuál es la ley principal de prevención en España?**
@@ -107,7 +108,9 @@ La **Ley 31/1995** de Prevención de Riesgos Laborales (LPRL).
 
 ---
 
-## Tips Técnicos para el Taller
+-->  
+
+## Recomendaciones para el taller
 * **Electricidad Estática:** Usa siempre **pulsera antiestática** antes de tocar componentes internos.
 * **Cargas de peso:** Levanta cajas flexionando las **rodillas**, nunca doblando la espalda.
 * **Símbolo RAEE:** Un contenedor tachado con una X indica que el producto no debe ir a la basura doméstica.
