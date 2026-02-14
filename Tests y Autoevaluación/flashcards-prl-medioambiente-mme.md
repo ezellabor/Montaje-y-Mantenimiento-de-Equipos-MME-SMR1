@@ -10,7 +10,7 @@ Este documento sirve como material de repaso rápido para el examen y el Kahoot 
 
 > **¿Cuál es la ley principal de prevención en España?**
 > <details>
-> <summary> Ver respuesta</summary>
+> <summary> Ver respuesta</summary>  
 > La **Ley 31/1995** de Prevención de Riesgos Laborales (LPRL).
 > </details>
 
