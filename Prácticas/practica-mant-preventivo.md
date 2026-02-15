@@ -33,6 +33,7 @@
 
 4. **Reacondicionamiento** (30 min)
    - Aplicación de nueva pasta térmica al procesador(es)
+   - Utilizar bridas para organizar cables
   
 5. **Montaje del equipo** (15 min)
    - Verificación de funcionamiento
