@@ -223,7 +223,8 @@ La **limpieza del polvo** con aire comprimido o aspirador. La acumulación de pe
 
 > **¿Cuáles son las 3R de la gestión ambiental?**
  <details>
- <summary>Ver respuesta</summary>
+ <summary>Ver respuesta</summary> 
+  
  1. **Reducir** (consumo).
  2. **Reutilizar** (dar nuevos usos).
  3. **Reciclar** (procesar materiales).
