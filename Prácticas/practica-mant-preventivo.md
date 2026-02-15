@@ -3,7 +3,7 @@
 ![Prof.](https://img.shields.io/badge/Prof.-Ezequiel_Llarena_Borges-blue?style=for-the-badge)  
 
 ## GUÍA DE PASOS EN EL MANTENIMIENTO PREVENTIVO
-**Duración estimada:** 1 hora
+**Duración estimada:** 1 hora 
 
 ### 1. Objetivos
 - Realizar **limpieza interna** de equipos
