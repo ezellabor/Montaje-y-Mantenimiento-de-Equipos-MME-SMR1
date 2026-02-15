@@ -70,5 +70,5 @@ Independientemente del formato, el trabajo debe cubrir estos 4 bloques técnicos
 * **Forma de entrega:** Aula virtual Moodle
 
 ## Recuerda...
-> Un buen técnico de montaje y mantenimiento no solo sabe arreglar el PC, sino que es capaz de mantener todo el ecosistema de periféricos que lo rodea.
-> Sean precisos en las descripciones técnicas."*
+> Un buen técnico de montaje y mantenimiento no solo sabe arreglar el PC, sino que es capaz de mantener todo el ecosistema de periféricos que lo rodea.  
+> Sean precisos en las descripciones técnicas.
