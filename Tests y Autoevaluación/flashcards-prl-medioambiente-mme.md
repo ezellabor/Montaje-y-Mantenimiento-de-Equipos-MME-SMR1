@@ -144,26 +144,19 @@ Usar un **paño de microfibra** ligeramente humedecido con agua destilada o líq
 La **limpieza del polvo** con aire comprimido o aspirador. La acumulación de pelusa actúa como combustible y obstruye la refrigeración.
 </details>  
 
-
-**¿Cuál es la ley principal de prevención en España?**
-<details>
-<summary> Ver respuesta</summary>  
-La **Ley 31/1995** de Prevención de Riesgos Laborales (LPRL).
-</details>
-
-> **¿El trabajador está obligado a usar los EPIs?**
+**¿El trabajador está obligado a usar los EPIs?**
 <details>
 <summary> Ver respuesta</summary> 
 **SÍ**. Es una obligación legal del trabajador utilizar correctamente los medios de protección facilitados por la empresa.
 </details> 
 
-> **¿Qué peligro tiene una fuente de alimentación desenchufada?**
+**¿Qué peligro tiene una fuente de alimentación desenchufada?**
 > <details>
 > <summary> Ver respuesta</summary>
 > Riesgo de **descarga eléctrica** por la energía residual almacenada en sus **condensadores**.
 > </details>
 
-> **¿Qué significa el cable de color Verde y Amarillo?**
+**¿Qué significa el cable de color Verde y Amarillo?**
 > <details>
 > <summary> Ver respuesta</summary>
 > Es la **Toma de Tierra**. Deriva fugas de corriente para evitar calambres y permitir que salte el diferencial.
