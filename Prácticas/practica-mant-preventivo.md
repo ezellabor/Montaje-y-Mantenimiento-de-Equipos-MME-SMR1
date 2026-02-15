@@ -5,12 +5,12 @@
 ## GUÍA DE PASOS EN EL MANTENIMIENTO PREVENTIVO
 **Duración estimada:** 1 hora
 
-### Objetivos
+### 1. Objetivos
 - Realizar **limpieza interna** de equipos
 - Aplicar **pasta térmica** al procesador
 - Optimizar el **flujo de aire** del sistema
 
-### Material necesario
+### 2. Material necesario
 - Aire comprimido
 - Alcohol isopropílico
 - Pasta térmica
@@ -18,7 +18,7 @@
 - Destornilladores
 - Pulsera antiestática
 
-### Desarrollo de la práctica
+### 3. Desarrollo de la práctica
 1. **Desmontaje seguro** (20 min)
    - Desenchufar equipo de la red eléctrica
    - Desconexión de todos los cables
@@ -38,7 +38,7 @@
    - Verificación de funcionamiento
    - Comprobar ruidos o pitidos
 
-### NORMAS GENERALES DE TRABAJO   
+### 4. Normas de manipulación de componentes     
 1. Utilizar siempre pulsera antiestática
 2. Desconectar equipos de la red eléctrica antes de manipular
 3. Mantener el puesto de trabajo ordenado
