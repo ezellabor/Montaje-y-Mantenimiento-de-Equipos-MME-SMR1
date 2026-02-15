@@ -38,9 +38,7 @@
    - Verificación de funcionamiento
    - Comprobar ruidos o pitidos
 
-#  
-
-## NORMAS GENERALES DE TRABAJO   
+### NORMAS GENERALES DE TRABAJO   
 1. Utilizar siempre pulsera antiestática
 2. Desconectar equipos de la red eléctrica antes de manipular
 3. Mantener el puesto de trabajo ordenado
