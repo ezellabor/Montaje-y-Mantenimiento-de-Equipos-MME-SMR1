@@ -133,81 +133,81 @@ En el **contenedor amarillo** (envases de plástico), ya que es poliestireno exp
 ## 5. Bloques combinados
 
 <details>
-<summary> ¿Cómo se debe limpiar una pantalla LCD para no dañarla?</summary> 
+<summary> 1. ¿Cómo se debe limpiar una pantalla LCD para no dañarla?</summary> 
 
 Usar un **paño de microfibra** ligeramente humedecido con agua destilada o líquido específico. **Jamás** usar alcohol o productos abrasivos con la pantalla encendida.
 </details>
 
 <details>
-<summary> ¿Qué mantenimiento preventivo evita incendios en las fuentes de alimentación?</summary>
+<summary> 2. ¿Qué mantenimiento preventivo evita incendios en las fuentes de alimentación?</summary>
 
 La **limpieza del polvo** con aire comprimido o aspirador. La acumulación de pelusa actúa como combustible y obstruye la refrigeración.
 </details>  
 
 <details>
-<summary> ¿El trabajador está obligado a usar los EPIs?</summary> 
+<summary> 3. ¿El trabajador está obligado a usar los EPIs?</summary> 
  
 **SÍ**. Es una obligación legal del trabajador utilizar correctamente los medios de protección facilitados por la empresa.
 </details> 
 
 <details>
- <summary> ¿Qué peligro tiene una fuente de alimentación desenchufada?</summary>
+ <summary> 4. ¿Qué peligro tiene una fuente de alimentación desenchufada?</summary>
  
  Riesgo de **descarga eléctrica** por la energía residual almacenada en sus **condensadores**.
  </details>
 
 <details>
- <summary> ¿Qué significa el cable de color Verde y Amarillo?</summary>
+ <summary> 5. ¿Qué significa el cable de color Verde y Amarillo?</summary>
  
  Es la **Toma de Tierra**. Deriva fugas de corriente para evitar calambres y permitir que salte el diferencial.
  </details>
 
  <details>
- <summary> ¿Cuál es el riesgo físico principal en un CPD o sala de servidores?</summary> 
+ <summary> 6. ¿Cuál es el riesgo físico principal en un CPD o sala de servidores?</summary> 
   
  El **ruido excesivo** y constante de los sistemas de ventilación (fatiga auditiva).
  </details>
 
  <details>
- <summary> ¿A qué altura debe situarse el borde superior del monitor?</summary> 
+ <summary> 7. ¿A qué altura debe situarse el borde superior del monitor?</summary> 
   
  A la **altura de los ojos** del usuario para evitar lesiones cervicales.
  </details>
 
  <details>
- <summary> ¿Cómo se evita el Síndrome del Túnel Carpiano?</summary>
+ <summary> 8. ¿Cómo se evita el Síndrome del Túnel Carpiano?</summary>
   
  Manteniendo las **muñecas rectas (posición neutra)** y apoyadas, evitando ángulos forzados al teclear.
  </details>
 
  <details>
- <summary> ¿Qué significa el protocolo P.A.S. en primeros auxilios?</summary>
+ <summary> 9. ¿Qué significa el protocolo P.A.S. en primeros auxilios?</summary>
   
 **P**roteger (el lugar), **A**visar (al 112) y **S**ocorrer (al herido).
  </details>
 
  <details>
- <summary> ¿Qué diferencia hay entre el Magnetotérmico y el Diferencial?</summary>
+ <summary> 10. ¿Qué diferencia hay entre el Magnetotérmico y el Diferencial?</summary>
  - **Magnetotérmico:** Protege la instalación y cables (evita incendios).
  - **Diferencial:** Protege a las personas (evita electrocuciones).
  </details>
 
  <details>
- <summary>¿Qué significan las siglas RAEE?
+ <summary>11. ¿Qué significan las siglas RAEE?
 </summary>  
   
 > **Residuos de Aparatos Eléctricos y Electrónicos**.
  </details>
 
  <details>
- <summary>¿Dónde se debe depositar una placa base o un monitor viejo?
+ <summary>12. ¿Dónde se debe depositar una placa base o un monitor viejo?
 </summary>  
  
 > En un **Punto Limpio** o a través de un gestor de residuos autorizado. Nunca al contenedor gris.
 </details>
 
  <details>
- <summary>¿Por qué no se pueden tirar las pilas a la basura común?
+ <summary>13. ¿Por qué no se pueden tirar las pilas a la basura común?
 </summary>  
   
 > Por su alto contenido en **metales pesados** (Mercurio, Cadmio, Litio) que son altamente contaminantes.
@@ -215,7 +215,7 @@ La **limpieza del polvo** con aire comprimido o aspirador. La acumulación de pe
 
 
  <details>
- <summary>¿Cuáles son las 3R de la gestión ambiental?</summary> 
+ <summary>14. ¿Cuáles son las 3R de la gestión ambiental?</summary> 
   
  1. **Reducir** (consumo).
  2. **Reutilizar** (dar nuevos usos).
