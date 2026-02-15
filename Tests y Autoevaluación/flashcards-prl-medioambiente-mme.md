@@ -3,7 +3,7 @@
 ![Grupo](https://img.shields.io/badge/Grupo-SMR1-darkgrey?style=for-the-badge)
 ![Prof.](https://img.shields.io/badge/Prof.-Ezequiel_Llarena_Borges-blue?style=for-the-badge)  
 
-> **Instrucciones:** Pulsa en " Ver respuesta" para comprobar si has acertado.
+**Instrucciones:** Pulsa en la flecha (triángulo negro) para comprobar si has acertado.
  
 ##  
 
