@@ -7,7 +7,7 @@
 
 ##  
 
-## Bloque 1: Legislación y Normativa
+## 1: Legislación y Normativa
 
 <details>
 <summary> ¿Cuál es la ley principal de prevención en España?</summary>
@@ -29,7 +29,7 @@ Tiene derecho a **interrumpir su actividad** y, si es necesario, abandonar el lu
 
 ---
 
-## Bloque 2: Identificación de riesgos
+## 2: Identificación de riesgos
 
 <details>
 <summary> ¿Qué peligro tiene una fuente de alimentación desenchufada?</summary>
@@ -59,7 +59,7 @@ El **ruido excesivo** y constante de los ventiladores, que puede causar fatiga a
 
 ---
 
-## Bloque 3: Medidas Preventivas y Ergonomía
+## 3: Medidas Preventivas y Ergonomía
 
 <details>
 <summary> ¿A qué altura debe situarse el borde superior del monitor?</summary>
@@ -97,7 +97,7 @@ Flexionar las **rodillas** manteniendo la **espalda recta** y pegar el peso al c
 
 ---
 
-## Bloque 4: Protección ambiental y RAEE
+## 4: Protección ambiental y RAEE
 
 <details>
 <summary> ¿Qué significan las siglas RAEE?</summary>
