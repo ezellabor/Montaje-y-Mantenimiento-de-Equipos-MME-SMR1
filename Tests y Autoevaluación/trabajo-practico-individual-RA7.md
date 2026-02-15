@@ -15,7 +15,7 @@ Desarrollar un trabajo en cualquiera de los formatos propuestos en el apartado 1
 4. Asociar las características y prestaciones de los periféricos de captura de imágenes digitales, fijas y en movimiento con sus posibles aplicaciones.
 5. Asociar las características y prestaciones de otros periféricos multimedia con sus posibles aplicaciones.
 6. Reconocer los usos y ámbitos de aplicación de equipos de fotocopiado, impresión digital profesional y filmado.
-7. Aplicar técnicas de mantenimiento preventivo a los periféricos.															
+7. Aplicar técnicas de mantenimiento preventivo a los periféricos.	 														
 
 ##  
 
