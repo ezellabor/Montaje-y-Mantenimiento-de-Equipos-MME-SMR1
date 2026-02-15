@@ -7,7 +7,7 @@
 
 ##  
 
-## 1. Legislación y Normativa
+## 1. Legislación y normativa
 
 <details>
 <summary> ¿Cuál es la ley principal de prevención en España?</summary>
@@ -59,7 +59,7 @@ El **ruido excesivo** y constante de los ventiladores, que puede causar fatiga a
 
 ---
 
-## 3. Medidas Preventivas y Ergonomía
+## 3. Medidas preventivas y ergonomía
 
 <details>
 <summary> ¿A qué altura debe situarse el borde superior del monitor?</summary>
@@ -97,7 +97,7 @@ Flexionar las **rodillas** manteniendo la **espalda recta** y pegar el peso al c
 
 ---
 
-## 4. Protección ambiental y RAEE
+## 4. Protección ambiental
 
 <details>
 <summary> ¿Qué significan las siglas RAEE?</summary>
