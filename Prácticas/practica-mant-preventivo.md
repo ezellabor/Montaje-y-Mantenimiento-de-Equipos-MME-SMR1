@@ -39,8 +39,11 @@
    - Comprobar ruidos o pitidos
 
 ### 4. Normas de manipulación de componentes     
+```cpp
 1. Utilizar siempre pulsera antiestática
 2. Desconectar equipos de la red eléctrica antes de manipular
 3. Mantener el puesto de trabajo ordenado
 4. Documentar cualquier incidencia
 5. Respetar los tiempos establecidos
+```
+#  
