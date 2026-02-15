@@ -6,10 +6,16 @@
 
 # Mantenimiento y Configuración de Periféricos
 
-## Objetivos  
-- Identificar averías y fallos de periféricos
-- Realizar mantenimiento preventivo
-- Seleccionar periféricos adecuados según las necesidades del cliente, cumpliendo con los criterios de evaluación del RA7
+## Objetivo  
+Desarrollar un trabajo en cualquiera de los formatos propuestos en el apartado 1 "Opciones de formato de presentación" que permita: Identificar averías y fallos de periféricos, Realizar mantenimiento preventivo o Seleccionar periféricos adecuados según las necesidades del cliente, cumpliendo con los **criterios de evaluación del RA7:**  
+
+1. Identificar y solucionar problemas mecánicos en periféricos de impresión estándar.
+2. Sustituir consumibles en periféricos de impresión estándar.
+3. Identificar y solucionar problemas mecánicos en periféricos de entrada.
+4. Asociar las características y prestaciones de los periféricos de captura de imágenes digitales, fijas y en movimiento con sus posibles aplicaciones.
+5. Asociar las características y prestaciones de otros periféricos multimedia con sus posibles aplicaciones.
+6. Reconocer los usos y ámbitos de aplicación de equipos de fotocopiado, impresión digital profesional y filmado.
+7. Aplicar técnicas de mantenimiento preventivo a los periféricos.															
 
 ##  
 
@@ -29,20 +35,20 @@ Elige el formato para presentar tu proyecto:
 
 Independientemente del formato, el trabajo debe cubrir estos 4 bloques técnicos:
 
-#### Bloque A: Periféricos de Impresión y Copia
+#### A) Periféricos de Impresión y Copia
 * **Mecánica y Consumibles:** Explicar el proceso de sustitución de tóner/cartuchos y la solución de atascos de papel o problemas de rodillos (problemas mecánicos).
 * **Equipos Profesionales:** Identificar diferencias entre una impresora doméstica, una fotocopiadora de oficina y sistemas de filmado/imprenta digital profesional.
 
 
-#### Bloque B: Periféricos de entrada y captura
+#### B) Periféricos de entrada y captura
 * **Reparación:** Identificar fallos comunes en teclados (membrana/mecánicos) y ratones (limpieza de sensores/clics).
 * **Captura de Imagen:** Comparar prestaciones (resolución, FPS, sensor) de webcams, cámaras réflex y cámaras de vídeo según su uso (streaming, fotografía pro, videovigilancia).
 
 
-#### Bloque C: Periféricos multimedia
+#### C) Periféricos multimedia
 * **Aplicaciones:** Asociar prestaciones de altavoces, pantallas interactivas, tabletas digitalizadoras y proyectores con entornos específicos (diseño gráfico, aulas, cine en casa).
 
-#### Bloque D: Mantenimiento preventivo
+#### D) Mantenimiento preventivo
 * **Protocolo:** Listado de técnicas para alargar la vida útil: limpieza de cabezales, calibración de escáneres, soplado de polvo en teclados y actualización de drivers.
 
 ##
