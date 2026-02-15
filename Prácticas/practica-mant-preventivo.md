@@ -1,10 +1,9 @@
-# GUÍA DE PRÁCTICAS - CFGM SMR1
-**Módulo:** Montaje y Mantenimiento de Equipos
-**Curso:** 2025-2026
-**Profesor:** Ezequiel Llarena Borges  
+![Módulo](https://img.shields.io/badge/Módulo-Montaje_y_Mantenimiento_de_equipos-red?style=for-the-badge)
+![Grupo](https://img.shields.io/badge/Grupo-SMR1-darkgrey?style=for-the-badge)
+![Prof.](https://img.shields.io/badge/Prof.-Ezequiel_Llarena_Borges-blue?style=for-the-badge)
 
-## PRÁCTICA: MANTENIMIENTO PREVENTIVO
-**Duración estimada:** 2 horas
+## GUÍA DE PASOS EN EL MANTENIMIENTO PREVENTIVO
+**Duración estimada:** 1 hora
 
 ### Objetivos
 - Realizar **limpieza interna** de equipos
