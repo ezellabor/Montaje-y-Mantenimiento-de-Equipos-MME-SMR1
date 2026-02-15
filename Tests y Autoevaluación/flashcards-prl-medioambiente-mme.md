@@ -144,9 +144,6 @@ Usar un **paño de microfibra** ligeramente humedecido con agua destilada o líq
 La **limpieza del polvo** con aire comprimido o aspirador. La acumulación de pelusa actúa como combustible y obstruye la refrigeración.
 </details>  
 
-#
-
-
 
 # Flashcards de repaso  
 ### Seguridad, PRL y Medio Ambiente    
@@ -258,5 +255,5 @@ La **Ley 31/1995** de Prevención de Riesgos Laborales (LPRL).
 ---
 
 -->  
-#  
+ 
 
