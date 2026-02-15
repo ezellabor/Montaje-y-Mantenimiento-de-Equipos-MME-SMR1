@@ -66,9 +66,8 @@ Activar si se usan máquinas virtuales.
 
 ## 1️⃣ Concepto de Firmware
 
-La BIOS (Basic Input Output System) y la UEFI (Unified Extensible Firmware Interface) son firmware almacenados en memoria flash de la placa base.
-
-Son el primer software que se ejecuta al encender el equipo.
+- La BIOS (Basic Input Output System) y la UEFI (Unified Extensible Firmware Interface) son firmware almacenados en memoria flash de la placa base.
+- Es el primer software que se ejecuta al encender el equipo.
 
 
 ## 2️⃣ Fases del arranque
@@ -90,7 +89,7 @@ Son el primer software que se ejecuta al encender el equipo.
 - Carga MBR (BIOS) o EFI Bootloader (UEFI)
 
 
-## 3️⃣ BIOS vs UEFI (Comparativa Técnica)
+## 3️⃣ Comparativa técnica BIOS vs UEFI   
 
 | Característica | BIOS | UEFI |
 |---------------|------|------|
