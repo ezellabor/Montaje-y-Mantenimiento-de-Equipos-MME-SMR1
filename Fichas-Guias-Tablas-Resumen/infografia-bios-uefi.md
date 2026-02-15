@@ -29,7 +29,7 @@ La versión moderna es **UEFI (Unified Extensible Firmware Interface).**
 | Velocidad | Más lenta | Más rápida |
 
 ---
-
+<!--
 ## 3. POST (Power-On Self Test)
 
 Secuencia automática al encender el equipo:
@@ -64,8 +64,73 @@ USB → SSD → HDD
 
 #### Virtualización
 Activar si se usan máquinas virtuales.
-
+-->
 ---  
+
+## 1️⃣ Concepto de Firmware
+
+La BIOS (Basic Input Output System) y la UEFI (Unified Extensible Firmware Interface) son firmware almacenados en memoria flash de la placa base.
+
+Son el primer software que se ejecuta al encender el equipo.
+
+# 
+
+## 2️⃣ Fases del Arranque
+
+### 1. POST (Power-On Self Test)
+- Verificación CPU
+- Comprobación RAM
+- Inicialización chipset
+- Detección dispositivos SATA/NVMe
+- Señales acústicas (beep codes)
+
+### 2. Inicialización Hardware
+- Controladores básicos integrados
+- Inicialización buses PCIe
+- Enumeración dispositivos
+
+### 3. Boot Manager
+- Selección dispositivo de arranque
+- Carga MBR (BIOS) o EFI Bootloader (UEFI)
+
+#  
+
+## 3️⃣ BIOS vs UEFI (Comparativa Técnica)
+
+| Característica | BIOS | UEFI |
+|---------------|------|------|
+| Arquitectura | 16 bits | 32/64 bits |
+| Particiones | MBR (2TB máx) | GPT (9.4 ZB) |
+| Secure Boot | No | Sí |
+| Interfaz | Texto | Gráfica |
+| Drivers propios | No | Sí |
+
+#  
+
+## 4️⃣ Configuración avanzada
+
+- AHCI vs RAID
+- XMP (perfiles de memoria)
+- Virtualización (Intel VT-x / AMD SVM)
+- Secure Boot
+- Fast Boot
+- TPM
+- Overclocking básico
+
+---
+
+## 5️⃣ Problemas comunes
+
+- Boot loop → RAM mal instalada
+- No detecta disco → Modo SATA incorrecto
+- Error Secure Boot → SO incompatible
+- Beep continuo → Error RAM
+
+#  
+
+## Idea técnica clave  
+
+>  **UEFI** es un mini-sistema operativo previo al sistema operativo principal.  
 
 ## 6. Simulador de BIOS/UEFI online de Lenovo  
 
