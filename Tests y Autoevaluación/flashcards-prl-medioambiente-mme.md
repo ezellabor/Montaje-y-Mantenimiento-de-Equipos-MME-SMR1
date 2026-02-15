@@ -5,8 +5,6 @@
 
 **Instrucciones:** Pulsa en la flecha (triángulo negro) para comprobar si has acertado.
  
-##  
-
 ## 1. Legislación y normativa
 
 <details>
