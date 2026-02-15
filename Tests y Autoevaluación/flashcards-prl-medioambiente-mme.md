@@ -130,7 +130,7 @@ En el **contenedor amarillo** (envases de plástico), ya que es poliestireno exp
 ---  
 
  
-## Bloques combinados
+## 5. Bloques combinados
 
 <details>
 <summary> ¿Cómo se debe limpiar una pantalla LCD para no dañarla?</summary> 
@@ -150,9 +150,8 @@ La **limpieza del polvo** con aire comprimido o aspirador. La acumulación de pe
 **SÍ**. Es una obligación legal del trabajador utilizar correctamente los medios de protección facilitados por la empresa.
 </details> 
 
-> **¿Qué peligro tiene una fuente de alimentación desenchufada?**
 <details>
- <summary> Ver respuesta</summary>
+ <summary> ¿Qué peligro tiene una fuente de alimentación desenchufada?</summary>
  
  Riesgo de **descarga eléctrica** por la energía residual almacenada en sus **condensadores**.
  </details>
@@ -175,51 +174,48 @@ La **limpieza del polvo** con aire comprimido o aspirador. La acumulación de pe
  A la **altura de los ojos** del usuario para evitar lesiones cervicales.
  </details>
 
-> **¿Cómo se evita el Síndrome del Túnel Carpiano?**
  <details>
- <summary> Ver respuesta</summary>
+ <summary> ¿Cómo se evita el Síndrome del Túnel Carpiano?</summary>
   
  Manteniendo las **muñecas rectas (posición neutra)** y apoyadas, evitando ángulos forzados al teclear.
  </details>
 
-> **¿Qué significa el protocolo P.A.S. en primeros auxilios?**
  <details>
- <summary> Ver respuesta</summary>
+ <summary> ¿Qué significa el protocolo P.A.S. en primeros auxilios?</summary>
   
 **P**roteger (el lugar), **A**visar (al 112) y **S**ocorrer (al herido).
  </details>
 
-> **¿Qué diferencia hay entre el Magnetotérmico y el Diferencial?**
  <details>
- <summary> Ver respuesta</summary>
+ <summary> ¿Qué diferencia hay entre el Magnetotérmico y el Diferencial?</summary>
  - **Magnetotérmico:** Protege la instalación y cables (evita incendios).
  - **Diferencial:** Protege a las personas (evita electrocuciones).
  </details>
 
-> **¿Qué significan las siglas RAEE?**
  <details>
- <summary>Ver respuesta</summary>  
+ <summary>¿Qué significan las siglas RAEE?
+</summary>  
   
 > **Residuos de Aparatos Eléctricos y Electrónicos**.
  </details>
 
-> **¿Dónde se debe depositar una placa base o un monitor viejo?**
  <details>
- <summary>Ver respuesta</summary>  
+ <summary>¿Dónde se debe depositar una placa base o un monitor viejo?
+</summary>  
  
 > En un **Punto Limpio** o a través de un gestor de residuos autorizado. Nunca al contenedor gris.
 </details>
 
-> **¿Por qué no se pueden tirar las pilas a la basura común?**
  <details>
- <summary>Ver respuesta</summary>  
+ <summary>¿Por qué no se pueden tirar las pilas a la basura común?
+</summary>  
   
 > Por su alto contenido en **metales pesados** (Mercurio, Cadmio, Litio) que son altamente contaminantes.
  </details>
 
-> **¿Cuáles son las 3R de la gestión ambiental?**
+
  <details>
- <summary>Ver respuesta</summary> 
+ <summary>¿Cuáles son las 3R de la gestión ambiental?</summary> 
   
  1. **Reducir** (consumo).
  2. **Reutilizar** (dar nuevos usos).
