@@ -133,7 +133,7 @@ En el **contenedor amarillo** (envases de plástico), ya que es poliestireno exp
 ## Bloques combinados
 
 <details>
-<summary> ¿Cómo se debe limpiar una pantalla LCD para no dañarla?</summary>
+<summary> ¿Cómo se debe limpiar una pantalla LCD para no dañarla?</summary> 
 
 Usar un **paño de microfibra** ligeramente humedecido con agua destilada o líquido específico. **Jamás** usar alcohol o productos abrasivos con la pantalla encendida.
 </details>
