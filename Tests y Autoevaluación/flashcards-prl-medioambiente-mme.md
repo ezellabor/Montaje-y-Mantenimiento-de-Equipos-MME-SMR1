@@ -127,10 +127,10 @@ Es la programación del fin de la vida útil de un producto para que falle tras 
 En el **contenedor amarillo** (envases de plástico), ya que es poliestireno expandido.
 </details>
 
-#  
+---  
 
-<!-- 
-## Bloques combinados y mantenimiento
+ 
+## Bloques combinados
 
 <details>
 <summary> ¿Cómo se debe limpiar una pantalla LCD para no dañarla?</summary>
@@ -145,17 +145,6 @@ La **limpieza del polvo** con aire comprimido o aspirador. La acumulación de pe
 </details>  
 
 
-# Flashcards de repaso  
-### Seguridad, PRL y Medio Ambiente    
-**Módulo:** Montaje y Mantenimiento de Equipos (MME) - SMR1  
-
-
-```Este documento sirve como material de repaso rápido para el examen y el Kahoot del bloque de Seguridad y Residuos.```  
-
----  
-
-## Bloque 1: Legislación y Normativa
-
 **¿Cuál es la ley principal de prevención en España?**
 <details>
 <summary> Ver respuesta</summary>  
@@ -167,10 +156,6 @@ La **Ley 31/1995** de Prevención de Riesgos Laborales (LPRL).
 <summary> Ver respuesta</summary> 
 **SÍ**. Es una obligación legal del trabajador utilizar correctamente los medios de protección facilitados por la empresa.
 </details> 
-
----
-
-## Bloque 2: Identificación de Riesgos
 
 > **¿Qué peligro tiene una fuente de alimentación desenchufada?**
 > <details>
@@ -189,10 +174,6 @@ La **Ley 31/1995** de Prevención de Riesgos Laborales (LPRL).
 > <summary> Ver respuesta</summary>
 > El **ruido excesivo** y constante de los sistemas de ventilación (fatiga auditiva).
 > </details>
-
----
-
-## Bloque 3: Medidas Preventivas y Ergonomía
 
 > **¿A qué altura debe situarse el borde superior del monitor?**
 > <details>
@@ -218,10 +199,6 @@ La **Ley 31/1995** de Prevención de Riesgos Laborales (LPRL).
 > - **Magnetotérmico:** Protege la instalación y cables (evita incendios).
 > - **Diferencial:** Protege a las personas (evita electrocuciones).
 > </details>
-
----
-
-## Bloque 4: Protección Ambiental y RAEE
 
 > **¿Qué significan las siglas RAEE?**
 > <details>
@@ -252,8 +229,4 @@ La **Ley 31/1995** de Prevención de Riesgos Laborales (LPRL).
 > 3. **Reciclar** (procesar materiales).
 > </details>
 
----
-
--->  
- 
-
+#  
