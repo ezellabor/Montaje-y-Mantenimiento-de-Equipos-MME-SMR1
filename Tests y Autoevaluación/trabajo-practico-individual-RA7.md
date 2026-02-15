@@ -61,7 +61,7 @@ Independientemente del formato, el trabajo debe cubrir estos 4 bloques técnicos
 | **Resolución de averías** | Identifica el síntoma, la causa exacta y la solución técnica. | Identifica la avería pero la explicación técnica es floja. | No sabe proponer una solución lógica. |
 | **Mantenimiento** | Propone técnicas preventivas claras y el uso correcto de herramientas. | Menciona mantenimiento básico (limpiar) sin rigor técnico. | No contempla el mantenimiento preventivo. |
 | **Conocimiento de equipos** | Diferencia perfectamente equipos domésticos de profesionales. | Confunde algunas prestaciones de equipos de gama alta. | No distingue tipos de periféricos. |
-| **Presentación** | Formato profesional, sin faltas y bien estructurado. | Formato correcto pero con errores de organización. | Entrega descuidada o incompleta. |
+| **Presentación** | Formato profesional, claro, fluido y bien estructurado. | Formato correcto pero con errores de organización. | Entrega descuidada o incompleta. |
 
 ##  
 
