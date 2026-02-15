@@ -143,12 +143,12 @@ Usar un **paño de microfibra** ligeramente humedecido con agua destilada o líq
 <summary> ¿Qué mantenimiento preventivo evita incendios en las fuentes de alimentación?</summary>
 
 La **limpieza del polvo** con aire comprimido o aspirador. La acumulación de pelusa actúa como combustible y obstruye la refrigeración.
-</details>
+</details>  
 
----
-_Manual de estudio para alumnos de 1º SMR - Creado para el repositorio de MME_
+#
 
-<!--  
+<!-- 
+
 # Flashcards de repaso  
 ### Seguridad, PRL y Medio Ambiente    
 **Módulo:** Montaje y Mantenimiento de Equipos (MME) - SMR1  
@@ -259,11 +259,5 @@ La **Ley 31/1995** de Prevención de Riesgos Laborales (LPRL).
 ---
 
 -->  
-
-## Recomendaciones para el taller
-* **Electricidad Estática:** Usa siempre **pulsera antiestática** antes de tocar componentes internos.
-* **Cargas de peso:** Levanta cajas flexionando las **rodillas**, nunca doblando la espalda.
-* **Símbolo RAEE:** Un contenedor tachado con una X indica que el producto no debe ir a la basura doméstica.
-
----
+#  
 
