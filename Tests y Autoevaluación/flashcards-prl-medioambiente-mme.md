@@ -187,7 +187,8 @@ La **limpieza del polvo** con aire comprimido o aspirador. La acumulación de pe
  </details>
 
  <details>
- <summary> 10. ¿Qué diferencia hay entre el Magnetotérmico y el Diferencial?</summary>
+ <summary> 10. ¿Qué diferencia hay entre el Magnetotérmico y el Diferencial?</summary>  
+  
  - **Magnetotérmico:** Protege la instalación y cables (evita incendios).
  - **Diferencial:** Protege a las personas (evita electrocuciones).
  </details>
@@ -196,21 +197,21 @@ La **limpieza del polvo** con aire comprimido o aspirador. La acumulación de pe
  <summary>11. ¿Qué significan las siglas RAEE?
 </summary>  
   
-> **Residuos de Aparatos Eléctricos y Electrónicos**.
+**Residuos de Aparatos Eléctricos y Electrónicos**.
  </details>
 
  <details>
  <summary>12. ¿Dónde se debe depositar una placa base o un monitor viejo?
 </summary>  
  
-> En un **Punto Limpio** o a través de un gestor de residuos autorizado. Nunca al contenedor gris.
+En un **Punto Limpio** o a través de un gestor de residuos autorizado. Nunca al contenedor gris.
 </details>
 
  <details>
  <summary>13. ¿Por qué no se pueden tirar las pilas a la basura común?
 </summary>  
   
-> Por su alto contenido en **metales pesados** (Mercurio, Cadmio, Litio) que son altamente contaminantes.
+Por su alto contenido en **metales pesados** _(Mercurio, Cadmio, Litio)_ que son altamente contaminantes.
  </details>
 
 
