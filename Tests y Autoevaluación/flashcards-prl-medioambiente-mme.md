@@ -3,7 +3,7 @@
 ![Grupo](https://img.shields.io/badge/Grupo-SMR1-darkgrey?style=for-the-badge)
 ![Prof.](https://img.shields.io/badge/Prof.-Ezequiel_Llarena_Borges-blue?style=for-the-badge)  
 
-**Instrucciones:** Pulsa en la flecha (triángulo negro) para comprobar si has acertado.
+**Instrucciones:** Lee cada pregunta y piensa cuál es su respuesta. Para ver la respuesta (corta) pulsa en la flecha (triángulo negro).
  
 ## 1. Legislación y normativa
 
@@ -144,9 +144,8 @@ Usar un **paño de microfibra** ligeramente humedecido con agua destilada o líq
 La **limpieza del polvo** con aire comprimido o aspirador. La acumulación de pelusa actúa como combustible y obstruye la refrigeración.
 </details>  
 
-> **¿El trabajador está obligado a usar los EPIs?**
 <details>
-<summary> Ver respuesta</summary> 
+<summary> ¿El trabajador está obligado a usar los EPIs?</summary> 
  
 **SÍ**. Es una obligación legal del trabajador utilizar correctamente los medios de protección facilitados por la empresa.
 </details> 
@@ -158,23 +157,20 @@ La **limpieza del polvo** con aire comprimido o aspirador. La acumulación de pe
  Riesgo de **descarga eléctrica** por la energía residual almacenada en sus **condensadores**.
  </details>
 
-> **¿Qué significa el cable de color Verde y Amarillo?**
 <details>
- <summary> Ver respuesta</summary>
+ <summary> ¿Qué significa el cable de color Verde y Amarillo?</summary>
  
  Es la **Toma de Tierra**. Deriva fugas de corriente para evitar calambres y permitir que salte el diferencial.
  </details>
 
-> **¿Cuál es el riesgo físico principal en un CPD o sala de servidores?**
  <details>
- <summary> Ver respuesta</summary> 
+ <summary> ¿Cuál es el riesgo físico principal en un CPD o sala de servidores?</summary> 
   
  El **ruido excesivo** y constante de los sistemas de ventilación (fatiga auditiva).
  </details>
 
-> **¿A qué altura debe situarse el borde superior del monitor?**
  <details>
- <summary> Ver respuesta</summary> 
+ <summary> ¿A qué altura debe situarse el borde superior del monitor?</summary> 
   
  A la **altura de los ojos** del usuario para evitar lesiones cervicales.
  </details>
