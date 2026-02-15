@@ -7,7 +7,7 @@
 # Mantenimiento y Configuración de Periféricos
 
 ## Objetivo  
-Desarrollar un trabajo en cualquiera de los formatos propuestos en el apartado 1 "Opciones de formato de presentación" que permita: Identificar averías y fallos de periféricos, Realizar mantenimiento preventivo o Seleccionar periféricos adecuados según las necesidades del cliente, cumpliendo con los **criterios de evaluación del RA7:**  
+Desarrollar un trabajo en cualquiera de los formatos propuestos en el apartado *1. Opciones de formato de presentación* que permita: **Identificar averías y fallos de periféricos, Realizar mantenimiento preventivo o Seleccionar periféricos adecuados según las necesidades del cliente,** cumpliendo con los criterios de evaluación del **RA7:**  
 ```
 1. Identificar y solucionar problemas mecánicos en periféricos de impresión estándar.
 2. Sustituir consumibles en periféricos de impresión estándar.
