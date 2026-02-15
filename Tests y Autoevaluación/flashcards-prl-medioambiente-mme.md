@@ -129,8 +129,9 @@ Es la programación del fin de la vida útil de un producto para que falle tras 
 En el **contenedor amarillo** (envases de plástico), ya que es poliestireno expandido.
 </details>
 
----
+#  
 
+<!-- 
 ## Bloques combinados y mantenimiento
 
 <details>
@@ -147,7 +148,7 @@ La **limpieza del polvo** con aire comprimido o aspirador. La acumulación de pe
 
 #
 
-<!-- 
+
 
 # Flashcards de repaso  
 ### Seguridad, PRL y Medio Ambiente    
