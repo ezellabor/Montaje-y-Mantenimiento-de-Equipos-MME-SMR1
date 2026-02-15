@@ -21,31 +21,26 @@
 
 ### Desarrollo de la práctica
 1. **Desmontaje seguro** (20 min)
+   - Desenchufar equipo de la red eléctrica
    - Desconexión de todos los cables
    - Extracción ordenada de componentes
    - Identificación y etiquetado si es necesario
 
-2. **Limpieza de componentes** (40 min)
-   - Limpieza de ventiladores y disipadores
+3. **Limpieza de componentes** (40 min)
+   - Limpieza de ventiladores (fuente de alimentación y disipadores)
    - Limpieza de contactos de memoria y tarjetas
    - Limpieza de la caja y filtros
 
-3. **Reacondicionamiento** (30 min)
-   - Aplicación de nueva pasta térmica
-   - Remontaje del equipo
+4. **Reacondicionamiento** (30 min)
+   - Aplicación de nueva pasta térmica al procesador(es)
+  
+5. **Montaje del equipo** (15 min)
    - Verificación de funcionamiento
+   - Comprobar ruidos o pitidos
 
-### Evaluación
-- Técnica de limpieza: 30%
-- Aplicación de pasta térmica: 25%
-- Remontaje correcto: 30%
-- Documentación del proceso: 15%
+#  
 
----
-
-
-## NORMAS GENERALES DE TRABAJO
-
+## NORMAS GENERALES DE TRABAJO   
 1. Utilizar siempre pulsera antiestática
 2. Desconectar equipos de la red eléctrica antes de manipular
 3. Mantener el puesto de trabajo ordenado
