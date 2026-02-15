@@ -171,7 +171,7 @@ La **Ley 31/1995** de Prevención de Riesgos Laborales (LPRL).
 <details>
 <summary> Ver respuesta</summary> 
 **SÍ**. Es una obligación legal del trabajador utilizar correctamente los medios de protección facilitados por la empresa.
-</details>
+</details> 
 
 ---
 
