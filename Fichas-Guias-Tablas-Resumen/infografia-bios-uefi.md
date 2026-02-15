@@ -28,7 +28,6 @@ La versión moderna es **UEFI (Unified Extensible Firmware Interface).**
 | Secure Boot | ❌ | ✅ |
 | Velocidad | Más lenta | Más rápida |
 
----
 <!--
 ## 3. POST (Power-On Self Test)
 
