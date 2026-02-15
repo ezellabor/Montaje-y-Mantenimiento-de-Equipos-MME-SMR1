@@ -1,7 +1,5 @@
-# BIOS / UEFI 
-
-![Nivel](https://img.shields.io/badge/Nivel-SMR1-blue)
 ![Módulo](https://img.shields.io/badge/Módulo-Montaje%20y%20Mantenimiento-lightgrey)
+![Grupo](https://img.shields.io/badge/Grupo-SMR1-blue)
 ![Tema](https://img.shields.io/badge/Tema-BIOS%20%2F%20UEFI-success)
 
 ---
@@ -72,9 +70,8 @@ La BIOS (Basic Input Output System) y la UEFI (Unified Extensible Firmware Inter
 
 Son el primer software que se ejecuta al encender el equipo.
 
-# 
 
-## 2️⃣ Fases del Arranque
+## 2️⃣ Fases del arranque
 
 ### 1. POST (Power-On Self Test)
 - Verificación CPU
@@ -92,7 +89,6 @@ Son el primer software que se ejecuta al encender el equipo.
 - Selección dispositivo de arranque
 - Carga MBR (BIOS) o EFI Bootloader (UEFI)
 
-#  
 
 ## 3️⃣ BIOS vs UEFI (Comparativa Técnica)
 
@@ -104,7 +100,7 @@ Son el primer software que se ejecuta al encender el equipo.
 | Interfaz | Texto | Gráfica |
 | Drivers propios | No | Sí |
 
-#  
+
 
 ## 4️⃣ Configuración avanzada
 
@@ -116,16 +112,12 @@ Son el primer software que se ejecuta al encender el equipo.
 - TPM
 - Overclocking básico
 
----
-
 ## 5️⃣ Problemas comunes
 
 - Boot loop → RAM mal instalada
 - No detecta disco → Modo SATA incorrecto
 - Error Secure Boot → SO incompatible
 - Beep continuo → Error RAM
-
-#  
 
 ## Idea técnica clave  
 
