@@ -6,16 +6,14 @@
 
 ## 1. ¿Qué es la BIOS?
 
-La **BIOS (Basic Input/Output System)** es un firmware almacenado en memoria ROM/Flash que:
+La **BIOS (Basic Input/Output System)** es un firmware almacenado en memoria ROM/Flash de la placa base. Es el primer "software" que se ejecuta al encender el equipo.  
+Funciones principales:  
+- Inicializar el hardware
+- Ejecutar el POST
+- Permitir configuración del sistema
+- Cargar el sistema operativo en memoria
 
-- Inicializa el hardware
-- Ejecuta el POST
-- Permite configurar el sistema
-- Carga el sistema operativo
-
-La versión moderna es **UEFI (Unified Extensible Firmware Interface).**
-
----  
+La versión moderna de la BIOS es la **UEFI (Unified Extensible Firmware Interface).**
 
 ## 2. BIOS vs UEFI
 
@@ -26,70 +24,26 @@ La versión moderna es **UEFI (Unified Extensible Firmware Interface).**
 | Secure Boot | ❌ | ✅ |
 | Velocidad | Más lenta | Más rápida |
 
-<!--
-## 3. POST (Power-On Self Test)
+## 2. Fases del arranque
 
-Secuencia automática al encender el equipo:
-
-1. CPU
-2. RAM
-3. Tarjeta gráfica
-4. Discos
-5. Periféricos
-
-## 4. Errores típicos BIOS
-
-- Pitidos continuos → RAM mal colocada
-- No detecta disco → Modo SATA incorrecto
-- No arranca USB → Orden de arranque mal configurado
-
----
-
-## 5. Configuración básica 
-
-#### Boot order
-USB → SSD → HDD
-
-#### Modo SATA
-- IDE (obsoleto)
-- AHCI (recomendado)
-- RAID
-
-#### Secure boot
-- Activado: solo sistemas firmados
-- Desactivado: instalaciones manuales
-
-#### Virtualización
-Activar si se usan máquinas virtuales.
--->
----  
-
-## 1️⃣ Concepto de Firmware
-
-- La BIOS (Basic Input Output System) y la UEFI (Unified Extensible Firmware Interface) son firmware almacenados en memoria flash de la placa base.
-- Es el primer software que se ejecuta al encender el equipo.
-
-
-## 2️⃣ Fases del arranque
-
-### 1. POST (Power-On Self Test)
+### 1️⃣ POST (Power-On Self Test)
 - Verificación CPU
 - Comprobación RAM
 - Inicialización chipset
 - Detección dispositivos SATA/NVMe
 - Señales acústicas (beep codes)
 
-### 2. Inicialización Hardware
+### 2️⃣ Inicialización Hardware
 - Controladores básicos integrados
 - Inicialización buses PCIe
 - Enumeración dispositivos
 
-### 3. Boot Manager
+### 3️⃣ Boot Manager
 - Selección dispositivo de arranque
 - Carga MBR (BIOS) o EFI Bootloader (UEFI)
 
 
-## 3️⃣ Comparativa técnica BIOS vs UEFI   
+## 3. Comparativa técnica BIOS vs UEFI   
 
 | Característica | BIOS | UEFI |
 |---------------|------|------|
@@ -99,9 +53,7 @@ Activar si se usan máquinas virtuales.
 | Interfaz | Texto | Gráfica |
 | Drivers propios | No | Sí |
 
-
-
-## 4️⃣ Configuración avanzada
+## 4️. Configuración avanzada
 
 - AHCI vs RAID
 - XMP (perfiles de memoria)
@@ -111,12 +63,11 @@ Activar si se usan máquinas virtuales.
 - TPM
 - Overclocking básico
 
-## 5️⃣ Problemas comunes
-
-- Boot loop → RAM mal instalada
+## 5. Errores típicos BIOS
+- Boot loop (pitidos continuos) → RAM mal instalada
 - No detecta disco → Modo SATA incorrecto
 - Error Secure Boot → SO incompatible
-- Beep continuo → Error RAM
+- No arranca USB → Orden de arranque mal configurado
 
 ## Idea técnica clave  
 
