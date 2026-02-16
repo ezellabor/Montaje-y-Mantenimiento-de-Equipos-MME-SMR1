@@ -2,15 +2,15 @@
 ![Grupo](https://img.shields.io/badge/Grupo-SMR1-darkgrey?style=for-the-badge)
 ![Prof.](https://img.shields.io/badge/Prof.-Ezequiel_Llarena_Borges-blue?style=for-the-badge)  
 
-## GUÍA DE MANTENIMIENTO PREVENTIVO DE EQUIPOS
-**Duración estimada:** 1 hora 
+## MANTENIMIENTO PREVENTIVO DE EQUIPOS  
+```Guía paso a paso```
 
 ### 1. Objetivos
 - Realizar **limpieza interna** de equipos
 - Aplicar **pasta térmica** al procesador
 - Optimizar el **flujo de aire** del sistema
 
-### 2. Material necesario
+### 2. Material y herramientas
 - Aire comprimido
 - Alcohol isopropílico
 - Pasta térmica
@@ -18,7 +18,7 @@
 - Destornilladores
 - Pulsera antiestática
 
-### 3. Desarrollo de la práctica
+### 3. Procedimiento simplificado
 1. **Desmontaje seguro** (20 min)
    - Desenchufar equipo de la red eléctrica
    - Desconexión de todos los cables
