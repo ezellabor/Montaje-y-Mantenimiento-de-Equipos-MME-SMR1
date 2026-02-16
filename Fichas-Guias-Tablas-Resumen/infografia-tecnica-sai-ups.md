@@ -55,7 +55,6 @@ PC 400W + Monitor 100W = 500W
 500 × 1.3 = 650 VA mínimo
 ```  
 
-#  
 
 
 
