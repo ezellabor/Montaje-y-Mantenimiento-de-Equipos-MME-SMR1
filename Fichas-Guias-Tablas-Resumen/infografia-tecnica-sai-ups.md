@@ -6,8 +6,8 @@
 
 Un **SAI** _(Sistema de Alimentación Ininterrumpida)_ o **UPS** _(Uninterruptible Power Supply)_ es un dispositivo que:
 
-- Protege frente a **cortes eléctricos**
-- Filtra picos eléctricos: **Estabiliza** o regula la tensión
+- Protege frente a cortes eléctricos
+- Filtra picos eléctricos: estabiliza o regula la tensión
 - Permite apagar el equipo correctamente
 - Proporciona energía temporal mediante baterías
 
