@@ -1,9 +1,14 @@
-# Test BIOS / UEFI 
+![Módulo](https://img.shields.io/badge/Módulo-Montaje_y_Mantenimiento_de_equipos-red?style=for-the-badge)
+![Grupo](https://img.shields.io/badge/Grupo-SMR1-darkgrey?style=for-the-badge)
+![Prof.](https://img.shields.io/badge/Prof.-Ezequiel_Llarena_Borges-blue?style=for-the-badge)  
+
+## Firmware BIOS / UEFI 
+```Test objetivo 10 items```
 
 ## Instrucciones
 - Marca **una sola respuesta correcta**.
 
----
+--- 
 
 ## 1. ¿Qué significa POST?
 
