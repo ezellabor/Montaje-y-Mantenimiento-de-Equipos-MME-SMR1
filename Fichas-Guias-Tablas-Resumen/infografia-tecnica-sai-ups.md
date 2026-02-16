@@ -20,7 +20,7 @@ Un SAI (Sistema de Alimentación Ininterrumpida) o UPS (Uninterruptible Power Su
 - Banco de baterías
 - Inversor (DC → AC)
 - Bypass automático
-
+ 
 ---
 
 ## 3️⃣ Tipos de SAI
