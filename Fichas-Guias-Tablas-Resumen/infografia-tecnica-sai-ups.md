@@ -34,7 +34,7 @@ Regulación AVR incluida
 ### On-line (Doble Conversión)
 Tiempo de transferencia: 0 ms  
 
-** Idea técnica: Un SAI On-line genera una señal eléctrica completamente nueva y aislada de la red.
+**Idea técnica:** Un SAI On-line genera una señal eléctrica completamente nueva y aislada de la red.
 
 ---
 
