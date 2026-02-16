@@ -12,7 +12,7 @@ Un **SAI** _(Sistema de Alimentación Ininterrumpida)_ o **UPS** _(Uninterruptib
 - Proporciona energía temporal mediante baterías
 
 ---  
-
+ 
 ## 2️⃣ Componentes internos
 
 - Rectificador (AC → DC)
