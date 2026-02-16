@@ -6,7 +6,7 @@
 
 ## 1. ¿Qué es la BIOS?
 
-La **BIOS (Basic Input/Output System)** es un firmware almacenado en memoria ROM/Flash de la placa base. Es el primer "software" que se ejecuta al encender el equipo y sus funciones principales son:  
+La **BIOS (Basic Input/Output System)** es el sistema básico de entrada/salida almacenado en memoria ROM/Flash en la placa base. Es el primer programa *(firmware)* que se ejecuta al encender el equipo y sus funciones principales son:  
 - Inicializar el hardware
 - Ejecutar el POST
 - Permitir configuración del sistema
@@ -25,15 +25,14 @@ La versión moderna de la BIOS es la **UEFI (Unified Extensible Firmware Interfa
 | Drivers propios | No | Sí |
 | Velocidad | Más lenta | Más rápida |  
 
-> Idea clave de **UEFI** es ser un mini-sistema operativo previo al sistema operativo principal.  
-
-## 3. Fases del arranque de la BIOS/UEFI  
+## 3. Fases de arranque (POST)  
 
 ### 1️⃣ POST (Power-On Self Test)
 - Verificación CPU
 - Comprobación RAM
 - Inicialización chipset
-- Detección dispositivos SATA/NVMe
+- Detección dispositivos de almacenamiento (SATA/NVMe)
+- Detección GPU
 - Señales acústicas (beep codes)
 
 ### 2️⃣ Inicialización Hardware
@@ -45,15 +44,15 @@ La versión moderna de la BIOS es la **UEFI (Unified Extensible Firmware Interfa
 - Selección dispositivo de arranque
 - Carga MBR (BIOS) o EFI Bootloader (UEFI)  
 
-## 4️. Configuración avanzada
+## 4. Configuración 
 
-- AHCI vs RAID
-- XMP (perfiles de memoria)
-- Virtualización (Intel VT-x / AMD SVM)
-- Secure Boot
-- Fast Boot
-- TPM
-- Overclocking básico
+-   Boot Order
+-   Modo SATA (AHCI/IDE/RAID)
+-   Virtualización (Intel VT-x / AMD SVM)
+-   Fecha y Hora
+-   Secure Boot
+-   Fast Boot
+-   Overclocking básico
 
 ## 5. Errores típicos BIOS
 - Boot loop (pitidos continuos) → RAM mal instalada
@@ -63,7 +62,16 @@ La versión moderna de la BIOS es la **UEFI (Unified Extensible Firmware Interfa
 
 ## 6. Simulador de BIOS/UEFI online de Lenovo  
 
-[Simulador BIOS/UEFI online](https://download.lenovo.com/bsco/index.html)
+[Simulador BIOS/UEFI online](https://download.lenovo.com/bsco/index.html)   
+
+### Ideas clave
+- La BIOS/UEFI es el firmware que prepara el equipo antes de que cargue el sistema operativo.
+- La UEFI es un mini-sistema operativo previo al sistema operativo principal.  
+
+
+
+
+
 
 
 
