@@ -14,13 +14,16 @@ La **BIOS (Basic Input/Output System)** es un firmware almacenado en memoria ROM
 
 La versión moderna de la BIOS es la **UEFI (Unified Extensible Firmware Interface).**
 
-## 2. BIOS vs UEFI 
+## 2. BIOS vs UEFI   
 
-| Característica | BIOS Legacy | UEFI |
-|---------------|------------|------|
+| Característica | BIOS (Legacy) | UEFI |
+|----------------|------|------|
+| Arquitectura | 16 bits | 32/64 bits |
+| Particiones | MBR (2TB máx) | GPT (9.4 ZB) |
+| Secure Boot | No | Sí |
 | Interfaz | Texto | Gráfica |
-| Disco máximo | 2TB (MBR) | >2TB (GPT) |
-| Secure Boot | ❌ | ✅ |
+| Drivers propios | No | Sí |
+| Característica | BIOS Legacy | UEFI |
 | Velocidad | Más lenta | Más rápida |
 
 ## 2. Fases del arranque
@@ -39,18 +42,7 @@ La versión moderna de la BIOS es la **UEFI (Unified Extensible Firmware Interfa
 
 ### 3️⃣ Boot Manager
 - Selección dispositivo de arranque
-- Carga MBR (BIOS) o EFI Bootloader (UEFI)
-
-
-## 3. Comparativa técnica BIOS vs UEFI   
-
-| Característica | BIOS | UEFI |
-|---------------|------|------|
-| Arquitectura | 16 bits | 32/64 bits |
-| Particiones | MBR (2TB máx) | GPT (9.4 ZB) |
-| Secure Boot | No | Sí |
-| Interfaz | Texto | Gráfica |
-| Drivers propios | No | Sí |
+- Carga MBR (BIOS) o EFI Bootloader (UEFI)  
 
 ## 4️. Configuración avanzada
 
