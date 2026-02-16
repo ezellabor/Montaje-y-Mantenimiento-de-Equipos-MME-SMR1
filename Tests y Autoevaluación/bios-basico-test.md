@@ -3,14 +3,11 @@
 ![Prof.](https://img.shields.io/badge/Prof.-Ezequiel_Llarena_Borges-blue?style=for-the-badge)  
 
 ## Firmware BIOS / UEFI 
-```Test objetivo 10 items```
-
-## Instrucciones
-- Marca **una sola respuesta correcta**.
+```Test objetivo; 10 items; una sola respuesta correcta```
 
 --- 
 
-## 1. ¿Qué significa POST?
+### 1. ¿Qué significa POST?
 
 A) Primary Operating System Tool  
 B) Power-On Self Test  
@@ -19,7 +16,7 @@ D) Power Operating System Task
 
 ---
 
-## 2. ¿Cuál es la función principal de la BIOS/UEFI?
+### 2. ¿Cuál es la función principal de la BIOS/UEFI?
 
 A) Ejecutar aplicaciones del usuario  
 B) Inicializar el hardware y cargar el sistema operativo  
@@ -28,7 +25,7 @@ D) Instalar controladores automáticamente
 
 ---
 
-## 3. ¿Qué tabla de particiones utiliza UEFI?
+### 3. ¿Qué tabla de particiones utiliza UEFI?
 
 A) MBR  
 B) GPT  
@@ -37,7 +34,7 @@ D) NTFS
 
 ---
 
-## 4. ¿Cuál es una ventaja técnica de UEFI frente a BIOS?
+### 4. ¿Cuál es una ventaja técnica de UEFI frente a BIOS?
 
 A) Solo funciona con discos IDE  
 B) Es más lenta en el arranque  
@@ -46,7 +43,7 @@ D) No permite interfaz gráfica
 
 ---
 
-## 5. ¿Qué opción permite activar la virtualización en la BIOS/UEFI?
+### 5. ¿Qué opción permite activar la virtualización en la BIOS/UEFI?
 
 A) Secure Boot  
 B) Fast Boot  
@@ -55,7 +52,7 @@ D) AHCI
 
 ---
 
-## 6. ¿Qué ocurre si el Boot Order está mal configurado?
+### 6. ¿Qué ocurre si el Boot Order está mal configurado?
 
 A) El equipo mejora el rendimiento  
 B) La RAM aumenta su frecuencia  
@@ -64,7 +61,7 @@ D) Se activa automáticamente el modo seguro
 
 ---
 
-## 7. ¿Para qué sirve Secure Boot?
+### 7. ¿Para qué sirve Secure Boot?
 
 A) Acelerar el arranque  
 B) Reducir consumo eléctrico  
@@ -73,7 +70,7 @@ D) Mejorar la velocidad del disco
 
 ---
 
-## 8. ¿Qué modo SATA es el más recomendado para SSD modernos?
+### 8. ¿Qué modo SATA es el más recomendado para SSD modernos?
 
 A) IDE  
 B) AHCI  
@@ -82,7 +79,7 @@ D) Legacy
 
 ---
 
-## 9. ¿Qué tipo de firmware utiliza arquitectura de 16 bits?
+### 9. ¿Qué tipo de firmware utiliza arquitectura de 16 bits?
 
 A) BIOS tradicional  
 B) UEFI  
@@ -91,7 +88,7 @@ D) NVMe
 
 ---
 
-## 10. ¿Qué indican los "beep codes" durante el arranque?
+### 10. ¿Qué indican los "beep codes" durante el arranque?
 
 A) Que Windows está actualizando  
 B) Error de hardware detectado en el POST  
