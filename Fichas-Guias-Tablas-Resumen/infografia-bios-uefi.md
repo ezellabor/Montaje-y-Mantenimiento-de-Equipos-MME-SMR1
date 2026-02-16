@@ -23,9 +23,11 @@ La versión moderna de la BIOS es la **UEFI (Unified Extensible Firmware Interfa
 | Particiones | MBR (2TB máx) | GPT (9.4 ZB) |
 | Secure Boot | No | Sí |
 | Drivers propios | No | Sí |
-| Velocidad | Más lenta | Más rápida |
+| Velocidad | Más lenta | Más rápida |  
 
-## 2. Fases del arranque
+> Idea clave de **UEFI** es ser un mini-sistema operativo previo al sistema operativo principal.  
+
+## 3. Fases del arranque de la BIOS/UEFI  
 
 ### 1️⃣ POST (Power-On Self Test)
 - Verificación CPU
@@ -57,11 +59,7 @@ La versión moderna de la BIOS es la **UEFI (Unified Extensible Firmware Interfa
 - Boot loop (pitidos continuos) → RAM mal instalada
 - No detecta disco → Modo SATA incorrecto
 - Error Secure Boot → SO incompatible
-- No arranca USB → Orden de arranque mal configurado
-
-## Idea técnica clave  
-
->  **UEFI** es un mini-sistema operativo previo al sistema operativo principal.  
+- No arranca USB → Orden de arranque mal configurado  
 
 ## 6. Simulador de BIOS/UEFI online de Lenovo  
 
