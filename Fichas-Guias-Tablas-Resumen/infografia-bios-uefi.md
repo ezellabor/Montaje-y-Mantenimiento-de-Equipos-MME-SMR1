@@ -14,7 +14,7 @@ La **BIOS (Basic Input/Output System)** es un firmware almacenado en memoria ROM
 
 La versión moderna de la BIOS es la **UEFI (Unified Extensible Firmware Interface).**
 
-## 2. BIOS vs UEFI
+## 2. BIOS vs UEFI 
 
 | Característica | BIOS Legacy | UEFI |
 |---------------|------------|------|
