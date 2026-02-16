@@ -1,81 +1,112 @@
+# Test BIOS / UEFI 
 
+## Instrucciones
+- Marca **una sola respuesta correcta**.
 
-// =====================
-// BIOS / UEFI
-// =====================
+---
 
-::POST Significado::
-¿Qué significa POST?
-{
-=Power-On Self Test
-~Primary Operating System Tool
-~Protocol Of System Transfer
-~Power Operating System Task
-}
+## 1. ¿Qué significa POST?
 
-::UEFI Particiones::
-¿Qué tabla de particiones utiliza UEFI?
-{
-=GPT
-~MBR
-~NTFS
-~FAT16
-}
+A) Primary Operating System Tool  
+B) Power-On Self Test  
+C) Protocol Of System Transfer  
+D) Power Operating System Task  
 
-::Virtualización::
-¿Qué opción permite activar virtualización en BIOS/UEFI?
-{
-=VT-x o SVM
-~XMP
-~Secure Boot
-~Fast Boot
-}
+---
 
-::Secure Boot::
-Secure Boot sirve para:
-{
-=Evitar carga de software no firmado
-~Aumentar la velocidad de arranque
-~Reducir consumo eléctrico
-~Mejorar temperatura CPU
-}
+## 2. ¿Cuál es la función principal de la BIOS/UEFI?
 
-// =====================
-// SAI / UPS
-// =====================
+A) Ejecutar aplicaciones del usuario  
+B) Inicializar el hardware y cargar el sistema operativo  
+C) Gestionar la red local  
+D) Instalar controladores automáticamente  
 
-::Tipo SAI Profesional::
-¿Qué tipo de SAI tiene tiempo de transferencia 0 ms?
-{
-=On-line
-~Off-line
-~Line-Interactive
-~Híbrido
-}
+---
 
-::Conversión Energía::
-¿Qué componente convierte DC en AC?
-{
-=Inversor
-~Rectificador
-~Transformador
-~Regulador
-}
+## 3. ¿Qué tabla de particiones utiliza UEFI?
 
-::Cálculo SAI::
-Un equipo consume 400W. ¿Qué SAI mínimo recomendarías?
-{
-=520VA
-~400VA
-~300VA
-~450VA
-}
+A) MBR  
+B) GPT  
+C) FAT32  
+D) NTFS  
 
-::Forma de Onda::
-¿Qué forma de onda es recomendable para servidores?
-{
-=Onda senoidal pura
-~Onda cuadrada
-~Onda triangular
-~Onda modificada básica
-}
+---
+
+## 4. ¿Cuál es una ventaja técnica de UEFI frente a BIOS?
+
+A) Solo funciona con discos IDE  
+B) Es más lenta en el arranque  
+C) Soporta discos mayores de 2 TB  
+D) No permite interfaz gráfica  
+
+---
+
+## 5. ¿Qué opción permite activar la virtualización en la BIOS/UEFI?
+
+A) Secure Boot  
+B) Fast Boot  
+C) Intel VT-x / AMD SVM  
+D) AHCI  
+
+---
+
+## 6. ¿Qué ocurre si el Boot Order está mal configurado?
+
+A) El equipo mejora el rendimiento  
+B) La RAM aumenta su frecuencia  
+C) El sistema operativo no inicia  
+D) Se activa automáticamente el modo seguro  
+
+---
+
+## 7. ¿Para qué sirve Secure Boot?
+
+A) Acelerar el arranque  
+B) Reducir consumo eléctrico  
+C) Evitar la carga de software no firmado  
+D) Mejorar la velocidad del disco  
+
+---
+
+## 8. ¿Qué modo SATA es el más recomendado para SSD modernos?
+
+A) IDE  
+B) AHCI  
+C) ATA  
+D) Legacy  
+
+---
+
+## 9. ¿Qué tipo de firmware utiliza arquitectura de 16 bits?
+
+A) BIOS tradicional  
+B) UEFI  
+C) GPT  
+D) NVMe  
+
+---
+
+## 10. ¿Qué indican los "beep codes" durante el arranque?
+
+A) Que Windows está actualizando  
+B) Error de hardware detectado en el POST  
+C) Que la batería CMOS está cargando  
+D) Que el disco está formateándose  
+
+---  
+
+<!--
+
+# Plantilla de Respuestas
+
+1) B  
+2) B  
+3) B  
+4) C  
+5) C  
+6) C  
+7) C  
+8) B  
+9) A  
+10) B  
+-->
