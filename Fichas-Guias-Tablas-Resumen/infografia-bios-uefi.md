@@ -11,7 +11,7 @@ La **BIOS (Basic Input/Output System)** es el sistema básico de entrada/salida 
 - Ejecutar el POST
 - Permitir configuración del sistema
 - Cargar el sistema operativo en memoria
-
+ 
 La versión moderna de la BIOS es la **UEFI (Unified Extensible Firmware Interface).**
 
 ## 2. BIOS vs UEFI   
