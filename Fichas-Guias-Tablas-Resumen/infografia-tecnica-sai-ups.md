@@ -27,9 +27,9 @@ Un **SAI** _(Sistema de Alimentación Ininterrumpida)_ o **UPS** _(Uninterruptib
 
 | Tipo | Uso habitual | Característica principal |
 |------|--------------|--------------------------|
-| Off-line | Doméstico | Tiempo de transferencia: 2–10 ms |
-| Line-Interactive | Aula | Regulación AVR incluida |
-| On-line | Servidores | Tiempo de transferencia: 0 ms |
+| **Off-line** | Doméstico | Tiempo de transferencia: 2–10 ms |
+| **Line-Interactive** | Aula | Regulación AVR incluida |
+| **On-line** | Servidores | Tiempo de transferencia: 0 ms |
 
 **Idea técnica:** Un SAI On-line genera una señal eléctrica completamente nueva y aislada de la red.
 
