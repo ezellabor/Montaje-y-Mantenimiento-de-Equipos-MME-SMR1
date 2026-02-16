@@ -2,25 +2,18 @@
 ![Grupo](https://img.shields.io/badge/Grupo-SMR1-blue)
 ![Tema](https://img.shields.io/badge/Tema-SAI%20%2F%20UPS-success) 
 
+## 1️⃣ ¿Qué es un SAI?  
 
-# 🔋 SAI / UPS — Versión Técnica Ampliada
+Un SAI (Sistema de Alimentación Ininterrumpida) o UPS (Uninterruptible Power Supply) es un dispositivo que:
 
-![Protección](https://img.shields.io/badge/Protección-Eléctrica-green)
-![Nivel](https://img.shields.io/badge/Nivel-Técnico-red)
-
----
-
-## 1️⃣ Definición Técnica
-
-Un SAI (Sistema de Alimentación Ininterrumpida) es un dispositivo que:
-
-- Regula tensión
-- Filtra picos eléctricos
+- Protege frente a **cortes eléctricos**
+- Filtra picos eléctricos: **Estabiliza** o regula la tensión
+- Permite apagar el equipo correctamente
 - Proporciona energía temporal mediante baterías
 
----
+---  
 
-## 2️⃣ Componentes Internos
+## 2️⃣ Componentes internos
 
 - Rectificador (AC → DC)
 - Cargador de batería
@@ -30,95 +23,41 @@ Un SAI (Sistema de Alimentación Ininterrumpida) es un dispositivo que:
 
 ---
 
-## 3️⃣ Tipos Técnicos
+## 3️⃣ Tipos de SAI
 
-### 🔹 Off-line
+### Off-line
 Tiempo de transferencia: 2–10 ms
 
-### 🔹 Line-Interactive
+### Line-Interactive
 Regulación AVR incluida
 
-### 🔹 On-line (Doble Conversión)
-Tiempo de transferencia: 0 ms
+### On-line (Doble Conversión)
+Tiempo de transferencia: 0 ms  
+Un SAI On-line genera una señal eléctrica completamente nueva y aislada de la red.
 
 ---
 
-## 4️⃣ Parámetros Técnicos
+## 4️⃣ Parámetros técnicos más importantes
 
-- Potencia en VA
-- Potencia en W
+- Potencia en (VA / W)
 - Factor de potencia
-- Autonomía
-- Tiempo de transferencia
+- Autonomía (min)
+- Tiempo de transferencia (ms)
 - Forma de onda (senoidal pura / modificada)
 
 ---
 
-## 5️⃣ Cálculo Profesional
+## 5️⃣ Potencia mínima recomendada
 
-Potencia mínima recomendada:
+Potencia mínima SAI = Potencia total de equipos (W) × 1.3 (margen seguirdad)
 
-Potencia total (W) × 1.3
-
+```
 Ejemplo:
 PC 400W + Monitor 100W = 500W  
 500 × 1.3 = 650VA mínimo
+```  
 
----
-
-## 🎯 Idea Clave Técnica
-
-Un SAI On-line genera una señal eléctrica completamente nueva y aislada de la red.
-
-<!--- **************************************************************************************  -->
 #  
 
-## ¿Qué es un SAI?
-
-SAI = Sistema de Alimentación Ininterrumpida  
-UPS = Uninterruptible Power Supply
-
-Dispositivo que:
-
-- Protege frente a **cortes eléctricos**
-- **Estabiliza** la tensión
-- Permite apagar el equipo correctamente
-
----
-
-## Componentes internos
-
-- Rectificador
-- Batería
-- Inversor
-- Controlador
-
----
-
-## Tipos de SAI
-
-| Tipo | Uso habitual |
-|------|-------------|
-| Off-line | Doméstico |
-| Line-Interactive | Aula |
-| On-line | Servidores |
-
----
-
-## Parámetros técnicos más importantes
-
-- Potencia (VA / W)
-- Autonomía (min)
-- Tiempo de transferencia (ms)
-- Forma de onda (senoidal pura o simulada)
-
----
-
-## Cálculo simplificado de carga  
-```csharp
-Potencia total equipos (W)
-× 1,2 (margen seguridad)
-= Potencia mínima SAI
-```
 
 
