@@ -6,8 +6,7 @@
 
 ## 1. ¿Qué es la BIOS?
 
-La **BIOS (Basic Input/Output System)** es un firmware almacenado en memoria ROM/Flash de la placa base. Es el primer "software" que se ejecuta al encender el equipo.  
-Funciones principales:  
+La **BIOS (Basic Input/Output System)** es un firmware almacenado en memoria ROM/Flash de la placa base. Es el primer "software" que se ejecuta al encender el equipo y sus funciones principales son:  
 - Inicializar el hardware
 - Ejecutar el POST
 - Permitir configuración del sistema
