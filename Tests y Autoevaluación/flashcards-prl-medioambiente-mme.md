@@ -2,8 +2,7 @@
 ![Grupo](https://img.shields.io/badge/Grupo-SMR1-darkgrey?style=for-the-badge)
 ![Prof.](https://img.shields.io/badge/Prof.-Ezequiel_Llarena_Borges-blue?style=for-the-badge)  
 # Flashcards: PRL y protección medioambiental    
-
-**Instrucciones:** Lee cada pregunta y piensa cuál es su respuesta. Para ver la respuesta (corta) pulsa en la flecha (triángulo negro).
+Preguntas de respuesta corta para repasar/reforzar conceptos. Haz click en la flechita negra (triángulo negro) para ver la solución.
  
 ## 1. Legislación y normativa
 
