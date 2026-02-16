@@ -20,7 +20,7 @@ La versión moderna de la BIOS es la **UEFI (Unified Extensible Firmware Interfa
 |----------------|------|------|
 | Interfaz | Texto | Gráfica |
 | Arquitectura | 16 bits | 32/64 bits |
-| Particiones | MBR (2TB máx) | GPT (9.4 ZB) |
+| Tabla particiones | MBR (2TB máx) | GPT (9.4 ZB) |
 | Secure Boot | No | Sí |
 | Drivers propios | No | Sí |
 | Velocidad | Más lenta | Más rápida |  
