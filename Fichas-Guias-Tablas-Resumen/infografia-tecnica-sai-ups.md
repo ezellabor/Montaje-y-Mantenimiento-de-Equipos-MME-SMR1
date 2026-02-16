@@ -4,7 +4,7 @@
 
 ## 1️⃣ ¿Qué es un SAI?  
 
-Un SAI (Sistema de Alimentación Ininterrumpida) o UPS (Uninterruptible Power Supply) es un dispositivo que:
+Un **SAI** _(Sistema de Alimentación Ininterrumpida)_ o **UPS** _(Uninterruptible Power Supply)_ es un dispositivo que:
 
 - Protege frente a **cortes eléctricos**
 - Filtra picos eléctricos: **Estabiliza** o regula la tensión
@@ -33,7 +33,8 @@ Regulación AVR incluida
 
 ### On-line (Doble Conversión)
 Tiempo de transferencia: 0 ms  
-Un SAI On-line genera una señal eléctrica completamente nueva y aislada de la red.
+
+** Idea técnica: Un SAI On-line genera una señal eléctrica completamente nueva y aislada de la red.
 
 ---
 
@@ -54,7 +55,7 @@ Potencia mínima SAI = Potencia total de equipos (W) × 1.3 (margen seguirdad)
 ```
 Ejemplo:
 PC 400W + Monitor 100W = 500W  
-500 × 1.3 = 650VA mínimo
+500 × 1.3 = 650 VA mínimo
 ```  
 
 #  
