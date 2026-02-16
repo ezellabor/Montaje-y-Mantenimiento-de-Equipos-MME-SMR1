@@ -1,6 +1,6 @@
 # ![Módulo](https://img.shields.io/badge/Módulo-Montaje%20y%20Mantenimiento-lightgrey)
 # ![Grupo](https://img.shields.io/badge/Grupo-SMR1-blue)
-# ![Tema](https://img.shields.io/badge/Tema-SAI%20%2F%20UPS-success)
+# ![Tema](https://img.shields.io/badge/Tema-SAI%20%2F%20UPS-success) 
 
 ---
 
