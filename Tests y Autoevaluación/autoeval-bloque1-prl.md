@@ -6,7 +6,7 @@
 ```AUTOEVALUACIÓN: 20 items```  
  
 ### I) Opción múltiple  
-```1 respuesta válida (5 items)```  
+```1 respuesta válida (5 items)```   
 
 **1. ¿En qué año se publicó la Ley de Prevención de Riesgos Laborales en España?**    
    a) 1978  
@@ -44,7 +44,7 @@
    e) Pedir un aumento de sueldo.  
 
 ### II) Respuesta múltiple  
-´´´Hasta 3 respuestas válidas (5 items)``` 
+´´´Hasta 3 respuestas válidas (5 items)```  
 
 **6. ¿Cuáles son obligaciones del trabajador según la LPRL?**    
    a) Usar correctamente los EPIs.  
