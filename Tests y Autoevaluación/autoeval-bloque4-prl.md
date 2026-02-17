@@ -87,5 +87,6 @@
 20. El lugar donde los ciudadanos llevan los residuos especiales se llama Punto __________ .
 
 ---
-## ✅ SOLUCIONES BLOQUE 4
+<!-- SOLUCIONES
 1:c | 2:b | 3:b | 4:d | 5:b | 6:a,b,c | 7:a,b,c | 8:a,b,c | 9:a,b,c | 10:a,b,c | 11:F | 12:V | 13:V | 14:V | 15:V | 16:V | 17:F | 18:Reducir | 19:RAEE | 20:Limpio
+-->
