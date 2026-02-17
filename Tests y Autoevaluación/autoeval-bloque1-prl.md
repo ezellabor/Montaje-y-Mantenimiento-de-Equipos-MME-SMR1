@@ -6,19 +6,19 @@
 ```AUTOEVALUACIÓN```  
 
 ## I. Opción múltiple (1 respuesta válida)
-1. ¿En qué año se publicó la Ley de Prevención de Riesgos Laborales en España?
-   a) 1978
-   b) 1995
-   c) 2005
-   d) 1986
-   e) 2010
+1. ¿En qué año se publicó la Ley de Prevención de Riesgos Laborales en España?  
+   a) 1978  
+   b) 1995  
+   c) 2005  
+   d) 1986  
+   e) 2010  
 
-2. El derecho a la protección frente a los riesgos laborales es un derecho...
-   a) Renunciable si el trabajador quiere cobrar más.
-   b) Exclusivo de los funcionarios.
-   c) Un deber del trabajador y un derecho del empresario.
-   d) Un derecho del trabajador y un deber del empresario.
-   e) Opcional según el tamaño de la empresa.
+2. El derecho a la protección frente a los riesgos laborales es un derecho...  
+   a) Renunciable si el trabajador quiere cobrar más.  
+   b) Exclusivo de los funcionarios.  
+   c) Un deber del trabajador y un derecho del empresario.  
+   d) Un derecho del trabajador y un deber del empresario.  
+   e) Opcional según el tamaño de la empresa.  
 
 3. ¿Qué organismo internacional marca las directrices de salud laboral?
    a) ONU
