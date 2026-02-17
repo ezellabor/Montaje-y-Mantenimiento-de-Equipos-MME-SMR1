@@ -52,7 +52,7 @@ D) AHCI
 
 ---
 
-### 6. ¿Qué ocurre si el Boot Order está mal configurado?
+### 6. ¿Qué ocurre si el _boot order_ está mal configurado?
 
 A) El equipo mejora el rendimiento  
 B) La RAM aumenta su frecuencia  
@@ -61,7 +61,7 @@ D) Se activa automáticamente el modo seguro
 
 ---
 
-### 7. ¿Para qué sirve Secure Boot?
+### 7. ¿Para qué sirve _secure boot_?
 
 A) Acelerar el arranque  
 B) Reducir consumo eléctrico  
@@ -88,7 +88,7 @@ D) NVMe
 
 ---
 
-### 10. ¿Qué indican los "beep codes" durante el arranque?
+### 10. ¿Qué indican los _beep codes_ durante el arranque?
 
 A) Que Windows está actualizando  
 B) Error de hardware detectado en el POST  
