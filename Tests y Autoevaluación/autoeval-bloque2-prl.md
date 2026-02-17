@@ -100,6 +100,8 @@
 19. Una descarga eléctrica causada por tocar un cable activo es un contacto __________ .
 20. La falta de luz o el exceso de calor son riesgos de tipo __________ .
 
----
+---  
+<!--
 ## ✅ SOLUCIONES BLOQUE 2
-1:b | 2:c | 3:e | 4:c | 5:c | 6:a,b,c | 7:a,b,c | 8:a,b,c | 9:a,b,c | 10:a,b,c | 11:V | 12:F | 13:V | 14:V | 15:V | 16:V | 17:V | 18:Ergonómico | 19:Directo | 20:Físico
+1:b | 2:c | 3:e | 4:c | 5:c | 6:a,b,c | 7:a,b,c | 8:a,b,c | 9:a,b,c | 10:a,b,c | 11:V | 12:F | 13:V | 14:V | 15:V | 16:V | 17:V | 18:Ergonómico | 19:Directo | 20:Físico  
+-->
