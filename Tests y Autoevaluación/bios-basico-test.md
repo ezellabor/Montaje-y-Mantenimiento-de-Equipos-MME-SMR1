@@ -10,7 +10,7 @@
 ### 1. ¿Qué significa POST?
 
 A) Primary Operating System Tool  
-B) Power-On Self Test  
+B) Power On Self Test  
 C) Protocol Of System Transfer  
 D) Power Operating System Task  
 
