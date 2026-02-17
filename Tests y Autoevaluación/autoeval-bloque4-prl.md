@@ -10,7 +10,7 @@
 
 **1. ¿Qué significan las siglas RAEE?**    
    a) Residuos de Automóviles Eléctricos.  
-   b) Reciclaje de Aparatos Electrónicos.  
+   b) Reciclaje de Aparatos Electrónicos.    
    c) Residuos de Aparatos Eléctricos y Electrónicos.  
    d) Red de Alerta Eléctrica Española.  
    e) Reutilización de Antiguos Equipos.  
