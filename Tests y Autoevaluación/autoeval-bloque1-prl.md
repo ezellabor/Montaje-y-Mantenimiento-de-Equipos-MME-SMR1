@@ -82,7 +82,8 @@
     e) Es voluntaria pero el empresario debe ofrecerla.  
 
 ### III) Verdadero o Falso  
-```(7 items)```   
+```(7 items)```  
+
 11. La LPRL no se aplica a los autónomos que no tienen trabajadores a su cargo. ( )  
 12. El empresario debe asumir el coste de las medidas de seguridad. ( )  
 13. El trabajador puede ser sancionado si no utiliza los EPIs obligatorios. ( )  
@@ -92,7 +93,8 @@
 17. El Comité de Seguridad y Salud es el órgano paritario de participación. ( )  
 
 ### IV) Completar la afirmación  
-```(3 items)```
+```(3 items)```  
+
 18. La Ley de Prevención de Riesgos Laborales es la Ley 31/__________ .  
 19. Los trabajadores eligen a sus representantes en prevención, llamados __________ de Prevención.  
 20. El conjunto de actividades para evitar riesgos se denomina __________ .  
