@@ -75,7 +75,7 @@
    d) Acudir al médico si persiste la irritación.  
    e) Echarse alcohol para desinfectar.  
 
-**10. Técnicas de prevención contra el Síndrome del Túnel Carpiano:**    
+**10. Técnicas de prevención contra el _síndrome del túnel de carpiano_:**    
     a) Reposamuñecas ergonómico.  
     b) Ejercicios de estiramiento de manos.  
     b) Ratones verticales.  
