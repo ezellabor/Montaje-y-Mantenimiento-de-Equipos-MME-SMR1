@@ -5,7 +5,7 @@
 # Bloque 1: Legislación y Normativa PRL  
 ```AUTOEVALUACIÓN```  
 
-## I. Opción Múltiple (1 respuesta válida)
+## I. Opción múltiple (1 respuesta válida)
 1. ¿En qué año se publicó la Ley de Prevención de Riesgos Laborales en España?
    a) 1978
    b) 1995
@@ -41,7 +41,7 @@
    d) Esperar a que el jefe lo vea.
    e) Pedir un aumento de sueldo.
 
-## II. Respuesta Múltiple (Hasta 3 respuestas válidas)
+## II. Respuesta múltiple (Hasta 3 respuestas válidas)
 6. ¿Cuáles son obligaciones del trabajador según la LPRL?
    a) Usar correctamente los EPIs.
    b) Evaluar los riesgos de la empresa.
