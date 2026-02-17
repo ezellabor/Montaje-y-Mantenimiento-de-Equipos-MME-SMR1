@@ -10,7 +10,7 @@
 ```1 respuesta válida (5 items)```
 
 **1. ¿Cuál es el EPI más importante para un técnico que monta placas base?**    
-   a) Casco de seguridad.  
+   a) Casco de seguridad.   
    b) Guantes de cuero.  
    c) Pulsera antiestática.  
    d) Botas de agua.  
