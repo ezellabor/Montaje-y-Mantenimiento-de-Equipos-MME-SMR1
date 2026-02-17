@@ -54,11 +54,11 @@
    e) Reordenar.  
 
 **7. ¿Qué materiales se pueden recuperar de una placa base reciclada?**    
-   a) Oro.  
+   a) Madera.  
    b) Cobre.  
    c) Estaño.  
    d) Gas natural.  
-   e) Madera.  
+   e) Oro.  
 
 **8. Beneficios de la eficiencia energética en el taller:**    
    a) Menor coste en la factura eléctrica.  
@@ -67,20 +67,20 @@
    d) El PC va más rápido.  
    e) El monitor tiene mejores colores.  
 
-**9. ¿Qué residuos informáticos van al _Punto Limpio_?**    
-   a) Monitores y pantallas.  
-   b) Unidades centrales (torres).  
-   c) Pequeños periféricos (ratones).  
-   d) Restos de bocadillo del técnico.  
-   e) Pañuelos usados.  
-
+**9. ¿Qué residuos informáticos van al _Punto Limpio_?**     
+   a) Restos de bocadillo del técnico.  
+   b) Pañuelos usados.  
+   c) Monitores y pantallas.  
+   d) Unidades centrales (torres).  
+   e) Pequeños periféricos (ratones).  
+   
 **10. ¿Cómo podemos reducir el impacto ambiental en el taller?**  
-    a) Usando equipos con certificación Energy Star.  
+    a) Tirando los componentes viejos al río.   
     b) Apagando los monitores al final de la jornada.  
     c) Imprimiendo solo lo estrictamente necesario.  
     d) Dejando todos los servidores encendidos siempre.  
-    e) Tirando los componentes viejos al río.  
-
+    e) Usando equipos con certificación Energy Star.  
+    
 ### III) Verdadero o Falso  
 ```(7 items)```  
 
@@ -101,5 +101,5 @@
 
 ---
 <!-- SOLUCIONES
-1:c | 2:b | 3:b | 4:d | 5:b | 6:a,b,c | 7:a,b,c | 8:a,b,c | 9:a,b,c | 10:a,b,c | 11:F | 12:V | 13:V | 14:V | 15:V | 16:V | 17:F | 18:Reducir | 19:RAEE | 20:Limpio
+1:c | 2:b | 3:b | 4:d | 5:b | 6:a,b,c | 7:b,c,e | 8:a,b,c | 9:c,d,e | 10:b,c,e | 11:F | 12:V | 13:V | 14:V | 15:V | 16:V | 17:F | 18:Reducir | 19:RAEE | 20:Limpio
 -->
