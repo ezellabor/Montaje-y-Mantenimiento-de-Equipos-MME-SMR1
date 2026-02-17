@@ -44,7 +44,7 @@
    e) Pedir un aumento de sueldo.  
 
 ### II) Respuesta múltiple  
-´´´Hasta 3 respuestas válidas (5 items)```  
+```Hasta 3 respuestas válidas (5 items)```  
 
 **6. ¿Cuáles son obligaciones del trabajador según la LPRL?**    
    a) Usar correctamente los EPIs.  
