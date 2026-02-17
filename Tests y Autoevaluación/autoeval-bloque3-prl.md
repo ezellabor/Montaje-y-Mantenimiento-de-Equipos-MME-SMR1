@@ -87,5 +87,6 @@
 20. Para evitar la electricidad estática se usa una __________ antiestática.
 
 ---
-## ✅ SOLUCIONES BLOQUE 3
+<!-- SOLUCIONES BLOQUE 3
 1:c | 2:e | 3:b | 4:c | 5:c | 6:a,b,c | 7:a,b,c | 8:a,b,c | 9:a,c,d | 10:a,b,c | 11:V | 12:V | 13:V | 14:V | 15:V | 16:F | 17:V | 18:Diferencial | 19:S | 20:Pulsera
+-->
