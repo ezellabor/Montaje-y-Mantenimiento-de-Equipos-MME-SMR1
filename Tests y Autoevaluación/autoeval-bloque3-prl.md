@@ -1,78 +1,90 @@
-# 📝 Autoevaluación Bloque 3: Medidas Preventivas y Primeros Auxilios
+![Módulo](https://img.shields.io/badge/Módulo-Montaje_y_Mantenimiento_de_Equipos-orange?style=for-the-badge)
+![Grupo](https://img.shields.io/badge/Grupo-SMR1-orange?style=for-the-badge)
+![UT3](https://img.shields.io/badge/UT3-Normativa_PRL_y_protección_ambiental-blue?style=for-the-badge)
+![Profesor](https://img.shields.io/badge/Profesor-Ezequiel_Llarena_Borges-00979D?style=for-the-badge)  
 
-## I. Opción Múltiple (1 respuesta válida)
-1. ¿Cuál es el EPI más importante para un técnico que monta placas base?
-   a) Casco de seguridad.
-   b) Guantes de cuero.
-   c) Pulsera antiestática.
-   d) Botas de agua.
-   e) Mascarilla FFP3.
+## Bloque 3: Medidas Preventivas  
+```AUTOEVALUACIÓN: 20 items``` 
 
-2. Ante un incendio de origen eléctrico (un PC ardiendo), ¿qué extintor NO se debe usar?
-   a) CO2 (Nieve carbónica).
-   b) Polvo ABC.
-   c) Agua pulverizada.
-   d) Espuma física.
-   e) Ni la c ni la d.
+### I) Opción múltiple  
+```1 respuesta válida (5 items)```
 
-3. En el protocolo PAS, la "A" significa...
-   a) Ayudar al herido rápido.
-   b) Avisar a emergencias (112).
-   c) Apartar los cables.
-   d) Analizar la situación.
-   e) Atar al accidentado.
+1. ¿Cuál es el EPI más importante para un técnico que monta placas base?  
+   a) Casco de seguridad.  
+   b) Guantes de cuero.  
+   c) Pulsera antiestática.  
+   d) Botas de agua.  
+   e) Mascarilla FFP3.  
 
-4. ¿A qué altura debe estar el monitor para evitar fatiga cervical?
-   a) A la altura del pecho.
-   b) Por encima de la cabeza.
-   c) El borde superior a la altura de los ojos.
-   d) Debajo de la mesa.
-   e) Da igual mientras se vea bien.
+2. Ante un incendio de origen eléctrico (un PC ardiendo), ¿qué extintor NO se debe usar?  
+   a) CO2 (Nieve carbónica).  
+   b) Polvo ABC.  
+   c) Agua pulverizada.  
+   d) Espuma física.  
+   e) Ni la c) ni la d).  
 
-5. ¿Cuál es el primer paso ante una electrocución en el taller?
-   a) Tocar al herido para separarlo.
-   b) Darle agua con azúcar.
-   c) Cortar el suministro eléctrico (cuadro).
-   d) Llamar a sus padres.
-   e) Soplarle fuerte.
+3. En el protocolo PAS, la "A" significa...  
+   a) Ayudar al herido rápido.  
+   b) Avisar a emergencias (112).  
+   c) Apartar los cables.    
+   d) Analizar la situación.    
+   e) Atar al accidentado.    
 
-## II. Respuesta Múltiple (Hasta 3 respuestas válidas)
-6. ¿Qué medidas preventivas evitan la fatiga visual?
-   a) Hacer descansos de 5 min cada hora.
-   b) Parpadear voluntariamente con frecuencia.
-   c) Usar filtros de luz azul o ajustar brillo.
-   d) Mirar siempre de cerca sin apartar la vista.
-   e) Usar gafas de sol dentro del taller.
+4. ¿A qué altura debe estar el monitor para evitar fatiga cervical?  
+   a) A la altura del pecho.  
+   b) Por encima de la cabeza.  
+   c) El borde superior a la altura de los ojos.  
+   d) Debajo de la mesa.  
+   e) Da igual mientras se vea bien.  
 
-7. ¿Qué elementos de protección eléctrica deben estar en el taller?
-   a) Interruptor Diferencial.
-   b) Interruptor Magnetotérmico (PIA).
-   c) Toma de tierra.
-   d) Alfombras de lana.
-   e) Imanes potentes en las puertas.
+5. ¿Cuál es el primer paso ante una electrocución en el taller?  
+   a) Tocar al herido para separarlo.  
+   b) Darle agua con azúcar.  
+   c) Cortar el suministro eléctrico (cuadro).  
+   d) Llamar a sus padres.  
+   e) Soplarle fuerte.  
 
-8. ¿Cómo debemos levantar una caja pesada de servidores?
-   a) Con la espalda recta.
-   b) Doblando las rodillas.
-   c) Pegando la carga al cuerpo.
-   d) Doblando la cintura sin mover las piernas.
-   e) Girando el tronco bruscamente.
+### II) Respuesta múltiple  
+```Hasta 3 respuestas válidas (5 items)```  
 
-9. ¿Qué hacer si entra polvo de limpieza en los ojos?
-   a) Lavar con abundante agua o suero.
-   b) Frotar fuerte con el dedo.
-   c) No cerrar el ojo bajo ningún concepto.
-   d) Acudir al médico si persiste la irritación.
-   e) Echarse alcohol para desinfectar.
+6. ¿Qué medidas preventivas evitan la fatiga visual?  
+   a) Hacer descansos de 5 min cada hora.  
+   b) Parpadear voluntariamente con frecuencia.  
+   c) Usar filtros de luz azul o ajustar brillo.  
+   d) Mirar siempre de cerca sin apartar la vista.  
+   e) Usar gafas de sol dentro del taller.  
 
-10. Técnicas de prevención contra el Síndrome del Túnel Carpiano:
-    a) Reposamuñecas ergonómico.
-    b) Ejercicios de estiramiento de manos.
-    b) Ratones verticales.
-    d) Escribir con un solo dedo.
-    e) Usar guantes de boxeo.
+7. ¿Qué elementos de protección eléctrica deben estar en el taller?  
+   a) Interruptor Diferencial.  
+   b) Interruptor Magnetotérmico (PIA).  
+   c) Toma de tierra.  
+   d) Alfombras de lana.  
+   e) Imanes potentes en las puertas.  
 
-## III. Verdadero o Falso
+8. ¿Cómo debemos levantar una caja pesada de servidores?  
+   a) Con la espalda recta.  
+   b) Doblando las rodillas.  
+   c) Pegando la carga al cuerpo.  
+   d) Doblando la cintura sin mover las piernas.  
+   e) Girando el tronco bruscamente.  
+
+9. ¿Qué hacer si entra polvo de limpieza en los ojos?  
+   a) Lavar con abundante agua o suero.  
+   b) Frotar fuerte con el dedo.  
+   c) No cerrar el ojo bajo ningún concepto.  
+   d) Acudir al médico si persiste la irritación.  
+   e) Echarse alcohol para desinfectar.  
+
+10. Técnicas de prevención contra el Síndrome del Túnel Carpiano:  
+    a) Reposamuñecas ergonómico.  
+    b) Ejercicios de estiramiento de manos.  
+    b) Ratones verticales.  
+    d) Escribir con un solo dedo.  
+    e) Usar guantes de boxeo.  
+ 
+### III) Verdadero o Falso  
+```(7 items)```  
+
 11. La pulsera antiestática debe estar conectada a una toma de tierra. ( )
 12. El botón de "Test" del diferencial debe pulsarse una vez al mes. ( )
 13. En primeros auxilios, si no sabes qué hacer, es mejor no tocar al herido. ( )
@@ -81,7 +93,9 @@
 16. Los extintores de CO2 dañan los circuitos electrónicos internos. ( )
 17. La luz debe entrar por el lado contrario a la mano con la que escribimos. ( )
 
-## IV. Completar la afirmación
+### IV) Completar la afirmación  
+```(3 items)```  
+
 18. El equipo que protege a las personas de derivaciones eléctricas es el __________ .
 19. El protocolo de primeros auxilios es P.A.__________ .
 20. Para evitar la electricidad estática se usa una __________ antiestática.
