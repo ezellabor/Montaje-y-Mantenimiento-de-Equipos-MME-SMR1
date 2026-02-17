@@ -4,7 +4,7 @@
 ![Profesor](https://img.shields.io/badge/Profesor-Ezequiel_Llarena_Borges-00979D?style=for-the-badge)  
 ## Bloque 1: Legislación y Normativa PRL  
 ```AUTOEVALUACIÓN```  
-
+ 
 ### I) Opción múltiple (1 respuesta válida)
 1. ¿En qué año se publicó la Ley de Prevención de Riesgos Laborales en España?  
    a) 1978  
