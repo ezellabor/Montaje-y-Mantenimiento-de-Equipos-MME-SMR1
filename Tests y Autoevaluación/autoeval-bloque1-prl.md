@@ -31,7 +31,7 @@
    a) Desde 1 trabajador.  
    b) Desde 6 trabajadores.  
    c) Desde 50 trabajadores.   
-   d) Solo en empresas de más de 100.  
+   d) Solo en empresas de más de 100.   
    e) No es obligatorio por ley.  
 
 5. Si un trabajador detecta un riesgo grave e inminente, puede...   
