@@ -3,10 +3,10 @@
 ![UT3](https://img.shields.io/badge/UT3-Normativa_PRL_y_protección_ambiental-blue?style=for-the-badge)
 ![Profesor](https://img.shields.io/badge/Profesor-Ezequiel_Llarena_Borges-00979D?style=for-the-badge)  
 ## Bloque 1: Legislación y Normativa PRL  
-```AUTOEVALUACIÓN```  
+```AUTOEVALUACIÓN: 20 items```  
  
 ### I) Opción múltiple  
-```1 respuesta válida```  
+```1 respuesta válida (5 items)```  
 
 **1. ¿En qué año se publicó la Ley de Prevención de Riesgos Laborales en España?**    
    a) 1978  
@@ -44,7 +44,7 @@
    e) Pedir un aumento de sueldo.  
 
 ### II) Respuesta múltiple  
-´´´Hasta 3 respuestas válidas``` 
+´´´Hasta 3 respuestas válidas (5 items)``` 
 
 **6. ¿Cuáles son obligaciones del trabajador según la LPRL?**    
    a) Usar correctamente los EPIs.  
@@ -82,6 +82,7 @@
     e) Es voluntaria pero el empresario debe ofrecerla.  
 
 ### III) Verdadero o Falso  
+```(7 items)```   
 11. La LPRL no se aplica a los autónomos que no tienen trabajadores a su cargo. ( )  
 12. El empresario debe asumir el coste de las medidas de seguridad. ( )  
 13. El trabajador puede ser sancionado si no utiliza los EPIs obligatorios. ( )  
@@ -91,6 +92,7 @@
 17. El Comité de Seguridad y Salud es el órgano paritario de participación. ( )  
 
 ### IV) Completar la afirmación  
+```(3 items)```
 18. La Ley de Prevención de Riesgos Laborales es la Ley 31/__________ .  
 19. Los trabajadores eligen a sus representantes en prevención, llamados __________ de Prevención.  
 20. El conjunto de actividades para evitar riesgos se denomina __________ .  
