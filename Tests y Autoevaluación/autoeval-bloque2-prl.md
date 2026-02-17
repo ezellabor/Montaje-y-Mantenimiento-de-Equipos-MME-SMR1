@@ -1,6 +1,14 @@
-# 📝 Autoevaluación Bloque 2: Riesgos en Entornos Informáticos
+![Módulo](https://img.shields.io/badge/Módulo-Montaje_y_Mantenimiento_de_Equipos-orange?style=for-the-badge)
+![Grupo](https://img.shields.io/badge/Grupo-SMR1-orange?style=for-the-badge)
+![UT3](https://img.shields.io/badge/UT3-Normativa_PRL_y_protección_ambiental-blue?style=for-the-badge)
+![Profesor](https://img.shields.io/badge/Profesor-Ezequiel_Llarena_Borges-00979D?style=for-the-badge)  
 
-## I. Opción Múltiple (1 respuesta válida)
+## Bloque 2: Identificación de riesgos  
+```AUTOEVALUACIÓN: 20 items``` 
+
+### I) Opción múltiple  
+```1 respuesta válida (5 items)```   
+
 1. ¿Qué tipo de riesgo es el ruido de los ventiladores en un rack de servidores?
    a) Riesgo químico
    b) Riesgo físico
@@ -36,7 +44,9 @@
    d) El cable HDMI.
    e) El ratón óptico.
 
-## II. Respuesta Múltiple (Hasta 3 respuestas válidas)
+### II) Respuesta múltiple  
+```Hasta 3 respuestas válidas (5 items)```  
+
 6. ¿Qué riesgos eléctricos existen en un taller informático?
    a) Contacto directo (tocar un cable pelado).
    b) Contacto indirecto (tocar la carcasa de un PC con derivación).
@@ -72,7 +82,9 @@
     d) Gripado del ventilador.
     e) Rotura de la pantalla.
 
-## III. Verdadero o Falso
+### III) Verdadero o Falso  
+```(7 items)```  
+
 11. La electricidad estática puede dañar componentes pero no es peligrosa para el humano. ( )
 12. Un CPD siempre debe estar a una temperatura muy elevada. ( )
 13. Las pantallas LED actuales no emiten radiaciones ionizantes peligrosas. ( )
@@ -81,7 +93,9 @@
 16. La iluminación insuficiente causa fatiga visual y errores. ( )
 17. Los cables por el suelo son un riesgo de caída al mismo nivel. ( )
 
-## IV. Completar la afirmación
+### IV) Completar la afirmación  
+```(3 items)```  
+
 18. El riesgo derivado de la postura y el diseño del puesto se llama riesgo __________ .
 19. Una descarga eléctrica causada por tocar un cable activo es un contacto __________ .
 20. La falta de luz o el exceso de calor son riesgos de tipo __________ .
