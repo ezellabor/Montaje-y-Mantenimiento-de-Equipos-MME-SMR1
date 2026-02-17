@@ -1,7 +1,7 @@
-![Módulo](https://img.shields.io/badge/Módulo-Montaje_y_Mantenimiento_de_Equipos-blue?style=for-the-badge)
-![Grupo](https://img.shields.io/badge/Grupo-SMR1-blue?style=for-the-badge)
-![UT3](https://img.shields.io/badge/UT3-Normativa_PRL_y_protección_ambiental-00979D?style=for-the-badge&logo=arduino)
-![Profesor](https://img.shields.io/badge/Profesor-Ezequiel_Llarena_Borges-orange?style=for-the-badge)  
+![Módulo](https://img.shields.io/badge/Módulo-Montaje_y_Mantenimiento_de_Equipos-orange?style=for-the-badge)
+![Grupo](https://img.shields.io/badge/Grupo-SMR1-orange?style=for-the-badge)
+![UT3](https://img.shields.io/badge/UT3-Normativa_PRL_y_protección_ambiental-blue?style=for-the-badge)
+![Profesor](https://img.shields.io/badge/Profesor-Ezequiel_Llarena_Borges-00979D?style=for-the-badge)  
 # Autoevaluación Bloque 1: Legislación y Normativa (PRL)
 
 ## I. Opción Múltiple (1 respuesta válida)
