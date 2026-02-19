@@ -62,11 +62,11 @@
    e) Imanes potentes en las puertas.  
 
 **8. ¿Cómo debemos levantar una caja pesada de servidores?**    
-    a) Doblando la cintura sin mover las piernas. 
-    b) Pegando la carga al cuerpo.  
-    c) Doblando las rodillas. 
-    d) Girando el tronco bruscamente.  
-    e) Con la espalda recta. 
+    a) Doblando la cintura sin mover las piernas.   
+    b) Pegando la carga al cuerpo.    
+    c) Doblando las rodillas.   
+    d) Girando el tronco bruscamente.    
+    e) Con la espalda recta.   
 
 **9. ¿Qué hacer si entra polvo de limpieza en los ojos?**    
    a) Lavar con abundante agua o suero.  
