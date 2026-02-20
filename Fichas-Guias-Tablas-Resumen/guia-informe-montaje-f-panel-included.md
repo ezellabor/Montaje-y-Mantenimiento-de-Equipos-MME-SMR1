@@ -6,7 +6,7 @@
 
 ## 1. Instalación de CPU y pasta térmica
 * **Procedimiento** Levanta la palanca de retención del zócalo. Localiza el triángulo dorado en una esquina del procesador y hazlo coincidir con la marca del zócalo de la placa base.    
-    ![CPU installation](./img/palanca-cpu.png)  
+    ![CPU installation](../img/palanca-cpu.png)  
 * **Principio ZIF:** La CPU debe encajar sin ejercer ninguna presión (Zero Insertion Force). Si no entra suavemente, la orientación es incorrecta.
 * **Pasta térmica:** Aplica una gota del tamaño de un grano de arroz exactamente en el centro del procesador.   
     ![Thermal paste application](https://www.intel.com/content/dam/www/central-libraries/us/en/images/2022-06/how-to-apply-thermal-paste-1.png)
