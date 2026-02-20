@@ -1,6 +1,11 @@
-# Guía Maestra de Montaje y Registro Técnico - SMR1
+![Módulo](https://img.shields.io/badge/Módulo-Montaje_y_Mantenimiento_de_Equipos-brown?style=for-the-badge)
+![Grupo](https://img.shields.io/badge/Grupo-SMR1-blue?style=for-the-badge)
+![Procedimiento](https://img.shields.io/badge/Procedimiento-Ensamblaje-brown?style=for-the-badge)
+![Profesor](https://img.shields.io/badge/Profesor-Ezequiel_Llarena_Borges-blue?style=for-the-badge)  
 
-## 1. Instalación de CPU y Pasta Térmica
+# Guía de montaje e informe técnico
+
+## 1. Instalación de CPU y pasta térmica
 * **Inserción Didáctica:** Levanta la palanca de retención del zócalo. Localiza el triángulo dorado en una esquina del procesador y hazlo coincidir con la marca del zócalo de la placa base. 
     ![CPU installation](https://images.pcworld.com/images/article/2011/11/cpu-alignment-5232871.jpg)
 * **Principio ZIF:** La CPU debe encajar sin ejercer ninguna presión (Zero Insertion Force). Si no entra suavemente, la orientación es incorrecta.
