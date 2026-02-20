@@ -35,7 +35,7 @@ Riesgo de **descarga eléctrica** por la energía residual almacenada en sus **c
 </details>
 
 <details>
-<summary> ¿Qué significa el cable de color Verde y Amarillo?</summary>
+<summary> ¿Qué significa el cable de color verde y amarillo?</summary>
 
 Es la **toma de tierra**. Su función es derivar fugas de corriente a tierra para que el **diferencial** pueda saltar y protegernos.
 </details>
