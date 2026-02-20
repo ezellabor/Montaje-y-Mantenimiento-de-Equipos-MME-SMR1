@@ -60,13 +60,18 @@ La versión moderna de la BIOS es la **UEFI (Unified Extensible Firmware Interfa
 - Error Secure Boot → SO incompatible
 - No arranca USB → Orden de arranque mal configurado  
 
-## 6. Simulador de BIOS/UEFI online de Lenovo  
+## 6. Simulador de BIOS/UEFI online  
 
 [Simulador BIOS/UEFI online](https://download.lenovo.com/bsco/index.html)   
 
 ## 7. Síntesis
 >- La BIOS/UEFI es el firmware que prepara el equipo antes de que cargue el sistema operativo.
->- La UEFI es un mini-sistema operativo previo al sistema operativo principal.  
+>- La UEFI es un mini-sistema operativo previo al sistema operativo principal.
+
+## 8. Autoevaluación  
+
+[Test de autoevaluación BIOS](Tests y Autoevaluación/bios-basico-test.md)
+
 
 
 
