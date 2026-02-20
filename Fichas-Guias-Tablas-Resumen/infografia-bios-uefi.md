@@ -9,7 +9,7 @@
 La **BIOS (Basic Input/Output System)** es el sistema básico de entrada/salida almacenado en memoria ROM/Flash en la placa base. Es el primer programa *(firmware)* que se ejecuta al encender el equipo y sus funciones principales son:  
 - Inicializar el hardware
 - Ejecutar el POST
-- Permitir configuración del sistema
+- Configuración del sistema
 - Cargar el sistema operativo en memoria
  
 La versión moderna de la BIOS es la **UEFI (Unified Extensible Firmware Interface).**
