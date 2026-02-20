@@ -72,7 +72,7 @@ A la **altura de los ojos** del usuario. De esta forma, la mirada cae ligerament
 </details>
 
 <details>
-<summary> ¿Qué significa el protocolo P.A.S. en primeros auxilios?</summary>
+<summary> ¿Qué significa el protocolo PAS en primeros auxilios?</summary>
 
 1. **P**roteger (el lugar del accidente).
 2. **A**visar (emergencias 112).
@@ -80,7 +80,7 @@ A la **altura de los ojos** del usuario. De esta forma, la mirada cae ligerament
 </details>
 
 <details>
-<summary> ¿Qué diferencia hay entre el Magnetotérmico y el Diferencial?</summary>
+<summary> ¿Qué diferencia hay entre Magnetotérmico y Diferencial?</summary>
 
 * **Magnetotérmico:** Protege la **instalación** (cables) de sobrecargas y cortocircuitos.
 * **Diferencial:** Protege a las **personas** de contactos eléctricos accidentales (fugas).
