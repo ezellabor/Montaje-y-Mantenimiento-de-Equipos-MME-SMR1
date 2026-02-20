@@ -37,7 +37,7 @@ Riesgo de **descarga eléctrica** por la energía residual almacenada en sus **c
 <details>
 <summary> ¿Qué significa el cable de color Verde y Amarillo?</summary>
 
-Es la **Toma de Tierra**. Su función es derivar fugas de corriente a tierra para que el **diferencial** pueda saltar y protegernos.
+Es la **toma de tierra**. Su función es derivar fugas de corriente a tierra para que el **diferencial** pueda saltar y protegernos.
 </details>
 
 <details>
@@ -158,7 +158,7 @@ La **limpieza del polvo** con aire comprimido o aspirador. La acumulación de pe
 <details>
  <summary> 5. ¿Qué significa el cable de color Verde y Amarillo?</summary>
  
- Es la **Toma de Tierra**. Deriva fugas de corriente para evitar calambres y permitir que salte el diferencial.
+ Es la **toma de tierra**. Deriva fugas de corriente para evitar calambres y permitir que salte el diferencial.
  </details>
 
  <details>
