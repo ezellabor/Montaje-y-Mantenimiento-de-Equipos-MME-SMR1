@@ -65,8 +65,8 @@ La versión moderna de la BIOS es la **UEFI (Unified Extensible Firmware Interfa
 [Simulador BIOS/UEFI online](https://download.lenovo.com/bsco/index.html)   
 
 ### Ideas clave
-- La BIOS/UEFI es el firmware que prepara el equipo antes de que cargue el sistema operativo.
-- La UEFI es un mini-sistema operativo previo al sistema operativo principal.  
+>- La BIOS/UEFI es el firmware que prepara el equipo antes de que cargue el sistema operativo.
+>- La UEFI es un mini-sistema operativo previo al sistema operativo principal.  
 
 
 
