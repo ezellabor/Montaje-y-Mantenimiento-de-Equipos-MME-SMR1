@@ -1,0 +1,909 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Guía de montaje e informe técnico</title>
+    <style>
+        :root {
+            --primary: #2c3e50;
+            --accent: #2980b9;
+            --success: #27ae60;
+            --warning: #f39c12;
+            --danger: #e74c3c;
+        }
+        body {
+            font-family: 'Segoe UI', Arial, sans-serif;
+            line-height: 1.6;
+            color: #333;
+            max-width: 1000px;
+            margin: 0 auto;
+            padding: 20px;
+            background-color: #f4f7f6;
+        }
+        header {
+            background: var(--primary);
+            color: white;
+            padding: 30px;
+            text-align: center;
+            border-radius: 8px;
+            margin-bottom: 30px;
+        }
+        h2 { color: var(--accent); border-bottom: 2px solid var(--accent); padding-bottom: 8px; margin-top: 40px; }
+        h3 { color: #34495e; border-left: 5px solid var(--accent); padding-left: 10px; margin-top: 25px; }
+
+        .card { background: white; padding: 25px; border-radius: 8px; box-shadow: 0 2px 10px rgba(0,0,0,0.05); margin-bottom: 20px; }
+        .prl-box { background: #fff3cd; border: 1px solid #ffeeba; padding: 15px; border-radius: 5px; margin: 20px 0; }
+        .didactica { display: block; margin-top: 10px; padding: 10px; background: #eef2f7; border-radius: 4px; font-style: italic; font-size: 0.95em; border-left: 3px solid var(--accent); }
+        
+        .step-check { display: flex; align-items: flex-start; margin-bottom: 15px; background: #fafafa; padding: 15px; border-radius: 5px; border: 1px solid #eee; }
+        .step-check input[type="checkbox"] { transform: scale(1.4); margin-right: 15px; margin-top: 5px; cursor: pointer; }
+
+        table { width: 100%; border-collapse: collapse; margin-top: 15px; background: white; }
+        th, td { border: 1px solid #ddd; padding: 12px; text-align: left; }
+        th { background-color: #f8f9fa; color: var(--primary); }
+        
+        input[type="text"], input[type="date"], textarea { width: 95%; padding: 8px; border: 1px solid #ccc; border-radius: 4px; font-family: inherit; }
+        textarea { resize: vertical; min-height: 80px; }
+
+        .btn-container { text-align: center; margin: 40px 0; }
+        #btnTop { position: fixed; bottom: 20px; right: 20px; background: var(--primary); color: white; padding: 12px; border: none; border-radius: 5px; cursor: pointer; font-weight: bold; z-index: 100; }
+        #btnPrint { background: var(--success); color: white; padding: 15px 30px; border: none; border-radius: 5px; font-size: 1.1em; cursor: pointer; font-weight: bold; }
+        
+        .bios-list { background: #f9f9f9; padding: 15px; border-radius: 5px; list-style-type: square; }
+
+        @media print {
+            #btnTop, #btnPrint, .prl-box { display: none; }
+            body { background: white; padding: 0; }
+            .card { box-shadow: none; border: 1px solid #eee; margin-bottom: 10px; page-break-inside: avoid; }
+            input[type="date"] { border: none; }
+        }
+    </style>
+</head>
+<body>
+
+<header>
+    <h1>Guía de Montaje e Informe técnico</h1>
+    <p>Montaje y Mantenimiento de Equipos</p>
+</header>
+
+<button onclick="window.scrollTo({top: 0, behavior: 'smooth'})" id="btnTop">TOP</button>
+
+<section class="card">
+    <h2>1. Materiales y herramientas</h2>
+    <div class="prl-box">
+        <strong>⚠️ NORMAS DE SEGURIDAD:</strong>
+        <ul>
+            <li><strong>Pulsera antiestática:</strong> Conectada obligatoriamente a una parte metálica del chasis.</li>
+            <li><strong>Energía:</strong> No manipular componentes con el cable de alimentación conectado.</li>
+            <li><strong>Manipulación de componentes:</strong> Sujetar siempre las placas por los bordes.</li>
+        </ul>
+    </div>
+    <div class="step-check">
+        <input type="checkbox">
+        <div>
+            <strong>Manuales y Documentación:</strong> Verificar componentes y tener a mano el <strong>manual de la placa base</strong>.
+            <span class="didactica">Recomendación: Antes de tocar nada, localiza en el manual el esquema de la placa (Motherboard Layout) para identificar dónde está cada conector.</span>
+        </div>
+    </div>
+</section>
+
+<section class="card">
+    <h2>2. Ensamblaje de componentes críticos</h2>
+    <div class="step-check">
+        <input type="checkbox">
+        <div>
+            <strong>Instalación de CPU:</strong> 
+            <p>Levanta la palanca de retención. Identifica la <strong>flecha dorada</strong> en una esquina del procesador y hazla coincidir con la marca en el zócalo. Baja la palanca suavemente.</p>
+            <span class="didactica">Recomendación: La CPU solo entra en una posición ("Zero Insertion Force"). Si sientes resistencia, NO presiones; podrías doblar los pines. Una vez fijada, la CPU no debe moverse nada.</span>
+        </div>
+    </div>
+    <div class="step-check">
+        <input type="checkbox">
+        <div>
+            <strong>Aplicación de pasta térmica:</strong>
+            <p>Aplica una pequeña cantidad (tamaño grano de arroz) en el centro del procesador antes de colocar el disipador.</p>
+            <span class="didactica">Recomendación: El objetivo de la pasta no es "rellenar", sino eliminar las micro-burbujas de aire entre el metal de la CPU y el disipador. Demasiada pasta actuará como aislante térmico y será contraproducente.</span>
+        </div>
+    </div>
+    <div class="step-check">
+        <input type="checkbox">
+        <div>
+            <strong>Memoria RAM:</strong> Abrir pestañas, alinear muesca y presionar hasta el "clic".
+            <span class="didactica">Recomendación: Para activar el <strong>Dual Channel</strong>, consulta el manual. Normalmente se instalan en slots alternos (1 y 3 o 2 y 4).</span>
+        </div>
+    </div>
+</section>
+
+<section class="card">
+    <h2>3. Conexiones del panel frontal (F-Panel) y alimentación</h2>
+    <p>La conexión del panel frontal requiere precisión quirúrgica. Usa el manual para identificar los pines.</p>
+    
+    <div class="step-check">
+        <input type="checkbox">
+        <div>
+            <strong>Conectores de Control (F-Panel):</strong>
+            <ul>
+                <li><strong>Power SW / Reset SW:</strong> No tienen polaridad. Su función es cerrar el circuito para encender o reiniciar.</li>
+                <li><strong>HDD LED / Power LED:</strong> ¡Tienen polaridad! El cable de color (rojo, azul, verde) es el <strong>Positivo (+)</strong> y el blanco o negro es el <strong>Negativo (-)</strong>.</li>
+                <li><strong>USB Frontales y Audio:</strong> Poseen muescas de seguridad. Si no entra suave, revisa que no haya pines doblados.</li>
+            </ul>
+            <span class="didactica">Recomendación: Si tras montar todo el PC no enciende, el 90% de las veces es porque el cable "Power SW" está en el pin equivocado. Revisa el manual de nuevo.</span>
+        </div>
+    </div>
+    <div class="step-check">
+        <input type="checkbox">
+        <div>
+            <strong>Alimentación principal:</strong> Conectar ATX (24 pines) y EPS (4/8 pines para CPU).
+            <span class="didactica">⚠️ Nota: Asegúrate de que los conectores encajen hasta el fondo y la pestaña de seguridad haga "clic". Un cable flojo puede generar un arco eléctrico y quemar el conector.</span>
+        </div>
+    </div>
+</section>
+
+<section class="card">
+    <h2>4. Test de inicio y configuración de BIOS/UEFI</h2>
+    <p>Una vez verificado el montaje físico, procedemos a la configuración del firmware.</p>
+    
+    <div class="bios-list">
+        <strong>Configuración de BIOS/UEFI:</strong>
+        <ul>
+            <li><strong>System Time/Date:</strong> Configurar fecha y hora actuales.</li>
+            <li><strong>Storage/SATA Mode:</strong> Verificar que esté en modo <strong>AHCI</strong>.*</li>
+            <li><strong>Boot Priority:</strong> Situar la unidad de instalación (USB) como primera opción.</li>
+            <li><strong>XMP/DOCP:</strong> Activar el perfil de memoria para que la RAM trabaje a su velocidad nominal.</li>
+            <li><strong>H/W Monitor:</strong> Verificar que la temperatura de la CPU es estable (30ºC - 45ºC en reposo).</li>
+        </ul>
+    </div>
+    <span class="didactica">Importante: Si la temperatura sube de forma descontrolada en este menú, apaga el equipo: es señal de que el disipador no hace contacto o la pasta térmica está mal aplicada. *AHCI (Advanced Host Controller Interface): Protocolo técnico que permite a la placa base comunicarse de forma más eficiente con dispositivos de almacenamiento SATA (especialmente SSDs).</span>
+</section>
+
+<div class="card" id="informe">
+    <h2 style="text-align: center; background: #eee; padding: 10px;">INFORME DE MONTAJE Y CONTROL DE CALIDAD</h2>
+    
+    <div style="margin-bottom: 20px; display: flex; justify-content: space-between; flex-wrap: wrap;">
+        <span><strong>Técnico/a:</strong> <input type="text" style="width: 300px;"></span>
+        <span><strong>Fecha de montaje:</strong> <input type="date" style="width: 160px;"></span>
+        <span><strong>ID del Equipo:</strong> <input type="text" style="width: 80px;"></span>
+    </div>
+
+    <table>
+        <thead>
+            <tr>
+                <th width="5%">Paso</th>
+                <th width="40%">Tarea realizada</th>
+                <th width="10%">Estado</th>
+                <th width="45%">Observaciones e Incidencias</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr><td>1</td><td>CPU y disipador instalados en la placa.</td><td><input type="checkbox"></td><td><input type="text"></td></tr>
+            <tr><td>2</td><td>RAM instalada en slots correctos (Dual Channel).</td><td><input type="checkbox"></td><td><input type="text"></td></tr>
+            <tr><td>3</td><td>I/O Shield colocado en la caja.</td><td><input type="checkbox"></td><td><input type="text"></td></tr>
+            <tr><td>4</td><td>Placa base fijada a la caja (con separadores).</td><td><input type="checkbox"></td><td><input type="text"></td></tr>
+            <tr><td>5</td><td>Fuente de alimentación instalada y apagada.</td><td><input type="checkbox"></td><td><input type="text"></td></tr>
+            <tr><td>6</td><td>Almacenamiento (SSD/HDD) instalado.</td><td><input type="checkbox"></td><td><input type="text"></td></tr>
+            <tr><td>7</td><td>Cables de alimentación (24pin ATX, CPU) conectados.</td><td><input type="checkbox"></td><td><input type="text"></td></tr>
+            <tr><td>8</td><td>Cables panel frontal (Power, LEDs, USB, Audio) conectados.</td><td><input type="checkbox"></td><td><input type="text"></td></tr>
+            <tr><td>9</td><td>Tarjeta gráfica y alimentación PCIe (si aplica) instaladas.</td><td><input type="checkbox"></td><td><input type="text"></td></tr>
+            <tr><td>10</td><td>Gestión de cables realizada (bridas y orden).</td><td><input type="checkbox"></td><td><input type="text"></td></tr>
+            <tr style="background: #e8f4fd;">
+                <td><strong>TEST</strong></td>
+                <td><strong>El equipo enciende y muestra BIOS correctamente.</strong></td>
+                <td><input type="checkbox"></td>
+                <td><input type="text" placeholder="Anotar temperatura CPU en BIOS"></td>
+            </tr>
+        </tbody>
+    </table>
+
+    <div style="margin-top: 25px;">
+        <label><strong>Observaciones finales del montaje:</strong></label>
+        <textarea placeholder="Describe aquí cualquier anomalía general, piezas sobrantes o sugerencias de mejora..."></textarea>
+    </div>
+</div>
+
+<div class="btn-container">
+    <button id="btnPrint" onclick="window.print()">Generar PDF</button>
+</div>
+
+<footer>
+    <p>2026 - Montaje y Mantenimiento de Equipos - Prof. Ezequiel Llarena Borges</p>
+</footer>
+
+</body>
+</html>
+<!--<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Guía Maestra y Registro de Montaje - SMR1</title>
+    <style>
+        :root {
+            --primary: #2c3e50;
+            --accent: #2980b9;
+            --success: #27ae60;
+            --warning: #f1c40f;
+            --danger: #e74c3c;
+        }
+        body {
+            font-family: 'Segoe UI', Arial, sans-serif;
+            line-height: 1.6;
+            color: #333;
+            max-width: 1000px;
+            margin: 0 auto;
+            padding: 20px;
+            background-color: #f4f7f6;
+        }
+        header {
+            background: var(--primary);
+            color: white;
+            padding: 30px;
+            text-align: center;
+            border-radius: 8px;
+            margin-bottom: 30px;
+        }
+        h2 { color: var(--accent); border-bottom: 2px solid var(--accent); padding-bottom: 8px; margin-top: 40px; }
+        h3 { color: #34495e; border-left: 5px solid var(--accent); padding-left: 10px; }
+
+        /* Cajas de Estilo */
+        .card { background: white; padding: 25px; border-radius: 8px; box-shadow: 0 2px 10px rgba(0,0,0,0.05); margin-bottom: 20px; }
+        .prl-box { background: #fff3cd; border: 1px solid #ffeeba; padding: 15px; border-radius: 5px; margin: 20px 0; }
+        .didactica { display: block; margin-top: 10px; padding: 10px; background: #eef2f7; border-radius: 4px; font-style: italic; font-size: 0.95em; }
+        
+        /* Checklist Visual de la Guía */
+        .step-check { display: flex; align-items: flex-start; margin-bottom: 15px; background: #fafafa; padding: 15px; border-radius: 5px; }
+        .step-check input[type="checkbox"] { transform: scale(1.4); margin-right: 15px; margin-top: 5px; cursor: pointer; }
+
+        /* Tabla de Informe Final */
+        table { width: 100%; border-collapse: collapse; margin-top: 15px; background: white; }
+        th, td { border: 1px solid #ddd; padding: 12px; text-align: left; }
+        th { background-color: #f8f9fa; color: var(--primary); }
+        input[type="text"] { width: 95%; padding: 6px; border: 1px solid #ccc; border-radius: 4px; }
+
+        /* Botones y Navegación */
+        .btn-container { text-align: center; margin: 40px 0; }
+        #btnTop { position: fixed; bottom: 20px; right: 20px; background: var(--primary); color: white; padding: 12px; border: none; border-radius: 5px; cursor: pointer; font-weight: bold; z-index: 100; }
+        #btnPrint { background: var(--success); color: white; padding: 15px 30px; border: none; border-radius: 5px; font-size: 1.1em; cursor: pointer; font-weight: bold; }
+        #btnPrint:hover { background: #219150; }
+
+        @media print {
+            #btnTop, #btnPrint, .prl-box, .didactica { display: none; }
+            body { background: white; padding: 0; }
+            .card { box-shadow: none; border: 1px solid #eee; margin-bottom: 10px; page-break-inside: avoid; }
+            h2 { margin-top: 20px; }
+        }
+    </style>
+</head>
+<body>
+
+<header>
+    <h1>Guía Maestra y Registro de Montaje</h1>
+    <p>SMR - Montaje y Mantenimiento de Equipos</p>
+</header>
+
+<button onclick="window.scrollTo({top: 0, behavior: 'smooth'})" id="btnTop">TOP</button>
+
+<section class="card">
+    <h2>1. Preparación, Materiales y Seguridad</h2>
+    <div class="prl-box">
+        <strong>⚠️ NORMAS DE SEGURIDAD (PRL):</strong>
+        <ul>
+            <li>Pulsera antiestática conectada a chasis o toma de tierra.</li>
+            <li>No manipular el equipo conectado a la corriente (230V).</li>
+            <li>Uso de herramientas adecuadas (evitar puntas magnetizadas cerca de discos mecánicos).</li>
+        </ul>
+    </div>
+    <div class="step-check">
+        <input type="checkbox">
+        <div>
+            <strong>Inventario Técnico:</strong> Reunir componentes, manual de placa base y herramientas (Phillips PH2).
+            <span class="didactica">Didáctica: El manual es tu mejor amigo. Busca siempre el diagrama de conectores (Layout) antes de empezar.</span>
+        </div>
+    </div>
+</section>
+
+<section class="card">
+    <h2>2. Ensamblaje de Componentes Críticos</h2>
+    <div class="step-check">
+        <input type="checkbox">
+        <div>
+            <strong>Instalación CPU y Pasta Térmica:</strong> Alinear muescas del socket y aplicar una gota de pasta del tamaño de un guisante.
+            
+        </div>
+    </div>
+    <div class="step-check">
+        <input type="checkbox">
+        <div>
+            <strong>Memoria RAM:</strong> Instalar en slots DIMM correspondientes.
+            <span class="didactica">Didáctica: Para Dual Channel, usa los slots 2 y 4 (normalmente) para maximizar el ancho de banda.</span>
+            
+        </div>
+    </div>
+    <div class="step-check">
+        <input type="checkbox">
+        <div>
+            <strong>Placa y Chasis:</strong> Colocar I/O Shield y fijar placa sobre los <strong>separadores</strong>.
+            <span class="didactica">⚠️ PRL: Un separador extra en contacto con la placa puede causar un corto irreparable.</span>
+        </div>
+    </div>
+</section>
+
+<section class="card">
+    <h2>3. Conexiones y Panel Frontal (F-Panel)</h2>
+    <h3>Detalle del Panel Frontal:</h3>
+    <p>Localiza el cabezal JFP1/Front Panel en el manual. Sigue este esquema estándar:</p>
+    <ul>
+        <li><strong>Power SW / Reset SW:</strong> Sin polaridad específica.</li>
+        <li><strong>HDD LED / Power LED:</strong> Cable de color (+), blanco/negro (-).</li>
+        <li><strong>HD Audio:</strong> Esquina inferior izquierda. Solo tiene una posición.</li>
+    </ul>
+    
+    <div class="step-check">
+        <input type="checkbox">
+        <div>
+            <strong>Cableado de Energía:</strong> Conectar el gran cable de 24 pines (ATX) y el de 4/8 pines (CPU).
+        </div>
+    </div>
+</section>
+
+<section class="card">
+    <h2>4. Test de Salud y BIOS (Paso Opcional)</h2>
+    <div class="step-check">
+        <input type="checkbox">
+        <div>
+            <strong>Monitorización H/W Monitor:</strong> Acceder a BIOS (Supr/F2) y revisar temperaturas.
+            <span class="didactica">Didáctica: Si la temperatura de la CPU sube de 60ºC en BIOS, el disipador está mal montado. Apaga de inmediato.</span>
+            
+        </div>
+    </div>
+</section>
+
+<div class="card" id="informe">
+    <h2 style="text-align: center; background: #eee; padding: 10px;">INFORME DE MONTAJE Y CONTROL DE CALIDAD</h2>
+    
+    <div style="margin-bottom: 20px; display: flex; justify-content: space-between;">
+        <span><strong>Alumno:</strong> <input type="text" style="width: 250px;"></span>
+        <span><strong>Fecha:</strong> <input type="text" style="width: 120px;" placeholder="DD/MM/AAAA"></span>
+        <span><strong>Equipo Nº:</strong> <input type="text" style="width: 80px;"></span>
+    </div>
+
+    <table>
+        <thead>
+            <tr>
+                <th width="5%">Paso</th>
+                <th width="40%">Tarea Realizada</th>
+                <th width="10%">Estado</th>
+                <th width="45%">Observaciones / Incidencias</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr><td>1</td><td>CPU y disipador instalados correctamente.</td><td><input type="checkbox"></td><td><input type="text"></td></tr>
+            <tr><td>2</td><td>RAM instalada en slots correctos (Dual Channel).</td><td><input type="checkbox"></td><td><input type="text"></td></tr>
+            <tr><td>3</td><td>I/O Shield colocado en la caja.</td><td><input type="checkbox"></td><td><input type="text"></td></tr>
+            <tr><td>4</td><td>Placa base fijada (con separadores).</td><td><input type="checkbox"></td><td><input type="text"></td></tr>
+            <tr><td>5</td><td>Fuente de alimentación instalada y apagada.</td><td><input type="checkbox"></td><td><input type="text"></td></tr>
+            <tr><td>6</td><td>Almacenamiento (SSD/HDD) instalado.</td><td><input type="checkbox"></td><td><input type="text"></td></tr>
+            <tr><td>7</td><td>Cables alimentación (24p y CPU) conectados.</td><td><input type="checkbox"></td><td><input type="text"></td></tr>
+            <tr><td>8</td><td>Cables panel frontal (Power, LEDs, etc.) según manual.</td><td><input type="checkbox"></td><td><input type="text"></td></tr>
+            <tr><td>9</td><td>Tarjeta gráfica y alimentación PCIe (si aplica).</td><td><input type="checkbox"></td><td><input type="text"></td></tr>
+            <tr><td>10</td><td>Gestión de cables realizada (bridas).</td><td><input type="checkbox"></td><td><input type="text"></td></tr>
+            <tr style="background: #e8f4fd;">
+                <td><strong>FINAL</strong></td>
+                <td><strong>El equipo enciende y muestra BIOS.</strong></td>
+                <td><input type="checkbox"></td>
+                <td><input type="text" placeholder="Anotar temperatura CPU"></td>
+            </tr>
+        </tbody>
+    </table>
+
+    <div style="margin-top: 30px; border-top: 1px solid #ccc; padding-top: 10px;">
+        <p><strong>Firma del Alumno:</strong> ___________________________</p>
+    </div>
+</div>
+
+<div class="btn-container">
+    <button id="btnPrint" onclick="window.print()">GENERAR INFORME FINAL (PDF)</button>
+</div>
+
+<footer>
+    <p>SMR - Montaje y Mantenimiento de Equipos - 2026</p>
+</footer>
+
+</body>
+</html>
+
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Informe y Guía de Montaje SMR1</title>
+    <style>
+        body {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            line-height: 1.6;
+            color: #333;
+            max-width: 900px;
+            margin: 0 auto;
+            padding: 20px;
+            background-color: #f0f2f5;
+        }
+        header, .section-card, .informe-container {
+            background: white;
+            padding: 25px;
+            border-radius: 10px;
+            box-shadow: 0 2px 10px rgba(0,0,0,0.05);
+            margin-bottom: 25px;
+        }
+        header {
+            background-color: #2c3e50;
+            color: white;
+            text-align: center;
+        }
+        h2 { color: #2980b9; border-bottom: 2px solid #eee; padding-bottom: 10px; }
+        .prl-tag {
+            background-color: #d43f3a;
+            color: white;
+            padding: 2px 8px;
+            border-radius: 4px;
+            font-size: 0.8em;
+            font-weight: bold;
+            margin-right: 10px;
+        }
+        .didactica {
+            display: block;
+            margin-top: 8px;
+            padding: 10px;
+            background: #f8f9fa;
+            border-left: 3px solid #bdc3c7;
+            font-style: italic;
+            font-size: 0.9em;
+        }
+        /* Tabla del Informe */
+        table {
+            width: 100%;
+            border-collapse: collapse;
+            margin-top: 15px;
+        }
+        th, td {
+            border: 1px solid #ddd;
+            padding: 12px;
+            text-align: left;
+        }
+        th { background-color: #f2f2f2; }
+        input[type="text"] {
+            width: 95%;
+            padding: 5px;
+            border: 1px solid #ccc;
+            border-radius: 4px;
+        }
+        /* Botones */
+        .btn-container { text-align: center; margin-top: 30px; }
+        #btnTop, #btnPrint {
+            padding: 12px 25px;
+            font-size: 16px;
+            cursor: pointer;
+            border-radius: 5px;
+            border: none;
+            font-weight: bold;
+            transition: 0.3s;
+        }
+        #btnTop { position: fixed; bottom: 20px; right: 20px; background: #2980b9; color: white; }
+        #btnPrint { background: #27ae60; color: white; margin-bottom: 50px; }
+        #btnPrint:hover { background: #219150; }
+        
+        .manual-tip {
+            background: #e8f4fd;
+            padding: 15px;
+            border: 1px dashed #3498db;
+            margin: 10px 0;
+        }
+
+        @media print {
+            #btnTop, #btnPrint { display: none; }
+            body { background: white; padding: 0; }
+            .section-card, .informe-container { box-shadow: none; border: 1px solid #eee; }
+        }
+    </style>
+</head>
+<body>
+
+<header>
+    <h1>Guía Técnica y Registro de Montaje</h1>
+    <p>Módulo: Montaje y Mantenimiento de Equipos - SMR</p>
+</header>
+
+<button onclick="window.scrollTo({top: 0, behavior: 'smooth'})" id="btnTop">TOP</button>
+
+<section class="section-card">
+    <h2>0. Materiales y Herramientas Necesarias</h2>
+    <ul>
+        <li><strong>Componentes:</strong> CPU, Placa Base, RAM (Kit Dual Channel), GPU, Fuente ATX, SSD/HDD, Chasis.</li>
+        <li><strong>Documentación Técnica:</strong> <mark>Manual de la placa base</mark> (impreso o digital), ficha técnica del procesador (TDP para disipador) y compatibilidad de memoria (QVL).</li>
+        <li><strong>Herramientas:</strong> Destornillador de estrella (Phillips) PH1/PH2, pinzas de punta fina, bridas de plástico.</li>
+        <li><strong>Seguridad:</strong> Pulsera antiestática, guantes de nitrilo (opcional) y superficie de trabajo aislante.</li>
+    </ul>
+</section>
+
+<section class="section-card">
+    <h2>Detalle: Conexión del Panel Frontal (F-Panel)</h2>
+    <p>Esta es la tarea más minuciosa. Los conectores son pequeños y tienen una posición específica.</p>
+    
+    <div class="manual-tip">
+        <strong>Uso del Manual:</strong> Busca en el diagrama de la placa la sección <em>"Front Panel Header"</em> o <em>"JFP1"</em>. Te indicará qué pin corresponde a cada cable.
+    </div>
+
+    
+
+    <ol>
+        <li><strong>Power SW / Reset SW:</strong> No tienen polaridad (puedes conectarlos en cualquier sentido), ya que solo cierran un circuito.</li>
+        <li><strong>HDD LED / Power LED:</strong> ¡Tienen polaridad! El cable de color es <strong>Positivo (+)</strong> y el blanco/negro es <strong>Negativo (-)</strong>. Si los conectas al revés, la luz no encenderá.</li>
+        <li><strong>USB 2.0 / 3.0:</strong> Tienen una muesca de seguridad para que solo entren en una posición. No los fuerces.</li>
+        <li><strong>HD Audio:</strong> Suele estar en la esquina inferior izquierda de la placa. Falta un pin en el conector que sirve de guía.</li>
+    </ol>
+    <span class="didactica">PRL: Si conectas el USB frontal en un cabezal que no corresponde (como el de Firewire antiguo), puedes quemar el dispositivo que conectes. Revisa siempre el manual.</span>
+</section>
+
+<div class="informe-container">
+    <h2>Informe de Montaje Técnico</h2>
+    
+    <div style="margin-bottom: 20px;">
+        <label><strong>Nombre del Alumno:</strong></label>
+        <input type="text" style="width: 300px; margin-right: 20px;">
+        <label><strong>Fecha:</strong></label>
+        <input type="text" style="width: 150px;" placeholder="dd/mm/aaaa">
+    </div>
+
+    <table>
+        <thead>
+            <tr>
+                <th width="5%">#</th>
+                <th width="40%">Tarea / Punto de Control</th>
+                <th width="10%">Estado</th>
+                <th width="45%">Observaciones e Incidencias</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <td>1</td>
+                <td>CPU y disipador instalados en la placa base.</td>
+                <td><input type="checkbox"></td>
+                <td><input type="text"></td>
+            </tr>
+            <tr>
+                <td>2</td>
+                <td>RAM instalada en slots correctos (Dual Channel).</td>
+                <td><input type="checkbox"></td>
+                <td><input type="text"></td>
+            </tr>
+            <tr>
+                <td>3</td>
+                <td>I/O Shield (chapa trasera) colocado en la caja.</td>
+                <td><input type="checkbox"></td>
+                <td><input type="text"></td>
+            </tr>
+            <tr>
+                <td>4</td>
+                <td>Placa base fijada a la caja (con separadores instalados).</td>
+                <td><input type="checkbox"></td>
+                <td><input type="text"></td>
+            </tr>
+            <tr>
+                <td>5</td>
+                <td>Fuente de alimentación instalada y apagada (interruptor en 0).</td>
+                <td><input type="checkbox"></td>
+                <td><input type="text"></td>
+            </tr>
+            <tr>
+                <td>6</td>
+                <td>Unidades de almacenamiento (SSD/HDD) fijadas y conectadas.</td>
+                <td><input type="checkbox"></td>
+                <td><input type="text"></td>
+            </tr>
+            <tr>
+                <td>7</td>
+                <td>Cables de alimentación (24pin ATX, 4/8pin CPU) conectados.</td>
+                <td><input type="checkbox"></td>
+                <td><input type="text"></td>
+            </tr>
+            <tr>
+                <td>8</td>
+                <td>Cables panel frontal (Power, Reset, LEDs, USB, Audio) conectados.</td>
+                <td><input type="checkbox"></td>
+                <td><input type="text"></td>
+            </tr>
+            <tr>
+                <td>9</td>
+                <td>Tarjeta gráfica y cables de alimentación PCIe instalados.</td>
+                <td><input type="checkbox"></td>
+                <td><input type="text"></td>
+            </tr>
+            <tr>
+                <td>10</td>
+                <td>Gestión de cables finalizada con bridas (flujo de aire óptimo).</td>
+                <td><input type="checkbox"></td>
+                <td><input type="text"></td>
+            </tr>
+            <tr style="background: #e8f4fd; font-weight: bold;">
+                <td>TEST</td>
+                <td>Equipo enciende correctamente y muestra la BIOS.</td>
+                <td><input type="checkbox"></td>
+                <td><input type="text" placeholder="Indicar temp. CPU detectada"></td>
+            </tr>
+        </tbody>
+    </table>
+
+    <div style="margin-top: 20px;">
+        <strong>Firma del Alumno:</strong> ___________________________
+    </div>
+</div>
+
+<div class="btn-container">
+    <button id="btnPrint" onclick="window.print()">IMPRIMIR INFORME (PDF)</button>
+</div>
+
+<footer>
+    <p>Material para el Ciclo SMR - Montaje y Mantenimiento de Equipos</p>
+</footer>
+
+</body>
+</html>
+
+
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Guía de Montaje de Equipos - SMR1 MME</title>
+    <style>
+        body {
+            font-family: sans-serif;
+            line-height: 1.6;
+            color: #333;
+            max-width: 800px;
+            margin: 0 auto;
+            padding: 20px;
+            background-color: #f4f4f4;
+        }
+        header {
+            background-color: #2c3e50;
+            color: white;
+            padding: 20px;
+            text-align: center;
+            border-radius: 8px;
+        }
+        .prl-box {
+            background-color: #fff3cd;
+            border-left: 5px solid #e67e22;
+            padding: 15px;
+            margin: 20px 0;
+            border: 1px solid #ffeeba;
+        }
+        section {
+            background: white;
+            margin: 20px 0;
+            padding: 20px;
+            border-radius: 8px;
+            box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+        }
+        h2 {
+            color: #2980b9;
+            border-bottom: 2px solid #2980b9;
+            padding-bottom: 10px;
+        }
+        .checklist-item {
+            display: flex;
+            align-items: flex-start;
+            margin-bottom: 12px;
+            padding: 10px;
+            border-bottom: 1px solid #eee;
+        }
+        .checklist-item input[type="checkbox"] {
+            margin-right: 15px;
+            transform: scale(1.5);
+            cursor: pointer;
+        }
+        .didactica {
+            font-style: italic;
+            color: #7f8c8d;
+            font-size: 0.9em;
+            display: block;
+            margin-top: 5px;
+        }
+        .nota-bios {
+            background-color: #e8f4fd;
+            border-left: 5px solid #3498db;
+            padding: 10px;
+            margin-top: 10px;
+            font-size: 0.9em;
+        }
+        #btnTop {
+            display: block;
+            position: fixed;
+            bottom: 20px;
+            right: 30px;
+            z-index: 99;
+            background-color: #2980b9;
+            color: white;
+            padding: 15px;
+            border: none;
+            border-radius: 10px;
+            cursor: pointer;
+            font-weight: bold;
+        }
+        #btnTop:hover {
+            background-color: #34495e;
+        }
+        footer {
+            text-align: center;
+            margin-top: 40px;
+            font-size: 0.8em;
+            color: #7f8c8d;
+        }
+    </style>
+</head>
+<body>
+
+<header>
+    <h1>Guía de Ensamblaje de Equipos</h1>
+    <p>Módulo: Montaje y Mantenimiento de Equipos (MME) - 1º SMR</p>
+</header>
+
+<button onclick="topFunction()" id="btnTop" title="Ir arriba">TOP</button>
+
+<div class="prl-box">
+    <strong>NORMAS GENERALES PRL:</strong>
+    <ul>
+        <li>Uso obligatorio de pulsera antiestática conectada a masa.</li>
+        <li>Orden y limpieza: Una herramienta fuera de lugar puede causar un cortocircuito.</li>
+        <li><strong>Prohibido</strong> manipular el interior con el cable de alimentación conectado.</li>
+    </ul>
+</div>
+
+<section id="fase1">
+    <h2>Fase 1: Preparación y CPU</h2>
+    <div class="checklist-item">
+        <input type="checkbox">
+        <div>
+            <strong>Verificación de inventario:</strong> Comprobar componentes y tornillería.
+            <span class="didactica">Consejo: Usa un recipiente pequeño para no perder los tornillos.</span>
+        </div>
+    </div>
+    <div class="checklist-item">
+        <input type="checkbox">
+        <div>
+            <strong>Instalación de la CPU:</strong> Alinear el triángulo de la CPU con el del zócalo.
+            <span class="didactica">PRL: No fuerces la palanca; si no baja suave, la CPU no está bien alineada.</span>
+        </div>
+    </div>
+</section>
+
+
+
+<section id="fase2">
+    <h2>Fase 2: Memoria y Refrigeración</h2>
+    <div class="checklist-item">
+        <input type="checkbox">
+        <div>
+            <strong>Montaje de RAM:</strong> Insertar en los slots siguiendo el orden del manual.
+            <span class="didactica">Didáctica: El "clic" asegura que los contactos eléctricos son firmes.</span>
+        </div>
+    </div>
+    <div class="checklist-item">
+        <input type="checkbox">
+        <div>
+            <strong>Disipador:</strong> Aplicar pasta térmica y fijar el sistema de refrigeración.
+        </div>
+    </div>
+</section>
+
+<section id="fase3">
+    <h2>Fase 3: Caja y Fuente</h2>
+    <div class="checklist-item">
+        <input type="checkbox">
+        <div>
+            <strong>Fuente de Alimentación:</strong> Orientar el ventilador de la fuente hacia la rejilla de ventilación.
+        </div>
+    </div>
+    <div class="checklist-item">
+        <input type="checkbox">
+        <div>
+            <strong>Placa Base en Chasis:</strong> Atornillar sobre los separadores metálicos.
+            <span class="didactica">PRL: Un separador mal puesto puede tocar pistas de la placa y quemarla.</span>
+        </div>
+    </div>
+</section>
+
+
+
+<section id="fase4">
+    <h2>Fase 4: Conexiones Internas</h2>
+    <div class="checklist-item">
+        <input type="checkbox">
+        <div>
+            <strong>Cables de Energía:</strong> Conectar ATX (24p) y EPS (CPU).
+        </div>
+    </div>
+    <div class="checklist-item">
+        <input type="checkbox">
+        <div>
+            <strong>Panel Frontal y Almacenamiento:</strong> Conectar botones, LEDs y discos SATA/M.2.
+        </div>
+    </div>
+</section>
+
+<section id="fase5">
+    <h2>Fase 5: Verificación Técnica</h2>
+    <div class="checklist-item">
+        <input type="checkbox">
+        <div>
+            <strong>Revisión visual:</strong> ¿Hay herramientas olvidadas dentro? ¿Cables rozando ventiladores?
+        </div>
+    </div>
+</section>
+
+<section id="fase6" style="border: 2px dashed #2980b9;">
+    <h2>Fase 6: Configuración Básica BIOS (Opcional)</h2>
+    <p class="didactica">Una vez que el hardware es seguro, debemos configurar el firmware para que el sistema reconozca los componentes correctamente.</p>
+    
+    <div class="checklist-item">
+        <input type="checkbox">
+        <div>
+            <strong>Acceso a la BIOS/UEFI:</strong> Encender y pulsar repetidamente la tecla de acceso (Supr, F2, F10 o F12 según fabricante).
+        </div>
+    </div>
+
+    
+
+    <div class="checklist-item">
+        <input type="checkbox">
+        <div>
+            <strong>Verificación de Componentes:</strong> Comprobar que la CPU, la cantidad de RAM y los discos aparecen en el resumen inicial.
+            <span class="didactica">Didáctica: Si un disco no aparece, revisa el cable de datos y el de alimentación.</span>
+        </div>
+    </div>
+
+    <div class="checklist-item">
+        <input type="checkbox">
+        <div>
+            <strong>Ajuste de Fecha y Hora:</strong> Configurar el reloj del sistema.
+            <span class="didactica">Nota: Una fecha incorrecta puede causar errores en la navegación web y certificados de seguridad.</span>
+        </div>
+    </div>
+
+    <div class="checklist-item">
+        <input type="checkbox">
+        <div>
+            <strong>Prioridad de Arranque (Boot Priority):</strong> Situar la unidad USB o DVD en primer lugar para la instalación del SO.
+        </div>
+    </div>
+
+    <div class="checklist-item">
+        <input type="checkbox">
+        <div>
+            <strong>Monitorización de Salud (H/W Monitor):</strong> Verificar que la temperatura de la CPU es estable (normalmente entre 30°C y 50°C en reposo).
+            <span class="didactica">PRL: Si la temperatura sube rápidamente por encima de 80°C, apaga el equipo; el disipador no está haciendo contacto.</span>
+        </div>
+    </div>
+
+    <div class="checklist-item">
+        <input type="checkbox">
+        <div>
+            <strong>Guardar y Salir:</strong> Pulsar F10 para salvar los cambios y reiniciar.
+        </div>
+    </div>
+</section>
+
+<footer>
+    <p>&copy; 2026 - Departamento de Informática - Guía Didáctica SMR</p>
+</footer>
+
+<script>
+    function topFunction() {
+        window.scrollTo({top: 0, behavior: 'smooth'});
+    }
+</script>
+
+</body>
+</html>-->
