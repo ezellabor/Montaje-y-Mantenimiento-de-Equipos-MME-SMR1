@@ -70,7 +70,7 @@ La versión moderna de la BIOS es la **UEFI (Unified Extensible Firmware Interfa
 
 ## 8. Autoevaluación  
 
-[Test de autoevaluación BIOS](Tests y Autoevaluación/bios-basico-test.md)
+[Test de autoevaluación BIOS](https://github.com/ezellabor/Montaje-y-Mantenimiento-de-Equipos-MME-SMR1/blob/main/Tests%20y%20Autoevaluaci%C3%B3n/bios-basico-test.md)
 
 
 
