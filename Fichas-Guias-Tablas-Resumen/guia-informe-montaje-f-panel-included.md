@@ -30,7 +30,7 @@ Consulta el diagrama de pines (JFP1) en el manual de tu placa base para realizar
 
 ---
 
-## 3. Configuración Inicial de la BIOS (UEFI)
+## 3. Configuración inicial de la BIOS (UEFI)
 Al arrancar el equipo por primera vez, pulsa `Supr` o `F2` para acceder a la configuración:
 
 1.  **System Time / Date:** Configurar fecha y hora actuales (Control de fecha).
@@ -42,9 +42,9 @@ Al arrancar el equipo por primera vez, pulsa `Supr` o `F2` para acceder a la con
 
 ---
 
-## 4. Informe de Montaje y Control de Calidad
+## 4. Informe de montaje y control de calidad
 
-**Alumno:** ________________________________________  
+**Técnico:** ________________________________________  
 **Fecha de Montaje:** `20 / 02 / 2026`  
 **Equipo Nº:** ________
 
