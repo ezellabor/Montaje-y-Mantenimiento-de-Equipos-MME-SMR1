@@ -11,7 +11,7 @@
   
 * **Principio ZIF:** La CPU debe encajar sin ejercer ninguna presión (Zero Insertion Force). Si no entra suavemente, la orientación es incorrecta.
 * **Pasta térmica:** Aplica una gota del tamaño de un grano de arroz exactamente en el centro del procesador.   
-    ![Thermal paste application](https://www.intel.com/content/dam/www/central-libraries/us/en/images/2022-06/how-to-apply-thermal-paste-1.png)
+   <!-- ![Thermal paste application](https://www.intel.com/content/dam/www/central-libraries/us/en/images/2022-06/how-to-apply-thermal-paste-1.png)-->
 * **Observaciones:** _La pasta sirve para eliminar el aire entre el procesador y el disipador. Un exceso de pasta actuará como aislante térmico y provocará sobrecalentamiento._
 
 ---
@@ -19,7 +19,7 @@
 ## 2. Conexión del panel frontal (F-Panel)
 Consulta el diagrama de pines (JFP1) en el manual de tu placa base para realizar las conexiones correctamente.
 
-[Frontpaneldiagram](../img/conectores-f-panel.jpg)
+![Frontpaneldiagram](../img/panel.png)
     
 * **Power SW y Reset SW:** Son interruptores de contacto; no tienen polaridad, por lo que la orientación de los dos cables no afecta al funcionamiento.
 * **HDD LED y Power LED:** **Tienen polaridad**. El cable de color (rojo, verde o azul) es el **Positivo (+)** y el cable blanco o negro es el **Negativo (-)**. Si se invierten, el LED no encenderá.
