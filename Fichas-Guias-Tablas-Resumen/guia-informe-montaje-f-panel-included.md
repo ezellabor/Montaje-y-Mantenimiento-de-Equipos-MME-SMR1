@@ -12,7 +12,7 @@
 * **Principio ZIF:** La CPU debe encajar sin ejercer ninguna presión (Zero Insertion Force). Si no entra suavemente, la orientación es incorrecta.
 * **Pasta térmica:** Aplica una gota del tamaño de un grano de arroz exactamente en el centro del procesador.   
    <!-- ![Thermal paste application](https://www.intel.com/content/dam/www/central-libraries/us/en/images/2022-06/how-to-apply-thermal-paste-1.png)-->
-* **Observaciones:** _La pasta sirve para eliminar el aire entre el procesador y el disipador. Un exceso de pasta actuará como aislante térmico y provocará sobrecalentamiento._
+  ```Observaciones: La pasta sirve para eliminar el aire entre el procesador y el disipador. Un exceso de pasta actuará como aislante térmico y provocará sobrecalentamiento.```  
 
 ---
 
