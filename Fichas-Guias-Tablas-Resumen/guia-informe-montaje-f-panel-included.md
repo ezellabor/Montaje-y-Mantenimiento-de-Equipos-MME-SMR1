@@ -19,7 +19,7 @@
 ## 2. Conexión del panel frontal (F-Panel)
 Consulta el diagrama de pines (JFP1) en el manual de tu placa base para realizar las conexiones correctamente.   
  
-    ![Frontpaneldiagram](img/conectores-f-panel.jpg)
+    ![Frontpaneldiagram](../img/conectores-f-panel.jpg)
     
 * **Power SW y Reset SW:** Son interruptores de contacto; no tienen polaridad, por lo que la orientación de los dos cables no afecta al funcionamiento.
 * **HDD LED y Power LED:** **Tienen polaridad**. El cable de color (rojo, verde o azul) es el **Positivo (+)** y el cable blanco o negro es el **Negativo (-)**. Si se invierten, el LED no encenderá.
