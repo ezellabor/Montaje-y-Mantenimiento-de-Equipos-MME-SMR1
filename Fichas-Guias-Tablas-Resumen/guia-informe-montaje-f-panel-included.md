@@ -49,17 +49,17 @@ Al arrancar el equipo por primera vez, pulsa `Supr` o `F2` para acceder a la con
 
 | Paso | Tarea eralizada | Estado (OK) | Observaciones e incidencias |
 | :--- | :--- | :---: | :--- |
-| 1 | CPU y disipador instalados correctamente | [ ] | |
-| 2 | RAM instalada en slots correctos (Dual Channel) | [ ] | |
-| 3 | I/O Shield colocado en la caja | [ ] | |
-| 4 | Placa base fijada al chasis (con separadores) | [ ] | |
-| 5 | Fuente de alimentación instalada y apagada | [ ] | |
-| 6 | Almacenamiento (SSD/HDD) instalado y conectado | [ ] | |
-| 7 | Cables alimentación (24p ATX y CPU) conectados | [ ] | |
-| 8 | Cables panel frontal (Power, LEDs, USB) conectados | [ ] | |
-| 9 | Tarjeta gráfica y alimentación PCIe instaladas | [ ] | |
-| 10 | Gestión de cables finalizada con bridas | [ ] | |
-| **TEST** | **El equipo enciende y muestra BIOS correctamente** | **[ ]** | **Temp. CPU: _______** |
+| 1 | CPU y disipador instalados correctamente | [  ] | |
+| 2 | RAM instalada en slots correctos (Dual Channel) | [  ] | |
+| 3 | I/O Shield colocado en la caja | [  ] | |
+| 4 | Placa base fijada al chasis (con separadores) | [  ] | |
+| 5 | Fuente de alimentación instalada y apagada | [  ] | |
+| 6 | Almacenamiento (SSD/HDD) instalado y conectado | [  ] | |
+| 7 | Cables alimentación (24p ATX y CPU) conectados | [  ] | |
+| 8 | Cables panel frontal (Power, LEDs, USB) conectados | [  ] | |
+| 9 | Tarjeta gráfica y alimentación PCIe instaladas | [  ] | |
+| 10 | Gestión de cables finalizada con bridas | [  ] | |
+| **TEST** | **El equipo enciende y muestra BIOS correctamente** | **[  ]** | **Temp. CPU: _______** |
 
 ### Observaciones finales
 *Indicar anomalías detectadas, dificultades en el montaje o sugerencias de mejora.*
