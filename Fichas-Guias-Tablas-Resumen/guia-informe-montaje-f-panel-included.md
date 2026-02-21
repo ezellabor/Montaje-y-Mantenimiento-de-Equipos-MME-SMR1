@@ -44,10 +44,10 @@ Al arrancar el equipo por primera vez, pulsa `Supr` o `F2` para acceder a la con
 ## 4. Informe de montaje y control de calidad
 
 **Técnico:** ________________________________________  
-**Fecha de Montaje:** `20 / 02 / 2026`  
-**Equipo Nº:** ________
+**Fecha de montaje:** `20 / 02 / 2026`  
+**Equipo ID:** ________
 
-| Paso | Tarea Realizada | Estado (OK) | Observaciones e Incidencias |
+| Paso | Tarea eralizada | Estado (OK) | Observaciones e incidencias |
 | :--- | :--- | :---: | :--- |
 | 1 | CPU y disipador instalados correctamente | [ ] | |
 | 2 | RAM instalada en slots correctos (Dual Channel) | [ ] | |
