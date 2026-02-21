@@ -62,10 +62,9 @@ Al arrancar el equipo por primera vez, pulsa `Supr` o `F2` para acceder a la con
 | 10 | Gestión de cables finalizada con bridas | [ ] | |
 | **TEST** | **El equipo enciende y muestra BIOS correctamente** | **[ ]** | **Temp. CPU: _______** |
 
-### Observaciones Finales
+### Observaciones finales
 *(Indicar anomalías detectadas, dificultades en el montaje o estado de la tornillería)*
 ____________________________________________________________________________________________________
 ____________________________________________________________________________________________________
 
 ---
-*Fin del informe técnico.*
