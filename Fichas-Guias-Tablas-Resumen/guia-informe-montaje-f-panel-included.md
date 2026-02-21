@@ -37,7 +37,7 @@ Al arrancar el equipo por primera vez, pulsa `Supr` o `F2` para acceder a la con
 3.  **Boot Priority:** Establecer la unidad USB como la primera opción de arranque.
 4.  **XMP / DOCP:** Activar el perfil para que la RAM trabaje a su frecuencia nominal.
 5.  **H/W Monitor:** Monitorizar que la temperatura de la CPU sea estable (30°C - 50°C).
-    ![BIOS Monitor](https://www.msi.com/blog/storage/images/monitor.png)
+   <!-- ![BIOS Monitor](https://www.msi.com/blog/storage/images/monitor.png)-->
 
 ---
 
@@ -62,7 +62,7 @@ Al arrancar el equipo por primera vez, pulsa `Supr` o `F2` para acceder a la con
 | **TEST** | **El equipo enciende y muestra BIOS correctamente** | **[ ]** | **Temp. CPU: _______** |
 
 ### Observaciones finales
-*(Indicar anomalías detectadas, dificultades en el montaje o estado de la tornillería)*
+*Indicar anomalías detectadas, dificultades en el montaje o sugerencias de mejora.*
 ____________________________________________________________________________________________________
 ____________________________________________________________________________________________________
 
