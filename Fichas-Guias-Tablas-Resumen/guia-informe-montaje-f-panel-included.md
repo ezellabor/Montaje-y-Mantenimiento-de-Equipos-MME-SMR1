@@ -9,9 +9,11 @@
     
     ![CPU installation](../img/palanca-cpu.png)
   
-* **Principio ZIF:** La CPU debe encajar sin ejercer ninguna presión (Zero Insertion Force). Si no entra suavemente, la orientación es incorrecta.
+* **Principio ZIF**(Zero Insertion Force): La CPU debe encajar sin ejercer ninguna presión. Si no entra suavemente, la orientación es incorrecta.
 * **Pasta térmica:** Aplica una gota del tamaño de un grano de arroz exactamente en el centro del procesador.  
-    ```NOTA: La pasta sirve para eliminar el aire entre el procesador y el disipador. Un exceso de pasta actuará como aislante térmico y provocará  sobrecalentamiento.```  
+    ```NOTA: La pasta sirve para eliminar el aire entre el procesador y el disipador. Un exceso de pasta actuará como aislante térmico y provocará  sobrecalentamiento.```
+
+![Video YouTube Instalación correcta de CPU](https://youtu.be/ZPQBk5YpOn8?si=A1dI4fXNfHvKyzb1&t=374)  
 
 ---
 
