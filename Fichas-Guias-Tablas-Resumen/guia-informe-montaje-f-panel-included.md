@@ -71,7 +71,7 @@ Al arrancar el equipo por primera vez, pulsa `Supr` o `F2` para acceder a la con
 ____________________________________________________________________________________________________
 ____________________________________________________________________________________________________    
 
-## 4. Enlace a guía de montaje e informe formato web  
+## 4. Enlace a guía de montaje e informe (formato web) 
 
 [Guía de montaje e informe formato web](https://www.zekiland.es/recursos/ficha-sintesis-mme/guia-pasos-ensamblaje-equipo-mme.html)
 
