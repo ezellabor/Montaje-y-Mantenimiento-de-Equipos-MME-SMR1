@@ -33,11 +33,11 @@ Consulta el diagrama de pines (JFP1) en el manual de tu placa base para realizar
 Al arrancar el equipo por primera vez, pulsa `Supr` o `F2` para acceder a la configuración:
 
 1.  **System Time / Date:** Configurar fecha y hora actuales (Control de fecha).
-2.  **SATA Mode:** Verificar que esté en **AHCI** para optimizar el SSD.
+2.  **SATA Mode:** Verificar que esté en **AHCI*** para optimizar el SSD.
 3.  **Boot Priority:** Establecer la unidad USB como la primera opción de arranque.
 4.  **XMP / DOCP:** Activar el perfil para que la RAM trabaje a su frecuencia nominal.
 5.  **H/W Monitor:** Monitorizar que la temperatura de la CPU sea estable (30°C - 50°C).
-* _AHCI (Advanced Host Controller Interface): Protocolo técnico que permite a la placa base comunicarse de forma más eficiente con dispositivos de almacenamiento SATA (especialmente SSDs)._
+*_AHCI (Advanced Host Controller Interface): Protocolo técnico que permite a la placa base comunicarse de forma más eficiente con dispositivos de almacenamiento SATA (especialmente SSDs)._
 
    <!-- ![BIOS Monitor](https://www.msi.com/blog/storage/images/monitor.png)-->
 
