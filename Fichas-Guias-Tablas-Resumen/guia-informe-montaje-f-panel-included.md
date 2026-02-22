@@ -4,7 +4,7 @@
 
 # Guía de montaje e informe técnico
 
-## 1. Instalación de CPU y pasta térmica
+## 1. Instalación de CPU y pasta térmica 
 * **Procedimiento** Levanta la palanca de retención del zócalo. Localiza el triángulo dorado en una esquina del procesador y hazlo coincidir con la marca del zócalo de la placa base.
     
     ![CPU installation](../img/palanca-cpu.png)
