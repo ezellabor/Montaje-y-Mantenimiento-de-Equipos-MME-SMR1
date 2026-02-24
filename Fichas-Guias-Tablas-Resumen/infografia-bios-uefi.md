@@ -1,10 +1,8 @@
-![Módulo](https://img.shields.io/badge/Módulo-Montaje%20y%20Mantenimiento-lightgrey)
-![Grupo](https://img.shields.io/badge/Grupo-SMR1-blue)
-![Tema](https://img.shields.io/badge/Tema-BIOS%20%2F%20UEFI-success)
-  
----
+![Módulo](https://img.shields.io/badge/Módulo-Montaje_y_Mantenimiento_de_Equipos-brown?style=for-the-badge)
+![Grupo](https://img.shields.io/badge/Grupo-SMR1-blue?style=for-the-badge)
+![Profesor](https://img.shields.io/badge/Profesor-Ezequiel_Llarena_Borges-blue?style=for-the-badge)
 
-## 1. ¿Qué es la BIOS?
+## 1. BIOS/UEFI
  
 La **BIOS (Basic Input/Output System)** es el sistema básico de entrada/salida almacenado en memoria ROM/Flash en la placa base. Es el primer programa *(firmware)* que se ejecuta al encender el equipo y sus funciones principales son:  
 - Inicializar el hardware
