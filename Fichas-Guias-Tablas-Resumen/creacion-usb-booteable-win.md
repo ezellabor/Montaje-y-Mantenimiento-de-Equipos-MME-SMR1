@@ -1,4 +1,8 @@
-# Guía Técnica  
+![Módulo](https://img.shields.io/badge/Módulo-Montaje_y_Mantenimiento_de_Equipos-brown?style=for-the-badge)
+![Grupo](https://img.shields.io/badge/Grupo-SMR1-blue?style=for-the-badge)
+![Profesor](https://img.shields.io/badge/Profesor-Ezequiel_Llarena_Borges-blue?style=for-the-badge)  
+```Guía técnica``` 
+  
 ## Creación de USB Booteable con Windows
 
 ---
