@@ -224,6 +224,6 @@ Crear un USB booteable con Windows implica:
 - Configurar entorno Windows PE.
 - Alinear esquema GPT/MBR con modo UEFI/BIOS.
 
-Una correcta comprensión de estos elementos evita errores de instalación y mejora la eficiencia en entornos de soporte técnico y formación profesional.
+*Una correcta comprensión de estos elementos evita errores de instalación y mejora la eficiencia en entornos de soporte técnico y formación profesional.*
 
 ---
