@@ -54,7 +54,7 @@ La versión moderna de la BIOS es la **UEFI (Unified Extensible Firmware Interfa
 -   Fast Boot
 -   Overclocking básico
 
-## 5. Flujo de arranque BIOS vs UEFI
+## 5. Flujo de arranque
 
 ![Flujo arranque BIOS-UEFI](../img/flujo-arranque-bios-vs-uefi.png)  
 
