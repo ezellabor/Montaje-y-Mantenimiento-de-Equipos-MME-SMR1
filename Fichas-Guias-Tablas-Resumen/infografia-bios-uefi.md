@@ -56,7 +56,7 @@ La versión moderna de la BIOS es la **UEFI (Unified Extensible Firmware Interfa
 
 ## 5. Flujo de arranque BIOS vs UEFI
 
-![Flujo arranque BIOS-UEFI](img/flujo-arranque-bios-vs-uefi.png)  
+[Flujo arranque BIOS-UEFI](img/flujo-arranque-bios-vs-uefi.png)  
 
 ### 5.1. Flujo de arranque en BIOS (Legacy)
 
