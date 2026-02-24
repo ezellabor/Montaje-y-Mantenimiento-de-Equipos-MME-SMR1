@@ -14,8 +14,7 @@
 
 * **Pasta térmica:** Aplica una gota del tamaño de un grano de arroz exactamente en el centro del procesador.    
     ```NOTA: La pasta sirve para eliminar el aire entre el procesador y el disipador. Un exceso de pasta actuará como aislante térmico y provocará  sobrecalentamiento.```
-  
-[Video YouTube aplicación pasta térmica](https://youtu.be/_gaz4pnZnDk?si=Libbvcu1ia1Zso2G&t=256)
+  [Video YouTube aplicación pasta térmica](https://youtu.be/_gaz4pnZnDk?si=Libbvcu1ia1Zso2G&t=256)
   
 ---
 
