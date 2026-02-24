@@ -3,7 +3,7 @@
 ![Profesor](https://img.shields.io/badge/Profesor-Ezequiel_Llarena_Borges-blue?style=for-the-badge)  
 ```Guía técnica``` 
   
-## Creación de USB Booteable con Windows
+## Creación de USB booteable con Windows
 
 ---
 
