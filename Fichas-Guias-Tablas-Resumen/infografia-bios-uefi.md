@@ -156,7 +156,12 @@ En entornos actuales, UEFI es el estándar recomendado.
 
 ## 9. Autoevaluación  
 
-[Test de autoevaluación BIOS](https://github.com/ezellabor/Montaje-y-Mantenimiento-de-Equipos-MME-SMR1/blob/main/Tests%20y%20Autoevaluaci%C3%B3n/bios-basico-test.md)
+[Test de autoevaluación BIOS](https://github.com/ezellabor/Montaje-y-Mantenimiento-de-Equipos-MME-SMR1/blob/main/Tests%20y%20Autoevaluaci%C3%B3n/bios-basico-test.md)  
+
+
+## 10. Práctica configuración BIOS/UEFI
+
+[Simulación ConfiguracióN BIOS/UEFI](https://github.com/ezellabor/Montaje-y-Mantenimiento-de-Equipos-MME-SMR1/blob/main/Pr%C3%A1cticas/Practica_Config_BIOS_UEFI_SMRI.md)
 
 
 
