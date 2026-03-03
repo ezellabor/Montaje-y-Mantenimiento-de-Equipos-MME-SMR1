@@ -55,7 +55,8 @@ Boot → Boot Option Priorities
 
 ## Captura simulada UEFI (SVG Profesional)
 
-![UEFI Boot Menu](img/01_UEFI_Boot_Menu.svg)
+![UEFI Boot Menu](assets/img/01_UEFI_Boot_Menu.png)  
+
 
 ### Acción esperada:
 Cambiar Boot Option #1 a USB.
@@ -74,16 +75,7 @@ Main → System Date / System Time
 
 ## Captura simulada
 
-<svg width="700" height="350" xmlns="http://www.w3.org/2000/svg">
-<rect width="700" height="350" fill="#1a1a1a"/>
-<text x="20" y="40" fill="#4fc3f7" font-size="22">UEFI BIOS Utility - Main</text>
-
-<rect x="80" y="100" width="540" height="70" fill="#2e2e2e" stroke="#4fc3f7"/>
-<text x="100" y="140" fill="white" font-size="20">System Date  →  03 / 03 / 2026</text>
-
-<rect x="80" y="200" width="540" height="70" fill="#2e2e2e" stroke="#4fc3f7"/>
-<text x="100" y="240" fill="white" font-size="20">System Time  →  10 : 45 : 22</text>
-</svg>
+![System Date Time](assets/img/02_System_Date_Time.png)
 
 
 ### Explicación Técnica
@@ -113,16 +105,7 @@ Advanced → SVM Mode
 ## Captura simulada Virtualización
 
 
-<svg width="700" height="380" xmlns="http://www.w3.org/2000/svg">
-<rect width="700" height="380" fill="#121212"/>
-<text x="20" y="40" fill="#81c784" font-size="22">Advanced - CPU Configuration</text>
-
-<rect x="80" y="110" width="540" height="80" fill="#1f1f1f" stroke="#81c784"/>
-<text x="100" y="150" fill="white" font-size="20">Intel Virtualization Technology → Disabled</text>
-
-<rect x="80" y="230" width="540" height="80" fill="#003300" stroke="#81c784"/>
-<text x="100" y="270" fill="white" font-size="20">Cambiar a → Enabled</text>
-</svg>
+![Virtualization](assets/img/03_Virtualization_Enable.png)
 
 
 ### Impacto Técnico
@@ -146,17 +129,9 @@ Boot → Secure Boot
 ## Captura simulada
 
 
-<svg width="700" height="360" xmlns="http://www.w3.org/2000/svg">
-<rect width="700" height="360" fill="#101820"/>
-<text x="20" y="40" fill="#ffcc00" font-size="22">Security - Secure Boot</text>
+## Secure Boot
 
-<rect x="100" y="130" width="500" height="90" fill="#2b2b2b" stroke="#ffcc00"/>
-<text x="120" y="180" fill="white" font-size="20">Secure Boot → Enabled</text>
-
-<text x="100" y="280" fill="#ffcc00" font-size="16">
-Desactivar solo si se instala sistema no firmado
-</text>
-</svg>
+![Secure Boot](assets/img/04_Secure_Boot.png)
 
 
 ---
