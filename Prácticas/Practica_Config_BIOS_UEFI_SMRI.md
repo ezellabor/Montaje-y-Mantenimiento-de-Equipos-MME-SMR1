@@ -72,7 +72,6 @@ Boot → Boot Option Priorities
 <text x="50" y="350" fill="#00ffcc" font-size="16">F10 → Save Changes & Reset</text>
 </svg>
 ```
-
 ### Acción esperada:
 Cambiar Boot Option #1 a USB.
 
