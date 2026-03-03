@@ -174,35 +174,35 @@ La correcta configuración del firmware es esencial en:
 
 ### Opción 1: Simulador de UEFI dentro de VirtualBox
 
-Pueden:
+Características:
 
-1. Crear máquina virtual en VirtualBox
-2. Activar opción "Enable EFI"
-3. Acceder al entorno UEFI virtual
-4. Es lo más realista sin tocar hardware.
+- Crear máquina virtual en VirtualBox
+- Activar opción "Enable EFI"
+- Acceder al entorno UEFI virtual
+
+Es lo más realista sin tocar hardware.
 
 
 ### Opción 2: Simulador interactivo de BIOS (educativo)
 
 https://www.biosflash.com/e/bios-simulator.htm
 
-1. Simulador básico tipo Award BIOS.
-2. Muy útil para práctica conceptual.
+- Simulador básico tipo Award BIOS.
+- Muy útil para práctica conceptual.
 
-
-### Opción 3 – Documentación interactiva fabricantes
+### Opción 3: Documentación interactiva fabricantes
 
 Muchos fabricantes permiten navegar por manuales UEFI:
 
-1. ASUS
-2. MSI
-3. Gigabyte Technology
+- ASUS
+- MSI
+- Gigabyte Technology
 
 Pueden descargar manual PDF y simular recorrido de menús.
 
-### 4 – Simulación en Tinkercad (solo conceptual)
+### Opción 4: Simulación en Tinkercad  
 
-No tiene BIOS real, pero permite explicar arranque conceptual.
+Solo conceptual porque no tiene BIOS real, pero permite explicar arranque conceptual.
 
 
 ## 12. Entregable
