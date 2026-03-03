@@ -4,7 +4,7 @@
 
 ---
 
-# 1. Objetivos
+# 1. Objetivos  
 
 El alumno será capaz de:
 
