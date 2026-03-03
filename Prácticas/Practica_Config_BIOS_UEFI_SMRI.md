@@ -55,7 +55,7 @@ Boot → Boot Option Priorities
 
 ## Captura simulada UEFI (SVG Profesional)
 
-![UEFI Boot Menu](assets/img/01_UEFI_Boot_Menu.png)  
+![UEFI Boot Menu](img/01_UEFI_Boot_Menu.png)  
 
 
 ### Acción esperada:
@@ -75,7 +75,7 @@ Main → System Date / System Time
 
 ## Captura simulada
 
-![System Date Time](assets/img/02_System_Date_Time.png)
+![System Date Time](img/02_System_Date_Time.png)
 
 
 ### Explicación Técnica
@@ -105,7 +105,7 @@ Advanced → SVM Mode
 ## Captura simulada Virtualización
 
 
-![Virtualization](assets/img/03_Virtualization_Enable.png)
+![Virtualization](img/03_Virtualization_Enable.png)
 
 
 ### Impacto Técnico
@@ -131,7 +131,7 @@ Boot → Secure Boot
 
 ## Secure Boot
 
-![Secure Boot](assets/img/04_Secure_Boot.png)
+![Secure Boot](img/04_Secure_Boot.png)
 
 
 ---
