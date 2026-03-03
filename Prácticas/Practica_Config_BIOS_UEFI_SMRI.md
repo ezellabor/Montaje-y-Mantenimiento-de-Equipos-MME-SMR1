@@ -2,7 +2,7 @@
 
 ---
 
-# 1. Objetivos  
+## 1. Objetivos  
 
 El alumno será capaz de:
 
@@ -15,7 +15,7 @@ El alumno será capaz de:
 
 ---
 
-# 2. Placas Base Analizadas
+## 2. Placas base a configurar
 
 1. ASUS Prime B760-Plus  
 2. Gigabyte B550M DS3H  
@@ -25,7 +25,7 @@ El alumno será capaz de:
 
 ---
 
-# 3. IDENTIFICACIÓN DEL FIRMWARE
+## 3. Identificación del Firmware
 
 Todas las placas modernas utilizan **UEFI (basado en AMI)** excepto modelos antiguos que pueden incluir modo Legacy/CSM.
 
@@ -38,12 +38,12 @@ Características comunes:
 
 ---
 
-# 4. PARÁMETRO 1 – CAMBIO DE ORDEN DE ARRANQUE
+## 4. Parámetro 1: Cambio de orden de arranque
 
-## Objetivo
+### Objetivo
 Arrancar desde USB o segundo disco.
 
-## Ruta típica
+### Ruta típica
 
 ```
 Boot → Boot Option Priorities
@@ -51,7 +51,7 @@ Boot → Boot Option Priorities
 
 ---
 
-## Captura simulada UEFI
+### Captura simulada UEFI
 
 ![UEFI Boot Menu](img/01_UEFI_Boot_Menu.png)  
 
@@ -61,9 +61,9 @@ Cambiar Boot Option #1 a USB.
 
 ---
 
-# 5. PARÁMETRO 2 – CONFIGURAR FECHA Y HORA
+## 5. Parámetro 2: Fecha y Hora
 
-## Ruta típica
+### Ruta típica
 
 ```
 Main → System Date / System Time
@@ -71,7 +71,7 @@ Main → System Date / System Time
 
 ---
 
-## Captura simulada
+### Captura simulada
 
 ![System Date Time](img/02_System_Date_Time.png)
 
@@ -84,15 +84,15 @@ Main → System Date / System Time
 
 ---
 
-# 6. PARÁMETRO 3 – ACTIVAR VIRTUALIZACIÓN
+## 6. Parámetro 3: Activar virtualización
 
-## Ruta Intel
+### Ruta Intel
 
 ```
 Advanced → CPU Configuration → Intel VT-x
 ```
 
-## Ruta AMD
+### Ruta AMD
 
 ```
 Advanced → SVM Mode
@@ -100,7 +100,7 @@ Advanced → SVM Mode
 
 ---
 
-## Captura simulada Virtualización
+### Captura simulada Virtualización
 
 
 ![Virtualization](img/03_Virtualization_Enable.png)
@@ -114,9 +114,9 @@ Si está desactivado:
 
 ---
 
-# 7. PARÁMETRO ADICIONAL – SECURE BOOT
+## 7. Parámetro adicional: Secure Boot
 
-## Ruta
+### Ruta
 
 ```
 Boot → Secure Boot
@@ -124,17 +124,17 @@ Boot → Secure Boot
 
 ---
 
-## Captura simulada
+### Captura simulada
 
 
-## Secure Boot
+### Secure Boot
 
 ![Secure Boot](img/04_Secure_Boot.png)
 
 
 ---
 
-# 8. PROCEDIMIENTO GENERAL PASO A PASO
+## 8. Procedimiento general
 
 1. Reiniciar equipo.
 2. Pulsar DEL o F2.
@@ -145,7 +145,7 @@ Boot → Secure Boot
 
 ---
 
-# 9. ERRORES COMUNES
+## 9. Errores típicos
 
 - No guardar cambios.
 - Activar Legacy sin convertir disco a MBR.
@@ -154,7 +154,7 @@ Boot → Secure Boot
 
 ---
 
-# 10. Síntesis
+## 10. Síntesis técnica
 
 UEFI reemplaza al BIOS tradicional ofreciendo:
 
@@ -173,7 +173,7 @@ La correcta configuración del firmware es esencial en:
 
 ---
 
-# 11. Entregable
+## 11. Entregable
 Debe incluir:
 
 - Identificación de firmware de cada placa.
@@ -184,7 +184,7 @@ Debe incluir:
 
 ---
 
-# 12. Criterios de evaluación
+## 12. Criterios de evaluación
 
 | Criterio | Puntos |
 |----------|--------|
