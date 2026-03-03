@@ -55,22 +55,7 @@ Boot → Boot Option Priorities
 
 ## Captura simulada UEFI (SVG Profesional)
 
-<svg width="700" height="420" xmlns="http://www.w3.org/2000/svg">
-<rect width="700" height="420" fill="#1e1e1e"/>
-<text x="20" y="40" fill="#00ffcc" font-size="22">UEFI BIOS Utility - Boot</text>
-
-<rect x="50" y="80" width="600" height="60" fill="#2c2c2c" stroke="#00ffcc"/>
-<text x="70" y="115" fill="white" font-size="18">Boot Option #1   → Windows Boot Manager</text>
-
-<rect x="50" y="160" width="600" height="60" fill="#2c2c2c" stroke="#00ffcc"/>
-<text x="70" y="195" fill="white" font-size="18">Boot Option #2   → Samsung SSD</text>
-
-<rect x="50" y="240" width="600" height="60" fill="#003366" stroke="#00ffcc"/>
-<text x="70" y="275" fill="white" font-size="18">Boot Option #3   → USB Kingston</text>
-
-<text x="50" y="350" fill="#00ffcc" font-size="16">F10 → Save Changes & Reset</text>
-</svg>
-
+![UEFI Boot Menu](img/01_UEFI_Boot_Menu.svg)
 
 ### Acción esperada:
 Cambiar Boot Option #1 a USB.
