@@ -1,0 +1,15 @@
+<svg width="900" height="500" xmlns="http://www.w3.org/2000/svg">
+  <rect width="900" height="500" fill="#1b1f23"/>
+  <text x="40" y="60" fill="#58a6ff" font-size="32" font-family="Arial">UEFI BIOS Utility - Boot Configuration</text>
+
+  <rect x="60" y="120" width="780" height="80" fill="#2d333b" stroke="#58a6ff" stroke-width="2"/>
+  <text x="90" y="170" fill="white" font-size="22" font-family="Arial">Boot Option #1 → Windows Boot Manager (SSD)</text>
+
+  <rect x="60" y="220" width="780" height="80" fill="#2d333b" stroke="#58a6ff" stroke-width="2"/>
+  <text x="90" y="270" fill="white" font-size="22" font-family="Arial">Boot Option #2 → Samsung SSD 980</text>
+
+  <rect x="60" y="320" width="780" height="80" fill="#0d1117" stroke="#3fb950" stroke-width="3"/>
+  <text x="90" y="370" fill="white" font-size="22" font-family="Arial">Boot Option #3 → USB Kingston (Seleccionar como #1)</text>
+
+  <text x="60" y="460" fill="#58a6ff" font-size="18" font-family="Arial">F10 → Save Changes & Reset</text>
+</svg>

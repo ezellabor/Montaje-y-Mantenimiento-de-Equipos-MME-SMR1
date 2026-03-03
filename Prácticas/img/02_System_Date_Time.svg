@@ -1,0 +1,10 @@
+<svg width="900" height="400" xmlns="http://www.w3.org/2000/svg">
+  <rect width="900" height="400" fill="#161b22"/>
+  <text x="40" y="60" fill="#79c0ff" font-size="30" font-family="Arial">UEFI BIOS Utility - Main</text>
+
+  <rect x="120" y="140" width="660" height="90" fill="#21262d" stroke="#79c0ff" stroke-width="2"/>
+  <text x="160" y="195" fill="white" font-size="24" font-family="Arial">System Date → 03 / 03 / 2026</text>
+
+  <rect x="120" y="260" width="660" height="90" fill="#21262d" stroke="#79c0ff" stroke-width="2"/>
+  <text x="160" y="315" fill="white" font-size="24" font-family="Arial">System Time → 10 : 45 : 22</text>
+</svg>
