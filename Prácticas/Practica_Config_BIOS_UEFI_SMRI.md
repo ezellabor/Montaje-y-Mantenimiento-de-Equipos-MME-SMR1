@@ -71,12 +71,12 @@ Main → System Date / System Time
 
 ---
 
-### Captura simulada
+### Captura simulada Fecha/Hora
 
 ![System Date Time](img/02_System_Date_Time.png)
 
 
-### Explicación Técnica
+### Explicación técnica
 
 - La fecha se almacena en el RTC.
 - Si la pila CMOS se agota → se pierde la configuración.
@@ -106,7 +106,7 @@ Advanced → SVM Mode
 ![Virtualization](img/03_Virtualization_Enable.png)
 
 
-### Impacto Técnico
+### Impacto técnico
 
 Si está desactivado:
 - VirtualBox mostrará error VT-x disabled
@@ -124,10 +124,7 @@ Boot → Secure Boot
 
 ---
 
-### Captura simulada
-
-
-### Secure Boot
+### Captura simulada Secure Boot
 
 ![Secure Boot](img/04_Secure_Boot.png)
 
@@ -154,7 +151,7 @@ Boot → Secure Boot
 
 ---
 
-## 10. Síntesis técnica
+## 10. Síntesis 
 
 UEFI reemplaza al BIOS tradicional ofreciendo:
 
