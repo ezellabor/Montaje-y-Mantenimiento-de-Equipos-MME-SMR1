@@ -170,7 +170,42 @@ La correcta configuración del firmware es esencial en:
 
 ---
 
-## 11. Entregable
+## 11. Herramientas online para simular BIOS
+
+### Opción 1: Simulador de UEFI dentro de VirtualBox
+
+Pueden:
+
+1. Crear máquina virtual en VirtualBox
+2. Activar opción "Enable EFI"
+3. Acceder al entorno UEFI virtual
+4. Es lo más realista sin tocar hardware.
+
+
+### Opción 2: Simulador interactivo de BIOS (educativo)
+
+https://www.biosflash.com/e/bios-simulator.htm
+
+1. Simulador básico tipo Award BIOS.
+2. Muy útil para práctica conceptual.
+
+
+### Opción 3 – Documentación interactiva fabricantes
+
+Muchos fabricantes permiten navegar por manuales UEFI:
+
+1. ASUS
+2. MSI
+3. Gigabyte Technology
+
+Pueden descargar manual PDF y simular recorrido de menús.
+
+### 4 – Simulación en Tinkercad (solo conceptual)
+
+No tiene BIOS real, pero permite explicar arranque conceptual.
+
+
+## 12. Entregable
 Debe incluir:
 
 - Identificación de firmware de cada placa.
@@ -181,7 +216,7 @@ Debe incluir:
 
 ---
 
-## 12. Criterios de evaluación
+## 13. Criterios de evaluación
 
 | Criterio | Puntos |
 |----------|--------|
