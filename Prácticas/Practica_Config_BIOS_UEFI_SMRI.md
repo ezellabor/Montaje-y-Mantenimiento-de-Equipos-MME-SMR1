@@ -1,6 +1,4 @@
-# PRÁCTICA 05  
-# CONFIGURACIÓN DE BIOS / UEFI  
-## Manual Técnico Guiado con Simulación Visual
+# Práctica: Configuración de BIOS / UEFI  
 
 ---
 
@@ -53,7 +51,7 @@ Boot → Boot Option Priorities
 
 ---
 
-## Captura simulada UEFI (SVG Profesional)
+## Captura simulada UEFI
 
 ![UEFI Boot Menu](img/01_UEFI_Boot_Menu.png)  
 
@@ -156,32 +154,7 @@ Boot → Secure Boot
 
 ---
 
-# 10. ENTREGABLE DEL ALUMNO
-
-Debe incluir:
-
-- Identificación de firmware de cada placa.
-- Ruta exacta de cada parámetro.
-- Explicación técnica.
-- Capturas reales o esquemas.
-- Conclusión final.
-
----
-
-# 11. CRITERIOS DE EVALUACIÓN
-
-| Criterio | Puntos |
-|----------|--------|
-| Identificación correcta | 4 |
-| Cambio orden arranque | 4 |
-| Fecha y hora | 3 |
-| Virtualización | 4 |
-| Explicación técnica | 3 |
-| Presentación | 2 |
-
----
-
-# 12. CONCLUSIÓN TÉCNICA
+# 10. Síntesis
 
 UEFI reemplaza al BIOS tradicional ofreciendo:
 
@@ -200,4 +173,29 @@ La correcta configuración del firmware es esencial en:
 
 ---
 
-FIN DEL DOCUMENTO
+# 11. Entregable
+Debe incluir:
+
+- Identificación de firmware de cada placa.
+- Ruta exacta de cada parámetro.
+- Explicación técnica.
+- Capturas reales o esquemas.
+- Conclusión final.
+
+---
+
+# 12. Criterios de evaluación
+
+| Criterio | Puntos |
+|----------|--------|
+| Identificación correcta | 4 |
+| Cambio orden arranque | 4 |
+| Fecha y hora | 3 |
+| Virtualización | 4 |
+| Explicación técnica | 3 |
+| Presentación | 2 |
+
+---
+
+
+
