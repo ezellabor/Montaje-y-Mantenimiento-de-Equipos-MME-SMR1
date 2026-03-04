@@ -36,7 +36,12 @@ Características comunes:
 - Virtualización (Intel VT-x o AMD SVM)
 - Interfaz gráfica
 
-* _CSM (Compatibility Support Module) es un componente del firmware UEFI en placas base modernas que permite arrancar sistemas operativos antiguos o discos con particiones MBR, emulando el comportamiento de una BIOS tradicional (Legacy). Es necesario activar CSM para usar hardware viejo o sistemas operativos anteriores a Windows 10 en equipos nuevos._
+<details>
+<summary>CSM (Compatibility Support Module)</summary>  
+  
+CSM es un componente del firmware UEFI en placas base modernas que permite arrancar sistemas operativos antiguos o discos con particiones MBR, emulando el comportamiento de una BIOS tradicional (Legacy). Es necesario activar CSM para usar hardware viejo o sistemas operativos anteriores a Windows 10 en equipos nuevos.  
+
+</details>
   
 ---
 
