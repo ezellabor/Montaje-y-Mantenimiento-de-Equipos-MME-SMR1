@@ -142,7 +142,7 @@ Boot → Secure Boot
 ## 8. Procedimiento general
 
 1. Reiniciar equipo.
-2. Pulsar DEL o F2.
+2. Pulsar DEL/Supr o F2.
 3. Entrar en modo Advanced.
 4. Modificar parámetro.
 5. Guardar con F10.
