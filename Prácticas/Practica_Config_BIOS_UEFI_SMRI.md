@@ -49,7 +49,7 @@ Características comunes:
 ## 4. Parámetro 1: Cambio de orden de arranque
 
 ### Objetivo
-Arrancar desde USB o segundo disco.
+Arrancar desde USB o un segundo disco.
 
 ### Ruta típica
 
