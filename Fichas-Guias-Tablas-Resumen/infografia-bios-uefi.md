@@ -55,9 +55,11 @@ La versión moderna de la BIOS es la **UEFI (Unified Extensible Firmware Interfa
 <details>
 <summary>*AHCI (Advanced Host Controller Interface)</summary>  
   
-  _El modo AHCI (Advanced Host Controller Interface) es la configuración SATA recomendada para discos duros modernos y SSDs, ya que ofrece un rendimiento superior, soporte para NCQ (Native Command Queuing) y intercambio en caliente. Se debe activar en la BIOS antes de instalar el sistema operativo para obtener la máxima velocidad, superando al antiguo modo IDE._  
+  El modo **AHCI** (Advanced Host Controller Interface) es la configuración SATA recomendada para discos duros modernos y SSDs, ya que ofrece un rendimiento superior, mejora la velocidad de lectura/escritura, soporte para NCQ (Native Command Queuing) y intercambio en caliente. Se debe activar en la BIOS antes de instalar el sistema operativo para obtener la máxima velocidad, superando al antiguo modo IDE.  
 
-</details>  
+</details> 
+
+_Nota: Cambiar de IDE a AHCI con un sistema operativo ya instalado puede causar que el sistema no arranque. En ese caso, se recomienda realizar los cambios necesarios en el registro de Windows antes del cambio en la BIOS._
 
 ## 5. Flujo de arranque
 
