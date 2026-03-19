@@ -161,7 +161,7 @@ En entornos actuales, UEFI es el estándar recomendado.
 
 ## 10. Práctica configuración BIOS/UEFI
 
-[Simulación ConfiguracióN BIOS/UEFI](https://github.com/ezellabor/Montaje-y-Mantenimiento-de-Equipos-MME-SMR1/blob/main/Pr%C3%A1cticas/Practica_Config_BIOS_UEFI_SMRI.md)
+[Simulación Configuración BIOS/UEFI](https://github.com/ezellabor/Montaje-y-Mantenimiento-de-Equipos-MME-SMR1/blob/main/Pr%C3%A1cticas/Practica_Config_BIOS_UEFI_SMRI.md)
 
 
 
