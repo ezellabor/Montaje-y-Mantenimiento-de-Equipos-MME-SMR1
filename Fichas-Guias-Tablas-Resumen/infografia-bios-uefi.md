@@ -45,12 +45,19 @@ La versión moderna de la BIOS es la **UEFI (Unified Extensible Firmware Interfa
 ## 4. Configuración 
 
 -   Boot Order
--   Modo SATA (AHCI/IDE/RAID)
+-   Modo SATA (AHCI*/IDE/RAID)
 -   Virtualización (Intel VT-x / AMD SVM)
 -   Fecha y Hora
 -   Secure Boot
 -   Fast Boot
 -   Overclocking básico
+  
+<details>
+<summary>*AHCI (Advanced Host Controller Interface)</summary>  
+  
+  _El modo AHCI (Advanced Host Controller Interface) es la configuración SATA recomendada para discos duros modernos y SSDs, ya que ofrece un rendimiento superior, soporte para NCQ (Native Command Queuing) y intercambio en caliente. Se debe activar en la BIOS antes de instalar el sistema operativo para obtener la máxima velocidad, superando al antiguo modo IDE._  
+
+</details>  
 
 ## 5. Flujo de arranque
 
