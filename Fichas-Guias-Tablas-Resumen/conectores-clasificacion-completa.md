@@ -1,4 +1,4 @@
-# Mapa completo de conectores por categoría
+# Mapa de conectores por categoría
 
 Tabla de referencia completa de todos los tipos de conectores organizados por categoría (Audio, Video, Red, USB, Energía, Datos y Periféricos).  
 
