@@ -154,3 +154,12 @@ CONECTORES
     └── Thunderbolt (PCIe tunneling)
 ```
 
+
+---
+## Notas técnicas
+
+- **Velocidades máximas:** Las velocidades indicadas son teóricas máximas del estándar. En la práctica pueden variar según implementación y calidad del cable.
+- **Compatibilidad:** Algunos conectores son compatibles hacia atrás (ej: USB 3.0 en puerto 2.0), pero funcionarán a la velocidad del puerto más lento.
+- **Obsoletos:** Los conectores marcados como obsoletos aún pueden encontrarse en equipos legacy pero no se recomiendan para nuevas instalaciones.
+
+---
