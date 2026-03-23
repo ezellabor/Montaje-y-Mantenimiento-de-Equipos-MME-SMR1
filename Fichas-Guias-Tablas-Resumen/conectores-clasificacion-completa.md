@@ -1,58 +1,6 @@
-## Clasificación de conectores
-
-### Resúmen de conectores
-```cpp
-CONECTORES
-├── 🎧 AUDIO
-│   ├── Jack 3.5mm / 6.35mm
-│   ├── XLR
-│   ├── RCA
-│   └── Óptico / Coaxial S/PDIF
-│
-├── 🎬 VIDEO
-│   ├── Analógicos: VGA, Component, Composite
-│   └── Digitales: HDMI, DisplayPort, DVI, SDI
-│
-├── 🔊 AUDIO+VIDEO
-│   ├── HDMI
-│   ├── DisplayPort
-│   └── USB-C (Alt Mode)
-│
-├── 🌐 RED
-│   ├── RJ-45 (Ethernet)
-│   ├── Fibra (LC/SC)
-│   └── Coaxial (F-Type)
-│
-├── 🔌 USB
-│   ├── Físicos: A, B, Mini, Micro, C
-│   └── Estándares: 2.0 → USB4 / Thunderbolt
-│
-├── ⚡ ENERGÍA
-│   ├── IEC C13/C14, Barrel Jack
-│   ├── SATA Power, PCIe, ATX
-│   └── USB PD
-│
-└── 💾 DATOS
-    ├── SATA, M.2, U.2
-    ├── IDE, SCSI (legacy)
-    └── Thunderbolt (PCIe tunneling)
-```
-
 # Mapa completo de conectores por categoría
 
-> **Descripción:** Tabla de referencia completa de todos los tipos de conectores organizados por categoría (Audio, Video, Red, USB, Energía, Datos y Periféricos).  
-
----
-
-## Índice
-
-1. [Audio y Audio/Video](#-audio-y-audiovideo)
-2. [Video (Solo Imagen)](#-video-solo-imagen)
-3. [Red y Comunicaciones](#-red-y-comunicaciones)
-4. [Tipos USB](#-tipos-usb)
-5. [Conectores de Energía](#-conectores-de-energía)
-6. [Datos y Almacenamiento](#-datos-y-almacenamiento)
-7. [Periféricos y Especializados](#-periféricos-y-especializados)
+Tabla de referencia completa de todos los tipos de conectores organizados por categoría (Audio, Video, Red, USB, Energía, Datos y Periféricos).  
 
 ---
 
@@ -71,7 +19,7 @@ CONECTORES
 
 ---
 
-## Video (Solo imagen)
+## Video
 
 | Conector | Tipo | Resolución Máx. | Uso Principal |
 |----------|------|-----------------|---------------|
@@ -126,7 +74,7 @@ CONECTORES
 
 ---
 
-## ⚡ Conectores de Energía
+## Conectores de Energía
 
 | Conector | Voltaje/Corriente | Uso | Notas |
 |----------|-------------------|-----|-------|
@@ -141,7 +89,7 @@ CONECTORES
 
 ---
 
-## 💾 Datos y Almacenamiento
+## Datos y Almacenamiento
 
 | Conector | Tipo | Velocidad | Uso |
 |----------|------|-----------|-----|
@@ -154,7 +102,7 @@ CONECTORES
 
 ---
 
-## 🖥️ Periféricos y Especializados
+## Periféricos y especializados
 
 | Conector | Uso | Notas |
 |----------|-----|-------|
@@ -167,4 +115,42 @@ CONECTORES
 | **Thunderbolt (Mini DP físico)** | Video + PCIe + datos | Solo en Macs antiguas (TB1/2) |
 
 ---
+
+### Resúmen
+```cpp
+CONECTORES
+├── 🎧 AUDIO
+│   ├── Jack 3.5mm / 6.35mm
+│   ├── XLR
+│   ├── RCA
+│   └── Óptico / Coaxial S/PDIF
+│
+├── 🎬 VIDEO
+│   ├── Analógicos: VGA, Component, Composite
+│   └── Digitales: HDMI, DisplayPort, DVI, SDI
+│
+├── 🔊 AUDIO+VIDEO
+│   ├── HDMI
+│   ├── DisplayPort
+│   └── USB-C (Alt Mode)
+│
+├── 🌐 RED
+│   ├── RJ-45 (Ethernet)
+│   ├── Fibra (LC/SC)
+│   └── Coaxial (F-Type)
+│
+├── 🔌 USB
+│   ├── Físicos: A, B, Mini, Micro, C
+│   └── Estándares: 2.0 → USB4 / Thunderbolt
+│
+├── ⚡ ENERGÍA
+│   ├── IEC C13/C14, Barrel Jack
+│   ├── SATA Power, PCIe, ATX
+│   └── USB PD
+│
+└── 💾 DATOS
+    ├── SATA, M.2, U.2
+    ├── IDE, SCSI (legacy)
+    └── Thunderbolt (PCIe tunneling)
+```
 
