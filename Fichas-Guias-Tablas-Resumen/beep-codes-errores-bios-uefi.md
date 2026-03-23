@@ -1,7 +1,7 @@
 ![Módulo](https://img.shields.io/badge/Módulo-Montaje-y-Mantenimiento-de-Equipos-orange?style=for-the-badge)
 ![Grupo](https://img.shields.io/badge/Grupo-SMR1-blue?style=for-the-badge)
 ![Profesor](https://img.shields.io/badge/Profesor-Ezequiel_Llarena_Borges-blue?style=for-the-badge)
-<div align="center">   
+ 
  
 # Señales Acústicas (Beep Codes) de Errores BIOS/UEFI
 
@@ -193,6 +193,4 @@ Si al encender **no hay ningún beep ni ventiladores girando**:
 
 ---
 
-> **Licencia:** Uso libre para fines educativos y técnicos.  
-> **Última revisión:** 2024  
 > **Fuentes:** Manuales AMI, Award, Phoenix, Dell, HP, Lenovo + experiencia técnica en soporte hardware.
