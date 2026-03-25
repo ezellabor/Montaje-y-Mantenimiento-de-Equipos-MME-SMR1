@@ -35,10 +35,10 @@
 
 | Categoría | Tecnología | Velocidad | Alcance | Relación |
 |-----------|------------|-----------|---------|----------|
-| **Corta distancia, alta velocidad** | Wi-Fi 6/6E, 5G mmWave | ⚡⚡⚡ |  | Ideal interior |
-| **Media distancia, media velocidad** | Bluetooth 5, Wi-Fi 4/5 | ⚡⚡⚡ | 📍📍 | Versátil |
-| **Larga distancia, baja velocidad** | LoRaWAN, Zigbee | ⚡ | 📍📍📍📍 | IoT extenso |
-| **Muy larga distancia** | 4G/5G, Satelital | ⚡⚡⚡ | 📍📍📍📍 | Cobertura total |
+| **Corta distancia, alta velocidad** | Wi-Fi 6/6E, 5G mmWave | 💡💡💡 |  | Ideal interior |
+| **Media distancia, media velocidad** | Bluetooth 5, Wi-Fi 4/5 | 💡💡💡 | 💡💡 | Versátil |
+| **Larga distancia, baja velocidad** | LoRaWAN, Zigbee | 💡 | 💡💡💡💡 | IoT extenso |
+| **Muy larga distancia** | 4G/5G, Satelital | 💡💡💡 | 💡💡💡💡 | Cobertura total |
 
 ---
 
