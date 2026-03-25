@@ -189,7 +189,7 @@ Realiza un **breve resumen** sobre los tipos de USB más comunes, mencionando:
 
 
 
-## Criterios de calificación - Sección Práctica
+#### Criterios de calificación  
 
 | Criterio | Puntuación | Descripción |
 |----------|------------|-------------|
