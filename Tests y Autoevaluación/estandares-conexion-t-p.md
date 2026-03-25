@@ -8,16 +8,16 @@
 
 ---
 
-## Descripción de la actividad 
+### Descripción de la actividad 
 
-1.  Esta actividad consta de **2 secciones**: Conceptual (70%) y Práctica (30%).
-2.  **Sección Conceptual:** Marca con una ✗ o círculo la única respuesta correcta.
-3.  **Sección Práctica:** Responde de forma clara y justificada en el espacio proporcionado.
+1.  Esta actividad consta de dos secciones: Conceptual (70%) y Práctica (30%).
+2.  **Sección conceptual:** Marca con una ✗ o círculo la única respuesta correcta.
+3.  **Sección práctica:** Responde de forma clara y justificada en el espacio proporcionado.
 4.  No se permite el uso de dispositivos electrónicos ni apuntes.
 
 ---
 
-### SECCIÓN 1: CONCEPTOS  
+#### Sección 1: CONCEPTOS  
 
 **1. ¿Cuál de los siguientes estándares es utilizado principalmente para conexiones Ethernet?**
 
@@ -118,7 +118,7 @@
 
 ---
 
-### SECCIÓN 2: PRÁCTICA
+#### Sección 2: PRÁCTICA
 
 #### Supuesto práctico: Instalación de nueva oficina
 
