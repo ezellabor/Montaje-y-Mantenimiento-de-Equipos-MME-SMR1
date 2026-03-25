@@ -1,5 +1,5 @@
-![Módulo](https://img.shields.io/badge/Módulo-Montaje_y_Mantenimiento_de_Equipos-darkgreen?style=for-the-badge)
-![Grupo](https://img.shields.io/badge/Grupo-SMR1-orange?style=for-the-badge)
+![Módulo](https://img.shields.io/badge/Módulo-Montaje_y_Mantenimiento_de_Equipos-yellow?style=for-the-badge)
+![Grupo](https://img.shields.io/badge/Grupo-SMR1-yellow?style=for-the-badge)
 ![Profesor](https://img.shields.io/badge/Profesor-Ezequiel_Llarena_Borges-blue?style=for-the-badge)
 --  
 ![issue](https://img.shields.io/badge/issue-Estándares_de_conexión_y_puertos-brown?style=for-the-badge)  
@@ -185,7 +185,9 @@ Realiza un **breve resumen** sobre los tipos de USB más comunes, mencionando:
 | USB-C / USB4 | 40 Gbps | ⚫ Gris/Negro | Carga rápida, video, datos, universal |
 
 **Relación color-velocidad:**  
-> _Escribe aquí tu respuesta..._
+> _Escribe aquí tu respuesta ..._
+
+---  
 
 
 
