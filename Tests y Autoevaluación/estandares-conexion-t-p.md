@@ -4,10 +4,7 @@
 --  
 ![issue](https://img.shields.io/badge/issue-Estándares_de_conexión_y_puertos-brown?style=for-the-badge)  
 
-**Actividad conceptual-práctica**  
-**Módulo:** Mantenimiento de Equipos (MME)  
-**Curso:** 1º SMR  
-**Fecha:** Abril 2026
+```Actividad conceptual-práctica```  
 
 ---
 
