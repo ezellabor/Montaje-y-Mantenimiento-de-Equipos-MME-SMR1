@@ -3,10 +3,11 @@
 ![Profesor](https://img.shields.io/badge/Profesor-Ezequiel_Llarena_Borges-blue?style=for-the-badge)
 --  
 ![issue](https://img.shields.io/badge/issue-Conexiones_Inalámbricas-navy?style=for-the-badge)  
+```Fuentes: IEEE, 3GPP, Wi-Fi Alliance, Bluetooth SIG, LoRa Alliance```  
 
 ---
 
-## Comparativa General
+## Comparativa general
 
 | Tecnología | Estándar | Frecuencia | Alcance | Velocidad Máx. | Consumo | Uso Principal |
 |------------|----------|------------|---------|----------------|---------|---------------|
@@ -28,7 +29,7 @@
 
 ---
 
-## Comparativa detallada por Características
+## Comparativa detallada por características
 
 ### Velocidad vs Alcance
 
@@ -134,5 +135,20 @@
 | **Control remoto simple** | RF 433MHz | Infrarrojos |
 
 ---
+
+
+
+---
+
+## Recomendaciones
+
+1. **Wi-Fi 6** es el estándar actual recomendado para nuevas instalaciones
+2. **5G** está reemplazando a 4G pero requiere hardware compatible
+3. **IoT industrial** → LoRaWAN o 5G privado según necesidades
+4. **Domótica** → Zigbee/Z-Wave mejor que Wi-Fi (menor congestión)
+5. **Seguridad** → Siempre usar cifrado WPA3 (Wi-Fi) o AES-128 mínimo
+
+---
+
 
 
