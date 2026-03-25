@@ -169,7 +169,7 @@ Decide si usarías una conexión inalámbrica para que los dispositivos móviles
 
 #### Tarea 4: Resumen de estándares USB  
 
-Realiza un **breve resumen** sobre los tipos de USB más comunes, mencionando:
+4.1. Realiza un **breve resumen** sobre los tipos de USB más comunes, mencionando:
 
 - Versión (USB 1.0, 2.0, 3.0, 3.1, USB-C)
 - Velocidad máxima teórica
@@ -184,7 +184,7 @@ Realiza un **breve resumen** sobre los tipos de USB más comunes, mencionando:
 | USB 3.1 Gen 2 | 10 Gbps | 🔴 Rojo / 🔵 Azul | SSDs externos, video 4K |
 | USB-C / USB4 | 40 Gbps | ⚫ Gris/Negro | Carga rápida, video, datos, universal |
 
-**Relación color-velocidad:**  
+4.2. **Relación color-velocidad:**  
 > _Escribe aquí tu respuesta ..._
 
 ---  
