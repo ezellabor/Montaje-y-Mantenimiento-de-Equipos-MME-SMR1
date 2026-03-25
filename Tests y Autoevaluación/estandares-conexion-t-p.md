@@ -178,11 +178,11 @@ Decide si usarías una conexión inalámbrica para que los dispositivos móviles
 
 | Versión USB | Velocidad máxima | Color conector | Uso recomendado |
 |-------------|------------------|-----------------|----------------|
-| USB 1.0/1.1 | 12 Mbps | Blanco | Dispositivos antiguos (teclado/ratón) |
-| USB 2.0 | 480 Mbps | Negro | Periféricos básicos, memoria USB |
-| USB 3.0/3.1 Gen 1 | 5 Gbps | 🔵 Azul | Discos externos, cámaras, alta velocidad |
-| USB 3.1 Gen 2 | 10 Gbps | 🔴 Rojo / 🔵 Azul | SSDs externos, video 4K |
-| USB-C / USB4 | 40 Gbps | ⚫ Gris/Negro | Carga rápida, video, datos, universal |
+| USB 1.0/1.1 |  |  |  |
+| USB 2.0 |  |  | Periféricos básicos, memoria USB |
+| USB 3.0/3.1 Gen 1 |  |  |  |
+| USB 3.1 Gen 2 |  |   | |
+| USB-C / USB4 |  |  |  |
 
 4.2. **Relación color-velocidad:**  
 > _Escribe aquí tu respuesta ..._
@@ -258,7 +258,14 @@ Decide si usarías una conexión inalámbrica para que los dispositivos móviles
 
 **Alternativas válidas:** Wi-Fi 5 (802.11ac) si el presupuesto es limitado.
 
-### Tarea 4: Resumen USB (1 punto)
+### Tarea 4: Resumen USB (1 punto)  
+| Versión USB | Velocidad máxima | Color conector | Uso recomendado |
+|-------------|------------------|-----------------|----------------|
+| USB 1.0/1.1 | 12 Mbps | Blanco | Dispositivos antiguos (teclado/ratón) |
+| USB 2.0 | 480 Mbps | Negro | Periféricos básicos, memoria USB |
+| USB 3.0/3.1 Gen 1 | 5 Gbps | 🔵 Azul | Discos externos, cámaras, alta velocidad |
+| USB 3.1 Gen 2 | 10 Gbps | 🔴 Rojo / 🔵 Azul | SSDs externos, video 4K |
+| USB-C / USB4 | 40 Gbps | ⚫ Gris/Negro | Carga rápida, video, datos, universal |
 **Tabla correcta:** Ver tabla en el enunciado.  
 **Relación color-velocidad:** 
 > "Los fabricantes usan colores para identificar visualmente la generación: negro (USB 2.0), azul (USB 3.0), rojo (USB 3.1 Gen 2), aunque no es un estándar obligatorio y puede variar por marca."
