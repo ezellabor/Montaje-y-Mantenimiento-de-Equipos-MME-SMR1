@@ -189,13 +189,13 @@ Realiza un **breve resumen** sobre los tipos de USB más comunes, mencionando:
 
 
 
-#### Criterios de calificación  
+#### Criterios de evaluación  
 
-| Criterio | Puntuación | Descripción |
-|----------|------------|-------------|
-| **Justificación técnica** | 1.5 pts | Argumentos sólidos basados en estándares reales |
-| **Conocimiento de estándares** | 1 pt | Uso correcto de nombres técnicos (IEEE 802.3, 802.11ax, etc.) |
-| **Claridad y estructura** | 0.5 pts | Respuestas ordenadas, legibles y bien presentadas |
+| Criterio | Descripción |
+|----------|-------------|
+| **Justificación técnica** | Argumentos sólidos basados en estándares reales |
+| **Conocimiento de estándares** | Uso correcto de nombres técnicos (IEEE 802.3, 802.11ax, etc.) |
+| **Claridad y estructura** | Respuestas ordenadas, legibles y bien presentadas |
 
 ---
 
