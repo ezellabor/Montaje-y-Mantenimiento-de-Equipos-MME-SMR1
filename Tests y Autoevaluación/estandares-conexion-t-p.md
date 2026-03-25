@@ -184,7 +184,8 @@ Realiza un **breve resumen** sobre los tipos de USB más comunes, mencionando:
 | USB 3.1 Gen 2 | 10 Gbps | 🔴 Rojo / 🔵 Azul | SSDs externos, video 4K |
 | USB-C / USB4 | 40 Gbps | ⚫ Gris/Negro | Carga rápida, video, datos, universal |
 
-**Relación color-velocidad (explicación breve):**
+**Relación color-velocidad:**  
+> _Escribe aquí tu respuesta..._
 
 
 
