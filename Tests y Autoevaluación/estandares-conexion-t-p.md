@@ -176,8 +176,8 @@ Decide si usarías una conexión inalámbrica para que los dispositivos móviles
 - Color típico del conector (si aplica)
 - Uso recomendado
 
-| Versión USB | Velocidad Máx. | Color conector | Relación color-velocidad | Uso recomendado |
-|-------------|----------------|----------------|-----------------|-----------------|
+| Versión USB | Velocidad máxima | Color conector | Uso recomendado |
+|-------------|------------------|-----------------|----------------|
 | USB 1.0/1.1 | 12 Mbps | Blanco | Dispositivos antiguos (teclado/ratón) |
 | USB 2.0 | 480 Mbps | Negro | Periféricos básicos, memoria USB |
 | USB 3.0/3.1 Gen 1 | 5 Gbps | 🔵 Azul | Discos externos, cámaras, alta velocidad |
