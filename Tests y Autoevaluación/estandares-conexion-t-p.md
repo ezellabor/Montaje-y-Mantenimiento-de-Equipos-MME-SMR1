@@ -1,5 +1,10 @@
-# Actividad conceptual-práctica: Estándares de conexión y puertos de equipos informáticos
+![Módulo](https://img.shields.io/badge/Módulo-Montaje_y_Mantenimiento_de_Equipos-orange?style=for-the-badge)
+![Grupo](https://img.shields.io/badge/Grupo-SMR1-brown?style=for-the-badge)
+![Profesor](https://img.shields.io/badge/Profesor-Ezequiel_Llarena_Borges-blue?style=for-the-badge)
+--  
+![issue](https://img.shields.io/badge/issue-Estándares_de_conexión_y_puertos-navy?style=for-the-badge)  
 
+**Actividad conceptual-práctica**  
 **Módulo:** Mantenimiento de Equipos (MME)  
 **Curso:** 1º SMR  
 **Fecha:** Abril 2026
