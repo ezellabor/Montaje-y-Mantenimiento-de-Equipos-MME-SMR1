@@ -1,51 +1,46 @@
-# Prueba Objetiva: Módulo MME
+# Actividad conceptual-práctica: Estándares de conexión y puertos de equipos informáticos
 
 **Módulo:** Mantenimiento de Equipos (MME)  
-**Curso:** 1º ASIR / SMR  
-**Duración:** 60 minutos  
-**Nombre del Alumno:** _________________________________________________  
-**Fecha:** __________________________
+**Curso:** 1º SMR  
+**Fecha:** Abril 2026
 
 ---
 
-## Instrucciones 
+## Descripción de la actividad 
 
-1.  La prueba consta de **2 secciones**: Teórica (70%) y Práctica (30%).
-2.  **Sección Teórica:** Marca con una ✗ o círculo la opción correcta.
+1.  Esta actividad consta de **2 secciones**: Conceptual (70%) y Práctica (30%).
+2.  **Sección Conceptual:** Marca con una ✗ o círculo la única respuesta correcta.
 3.  **Sección Práctica:** Responde de forma clara y justificada en el espacio proporcionado.
 4.  No se permite el uso de dispositivos electrónicos ni apuntes.
-5.  Revisa tus respuestas antes de entregar.
 
 ---
 
-# SECCIÓN 1: TEÓRICA
-
-## Preguntas de Elección Múltiple
+### SECCIÓN 1: CONCEPTOS  
 
 **1. ¿Cuál de los siguientes estándares es utilizado principalmente para conexiones Ethernet?**
 
 - [ ] A) USB 3.0
 - [ ] B) HDMI
-- [x] C) IEEE 802.3
+- [ ] C) IEEE 802.3
 - [ ] D) PS/2
 
 **2. ¿Cuál es la velocidad máxima de transferencia de datos del estándar USB 3.0?**
 
 - [ ] A) 480 Mbps
-- [x] B) 5 Gbps
+- [ ] B) 5 Gbps
 - [ ] C) 10 Gbps
 - [ ] D) 1 Gbps
 
 **3. El puerto VGA es un estándar utilizado para:**
 
 - [ ] A) Conexiones de red
-- [x] B) Conexiones de video analógico
+- [ ] B) Conexiones de video analógico
 - [ ] C) Conexiones de audio
 - [ ] D) Conexiones USB
 
 **4. ¿Cuál de los siguientes estándares es utilizado para conexiones inalámbricas de alta velocidad?**
 
-- [x] A) IEEE 802.11ac
+- [ ] A) IEEE 802.11ac
 - [ ] B) Bluetooth 2.0
 - [ ] C) PS/2
 - [ ] D) RS-232
@@ -53,7 +48,7 @@
 **5. ¿Qué puerto es conocido por su uso en impresoras y escáneres, además de asegurar la comunicación en paralelo?**
 
 - [ ] A) USB
-- [x] B) DB-25 (Paralelo)
+- [ ] B) DB-25 (Paralelo)
 - [ ] C) HDMI
 - [ ] D) RJ-45
 
@@ -61,19 +56,19 @@
 
 - [ ] A) Cable coaxial
 - [ ] B) Cable de fibra óptica
-- [x] C) Cable de par trenzado (UTP/STP)
+- [ ] C) Cable de par trenzado (UTP/STP)
 - [ ] D) Cable HDMI
 
 **7. ¿Cuál es la principal ventaja de usar HDMI sobre VGA?**
 
 - [ ] A) HDMI es más económico.
-- [x] B) HDMI transmite video y audio en alta definición.
+- [ ] B) HDMI transmite video y audio en alta definición.
 - [ ] C) VGA es más fácil de conectar.
 - [ ] D) HDMI tiene un conector más pequeño.
 
 **8. ¿Qué tipo de puerto se utiliza para conectar dispositivos de almacenamiento externo de alta velocidad?**
 
-- [x] A) USB-C / USB 3.x
+- [ ] A) USB-C / USB 3.x
 - [ ] B) PS/2
 - [ ] C) RJ-45
 - [ ] D) VGA
@@ -82,14 +77,14 @@
 
 - [ ] A) 1.5 Mbps
 - [ ] B) 12 Mbps
-- [x] C) 480 Mbps
+- [ ] C) 480 Mbps
 - [ ] D) 5 Gbps
 
 **10. ¿Cuál es el estándar más reciente para conexiones inalámbricas Wi-Fi?**
 
 - [ ] A) IEEE 802.11n (Wi-Fi 4)
 - [ ] B) IEEE 802.11ac (Wi-Fi 5)
-- [x] C) IEEE 802.11ax (Wi-Fi 6/6E)
+- [ ] C) IEEE 802.11ax (Wi-Fi 6/6E)
 - [ ] D) Bluetooth 5.0
 
 ---
@@ -98,36 +93,36 @@
 
 **11. El puerto HDMI puede transmitir tanto video como audio.**
 
-- [x] A) Verdadero
+- [ ] A) Verdadero
 - [ ] B) Falso
 
 **12. El estándar PS/2 se considera actualmente uno de los más utilizados para conectar teclados y ratones.**
 
 - [ ] A) Verdadero
-- [x] B) Falso
+- [ ] B) Falso
 
 **13. El estándar Bluetooth 5.0 tiene un rango de hasta 400 metros en condiciones óptimas (línea de vista, sin obstáculos).**
 
-- [x] A) Verdadero
+- [ ] A) Verdadero
 - [ ] B) Falso
 
 **14. El puerto RJ-45 es utilizado exclusivamente para conexiones de audio.**
 
 - [ ] A) Verdadero
-- [x] B) Falso
+- [ ] B) Falso
 
 **15. El estándar de conexión Thunderbolt 3 utiliza un conector USB-C.**
 
-- [x] A) Verdadero
+- [ ] A) Verdadero
 - [ ] B) Falso
 
 ---
 
 # SECCIÓN 2: PRÁCTICA
 
-## Supuesto Práctico: Instalación de Nueva Oficina
+## Supuesto práctico: Instalación de nueva oficina
 
-Eres el técnico de la instalación de una nueva oficina para una empresa de 20 empleados. Necesitas decidir qué tipo de conexiones y puertos utilizar para asegurarte de que:
+Eres el técnico de la instalación de una nueva oficina para una empresa de 20 empleados. Necesitas decidir qué **tipo de conexiones y puertos** utilizar para asegurarte de que:
 
 - ✅ Todos los equipos tengan acceso estable a la red interna e Internet.
 - ✅ Las impresoras y periféricos funcionen correctamente.
@@ -138,7 +133,7 @@ Eres el técnico de la instalación de una nueva oficina para una empresa de 20 
 
 ### Tareas a realizar
 
-#### **Tarea 1: Conexiones Alámbricas para Red Interna (1 punto)**
+#### Tarea 1: Conexiones alámbricas para red interna 
 
 Selecciona **3 tipos de conexiones alámbricas** que usarías para la red interna de la oficina. Justifica brevemente tu elección de cada una.
 
@@ -152,7 +147,7 @@ Selecciona **3 tipos de conexiones alámbricas** que usarías para la red intern
 
 ---
 
-#### **Tarea 2: Conexión de Impresoras (0.5 puntos)**
+#### Tarea 2: Conexión de impresoras
 
 Elige **un puerto o tipo de conexión** para conectar las impresoras multifunción de la oficina. Explica por qué elegiste esa opción en lugar de otras alternativas.
 
@@ -161,7 +156,7 @@ Elige **un puerto o tipo de conexión** para conectar las impresoras multifunci�
 
 ---  
 
-#### **Tarea 3: Conexión Inalámbrica para Dispositivos Móviles (0.5 puntos)**
+#### Tarea 3: Conexión inalámbrica para dispositivos móviles  
 
 Decide si usarías una conexión inalámbrica para que los dispositivos móviles (smartphones, tablets, portátiles) accedan a la red. 
 
@@ -172,7 +167,7 @@ Decide si usarías una conexión inalámbrica para que los dispositivos móviles
 
 ---
 
-#### **Tarea 4: Resumen de Estándares USB (1 punto)**
+#### Tarea 4: Resumen de estándares USB  
 
 Realiza un **breve resumen** sobre los tipos de USB más comunes, mencionando:
 
@@ -181,7 +176,7 @@ Realiza un **breve resumen** sobre los tipos de USB más comunes, mencionando:
 - Color típico del conector (si aplica)
 - Uso recomendado
 
-| Versión USB | Velocidad Máx. | Color Conector | Uso Recomendado |
+| Versión USB | Velocidad Máx. | Color conector | Uso recomendado |
 |-------------|----------------|----------------|-----------------|
 | USB 1.0/1.1 | 12 Mbps | Blanco | Dispositivos antiguos (teclado/ratón) |
 | USB 2.0 | 480 Mbps | Negro | Periféricos básicos, memoria USB |
@@ -208,10 +203,10 @@ Realiza un **breve resumen** sobre los tipos de USB más comunes, mencionando:
 <!--
 # SOLUCIONARIO
 
-## Sección 1: Teórica - Respuestas Correctas
+## Sección 1: Conceptos teóricos  
 
 ### Elección Múltiple
-| Pregunta | Respuesta | Explicación Breve |
+| Pregunta | Respuesta Correcta | Explicación |
 |----------|-----------|-------------------|
 | 1 | **C) IEEE 802.3** | Estándar Ethernet para redes cableadas |
 | 2 | **B) 5 Gbps** | USB 3.0 (también llamado USB 3.1 Gen 1) |
@@ -225,7 +220,7 @@ Realiza un **breve resumen** sobre los tipos de USB más comunes, mencionando:
 | 10 | **C) IEEE 802.11ax** | Wi-Fi 6/6E, último estándar masivo (2024) |
 
 ### Verdadero/Falso
-| Pregunta | Respuesta | Explicación |
+| Pregunta | Respuesta Correcta | Explicación |
 |----------|-----------|-------------|
 | 11 | ✅ Verdadero | HDMI transmite audio y video digital |
 | 12 | ❌ Falso | PS/2 está obsoleto, reemplazado por USB |
@@ -235,9 +230,9 @@ Realiza un **breve resumen** sobre los tipos de USB más comunes, mencionando:
 
 ---
 
-## Sección 2: Práctica - Criterios de Corrección
+## Sección 2: Práctica - Criterios de Calificación
 
-### Tarea 1: Conexiones Alámbricas (1 punto)
+### Tarea 1: Conexiones alámbricas (1 punto)
 **Respuestas esperadas (cualquier combinación de 3):**
 - ✅ **Ethernet IEEE 802.3 (Cat6/Cat6a)**: Alta velocidad, estándar empresarial.
 - ✅ **Fibra óptica (para backbone)**: Larga distancia, alta capacidad.
@@ -283,7 +278,7 @@ Realiza un **breve resumen** sobre los tipos de USB más comunes, mencionando:
 > **Notas para el profesor:**
 > - Imprimir en A4, doble cara recomendado.
 > - Tiempo estimado de realización: 45-60 minutos.
-> - Se puede permitir consulta de tabla de conectores si se desea evaluar solo aplicación práctica.
+> - Se puede permitir consulta de **tabla/mapa de conectores de referencia** si se desea evaluar solo aplicación práctica.
 > - Adaptar dificultad según nivel del grupo.
 
 ---
