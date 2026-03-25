@@ -1,8 +1,8 @@
-![Módulo](https://img.shields.io/badge/Módulo-Montaje_y_Mantenimiento_de_Equipos-red?style=for-the-badge)
-![Grupo](https://img.shields.io/badge/Grupo-SMR1-red?style=for-the-badge)
-![Profesor](https://img.shields.io/badge/Profesor-Ezequiel_Llarena_Borges-chocolate?style=for-the-badge)
+![Módulo](https://img.shields.io/badge/Módulo-Montaje_y_Mantenimiento_de_Equipos-brown?style=for-the-badge)
+![Grupo](https://img.shields.io/badge/Grupo-SMR1-brown?style=for-the-badge)
+![Profesor](https://img.shields.io/badge/Profesor-Ezequiel_Llarena_Borges-gray?style=for-the-badge)
 --  
-![issue](https://img.shields.io/badge/issue-Estándares_de_conexión_y_puertos-brown?style=for-the-badge)  
+![issue](https://img.shields.io/badge/issue-Estándares_de_conexión_y_puertos-blue?style=for-the-badge)  
 
 ```Actividad conceptual-práctica```  
 
