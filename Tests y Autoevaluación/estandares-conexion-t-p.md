@@ -179,7 +179,7 @@ Decide si usarías una conexión inalámbrica para que los dispositivos móviles
 | Versión USB | Velocidad máxima | Color conector | Uso recomendado |
 |-------------|------------------|-----------------|----------------|
 | USB 1.0/1.1 |  |  |  |
-| USB 2.0 |  |  | Periféricos básicos, memoria USB |
+| USB 2.0 |  |  |  |
 | USB 3.0/3.1 Gen 1 |  |  |  |
 | USB 3.1 Gen 2 |  |   | |
 | USB-C / USB4 |  |  |  |
