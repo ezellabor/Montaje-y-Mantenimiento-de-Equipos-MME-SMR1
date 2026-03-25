@@ -4,7 +4,7 @@
 
 ---
 
-## 📊 Comparativa General
+## Comparativa General
 
 | Tecnología | Estándar | Frecuencia | Alcance | Velocidad Máx. | Consumo | Uso Principal |
 |------------|----------|------------|---------|----------------|---------|---------------|
@@ -26,9 +26,9 @@
 
 ---
 
-## 🔍 Comparativa Detallada por Características
+## Comparativa detallada por Características
 
-### 📶 Velocidad vs Alcance
+### Velocidad vs Alcance
 
 | Categoría | Tecnología | Velocidad | Alcance | Relación |
 |-----------|------------|-----------|---------|----------|
@@ -39,7 +39,7 @@
 
 ---
 
-### 🔋 Consumo Energético
+### Consumo energético
 
 | Nivel de Consumo | Tecnologías | Batería Típica |
 |------------------|-------------|----------------|
@@ -52,9 +52,9 @@
 
 ---
 
-## 🎯 Casos de Uso por Sector
+## Casos de uso por sector
 
-### 🏠 Domótica (Smart Home)
+### Domótica (Smart Home)
 
 | Tecnología | Dispositivos Típicos | Ventajas | Desventajas |
 |------------|---------------------|----------|-------------|
@@ -65,7 +65,7 @@
 
 ---
 
-### 🏢 Empresarial/Industrial
+### Empresarial/Industrial
 
 | Tecnología | Aplicación | Por qué se usa |
 |------------|------------|----------------|
@@ -76,7 +76,7 @@
 
 ---
 
-### 📱 Móvil/Personal
+### Móvil/Personal
 
 | Tecnología | Uso | Característica Clave |
 |------------|-----|---------------------|
@@ -87,7 +87,7 @@
 
 ---
 
-## 📈 Comparativa de Costes
+## Comparativa de costes
 
 | Tecnología | Coste Hardware | Coste Infraestructura | Coste Operativo |
 |------------|----------------|----------------------|-----------------|
@@ -100,7 +100,7 @@
 
 ---
 
-## 🛡️ Seguridad Comparada
+## Seguridad 
 
 | Tecnología | Cifrado | Nivel Seguridad | Vulnerabilidades Comunes |
 |------------|---------|-----------------|-------------------------|
@@ -114,7 +114,7 @@
 
 ---
 
-## 🔄 Tabla de Decisión Rápida
+## Tabla de decisión 
 
 **¿Qué tecnología elegir?**
 
@@ -133,4 +133,4 @@
 
 ---
 
-## 📊 Resumen Visual de Espectro
+
