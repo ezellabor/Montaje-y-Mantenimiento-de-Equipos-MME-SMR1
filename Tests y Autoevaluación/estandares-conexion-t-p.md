@@ -89,9 +89,7 @@
 - [ ] C) IEEE 802.11ax (Wi-Fi 6/6E)
 - [ ] D) Bluetooth 5.0
 
----
-
-## ✅❌ Preguntas de Verdadero/Falso
+----
 
 **11. El puerto HDMI puede transmitir tanto video como audio.**
 
@@ -120,9 +118,9 @@
 
 ---
 
-# SECCIÓN 2: PRÁCTICA
+### SECCIÓN 2: PRÁCTICA
 
-## Supuesto práctico: Instalación de nueva oficina
+#### Supuesto práctico: Instalación de nueva oficina
 
 Eres el técnico de la instalación de una nueva oficina para una empresa de 20 empleados. Necesitas decidir qué **tipo de conexiones y puertos** utilizar para asegurarte de que:
 
