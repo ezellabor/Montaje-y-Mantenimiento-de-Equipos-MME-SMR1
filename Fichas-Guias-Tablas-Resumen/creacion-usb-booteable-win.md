@@ -5,7 +5,7 @@
   
 ## Creación de USB bootable con Windows
 
-# Índice
+# Indice
 
 1. [Objetivo](#1-objetivo)
 2. [Requisitos técnicos](#2-requisitos-técnicos)
