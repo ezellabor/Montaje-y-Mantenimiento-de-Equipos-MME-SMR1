@@ -106,6 +106,8 @@ Opción B:
 - Instala Windows PE (entorno de preinstalación).
 - Configura archivos BCD (Boot Configuration Data).
 
+[Enlace de referencia](https://www.xataka.com/basics/como-crear-usb-arranque-para-instalar-windows-11-cualquier-pc)
+
 ---
 
 ## 5. Método 2: ISO + Rufus
