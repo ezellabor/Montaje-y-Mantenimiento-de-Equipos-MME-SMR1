@@ -1,4 +1,4 @@
-## UT 9: Nuevas tendencias en equipos informáticos (Tabla comparativa)
+## UT 9: Nuevas tendencias en equipos informáticos  
 
 | Tendencia                | Qué es / En qué consiste                          | Ventajas principales                     | Ejemplos                         |
 |--------------------------|--------------------------------------------------|------------------------------------------|----------------------------------|
@@ -13,3 +13,48 @@
 
 ### Idea clave
 - Equipos más pequeños, eficientes, conectados y seguros
+
+---   
+
+## Trabajo individual  
+
+### Enunciado
+El alumnado deberá realizar un **trabajo individual** sobre las *nuevas tendencias en equipos informáticos*, correspondientes a la UT 9 del módulo de **Montaje y Mantenimiento de Equipos (MME)**.
+
+El trabajo deberá presentar de forma **clara y estructurada** los contenidos de la unidad de trabajo, incluyendo **definiciones y ejemplos prácticos.**
+
+---
+
+## Requisitos del trabajo
+- El trabajo debe ser **original** e **individual**  
+- Formato de entrega: **PDF**  
+- Extensión máxima: **10 páginas**  
+- Fecha límite de entrega: **15 de mayo (incluido)**
+- Se valorará la **capacidad de síntesis y claridad**  
+- No copiar información sin elaborar  
+
+---
+
+## Contenidos mínimos
+El trabajo deberá incluir al menos 5 de los siguientes puntos:
+- Miniaturización  
+- Movilidad  
+- Eficiencia energética  
+- Virtualización  
+- Cloud Computing  
+- Internet de las Cosas (IoT)  
+- Almacenamiento moderno (SSD vs HDD)  
+- Seguridad en equipos informáticos  
+
+---
+
+## Criterios de evaluación
+- Claridad y organización del contenido  
+- Corrección técnica  
+- Uso de ejemplos  
+- Presentación y formato  
+
+---
+
+## Entrega
+El trabajo deberá subirse en formato PDF a través del aula virtual del curso.
