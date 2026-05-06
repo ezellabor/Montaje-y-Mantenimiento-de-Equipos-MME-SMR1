@@ -1,5 +1,6 @@
 ## RA6 - Nuevas tendencias en equipos informáticos  
 
+
 | Tendencia | Qué es / En qué consiste      | Ejemplos     | Ventajas     |
 |-----------|-------------------------------|--------------|--------------|
 | **Miniaturización** | Equipos más pequeños y compactos | `Raspberry Pi, mini PC, ultrabooks` | *Ahorro de espacio y menor consumo* |
