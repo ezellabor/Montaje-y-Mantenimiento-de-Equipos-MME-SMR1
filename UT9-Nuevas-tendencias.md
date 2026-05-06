@@ -12,7 +12,7 @@
 | Seguridad                | Protección de sistemas y datos                   | Prevención de ataques y pérdidas         | Antivirus, firewall, cifrado     |
 
 ### Idea clave
-- Equipos más pequeños, eficientes, conectados y seguros
+- Equipos → más pequeños, más rápidos, más conectados, más seguros y más eficientes
 
 ---   
 
