@@ -33,7 +33,7 @@ El trabajo deberá presentar de forma **clara y estructurada** los contenidos de
 - Extensión máxima: **10 páginas**  
 - Fecha límite de entrega: **15 de mayo (incluido)**
 - Se valorará la **capacidad de síntesis y claridad**  
-- No copiar información sin elaborar  
+- **No copiar** información sin elaborar  
 
 ---
 
