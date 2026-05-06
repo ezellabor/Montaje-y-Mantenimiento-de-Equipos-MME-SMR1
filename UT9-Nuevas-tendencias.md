@@ -1,4 +1,4 @@
-## UT 9: Nuevas tendencias en equipos informáticos  
+## RA6 - Nuevas tendencias en equipos informáticos  
 
 | Tendencia                | Qué es / En qué consiste                          | Ventajas principales                     | Ejemplos                         |
 |--------------------------|--------------------------------------------------|------------------------------------------|----------------------------------|
