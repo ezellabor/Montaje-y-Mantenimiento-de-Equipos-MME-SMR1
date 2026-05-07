@@ -32,7 +32,7 @@ El trabajo deberá presentar de forma **clara y estructurada** los contenidos de
 - El trabajo debe ser **original** e **individual**  
 - Formato de entrega: **PDF**  
 - Extensión máxima: **10 páginas**  
-- Fecha límite de entrega: **15 de mayo (incluido)**
+- Fecha límite de entrega: **17 de mayo (incluido)**
 - Se valorará la **capacidad de síntesis y claridad**  
 - **No copiar** información sin elaborar  
 
