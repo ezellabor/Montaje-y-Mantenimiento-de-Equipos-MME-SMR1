@@ -1,4 +1,3 @@
-# IES JUAN DE LA CIERVA (MADRID)
 ## Guía Integral de Tutoría: Itinerario, Funciones y Régimen de Asistencia en FP
 
 - **Curso Académico:** 2026-2027
