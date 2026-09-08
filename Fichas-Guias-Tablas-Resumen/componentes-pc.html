@@ -1,0 +1,263 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Componentes principales de un PC · MME 1º SMR</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@500;600;700&family=IBM+Plex+Sans:wght@400;500;600&family=IBM+Plex+Mono:wght@400;500;600&display=swap" rel="stylesheet">
+<style>
+  :root{
+    --bg:#10161d; --panel:#1a222b; --panel-alt:#212b35;
+    --border:#2c3742; --border-soft:#232d37;
+    --text:#e7edf2; --text-dim:#8fa0ac;
+    --copper:#c17f4a; --copper-bright:#e5a86e;
+    --mint:#5fae8c; --mint-bright:#7ecba7;
+    --radius:3px;
+    --font-head:'Space Grotesk', sans-serif;
+    --font-body:'IBM Plex Sans', sans-serif;
+    --font-mono:'IBM Plex Mono', monospace;
+  }
+  *{box-sizing:border-box;}
+  body{
+    margin:0;background:var(--bg);color:var(--text);font-family:var(--font-body);line-height:1.55;
+    background-image:linear-gradient(var(--border-soft) 1px, transparent 1px),linear-gradient(90deg, var(--border-soft) 1px, transparent 1px);
+    background-size:28px 28px;background-attachment:fixed;
+  }
+  h1,h2,h3{font-family:var(--font-head);font-weight:600;margin:0 0 .3em;}
+  p{margin:0 0 .7em;}
+  .mono{font-family:var(--font-mono);}
+  .dim{color:var(--text-dim);}
+  ::selection{background:var(--copper);color:#10161d;}
+
+  header.top{padding:26px 24px 20px;max-width:1180px;margin:0 auto;border-bottom:1px solid var(--border);}
+  header.top .eyebrow{font-family:var(--font-mono);font-size:12.5px;color:var(--copper-bright);margin-bottom:8px;}
+  header.top h1{font-size:clamp(24px,3.6vw,34px);max-width:20ch;}
+  header.top p.lede{color:var(--text-dim);max-width:60ch;font-size:14.5px;}
+
+  .wrap{max-width:1180px;margin:0 auto;padding:32px 24px 80px;}
+
+  .layout{display:grid;grid-template-columns:1.15fr .85fr;gap:26px;align-items:start;margin-bottom:52px;}
+  @media (max-width:880px){ .layout{grid-template-columns:1fr;} }
+
+  .diagram-box{
+    background:var(--panel);border:1px solid var(--border);border-radius:var(--radius);
+    padding:18px;position:sticky;top:20px;
+  }
+  .diagram-box .cap{font-family:var(--font-mono);font-size:11.5px;color:var(--text-dim);margin-bottom:8px;}
+  svg#pc-diagram{width:100%;height:auto;display:block;}
+  .hotspot{cursor:pointer;transition:opacity .15s;}
+  .hotspot .shape{fill:var(--panel-alt);stroke:var(--border);stroke-width:2;transition:stroke .15s, fill .15s;}
+  .hotspot:hover .shape{stroke:var(--copper-bright);}
+  .hotspot.active .shape{stroke:var(--mint-bright);fill:rgba(95,174,140,.14);}
+  .badge-circle{fill:#0d1116;stroke:var(--border);stroke-width:1.5;}
+  .hotspot:hover .badge-circle, .hotspot.active .badge-circle{stroke:var(--copper-bright);}
+  .hotspot.active .badge-circle{stroke:var(--mint-bright);}
+  .badge-text{font-family:var(--font-mono);font-size:12px;fill:var(--text);text-anchor:middle;dominant-baseline:central;}
+  .diagram-label{font-family:var(--font-mono);font-size:10.5px;fill:var(--text-dim);}
+
+  .detail-panel{
+    background:var(--panel);border:1px solid var(--border);border-radius:var(--radius);
+    padding:22px;min-height:340px;position:sticky;top:20px;
+  }
+  .detail-panel .num{
+    display:inline-flex;align-items:center;justify-content:center;width:26px;height:26px;
+    border:1px solid var(--copper);border-radius:50%;font-family:var(--font-mono);font-size:12.5px;
+    color:var(--copper-bright);margin-right:10px;flex-shrink:0;
+  }
+  .detail-head{display:flex;align-items:center;margin-bottom:6px;}
+  .detail-panel h3{font-size:19px;margin:0;}
+  .detail-fn{color:var(--text-dim);font-size:12.5px;font-family:var(--font-mono);margin-bottom:14px;}
+  .detail-panel .body p{font-size:14px;}
+  .spec-list{list-style:none;margin:14px 0 0;padding:0;}
+  .spec-list li{
+    display:flex;gap:8px;padding:8px 0;border-top:1px solid var(--border-soft);font-size:13.3px;
+  }
+  .spec-list li:first-child{border-top:none;}
+  .spec-list b{color:var(--copper-bright);font-family:var(--font-mono);font-size:11.5px;min-width:110px;flex-shrink:0;font-weight:500;}
+  .detail-empty{color:var(--text-dim);font-size:14px;padding-top:60px;text-align:center;}
+
+  .grid-title{font-family:var(--font-mono);font-size:12.5px;color:var(--text-dim);margin:0 0 16px;letter-spacing:.04em;}
+  .cards-grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(230px,1fr));gap:14px;}
+  .card{
+    background:var(--panel);border:1px solid var(--border);border-radius:var(--radius);
+    padding:16px 17px;cursor:pointer;transition:border-color .15s;
+  }
+  .card:hover{border-color:var(--copper);}
+  .card.active{border-color:var(--mint-bright);background:var(--panel-alt);}
+  .card .ch{display:flex;align-items:center;gap:9px;margin-bottom:6px;}
+  .card .num{
+    width:22px;height:22px;flex-shrink:0;border:1px solid var(--border);border-radius:50%;
+    display:flex;align-items:center;justify-content:center;font-family:var(--font-mono);font-size:11px;color:var(--text-dim);
+  }
+  .card.active .num{border-color:var(--mint-bright);color:var(--mint-bright);}
+  .card h4{margin:0;font-family:var(--font-head);font-size:14.5px;font-weight:600;}
+  .card p{font-size:12.5px;color:var(--text-dim);margin:0;}
+
+  footer{text-align:center;padding:30px 20px 46px;color:var(--text-dim);font-size:12.5px;font-family:var(--font-mono);border-top:1px solid var(--border);}
+</style>
+</head>
+<body>
+
+<header class="top">
+  <div class="eyebrow">// referencia rápida — identificación de hardware</div>
+  <h1>Componentes principales de un PC</h1>
+  <p class="lede">Toca cualquier número del esquema, o una tarjeta de la lista, para ver qué es cada componente, qué función cumple y sus características clave.</p>
+</header>
+
+<div class="wrap">
+
+  <div class="layout">
+    <div class="diagram-box">
+      <div class="cap">esquema — vista de caja abierta</div>
+      <svg id="pc-diagram" viewBox="0 0 640 480" xmlns="http://www.w3.org/2000/svg">
+        <!-- Case outline -->
+        <rect x="12" y="12" width="616" height="456" rx="6" fill="none" stroke="#2c3742" stroke-width="2"/>
+        <text x="26" y="34" class="diagram-label">CAJA / CHASIS</text>
+
+        <!-- PSU (top-right) -->
+        <g class="hotspot" data-id="psu">
+          <rect class="shape" x="470" y="34" width="130" height="80" rx="2"/>
+          <text x="535" y="60" class="diagram-label" text-anchor="middle">FUENTE DE</text>
+          <text x="535" y="74" class="diagram-label" text-anchor="middle">ALIMENTACIÓN</text>
+          <circle class="badge-circle" cx="600" cy="46" r="12"/>
+          <text x="600" y="47" class="badge-text">6</text>
+        </g>
+
+        <!-- Motherboard (large right panel) -->
+        <g class="hotspot" data-id="mobo">
+          <rect class="shape" x="330" y="130" width="270" height="300" rx="2"/>
+          <text x="345" y="150" class="diagram-label">PLACA BASE</text>
+          <circle class="badge-circle" cx="588" cy="142" r="12"/>
+          <text x="588" y="143" class="badge-text">1</text>
+        </g>
+
+        <!-- CPU + cooler on motherboard -->
+        <g class="hotspot" data-id="cpu">
+          <rect class="shape" x="360" y="170" width="70" height="70" rx="2"/>
+          <circle cx="395" cy="205" r="26" fill="none" stroke="#2c3742" stroke-width="2"/>
+          <circle class="badge-circle" cx="360" cy="164" r="12"/>
+          <text x="360" y="165" class="badge-text">2</text>
+        </g>
+
+        <!-- RAM sticks -->
+        <g class="hotspot" data-id="ram">
+          <rect class="shape" x="450" y="165" width="16" height="90" rx="1"/>
+          <rect class="shape" x="474" y="165" width="16" height="90" rx="1"/>
+          <circle class="badge-circle" cx="490" cy="158" r="12"/>
+          <text x="490" y="159" class="badge-text">3</text>
+        </g>
+
+        <!-- GPU slotted below CPU -->
+        <g class="hotspot" data-id="gpu">
+          <rect class="shape" x="345" y="270" width="220" height="46" rx="2"/>
+          <text x="358" y="298" class="diagram-label">TARJETA GRÁFICA</text>
+          <circle class="badge-circle" cx="565" cy="264" r="12"/>
+          <text x="565" y="265" class="badge-text">5</text>
+        </g>
+
+        <!-- Cooling fans on case -->
+        <g class="hotspot" data-id="cooling">
+          <circle class="shape" cx="80" cy="90" r="34"/>
+          <circle class="shape" cx="80" cy="330" r="34"/>
+          <circle class="badge-circle" cx="112" cy="66" r="12"/>
+          <text x="112" y="67" class="badge-text">7</text>
+        </g>
+
+        <!-- Storage bay -->
+        <g class="hotspot" data-id="storage">
+          <rect class="shape" x="40" y="150" width="150" height="130" rx="2"/>
+          <text x="52" y="172" class="diagram-label">ALMACENAMIENTO</text>
+          <rect x="52" y="190" width="126" height="26" rx="1" fill="none" stroke="#2c3742" stroke-width="1.5"/>
+          <rect x="52" y="224" width="126" height="26" rx="1" fill="none" stroke="#2c3742" stroke-width="1.5"/>
+          <circle class="badge-circle" cx="178" cy="156" r="12"/>
+          <text x="178" y="157" class="badge-text">4</text>
+        </g>
+
+        <!-- Front panel I/O -->
+        <g class="hotspot" data-id="io">
+          <rect class="shape" x="40" y="400" width="150" height="46" rx="2"/>
+          <text x="52" y="428" class="diagram-label">PANEL FRONTAL / E-S</text>
+          <circle class="badge-circle" cx="178" cy="394" r="12"/>
+          <text x="178" y="395" class="badge-text">8</text>
+        </g>
+
+        <!-- Case itself as a hotspot label (bottom left corner marker) -->
+        <g class="hotspot" data-id="case">
+          <circle class="badge-circle" cx="30" cy="450" r="12"/>
+          <text x="30" y="451" class="badge-text">9</text>
+        </g>
+      </svg>
+    </div>
+
+    <div class="detail-panel" id="detail-panel">
+      <div class="detail-empty">Selecciona un componente del esquema o de la lista para ver su ficha aquí.</div>
+    </div>
+  </div>
+
+  <p class="grid-title">TODOS LOS COMPONENTES — VISTA DE LISTA</p>
+  <div class="cards-grid" id="cards-grid"></div>
+
+</div>
+
+<footer>IES Juan de la Cierva · Módulo MME · 1º Sistemas Microinformáticos y Redes</footer>
+
+<script>
+const COMPONENTS = [
+  {id:'mobo', num:1, name:'Placa base', fn:'Backbone del sistema',
+   desc:'Es el circuito impreso principal: conecta e interconecta todos los demás componentes (CPU, RAM, almacenamiento, tarjetas de expansión y fuente de alimentación) a través de sus buses y conectores.',
+   specs:[['Formato','ATX, micro-ATX, Mini-ITX'],['Zócalo','Debe coincidir con el de la CPU'],['Chipset','Gestiona la comunicación entre bloques'],['Slots','PCIe para expansión, DIMM para RAM']]},
+  {id:'cpu', num:2, name:'CPU (procesador)', fn:'Unidad central de procesamiento',
+   desc:'Ejecuta las instrucciones de los programas. Contiene la unidad de control (UC), la unidad aritmético-lógica (ALU) y los registros. Necesita un sistema de refrigeración adecuado a su disipación térmica.',
+   specs:[['Arquitectura','x86-64, ARM'],['Núcleos / hilos','A más núcleos, más tareas en paralelo'],['Caché','Memoria ultrarrápida integrada (L1/L2/L3)'],['TDP','Calor a disipar, en vatios']]},
+  {id:'ram', num:3, name:'Memoria RAM', fn:'Memoria de trabajo, volátil',
+   desc:'Almacena temporalmente los datos y programas que la CPU está usando en cada momento. Es mucho más rápida que el almacenamiento, pero pierde su contenido al apagar el equipo.',
+   specs:[['Tipo','DDR4, DDR5 (según la placa)'],['Velocidad','En MT/s'],['Latencia','CL — cuanto menor, mejor'],['Canal','Dual/Quad Channel mejora el ancho de banda']]},
+  {id:'storage', num:4, name:'Almacenamiento', fn:'Memoria permanente',
+   desc:'Guarda el sistema operativo, los programas y los archivos de forma no volátil. Puede ser mecánico (HDD) o de estado sólido (SSD/M.2), con grandes diferencias de velocidad entre ambos.',
+   specs:[['HDD','Mayor capacidad/precio, partes móviles'],['SSD / M.2 NVMe','Mucha más velocidad, sin partes móviles'],['Interfaz','SATA o PCIe (M.2/NVMe)'],['Particiones','MBR (heredado) o GPT (moderno, UEFI)']]},
+  {id:'gpu', num:5, name:'Tarjeta gráfica', fn:'Procesamiento de imagen',
+   desc:'Genera la imagen que se envía al monitor. Puede estar integrada en la CPU/placa o ser una tarjeta dedicada, especialmente relevante en diseño, vídeo, juegos o cálculo intensivo (IA).',
+   specs:[['Conexión','PCIe x16'],['Alimentación','Puede requerir conectores extra de la PSU'],['Fabricantes','NVIDIA, AMD, Intel'],['Uso extra','Coprocesador para cálculo (IA, renderizado)']]},
+  {id:'psu', num:6, name:'Fuente de alimentación (PSU)', fn:'Suministro eléctrico',
+   desc:'Convierte la corriente alterna de la red en las tensiones continuas que necesita el equipo (+3.3V, +5V, +12V), repartidas en distintos raíles según el componente.',
+   specs:[['Tensiones típicas','+3.3V, +5V, +12V'],['Eficiencia','Certificación 80 Plus'],['Potencia','Debe cubrir el consumo de todos los componentes'],['Modularidad','Cableado fijo, semi-modular o modular']]},
+  {id:'cooling', num:7, name:'Refrigeración', fn:'Control de temperatura',
+   desc:'Disipadores, ventiladores o sistemas líquidos que evacúan el calor generado por CPU, GPU y el resto del sistema, evitando el sobrecalentamiento y las averías asociadas.',
+   specs:[['Aire','Disipador + ventilador, la más común'],['Líquida','Mayor capacidad de disipación'],['Flujo de aire','Entrada/salida bien orientadas en la caja'],['Mantenimiento','Limpieza de polvo y renovación de pasta térmica']]},
+  {id:'io', num:8, name:'Panel frontal / E-S', fn:'Conexión con el exterior',
+   desc:'Puertos y conectores accesibles del equipo (USB, audio, botón de encendido, LEDs) que se cablean a la placa base durante el montaje.',
+   specs:[['Cables típicos','Power SW, Reset, LED, USB, Audio HD'],['Conexión','Cabezales específicos en la placa base'],['Función','Encendido, indicadores y puertos de uso frecuente']]},
+  {id:'case', num:9, name:'Caja / chasis', fn:'Estructura y ventilación',
+   desc:'Aloja y protege físicamente todos los componentes. Su formato debe ser compatible con el de la placa base, y su diseño condiciona el flujo de aire y, por tanto, las temperaturas del sistema.',
+   specs:[['Formato','Debe coincidir con el de la placa base'],['Ventilación','Determina el flujo de aire interno'],['Personalización','El "modding" lleva su estética más allá de lo funcional']]}
+];
+
+const cardsGrid = document.getElementById('cards-grid');
+cardsGrid.innerHTML = COMPONENTS.map(c=>`
+  <div class="card" data-id="${c.id}" onclick="selectComponent('${c.id}')">
+    <div class="ch"><div class="num">${c.num}</div><h4>${c.name}</h4></div>
+    <p>${c.fn}</p>
+  </div>`).join('');
+
+const detailPanel = document.getElementById('detail-panel');
+function selectComponent(id){
+  const c = COMPONENTS.find(x=>x.id===id);
+  if(!c) return;
+  document.querySelectorAll('.hotspot').forEach(h=>h.classList.toggle('active', h.dataset.id===id));
+  document.querySelectorAll('.card').forEach(cd=>cd.classList.toggle('active', cd.dataset.id===id));
+  detailPanel.innerHTML = `
+    <div class="detail-head"><div class="num">${c.num}</div><h3>${c.name}</h3></div>
+    <div class="detail-fn">${c.fn}</div>
+    <div class="body"><p>${c.desc}</p></div>
+    <ul class="spec-list">${c.specs.map(s=>`<li><b>${s[0]}</b><span>${s[1]}</span></li>`).join('')}</ul>
+  `;
+}
+
+document.querySelectorAll('.hotspot').forEach(h=>{
+  h.addEventListener('click', ()=>selectComponent(h.dataset.id));
+});
+</script>
+</body>
+</html>

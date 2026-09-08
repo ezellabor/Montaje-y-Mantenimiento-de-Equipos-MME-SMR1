@@ -1,0 +1,577 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Componentes principales de un PC · MME 1º SMR</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@500;600;700&family=IBM+Plex+Sans:wght@400;500;600&family=IBM+Plex+Mono:wght@400;500;600&display=swap" rel="stylesheet">
+<style>
+  :root{
+    --bg:#10161d; --panel:#1a222b; --panel-alt:#212b35;
+    --border:#2c3742; --border-soft:#232d37;
+    --text:#e7edf2; --text-dim:#8fa0ac;
+    --copper:#c17f4a; --copper-bright:#e5a86e;
+    --mint:#5fae8c; --mint-bright:#7ecba7;
+    --red:#c1614a;
+    --radius:3px;
+    --font-head:'Space Grotesk', sans-serif;
+    --font-body:'IBM Plex Sans', sans-serif;
+    --font-mono:'IBM Plex Mono', monospace;
+  }
+  *{box-sizing:border-box;}
+  body{
+    margin:0;background:var(--bg);color:var(--text);font-family:var(--font-body);line-height:1.55;
+    background-image:linear-gradient(var(--border-soft) 1px, transparent 1px),linear-gradient(90deg, var(--border-soft) 1px, transparent 1px);
+    background-size:28px 28px;background-attachment:fixed;
+  }
+  h1,h2,h3{font-family:var(--font-head);font-weight:600;margin:0 0 .3em;}
+  p{margin:0 0 .7em;}
+  .mono{font-family:var(--font-mono);}
+  .dim{color:var(--text-dim);}
+  ::selection{background:var(--copper);color:#10161d;}
+  button{font-family:inherit;}
+
+  header.top{padding:26px 24px 20px;max-width:1180px;margin:0 auto;border-bottom:1px solid var(--border);}
+  header.top .eyebrow{font-family:var(--font-mono);font-size:12.5px;color:var(--copper-bright);margin-bottom:8px;}
+  header.top h1{font-size:clamp(24px,3.6vw,34px);max-width:24ch;}
+  header.top p.lede{color:var(--text-dim);max-width:64ch;font-size:14.5px;}
+
+  .wrap{max-width:1180px;margin:0 auto;padding:32px 24px 80px;}
+
+  /* ---------- LIST VIEW ---------- */
+  .layout{display:grid;grid-template-columns:1.15fr .85fr;gap:26px;align-items:start;margin-bottom:52px;}
+  @media (max-width:880px){ .layout{grid-template-columns:1fr;} }
+
+  .diagram-box{
+    background:var(--panel);border:1px solid var(--border);border-radius:var(--radius);
+    padding:18px;position:sticky;top:20px;
+  }
+  .diagram-box .cap{font-family:var(--font-mono);font-size:11.5px;color:var(--text-dim);margin-bottom:8px;}
+  .legend{display:flex;gap:16px;flex-wrap:wrap;margin-top:10px;font-size:11px;font-family:var(--font-mono);color:var(--text-dim);}
+  .legend span{display:inline-flex;align-items:center;gap:6px;}
+  .legend i{width:14px;height:2px;display:inline-block;}
+  .legend i.solid{background:var(--border);}
+  .legend i.bus{background:var(--copper-bright);border-top:2px dashed var(--copper-bright);height:0;}
+  svg#pc-diagram{width:100%;height:auto;display:block;}
+  .hotspot{cursor:pointer;}
+  .hotspot .shape{fill:var(--panel-alt);stroke:var(--border);stroke-width:2;transition:stroke .15s, fill .15s;}
+  .hotspot:hover .shape{stroke:var(--copper-bright);}
+  .hotspot.active .shape{stroke:var(--mint-bright);fill:rgba(95,174,140,.14);}
+  .bus-line{fill:none;stroke:var(--copper);stroke-width:2;stroke-dasharray:5 4;transition:stroke .15s;}
+  .hotspot:hover .bus-line{stroke:var(--copper-bright);}
+  .hotspot.active .bus-line{stroke:var(--mint-bright);}
+  .bus-hit{fill:none;stroke:transparent;stroke-width:16;}
+  .badge-circle{fill:#0d1116;stroke:var(--border);stroke-width:1.5;}
+  .hotspot:hover .badge-circle{stroke:var(--copper-bright);}
+  .hotspot.active .badge-circle{stroke:var(--mint-bright);}
+  .badge-text{font-family:var(--font-mono);font-size:11.5px;fill:var(--text);text-anchor:middle;dominant-baseline:central;}
+  .diagram-label{font-family:var(--font-mono);font-size:10px;fill:var(--text-dim);}
+  .chip-block{fill:none;stroke:#3a4650;stroke-width:1.5;stroke-dasharray:3 3;}
+
+  .detail-panel{
+    background:var(--panel);border:1px solid var(--border);border-radius:var(--radius);
+    padding:22px;min-height:340px;position:sticky;top:20px;
+  }
+  .detail-panel .num{
+    display:inline-flex;align-items:center;justify-content:center;width:26px;height:26px;
+    border:1px solid var(--copper);border-radius:50%;font-family:var(--font-mono);font-size:12.5px;
+    color:var(--copper-bright);margin-right:10px;flex-shrink:0;
+  }
+  .detail-head{display:flex;align-items:center;margin-bottom:6px;}
+  .detail-panel h3{font-size:19px;margin:0;}
+  .detail-fn{color:var(--text-dim);font-size:12.5px;font-family:var(--font-mono);margin-bottom:14px;}
+  .detail-panel .body p{font-size:14px;}
+  .spec-list{list-style:none;margin:14px 0 0;padding:0;}
+  .spec-list li{display:flex;gap:8px;padding:8px 0;border-top:1px solid var(--border-soft);font-size:13.3px;}
+  .spec-list li:first-child{border-top:none;}
+  .spec-list b{color:var(--copper-bright);font-family:var(--font-mono);font-size:11.5px;min-width:110px;flex-shrink:0;font-weight:500;}
+  .detail-empty{color:var(--text-dim);font-size:14px;padding-top:60px;text-align:center;}
+  .full-link{
+    display:inline-block;margin-top:16px;font-family:var(--font-mono);font-size:12.5px;
+    color:var(--mint-bright);text-decoration:none;border:1px solid var(--border);padding:8px 14px;border-radius:var(--radius);
+  }
+  .full-link:hover{border-color:var(--mint-bright);}
+
+  .grid-title{font-family:var(--font-mono);font-size:12.5px;color:var(--text-dim);margin:26px 0 16px;letter-spacing:.04em;}
+  .cards-grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(230px,1fr));gap:14px;}
+  .card{
+    background:var(--panel);border:1px solid var(--border);border-radius:var(--radius);
+    padding:16px 17px;cursor:pointer;transition:border-color .15s;
+  }
+  .card:hover{border-color:var(--copper);}
+  .card .ch{display:flex;align-items:center;gap:9px;margin-bottom:6px;}
+  .card .num{
+    width:22px;height:22px;flex-shrink:0;border:1px solid var(--border);border-radius:50%;
+    display:flex;align-items:center;justify-content:center;font-family:var(--font-mono);font-size:11px;color:var(--text-dim);
+  }
+  .card h4{margin:0;font-family:var(--font-head);font-size:14.5px;font-weight:600;}
+  .card p{font-size:12.5px;color:var(--text-dim);margin:0;}
+  .card .thumb-count{font-family:var(--font-mono);font-size:10.5px;color:var(--mint-bright);margin-top:8px;}
+
+  /* ---------- DETAIL PAGE (dedicated) ---------- */
+  #view-detail{display:none;}
+  #view-detail.show{display:block;}
+  #view-list.hide{display:none;}
+  .back-link{
+    display:inline-flex;align-items:center;gap:6px;font-family:var(--font-mono);font-size:12.5px;
+    color:var(--text-dim);text-decoration:none;margin-bottom:22px;border:1px solid var(--border);
+    padding:8px 14px;border-radius:var(--radius);background:none;cursor:pointer;
+  }
+  .back-link:hover{color:var(--copper-bright);border-color:var(--copper);}
+  .page-head{display:flex;align-items:center;gap:14px;margin-bottom:6px;flex-wrap:wrap;}
+  .page-head .num{
+    display:inline-flex;align-items:center;justify-content:center;width:38px;height:38px;
+    border:1.5px solid var(--copper);border-radius:50%;font-family:var(--font-mono);font-size:15px;color:var(--copper-bright);flex-shrink:0;
+  }
+  .page-head h2{font-size:26px;margin:0;}
+  .page-fn{font-family:var(--font-mono);font-size:13px;color:var(--mint-bright);margin-bottom:26px;}
+  .page-cols{display:grid;grid-template-columns:1.3fr 1fr;gap:30px;align-items:start;}
+  @media (max-width:820px){ .page-cols{grid-template-columns:1fr;} }
+  .page-desc p{font-size:15px;max-width:66ch;}
+  .page-specs{
+    background:var(--panel);border:1px solid var(--border);border-radius:var(--radius);padding:20px 22px;
+  }
+  .page-specs h4{font-family:var(--font-mono);font-size:11.5px;color:var(--text-dim);letter-spacing:.04em;margin:0 0 12px;}
+
+  .photo-section{margin-top:34px;}
+  .photo-section h4{font-family:var(--font-mono);font-size:11.5px;color:var(--text-dim);letter-spacing:.04em;margin-bottom:14px;}
+  .photo-grid{display:grid;grid-template-columns:repeat(auto-fill,minmax(140px,1fr));gap:12px;margin-bottom:16px;}
+  .photo-item{position:relative;border-radius:var(--radius);overflow:hidden;border:1px solid var(--border);background:var(--panel);aspect-ratio:4/3;}
+  .photo-item img{width:100%;height:100%;object-fit:cover;display:block;}
+  .photo-item .rm{
+    position:absolute;top:5px;right:5px;width:22px;height:22px;border-radius:50%;
+    background:rgba(13,17,22,.85);border:1px solid var(--border);color:var(--text);
+    display:flex;align-items:center;justify-content:center;cursor:pointer;font-size:13px;line-height:1;
+  }
+  .photo-item .rm:hover{border-color:var(--red);color:var(--red);}
+  .photo-empty{
+    border:1px dashed var(--border);border-radius:var(--radius);padding:22px;text-align:center;
+    color:var(--text-dim);font-size:13px;margin-bottom:16px;
+  }
+  .upload-row{display:flex;align-items:center;gap:12px;flex-wrap:wrap;}
+  .upload-btn{
+    display:inline-flex;align-items:center;gap:8px;background:var(--copper);color:#10161d;border:none;
+    padding:9px 16px;border-radius:var(--radius);font-family:var(--font-head);font-weight:600;font-size:13px;cursor:pointer;
+  }
+  .upload-btn:hover{background:var(--copper-bright);}
+  .upload-note{font-size:11.8px;color:var(--text-dim);}
+  .upload-warning{font-size:12.3px;color:var(--red);margin-top:8px;display:none;}
+  .upload-warning.show{display:block;}
+
+  footer{text-align:center;padding:30px 20px 46px;color:var(--text-dim);font-size:12.5px;font-family:var(--font-mono);border-top:1px solid var(--border);}
+</style>
+</head>
+<body>
+
+<header class="top">
+  <div class="eyebrow">// referencia rápida — identificación de hardware</div>
+  <h1>Componentes principales de un PC</h1>
+  <p class="lede">Toca cualquier número del esquema, o una tarjeta de la lista, para ver qué es cada componente, cómo se comunica con el resto del sistema y sus características clave. Incluye los buses de comunicación entre CPU, chipset y memoria, y la BIOS/UEFI.</p>
+</header>
+
+<div class="wrap">
+
+  <div id="view-list">
+    <div class="layout">
+      <div class="diagram-box">
+        <div class="cap">esquema — vista de caja abierta</div>
+        <svg id="pc-diagram" viewBox="0 0 640 480" xmlns="http://www.w3.org/2000/svg">
+          <rect x="12" y="12" width="616" height="456" rx="6" fill="none" stroke="#2c3742" stroke-width="2"/>
+          <text x="26" y="34" class="diagram-label">CAJA / CHASIS</text>
+
+          <!-- PSU -->
+          <g class="hotspot" data-id="psu">
+            <rect class="shape" x="470" y="34" width="130" height="80" rx="2"/>
+            <text x="535" y="60" class="diagram-label" text-anchor="middle">FUENTE DE</text>
+            <text x="535" y="74" class="diagram-label" text-anchor="middle">ALIMENTACIÓN</text>
+            <circle class="badge-circle" cx="600" cy="46" r="12"/>
+            <text x="600" y="47" class="badge-text">6</text>
+          </g>
+
+          <!-- Motherboard -->
+          <g class="hotspot" data-id="mobo">
+            <rect class="shape" x="330" y="130" width="270" height="300" rx="2"/>
+            <text x="345" y="150" class="diagram-label">PLACA BASE</text>
+            <circle class="badge-circle" cx="588" cy="142" r="12"/>
+            <text x="588" y="143" class="badge-text">1</text>
+          </g>
+
+          <!-- Chipset (visual anchor, part of mobo) -->
+          <rect class="chip-block" x="478" y="325" width="92" height="55" rx="2"/>
+          <text x="486" y="356" class="diagram-label">CHIPSET</text>
+
+          <!-- BIOS chip -->
+          <g class="hotspot" data-id="bios">
+            <rect class="shape" x="340" y="335" width="46" height="26" rx="2"/>
+            <text x="345" y="352" class="diagram-label" style="font-size:8.5px">BIOS</text>
+            <circle class="badge-circle" cx="340" cy="329" r="12"/>
+            <text x="340" y="330" class="badge-text">10</text>
+          </g>
+
+          <!-- CPU -->
+          <g class="hotspot" data-id="cpu">
+            <rect class="shape" x="360" y="170" width="70" height="70" rx="2"/>
+            <circle cx="395" cy="205" r="26" fill="none" stroke="#2c3742" stroke-width="2"/>
+            <circle class="badge-circle" cx="360" cy="164" r="12"/>
+            <text x="360" y="165" class="badge-text">2</text>
+          </g>
+
+          <!-- Internal buses (data/address/control) -->
+          <g class="hotspot" data-id="bus-internal">
+            <path class="bus-line" d="M368 178 h24 M368 186 h24 M368 194 h24"/>
+            <path class="bus-hit" d="M355 170 h50 v34 h-50 z" opacity="0"/>
+            <circle class="badge-circle" cx="440" cy="180" r="12"/>
+            <text x="440" y="181" class="badge-text">11</text>
+          </g>
+
+          <!-- RAM -->
+          <g class="hotspot" data-id="ram">
+            <rect class="shape" x="450" y="165" width="16" height="90" rx="1"/>
+            <rect class="shape" x="474" y="165" width="16" height="90" rx="1"/>
+            <circle class="badge-circle" cx="490" cy="158" r="12"/>
+            <text x="490" y="159" class="badge-text">3</text>
+          </g>
+
+          <!-- Memory bus -->
+          <g class="hotspot" data-id="bus-memory">
+            <path class="bus-line" d="M430 205 L450 205"/>
+            <path class="bus-hit" d="M430 205 L450 205"/>
+            <circle class="badge-circle" cx="440" cy="222" r="12"/>
+            <text x="440" y="223" class="badge-text">13</text>
+          </g>
+
+          <!-- CPU-Chipset bus (FSB/DMI) -->
+          <g class="hotspot" data-id="bus-fsb">
+            <path class="bus-line" d="M400 240 L500 325"/>
+            <path class="bus-hit" d="M400 240 L500 325"/>
+            <circle class="badge-circle" cx="463" cy="288" r="12"/>
+            <text x="463" y="289" class="badge-text">12</text>
+          </g>
+
+          <!-- GPU -->
+          <g class="hotspot" data-id="gpu">
+            <rect class="shape" x="345" y="270" width="220" height="46" rx="2"/>
+            <text x="358" y="298" class="diagram-label">TARJETA GRÁFICA</text>
+            <circle class="badge-circle" cx="565" cy="264" r="12"/>
+            <text x="565" y="265" class="badge-text">5</text>
+          </g>
+
+          <!-- PCIe bus -->
+          <g class="hotspot" data-id="bus-pcie">
+            <path class="bus-line" d="M500 325 L470 316"/>
+            <path class="bus-hit" d="M500 325 L470 316"/>
+            <circle class="badge-circle" cx="510" cy="305" r="12"/>
+            <text x="510" y="306" class="badge-text">14</text>
+          </g>
+
+          <!-- Cooling -->
+          <g class="hotspot" data-id="cooling">
+            <circle class="shape" cx="80" cy="90" r="34"/>
+            <circle class="shape" cx="80" cy="330" r="34"/>
+            <circle class="badge-circle" cx="112" cy="66" r="12"/>
+            <text x="112" y="67" class="badge-text">7</text>
+          </g>
+
+          <!-- Storage -->
+          <g class="hotspot" data-id="storage">
+            <rect class="shape" x="40" y="150" width="150" height="130" rx="2"/>
+            <text x="52" y="172" class="diagram-label">ALMACENAMIENTO</text>
+            <rect x="52" y="190" width="126" height="26" rx="1" fill="none" stroke="#2c3742" stroke-width="1.5"/>
+            <rect x="52" y="224" width="126" height="26" rx="1" fill="none" stroke="#2c3742" stroke-width="1.5"/>
+            <circle class="badge-circle" cx="178" cy="156" r="12"/>
+            <text x="178" y="157" class="badge-text">4</text>
+          </g>
+
+          <!-- SATA bus -->
+          <g class="hotspot" data-id="bus-sata">
+            <path class="bus-line" d="M478 355 L190 215"/>
+            <path class="bus-hit" d="M478 355 L190 215"/>
+            <circle class="badge-circle" cx="335" cy="285" r="12"/>
+            <text x="335" y="286" class="badge-text">15</text>
+          </g>
+
+          <!-- Front panel I/O -->
+          <g class="hotspot" data-id="io">
+            <rect class="shape" x="40" y="400" width="150" height="46" rx="2"/>
+            <text x="52" y="428" class="diagram-label">PANEL FRONTAL / E-S</text>
+            <circle class="badge-circle" cx="178" cy="394" r="12"/>
+            <text x="178" y="395" class="badge-text">8</text>
+          </g>
+
+          <!-- USB bus -->
+          <g class="hotspot" data-id="bus-usb">
+            <path class="bus-line" d="M478 380 L190 405"/>
+            <path class="bus-hit" d="M478 380 L190 405"/>
+            <circle class="badge-circle" cx="330" cy="404" r="12"/>
+            <text x="330" y="405" class="badge-text">16</text>
+          </g>
+
+          <!-- Case -->
+          <g class="hotspot" data-id="case">
+            <circle class="badge-circle" cx="30" cy="450" r="12"/>
+            <text x="30" y="451" class="badge-text">9</text>
+          </g>
+        </svg>
+        <div class="legend">
+          <span><i class="solid"></i> componente físico</span>
+          <span><i class="bus"></i> bus de comunicación</span>
+        </div>
+      </div>
+
+      <div class="detail-panel" id="detail-panel">
+        <div class="detail-empty">Selecciona un componente o un bus del esquema, o una tarjeta de la lista, para ver su ficha rápida aquí.</div>
+      </div>
+    </div>
+
+    <p class="grid-title">COMPONENTES FÍSICOS</p>
+    <div class="cards-grid" id="cards-grid-componentes"></div>
+
+    <p class="grid-title">BUSES DE COMUNICACIÓN Y FIRMWARE</p>
+    <div class="cards-grid" id="cards-grid-buses"></div>
+  </div>
+
+  <div id="view-detail"></div>
+
+</div>
+
+<footer>IES Juan de la Cierva · Módulo MME · 1º Sistemas Microinformáticos y Redes</footer>
+
+<script>
+const COMPONENTS = [
+  {id:'mobo', num:1, cat:'componente', name:'Placa base', fn:'Backbone del sistema',
+   desc:'Es el circuito impreso principal: conecta e interconecta todos los demás componentes (CPU, RAM, almacenamiento, tarjetas de expansión y fuente de alimentación) a través de sus buses y conectores.',
+   specs:[['Formato','ATX, micro-ATX, Mini-ITX'],['Zócalo','Debe coincidir con el de la CPU'],['Chipset','Gestiona la comunicación entre bloques'],['Slots','PCIe para expansión, DIMM para RAM']]},
+  {id:'cpu', num:2, cat:'componente', name:'CPU (procesador)', fn:'Unidad central de procesamiento',
+   desc:'Ejecuta las instrucciones de los programas. Contiene la unidad de control (UC), la unidad aritmético-lógica (ALU) y los registros. Necesita un sistema de refrigeración adecuado a su disipación térmica.',
+   specs:[['Arquitectura','x86-64, ARM'],['Núcleos / hilos','A más núcleos, más tareas en paralelo'],['Caché','Memoria ultrarrápida integrada (L1/L2/L3)'],['TDP','Calor a disipar, en vatios']]},
+  {id:'ram', num:3, cat:'componente', name:'Memoria RAM', fn:'Memoria de trabajo, volátil',
+   desc:'Almacena temporalmente los datos y programas que la CPU está usando en cada momento. Es mucho más rápida que el almacenamiento, pero pierde su contenido al apagar el equipo.',
+   specs:[['Tipo','DDR4, DDR5 (según la placa)'],['Velocidad','En MT/s'],['Latencia','CL — cuanto menor, mejor'],['Canal','Dual/Quad Channel mejora el ancho de banda']]},
+  {id:'storage', num:4, cat:'componente', name:'Almacenamiento', fn:'Memoria permanente',
+   desc:'Guarda el sistema operativo, los programas y los archivos de forma no volátil. Puede ser mecánico (HDD) o de estado sólido (SSD/M.2), con grandes diferencias de velocidad entre ambos.',
+   specs:[['HDD','Mayor capacidad/precio, partes móviles'],['SSD / M.2 NVMe','Mucha más velocidad, sin partes móviles'],['Interfaz','SATA o PCIe (M.2/NVMe)'],['Particiones','MBR (heredado) o GPT (moderno, UEFI)']]},
+  {id:'gpu', num:5, cat:'componente', name:'Tarjeta gráfica', fn:'Procesamiento de imagen',
+   desc:'Genera la imagen que se envía al monitor. Puede estar integrada en la CPU/placa o ser una tarjeta dedicada, especialmente relevante en diseño, vídeo, juegos o cálculo intensivo (IA).',
+   specs:[['Conexión','PCIe x16'],['Alimentación','Puede requerir conectores extra de la PSU'],['Fabricantes','NVIDIA, AMD, Intel'],['Uso extra','Coprocesador para cálculo (IA, renderizado)']]},
+  {id:'psu', num:6, cat:'componente', name:'Fuente de alimentación (PSU)', fn:'Suministro eléctrico',
+   desc:'Convierte la corriente alterna de la red en las tensiones continuas que necesita el equipo (+3.3V, +5V, +12V), repartidas en distintos raíles según el componente.',
+   specs:[['Tensiones típicas','+3.3V, +5V, +12V'],['Eficiencia','Certificación 80 Plus'],['Potencia','Debe cubrir el consumo de todos los componentes'],['Modularidad','Cableado fijo, semi-modular o modular']]},
+  {id:'cooling', num:7, cat:'componente', name:'Refrigeración', fn:'Control de temperatura',
+   desc:'Disipadores, ventiladores o sistemas líquidos que evacúan el calor generado por CPU, GPU y el resto del sistema, evitando el sobrecalentamiento y las averías asociadas.',
+   specs:[['Aire','Disipador + ventilador, la más común'],['Líquida','Mayor capacidad de disipación'],['Flujo de aire','Entrada/salida bien orientadas en la caja'],['Mantenimiento','Limpieza de polvo y renovación de pasta térmica']]},
+  {id:'io', num:8, cat:'componente', name:'Panel frontal / E-S', fn:'Conexión con el exterior',
+   desc:'Puertos y conectores accesibles del equipo (USB, audio, botón de encendido, LEDs) que se cablean a la placa base durante el montaje.',
+   specs:[['Cables típicos','Power SW, Reset, LED, USB, Audio HD'],['Conexión','Cabezales específicos en la placa base'],['Función','Encendido, indicadores y puertos de uso frecuente']]},
+  {id:'case', num:9, cat:'componente', name:'Caja / chasis', fn:'Estructura y ventilación',
+   desc:'Aloja y protege físicamente todos los componentes. Su formato debe ser compatible con el de la placa base, y su diseño condiciona el flujo de aire y, por tanto, las temperaturas del sistema.',
+   specs:[['Formato','Debe coincidir con el de la placa base'],['Ventilación','Determina el flujo de aire interno'],['Personalización','El "modding" lleva su estética más allá de lo funcional']]},
+
+  {id:'bios', num:10, cat:'bus', name:'BIOS / UEFI', fn:'Firmware de arranque',
+   desc:'Es el software básico grabado en un chip de la placa base. Se ejecuta antes que cualquier sistema operativo: comprueba el hardware (POST), permite configurar parámetros del sistema y decide desde qué dispositivo arrancar el equipo.',
+   specs:[['BIOS clásica','Interfaz de texto, arranque vía MBR'],['UEFI','Interfaz gráfica, arranque vía GPT, más rápida'],['POST','Autochequeo de hardware al encender el equipo'],['Configuración típica','Secuencia de arranque, fecha/hora, virtualización']]},
+  {id:'bus-internal', num:11, cat:'bus', name:'Buses internos (datos / direcciones / control)', fn:'Los tres buses clásicos de Von Neumann',
+   desc:'Todo el intercambio de información dentro del equipo viaja por tres tipos de líneas: el bus de datos (la información en sí), el bus de direcciones (dónde se lee o escribe esa información) y el bus de control (las señales que coordinan la operación, como lectura/escritura).',
+   specs:[['Bus de datos','Transporta la información a procesar'],['Bus de direcciones','Indica la posición de memoria u dispositivo'],['Bus de control','Señales de sincronización (lectura, escritura, interrupciones)'],['Ancho de bus','Nº de bits que viajan a la vez: más ancho, más rendimiento']]},
+  {id:'bus-fsb', num:12, cat:'bus', name:'Bus CPU–Chipset (FSB / DMI)', fn:'Enlace entre procesador y chipset',
+   desc:'Conecta la CPU con el chipset de la placa base, que a su vez reparte la comunicación hacia el resto de periféricos. En arquitecturas antiguas se llamaba FSB (Front Side Bus); en las actuales, enlaces punto a punto como DMI cumplen ese papel.',
+   specs:[['Función','Comunica la CPU con el resto del sistema vía chipset'],['Evolución','FSB (antiguo) → DMI / enlaces punto a punto (actual)'],['Impacto','Su velocidad influye en el rendimiento global del equipo']]},
+  {id:'bus-memory', num:13, cat:'bus', name:'Bus de memoria', fn:'Enlace CPU–RAM',
+   desc:'Conecta el controlador de memoria (integrado hoy en día en la propia CPU) con los módulos de RAM. Su velocidad y ancho determinan el ancho de banda disponible para leer y escribir datos en memoria.',
+   specs:[['Ancho de banda','Depende del tipo de RAM (MT/s) y del nº de canales'],['Dual/Quad Channel','Varios módulos trabajando en paralelo aumentan el rendimiento'],['Ubicación','El controlador de memoria suele estar integrado en la CPU']]},
+  {id:'bus-pcie', num:14, cat:'bus', name:'Bus PCIe', fn:'Expansión de alta velocidad',
+   desc:'Bus serie de alta velocidad usado por tarjetas gráficas, discos SSD M.2/NVMe y otras tarjetas de expansión. Se organiza en "carriles" (lanes); a más carriles asignados a un slot, mayor ancho de banda disponible.',
+   specs:[['Uso típico','Tarjetas gráficas, SSD NVMe, tarjetas de red/captura'],['Carriles (lanes)','x1, x4, x8, x16 según el dispositivo'],['Generaciones','Cada generación (3.0, 4.0, 5.0…) duplica aprox. el ancho de banda']]},
+  {id:'bus-sata', num:15, cat:'bus', name:'Bus SATA', fn:'Conexión de almacenamiento',
+   desc:'Interfaz estándar para conectar discos duros y SSD de 2,5"/3,5" a la placa base, tanto para datos como, en algunos casos, alimentación (SATA power es un conector aparte).',
+   specs:[['Uso típico','Discos duros mecánicos y SSD de formato 2,5"/3,5"'],['Velocidad','Inferior a PCIe/NVMe, suficiente para HDD'],['Conectores','Datos (fino) y alimentación (desde la PSU)']]},
+  {id:'bus-usb', num:16, cat:'bus', name:'Bus USB', fn:'Conexión de periféricos',
+   desc:'El bus más habitual para conectar periféricos externos: teclado, ratón, impresoras, discos externos, etc. Sus distintas versiones (2.0, 3.0, 3.1, 3.2, USB-C) ofrecen velocidades y capacidades de alimentación crecientes.',
+   specs:[['Uso típico','Teclado, ratón, impresoras, almacenamiento externo'],['Versiones','USB 2.0 (lento) hasta USB 3.2 / USB-C (rápido)'],['Alimentación','Puede alimentar dispositivos además de transmitir datos']]}
+];
+
+/* ---------- Render list cards ---------- */
+const gridComp = document.getElementById('cards-grid-componentes');
+const gridBus = document.getElementById('cards-grid-buses');
+
+function photoCountLabel(id){
+  const n = loadPhotos(id).length;
+  return n>0 ? `<div class="thumb-count">${n} foto${n>1?'s':''} añadida${n>1?'s':''}</div>` : '';
+}
+function renderCards(){
+  gridComp.innerHTML = COMPONENTS.filter(c=>c.cat==='componente').map(c=>`
+    <div class="card" data-id="${c.id}" onclick="goToDetail('${c.id}')">
+      <div class="ch"><div class="num">${c.num}</div><h4>${c.name}</h4></div>
+      <p>${c.fn}</p>
+      ${photoCountLabel(c.id)}
+    </div>`).join('');
+  gridBus.innerHTML = COMPONENTS.filter(c=>c.cat==='bus').map(c=>`
+    <div class="card" data-id="${c.id}" onclick="goToDetail('${c.id}')">
+      <div class="ch"><div class="num">${c.num}</div><h4>${c.name}</h4></div>
+      <p>${c.fn}</p>
+      ${photoCountLabel(c.id)}
+    </div>`).join('');
+}
+renderCards();
+
+/* ---------- Diagram quick-preview panel ---------- */
+const detailPanel = document.getElementById('detail-panel');
+function selectComponent(id){
+  const c = COMPONENTS.find(x=>x.id===id);
+  if(!c) return;
+  document.querySelectorAll('.hotspot').forEach(h=>h.classList.toggle('active', h.dataset.id===id));
+  detailPanel.innerHTML = `
+    <div class="detail-head"><div class="num">${c.num}</div><h3>${c.name}</h3></div>
+    <div class="detail-fn">${c.fn}</div>
+    <div class="body"><p>${c.desc}</p></div>
+    <ul class="spec-list">${c.specs.map(s=>`<li><b>${s[0]}</b><span>${s[1]}</span></li>`).join('')}</ul>
+    <a class="full-link" onclick="goToDetail('${c.id}')">Ver ficha completa y fotos →</a>
+  `;
+}
+document.querySelectorAll('.hotspot').forEach(h=>{
+  h.addEventListener('click', ()=>selectComponent(h.dataset.id));
+});
+
+/* ---------- Photo storage (localStorage) ---------- */
+const PHOTO_KEY = 'pc_components_photos';
+function loadAllPhotos(){
+  try{ return JSON.parse(localStorage.getItem(PHOTO_KEY)) || {}; }catch(e){ return {}; }
+}
+function loadPhotos(id){
+  const all = loadAllPhotos();
+  return all[id] || [];
+}
+function savePhotos(id, arr){
+  const all = loadAllPhotos();
+  all[id] = arr;
+  try{
+    localStorage.setItem(PHOTO_KEY, JSON.stringify(all));
+    return true;
+  }catch(e){
+    return false;
+  }
+}
+
+/* ---------- Dedicated detail page ---------- */
+const viewList = document.getElementById('view-list');
+const viewDetail = document.getElementById('view-detail');
+
+function goToDetail(id){
+  location.hash = id;
+}
+function goToList(){
+  location.hash = '';
+}
+
+function renderDetailPage(id){
+  const c = COMPONENTS.find(x=>x.id===id);
+  if(!c){ goToList(); return; }
+  const photos = loadPhotos(id);
+  viewDetail.innerHTML = `
+    <button class="back-link" onclick="goToList()">← Volver a la lista</button>
+    <div class="page-head"><div class="num">${c.num}</div><h2>${c.name}</h2></div>
+    <div class="page-fn">${c.fn}</div>
+    <div class="page-cols">
+      <div class="page-desc">
+        <p>${c.desc}</p>
+      </div>
+      <div class="page-specs">
+        <h4>CARACTERÍSTICAS CLAVE</h4>
+        <ul class="spec-list">${c.specs.map(s=>`<li><b>${s[0]}</b><span>${s[1]}</span></li>`).join('')}</ul>
+      </div>
+    </div>
+    <div class="photo-section">
+      <h4>FOTOS DE ESTE COMPONENTE</h4>
+      <div class="photo-grid" id="photo-grid-${id}"></div>
+      <div class="photo-empty" id="photo-empty-${id}" style="display:none;">Aún no hay fotos añadidas para este componente.</div>
+      <div class="upload-row">
+        <label class="upload-btn">
+          + Añadir foto(s)
+          <input type="file" accept="image/*" multiple style="display:none" onchange="handlePhotoUpload('${id}', this.files)">
+        </label>
+        <span class="upload-note">Las fotos se guardan solo en este navegador (no se suben a ningún servidor).</span>
+      </div>
+      <div class="upload-warning" id="upload-warning-${id}">No se ha podido guardar la foto: puede que se haya superado el espacio disponible en el navegador. Prueba con una imagen más ligera.</div>
+    </div>
+  `;
+  renderPhotoGrid(id);
+}
+
+function renderPhotoGrid(id){
+  const grid = document.getElementById(`photo-grid-${id}`);
+  const empty = document.getElementById(`photo-empty-${id}`);
+  const photos = loadPhotos(id);
+  if(!grid) return;
+  if(photos.length === 0){
+    grid.innerHTML = '';
+    if(empty) empty.style.display = 'block';
+    return;
+  }
+  if(empty) empty.style.display = 'none';
+  grid.innerHTML = photos.map((p,i)=>`
+    <div class="photo-item">
+      <img src="${p.src}" alt="${p.name || 'foto del componente'}">
+      <div class="rm" onclick="removePhoto('${id}', ${i})">×</div>
+    </div>`).join('');
+}
+
+function handlePhotoUpload(id, fileList){
+  const warnEl = document.getElementById(`upload-warning-${id}`);
+  if(warnEl) warnEl.classList.remove('show');
+  const files = Array.from(fileList || []);
+  if(files.length === 0) return;
+  let pending = files.length;
+  const newPhotos = [];
+  files.forEach(file=>{
+    const reader = new FileReader();
+    reader.onload = (e)=>{
+      newPhotos.push({src: e.target.result, name: file.name});
+      pending--;
+      if(pending === 0){
+        const current = loadPhotos(id);
+        const merged = current.concat(newPhotos);
+        const ok = savePhotos(id, merged);
+        if(!ok){
+          if(warnEl) warnEl.classList.add('show');
+        } else {
+          renderPhotoGrid(id);
+          renderCards();
+        }
+      }
+    };
+    reader.onerror = ()=>{
+      pending--;
+      if(warnEl) warnEl.classList.add('show');
+    };
+    reader.readAsDataURL(file);
+  });
+}
+
+function removePhoto(id, index){
+  const photos = loadPhotos(id);
+  photos.splice(index, 1);
+  savePhotos(id, photos);
+  renderPhotoGrid(id);
+  renderCards();
+}
+
+/* ---------- Router ---------- */
+function router(){
+  const hash = decodeURIComponent(location.hash.replace('#',''));
+  const match = COMPONENTS.find(c=>c.id===hash);
+  if(match){
+    viewList.classList.add('hide');
+    viewDetail.classList.add('show');
+    renderDetailPage(match.id);
+    window.scrollTo(0,0);
+  } else {
+    viewList.classList.remove('hide');
+    viewDetail.classList.remove('show');
+  }
+}
+window.addEventListener('hashchange', router);
+router();
+</script>
+</body>
+</html>
