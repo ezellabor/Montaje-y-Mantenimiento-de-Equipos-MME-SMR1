@@ -1,17 +1,17 @@
-# 🛠️ Caso Práctico de Taller: "El misterio de la pantalla en negro"
+# Caso Práctico de Taller: "Pantalla en negro"
 **Módulo:** Montaje y Mantenimiento de Equipos (SMR)  
 **Actividad:** Juego de rol de texto (Troubleshooting de Hardware)
 
 ---
 
-### 📋 Orden de Trabajo #1042
+### Orden de Trabajo #1042
 * **Equipo:** Torre clónica estándar (PC de escritorio).
 * **Sintoma reportado:** "El ordenador enciende (los ventiladores giran y los LEDs de la torre se iluminan), pero no da ninguna señal de vídeo en la pantalla."
 * **Tu rol:** Técnico/a informático de soporte de nivel 1.
 
 ---
 
-## 🔹 Escena 1: Recepción y comprobación inicial
+## Escena 1: Recepción y comprobación inicial
 
 El ordenador está sobre tu mesa de trabajo. Conectas el cable de alimentación, el cable de vídeo (HDMI) a la pantalla del taller y enciendes el equipo. 
 
@@ -25,7 +25,7 @@ Los ventiladores empiezan a girar y la luz del botón de encendido se ilumina, p
 
 ---
 
-## 🔹 Escena 2: Inspección física y diagnóstico de placa
+## Escena 2: Inspección física y diagnóstico de placa
 
 > *(Si elegiste la Opción B)*  
 > Te das cuenta de un detalle clave: el cable HDMI estaba conectado a la salida de la **placa base**, pero el equipo tiene una **tarjeta gráfica dedicada** instalada. Conectas el cable a la GPU... ¡pero sigue sin dar vídeo! Cambias el cable y el monitor, pero la pantalla continúa en negro. 
@@ -42,7 +42,7 @@ Al encender de nuevo el PC con la tapa abierta, observas que el ventilador de la
 
 ---
 
-## 🔹 Escena 3: Verificación y control de calidad
+## Escena 3: Verificación y control de calidad
 
 > *(Si elegiste la Opción A)*  
 > Retiras los dos módulos de RAM. Limpias los contactos dorados, insertas un solo módulo en el slot recomendado por el manual (A2) y vuelves a encender.
@@ -59,7 +59,7 @@ Sin embargo, antes de dar el trabajo por finalizado y avisar al cliente, debes c
 
 ---
 
-## 📑 Solucionario y Rúbrica de Evaluación
+## Solucionario y Rúbrica de Evaluación
 
 | Criterio | Ruta Correcta | Explicación Técnica |
 | :--- | :---: | :--- |
@@ -67,7 +67,7 @@ Sin embargo, antes de dar el trabajo por finalizado y avisar al cliente, debes c
 | **Fase 2: Hardware Interno** | **Opción A** | Los códigos POST (pitidos o LEDs de diagnóstico) guiaron la avería hacia la **RAM**. Limpiar los contactos elimina sulfatación o suciedad, y probar un solo módulo permite aislar si el fallo está en un módulo o en un socket. |
 | **Fase 3: Quality Assurance (QA)** | **Opción B** | Un técnico profesional no se limita a "ver imagen". Debe verificar si el componente retirado estaba dañado o solo mal asentado, y certificar mediante software de diagnóstico (*MemTest86*) que el PC no fallará bajo carga. |
 
-### 📊 Puntuación final del alumno
+### Puntuación final del alumno
 * **3/3 Respuestas correctas:** 🏆 *Técnico Senior* – Diagnóstico impecable, metódico y eficiente.
 * **2/3 Respuestas correctas:** 🛠️ *Técnico Junior* – Buen camino, pero falta pulir metodología o pruebas de estrés.
 * **0-1/3 Respuestas correctas:** ⚠️ *Técnico en Prácticas* – Recuerda aplicar la metodología de descarte en orden de complejidad.
