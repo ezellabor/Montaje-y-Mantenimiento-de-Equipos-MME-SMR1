@@ -4,8 +4,8 @@
 
 ### Componentes principales de un equipo informático
 
-[1.Componentes de un PC: esquema interactivo](https://github.com/ezellabor/Montaje-y-Mantenimiento-de-Equipos-MME-SMR1/blob/main/Fichas-Guias-Tablas-Resumen/componentes-pc.html)  
-[2.Buses del sistema: esquema interactivo](https://github.com/ezellabor/Montaje-y-Mantenimiento-de-Equipos-MME-SMR1/blob/main/Fichas-Guias-Tablas-Resumen/componentes-pc.html)
+[1. Componentes de un PC: esquema interactivo](https://github.com/ezellabor/Montaje-y-Mantenimiento-de-Equipos-MME-SMR1/blob/main/Fichas-Guias-Tablas-Resumen/componentes-pc.html)  
+[2. Buses del Sistema: esquema interactivo](https://github.com/ezellabor/Montaje-y-Mantenimiento-de-Equipos-MME-SMR1/blob/main/Fichas-Guias-Tablas-Resumen/componentes-pc.html)
 
 ![Arquitectura-Von-Neumann](img/arquitectura_von_newmann.png)
 
