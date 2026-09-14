@@ -11,7 +11,7 @@ https://github.com/ezellabor/Montaje-y-Mantenimiento-de-Equipos-MME-SMR1/blob/ma
 
 
 >Profesor: Ezequiel Llarena Borges
->ezequiel.formacion@gmail.com
+>elb733@educa.madrid.org
 ---
 
 
