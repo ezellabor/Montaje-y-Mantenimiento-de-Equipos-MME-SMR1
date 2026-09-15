@@ -6,11 +6,11 @@
 
 * [Componentes principales y buses de comunicación de un PC: esquema interactivo](https://github.com/ezellabor/Montaje-y-Mantenimiento-de-Equipos-MME-SMR1/blob/main/Fichas-Guias-Tablas-Resumen/esquema-componentes-hw-interactivo.html)
 * [Guía Resumen de Arquitectura y componentes de un equipo informático](https://github.com/ezellabor/Montaje-y-Mantenimiento-de-Equipos-MME-SMR1/blob/main/Fichas-Guias-Tablas-Resumen/sintesis-mme-smr1.html)
-* ![Esquema de placa base](img/placabase-esquema.jpg/)
 
 --- 
 
-![Arquitectura-Von-Neumann](img/arquitectura_von_newmann.png)
+![Arquitectura-Von-Neumann](img/arquitectura_von_newmann.png)  
+![Esquema de placa base](img/placabase-esquema.jpg/)
 
 >Profesor: Ezequiel Llarena Borges
 >elb733@educa.madrid.org
