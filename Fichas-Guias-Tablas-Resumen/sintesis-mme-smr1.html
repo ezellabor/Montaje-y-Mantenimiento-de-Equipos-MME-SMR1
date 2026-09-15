@@ -1,0 +1,935 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>MME · Guía de referencia · 1º SMR</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@500;600;700&family=IBM+Plex+Sans:wght@400;500;600&family=IBM+Plex+Mono:wght@400;500;600&display=swap" rel="stylesheet">
+<style>
+  :root{
+    --bg:#10161d;
+    --panel:#1a222b;
+    --panel-alt:#212b35;
+    --border:#2c3742;
+    --border-soft:#232d37;
+    --text:#e7edf2;
+    --text-dim:#8fa0ac;
+    --copper:#c17f4a;
+    --copper-bright:#e5a86e;
+    --mint:#5fae8c;
+    --mint-bright:#7ecba7;
+    --amber:#d9a441;
+    --red:#c1614a;
+    --radius:3px;
+    --font-head:'Space Grotesk', sans-serif;
+    --font-body:'IBM Plex Sans', sans-serif;
+    --font-mono:'IBM Plex Mono', monospace;
+  }
+  *{box-sizing:border-box;}
+  html{scroll-behavior:smooth;}
+  body{
+    margin:0;
+    background:var(--bg);
+    color:var(--text);
+    font-family:var(--font-body);
+    line-height:1.55;
+    background-image:
+      linear-gradient(var(--border-soft) 1px, transparent 1px),
+      linear-gradient(90deg, var(--border-soft) 1px, transparent 1px);
+    background-size:28px 28px;
+    background-attachment:fixed;
+  }
+  ::selection{background:var(--copper);color:#10161d;}
+  a{color:var(--copper-bright);}
+  h1,h2,h3,h4{font-family:var(--font-head);font-weight:600;margin:0 0 .4em;letter-spacing:.01em;}
+  p{margin:0 0 .8em;color:var(--text);}
+  .mono{font-family:var(--font-mono);}
+  .dim{color:var(--text-dim);}
+
+  /* ---------- Boot overlay ---------- */
+  #boot{
+    position:fixed;inset:0;background:#0b0f14;color:#7ecba7;
+    font-family:var(--font-mono);font-size:13px;padding:28px;z-index:999;
+    display:flex;flex-direction:column;gap:2px;overflow:hidden;
+  }
+  #boot .line{opacity:0;white-space:pre;animation:appear .05s forwards;}
+  #boot .cursor{display:inline-block;width:7px;height:14px;background:#7ecba7;margin-left:2px;animation:blink 1s steps(1) infinite;}
+  #boot-skip{
+    position:fixed;bottom:22px;right:26px;z-index:1000;
+    background:transparent;border:1px solid #3a4650;color:var(--text-dim);
+    font-family:var(--font-mono);font-size:12px;padding:7px 14px;border-radius:var(--radius);
+    cursor:pointer;
+  }
+  #boot-skip:hover{border-color:var(--copper);color:var(--copper-bright);}
+  @keyframes appear{to{opacity:1;}}
+  @keyframes blink{50%{opacity:0;}}
+  body.boot-done #boot, body.boot-done #boot-skip{display:none;}
+  @media (prefers-reduced-motion: reduce){
+    #boot, #boot-skip{display:none;}
+  }
+
+  /* ---------- Layout shell ---------- */
+  .shell{display:flex;min-height:100vh;max-width:1320px;margin:0 auto;}
+  header.top{
+    position:sticky;top:0;z-index:50;
+    background:rgba(16,22,29,.92);backdrop-filter:blur(6px);
+    border-bottom:1px solid var(--border);
+  }
+  .top-inner{
+    max-width:1320px;margin:0 auto;padding:14px 24px;
+    display:flex;align-items:center;gap:18px;flex-wrap:wrap;
+  }
+  .brand{display:flex;align-items:center;gap:10px;margin-right:auto;}
+  .brand-chip{
+    width:34px;height:34px;border:1.5px solid var(--copper);border-radius:6px;
+    display:flex;align-items:center;justify-content:center;color:var(--copper-bright);
+    font-family:var(--font-mono);font-weight:600;font-size:13px;flex-shrink:0;
+  }
+  .brand-text .t1{font-family:var(--font-head);font-size:16px;font-weight:600;line-height:1.1;}
+  .brand-text .t2{font-size:11.5px;color:var(--text-dim);font-family:var(--font-mono);}
+
+  #search{
+    flex:1 1 220px;max-width:340px;
+    background:var(--panel);border:1px solid var(--border);color:var(--text);
+    padding:8px 12px;border-radius:var(--radius);font-family:var(--font-body);font-size:13.5px;
+  }
+  #search:focus{outline:none;border-color:var(--copper);}
+  #search::placeholder{color:var(--text-dim);}
+
+  .progress-pill{
+    font-family:var(--font-mono);font-size:12px;color:var(--mint-bright);
+    border:1px solid var(--border);padding:7px 12px;border-radius:var(--radius);
+    background:var(--panel);white-space:nowrap;
+  }
+
+  /* ---------- Sidebar nav ---------- */
+  nav.side{
+    width:238px;flex-shrink:0;padding:22px 12px 40px 24px;
+    position:sticky;top:66px;align-self:flex-start;height:calc(100vh - 66px);overflow-y:auto;
+  }
+  nav.side a{
+    display:flex;align-items:center;gap:10px;
+    padding:8px 10px;border-radius:var(--radius);
+    color:var(--text-dim);text-decoration:none;font-size:13.5px;
+    border-left:2px solid transparent;margin-bottom:1px;
+  }
+  nav.side a:hover{color:var(--text);background:var(--panel);}
+  nav.side a.active{color:var(--copper-bright);border-left-color:var(--copper);background:var(--panel);}
+  nav.side a svg{width:16px;height:16px;flex-shrink:0;}
+  nav.side .ra-status{margin-left:auto;width:7px;height:7px;border-radius:50%;background:#3a4650;flex-shrink:0;}
+  nav.side a.done .ra-status{background:var(--mint-bright);}
+  nav.side .section-label{
+    font-family:var(--font-mono);font-size:10.5px;letter-spacing:.06em;color:#5a6874;
+    padding:16px 10px 6px;
+  }
+
+  /* mobile nav */
+  #nav-toggle{display:none;}
+
+  main{flex:1;min-width:0;padding:32px 28px 100px;}
+
+  /* ---------- Hero ---------- */
+  .hero{padding:8px 0 34px;border-bottom:1px solid var(--border);margin-bottom:34px;}
+  .hero .eyebrow{font-family:var(--font-mono);font-size:12.5px;color:var(--copper-bright);margin-bottom:10px;}
+  .hero h1{font-size:clamp(28px,4vw,40px);max-width:14ch;}
+  .hero p.lede{max-width:56ch;color:var(--text-dim);font-size:15.5px;}
+  .hero-meta{display:flex;gap:22px;flex-wrap:wrap;margin-top:18px;}
+  .hero-meta div{font-size:12.5px;color:var(--text-dim);}
+  .hero-meta strong{display:block;color:var(--text);font-family:var(--font-mono);font-size:14px;}
+
+  /* ---------- RA section ---------- */
+  section.ra{padding-bottom:56px;margin-bottom:8px;scroll-margin-top:80px;border-bottom:1px solid var(--border-soft);}
+  section.ra:last-of-type{border-bottom:none;}
+  .ra-head{display:flex;gap:16px;align-items:flex-start;margin-bottom:14px;}
+  .ra-num{
+    font-family:var(--font-mono);font-size:13px;color:var(--copper-bright);
+    border:1px solid var(--border);padding:4px 9px;border-radius:var(--radius);flex-shrink:0;margin-top:4px;
+  }
+  .ra-head h2{font-size:22px;max-width:34ch;}
+  .ra-competencia{
+    font-size:14px;color:var(--text-dim);max-width:70ch;padding:12px 16px;
+    background:var(--panel);border-left:2px solid var(--border);margin:14px 0 24px;border-radius:0 var(--radius) var(--radius) 0;
+  }
+
+  .units-grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(260px,1fr));gap:14px;margin-bottom:26px;}
+  details.unit{
+    background:var(--panel);border:1px solid var(--border);border-radius:var(--radius);
+    padding:0;overflow:hidden;
+  }
+  details.unit summary{
+    list-style:none;cursor:pointer;padding:13px 15px;display:flex;align-items:center;gap:10px;
+    font-family:var(--font-head);font-weight:600;font-size:14.5px;
+  }
+  details.unit summary::-webkit-details-marker{display:none;}
+  details.unit summary::after{
+    content:'+';margin-left:auto;color:var(--copper-bright);font-family:var(--font-mono);font-size:16px;flex-shrink:0;
+  }
+  details.unit[open] summary::after{content:'–';}
+  details.unit .unit-body{padding:0 16px 15px;}
+  details.unit ul{margin:0;padding-left:18px;}
+  details.unit li{margin-bottom:6px;font-size:13.8px;color:var(--text-dim);}
+  details.unit li b{color:var(--text);font-weight:500;}
+  details.unit li .hl{background:rgba(193,127,74,.28);color:var(--text);border-radius:2px;padding:0 2px;}
+
+  /* ---------- Tool boxes (calculators) ---------- */
+  .tool{
+    background:var(--panel-alt);border:1px solid var(--border);border-radius:var(--radius);
+    padding:20px 22px;margin:6px 0 28px;
+  }
+  .tool h3{font-size:15px;display:flex;align-items:center;gap:8px;}
+  .tool h3::before{content:'';width:8px;height:8px;background:var(--mint-bright);border-radius:1px;flex-shrink:0;}
+  .tool p.desc{font-size:13.3px;color:var(--text-dim);max-width:60ch;}
+  .tool-row{display:flex;gap:14px;flex-wrap:wrap;align-items:flex-end;margin:14px 0;}
+  .field{display:flex;flex-direction:column;gap:5px;min-width:130px;}
+  .field label{font-size:11.5px;font-family:var(--font-mono);color:var(--text-dim);}
+  .field input, .field select{
+    background:var(--bg);border:1px solid var(--border);color:var(--text);
+    padding:8px 10px;border-radius:var(--radius);font-family:var(--font-mono);font-size:13.5px;width:100%;
+  }
+  .field input:focus, .field select:focus{outline:none;border-color:var(--copper);}
+  .tool button{
+    background:var(--copper);color:#10161d;border:none;padding:9px 18px;
+    border-radius:var(--radius);font-family:var(--font-head);font-weight:600;font-size:13.5px;cursor:pointer;
+  }
+  .tool button:hover{background:var(--copper-bright);}
+  .tool-result{
+    margin-top:12px;font-family:var(--font-mono);font-size:14px;color:var(--mint-bright);
+    min-height:22px;
+  }
+  .tool-result .err{color:var(--red);}
+
+  /* ---------- Glossary chips ---------- */
+  .glossary{display:flex;flex-wrap:wrap;gap:8px;margin:10px 0 30px;}
+  .term{position:relative;}
+  .term > span{
+    display:inline-block;background:var(--panel);border:1px solid var(--border);
+    padding:6px 12px;border-radius:20px;font-size:12.8px;cursor:default;color:var(--text);
+  }
+  .term:hover > span{border-color:var(--copper);color:var(--copper-bright);}
+  .term .tip{
+    display:none;position:absolute;bottom:calc(100% + 8px);left:0;z-index:10;
+    background:#0d1116;border:1px solid var(--border);padding:10px 12px;border-radius:var(--radius);
+    width:240px;font-size:12.5px;color:var(--text-dim);box-shadow:0 8px 24px rgba(0,0,0,.4);
+  }
+  .term:hover .tip{display:block;}
+
+  /* ---------- Quiz ---------- */
+  .quiz{background:var(--panel);border:1px solid var(--border);border-radius:var(--radius);padding:22px;}
+  .quiz h3{font-size:15px;display:flex;align-items:center;gap:8px;}
+  .quiz h3::before{content:'';width:8px;height:8px;background:var(--amber);border-radius:1px;flex-shrink:0;}
+  .quiz-progress{font-family:var(--font-mono);font-size:12px;color:var(--text-dim);margin-bottom:16px;}
+  .q-block{display:none;}
+  .q-block.active{display:block;}
+  .q-text{font-family:var(--font-head);font-size:15.5px;margin-bottom:14px;}
+  .q-options{display:flex;flex-direction:column;gap:8px;margin-bottom:16px;}
+  .q-option{
+    text-align:left;background:var(--bg);border:1px solid var(--border);color:var(--text);
+    padding:10px 14px;border-radius:var(--radius);cursor:pointer;font-family:var(--font-body);font-size:13.8px;
+  }
+  .q-option:hover{border-color:var(--copper);}
+  .q-option.correct{border-color:var(--mint-bright);background:rgba(95,174,140,.14);color:var(--mint-bright);}
+  .q-option.incorrect{border-color:var(--red);background:rgba(193,97,74,.14);color:var(--red);}
+  .q-option[disabled]{cursor:default;}
+  .q-explain{
+    font-size:13px;color:var(--text-dim);background:var(--panel-alt);padding:10px 12px;
+    border-radius:var(--radius);display:none;margin-bottom:14px;border-left:2px solid var(--border);
+  }
+  .q-explain.show{display:block;}
+  .quiz-nav{display:flex;justify-content:space-between;align-items:center;}
+  .quiz-nav button{
+    background:transparent;border:1px solid var(--border);color:var(--text-dim);
+    padding:8px 16px;border-radius:var(--radius);font-family:var(--font-head);font-weight:600;
+    font-size:13px;cursor:pointer;
+  }
+  .quiz-nav button:hover:not([disabled]){border-color:var(--copper);color:var(--copper-bright);}
+  .quiz-nav button[disabled]{opacity:.35;cursor:default;}
+  .quiz-result{display:none;text-align:center;padding:18px 0 4px;}
+  .quiz-result.show{display:block;}
+  .quiz-result .score{font-family:var(--font-head);font-size:30px;color:var(--mint-bright);}
+  .quiz-result p{color:var(--text-dim);font-size:13.5px;}
+  .quiz-result button{
+    margin-top:8px;background:transparent;border:1px solid var(--border);color:var(--text-dim);
+    padding:8px 16px;border-radius:var(--radius);font-family:var(--font-head);font-weight:600;font-size:13px;cursor:pointer;
+  }
+
+  /* ---------- Search highlighting / filtering ---------- */
+  .no-match{display:none !important;}
+  mark.match{background:rgba(217,164,65,.4);color:var(--text);border-radius:2px;}
+
+  footer{
+    text-align:center;padding:36px 20px 50px;color:var(--text-dim);font-size:12.5px;
+    font-family:var(--font-mono);border-top:1px solid var(--border);
+  }
+
+  @media (max-width:880px){
+    nav.side{
+      position:fixed;top:0;left:0;bottom:0;width:250px;background:var(--bg);z-index:80;
+      border-right:1px solid var(--border);transform:translateX(-100%);transition:transform .25s ease;
+      padding-top:78px;height:100vh;
+    }
+    nav.side.open{transform:translateX(0);}
+    #nav-toggle{
+      display:flex;align-items:center;justify-content:center;
+      width:36px;height:36px;background:var(--panel);border:1px solid var(--border);
+      border-radius:var(--radius);color:var(--text);cursor:pointer;flex-direction:column;gap:3px;
+    }
+    #nav-toggle span{width:16px;height:1.5px;background:var(--text);}
+    #nav-scrim{display:none;position:fixed;inset:0;background:rgba(0,0,0,.5);z-index:70;}
+    #nav-scrim.open{display:block;}
+    main{padding:26px 18px 90px;}
+    .top-inner{padding:12px 16px;}
+  }
+</style>
+</head>
+<body>
+
+<div id="boot" aria-hidden="true"></div>
+<button id="boot-skip">saltar intro →</button>
+
+<header class="top">
+  <div class="top-inner">
+    <button id="nav-toggle" aria-label="Abrir índice"><span></span><span></span><span></span></button>
+    <div class="brand">
+      <div class="brand-chip">MME</div>
+      <div class="brand-text">
+        <div class="t1">Montaje y Mantenimiento de Equipos</div>
+        <div class="t2">1º SMR · guía de referencia</div>
+      </div>
+    </div>
+    <input type="search" id="search" placeholder="Buscar un término, componente, unidad…">
+    <div class="progress-pill" id="progress-pill">0 / 8 RA superados</div>
+  </div>
+</header>
+
+<div id="nav-scrim"></div>
+
+<div class="shell">
+  <nav class="side" id="side-nav" aria-label="Índice de resultados de aprendizaje"></nav>
+
+  <main>
+    <section class="hero">
+      <div class="eyebrow">// referencia del módulo — curso completo</div>
+      <h1>Todo el módulo, siempre a mano.</h1>
+      <p class="lede">Contenidos organizados por los 8 Resultados de Aprendizaje oficiales del módulo, con calculadoras técnicas y autoevaluación para repasar antes de cada examen o práctica de taller.</p>
+      <div class="hero-meta">
+        <div><strong>8</strong>resultados de aprendizaje</div>
+        <div><strong id="meta-units">—</strong>bloques de contenido</div>
+        <div><strong id="meta-terms">—</strong>términos de glosario</div>
+        <div><strong id="meta-questions">—</strong>preguntas de repaso</div>
+      </div>
+    </section>
+
+    <div id="ra-container"></div>
+
+    <footer>IES Juan de la Cierva · Módulo MME · 1º Sistemas Microinformáticos y Redes</footer>
+  </main>
+</div>
+
+<script>
+/* =========================================================
+   DATOS: Resultados de Aprendizaje, contenidos, glosario
+   ========================================================= */
+const ICONS = {
+  chip:'<svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6"><rect x="7" y="7" width="10" height="10" rx="1"/><path d="M9 3v4M15 3v4M9 17v4M15 17v4M3 9h4M3 15h4M17 9h4M17 15h4"/></svg>',
+  screwdriver:'<svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6"><path d="M14 3l7 7-2 2-7-7 2-2z"/><path d="M4 20l6-6M15 9L5 19a2 2 0 000 3l0 0"/></svg>',
+  gauge:'<svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6"><path d="M4 16a8 8 0 0116 0"/><path d="M12 16l4-5"/><circle cx="12" cy="16" r="1"/></svg>',
+  wrench:'<svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6"><path d="M14.7 6.3a4 4 0 00-5.4 5.4L4 17l3 3 5.3-5.3a4 4 0 005.4-5.4l-2.3 2.3-2-2 2.3-2.3z"/></svg>',
+  disk:'<svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6"><rect x="3" y="4" width="18" height="16" rx="1"/><path d="M7 4v4h10V4M8 14h.01M12 14h4"/></svg>',
+  rocket:'<svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6"><path d="M5 15s-2 3 0 6c3 2 6 0 6 0M12 15c3-3 5-8 4-13-5-1-10 1-13 4-3 4-1 8 1 9 2-1 5-3 8-6z"/><circle cx="14" cy="9" r="1.3"/></svg>',
+  mouse:'<svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6"><rect x="7" y="3" width="10" height="18" rx="5"/><path d="M12 3v6"/></svg>',
+  shield:'<svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6"><path d="M12 3l7 3v6c0 5-3 8-7 9-4-1-7-4-7-9V6l7-3z"/></svg>'
+};
+
+const RA_DATA = [
+{
+  id:'ra1', num:1, icon:'chip',
+  title:'Selección de componentes',
+  competencia:'Selecciona los componentes de integración de un equipo microinformático estándar, describiendo sus funciones y comparando prestaciones de distintos fabricantes.',
+  units:[
+    {title:'Arquitectura de Von Neumann y buses', bullets:[
+      'Un equipo se organiza en <b>bloques funcionales</b>: unidad central (CPU), memoria, entrada/salida y buses que los conectan.',
+      'La CPU integra la <b>UC (unidad de control)</b>, la <b>ALU</b> (operaciones aritmético-lógicas) y los <b>registros</b> (almacenamiento temporal ultrarrápido).',
+      'Un <b>bus</b> es el conjunto de líneas que transportan datos, direcciones o señales de control entre bloques; su <b>ancho</b> (en bits) determina cuánta información viaja a la vez.',
+      'A mayor ancho de <b>bus de direcciones</b>, mayor cantidad de memoria direccionable (ver calculadora más abajo).'
+    ]},
+    {title:'Placa base', bullets:[
+      'Formatos habituales: <b>ATX</b>, <b>micro-ATX</b>, <b>Mini-ITX</b> — determinan tamaño, nº de slots y compatibilidad con la caja.',
+      'El <b>zócalo (socket)</b> fija qué procesadores son compatibles con la placa.',
+      'El <b>chipset</b> gestiona la comunicación entre CPU, RAM, almacenamiento y periféricos.',
+      'Slots de expansión: <b>PCIe</b> (gráficas, capturadoras, tarjetas de red) ha sustituido a los antiguos PCI, AGP e ISA.',
+      'Conectores internos: <b>ATX de alimentación</b>, <b>SATA</b>, cabezales USB y de panel frontal.',
+      'Antes de comprar o sustituir cualquier componente conviene revisar el <b>manual de la placa</b> para confirmar compatibilidades.'
+    ]},
+    {title:'Procesador (CPU)', bullets:[
+      'Arquitecturas principales: <b>x86-64</b> (sobremesa/portátiles) y <b>ARM</b> (móviles, algunos portátiles recientes).',
+      'Características clave: frecuencia (GHz), nº de núcleos e hilos, memoria <b>caché</b> (L1/L2/L3) y <b>TDP</b> (disipación térmica de diseño, en vatios).',
+      'La refrigeración (disipador + ventilador, o líquida) debe dimensionarse según el TDP del procesador.',
+      'Fabricantes de referencia: <b>Intel</b> y <b>AMD</b>, cada uno con sus propias gamas y zócalos.'
+    ]},
+    {title:'Memoria RAM', bullets:[
+      'Estándar <b>JEDEC</b>: define tipos (DDR4, DDR5…) y velocidades homologadas.',
+      'Parámetros clave: <b>MT/s</b> (transferencias por segundo) y <b>latencia (CL)</b>.',
+      'El <b>Dual/Quad Channel</b> mejora el ancho de banda al repartir el acceso entre varios módulos.',
+      'Debe ser compatible con el zócalo de memoria de la placa base (DDR3/DDR4/DDR5 no son intercambiables).'
+    ]},
+    {title:'Tarjeta gráfica', bullets:[
+      'Se conecta habitualmente por <b>PCIe x16</b> y puede requerir alimentación adicional según su consumo.',
+      'Fabricantes principales: <b>NVIDIA, AMD e Intel</b> (integradas y dedicadas).',
+      'Gamas profesionales (Quadro, FirePro/Radeon Pro) frente a gamas de consumo/gaming.',
+      'Puede usarse como <b>coprocesador</b> para cálculo intensivo (IA, renderizado) además de gráficos.'
+    ]},
+    {title:'Almacenamiento', bullets:[
+      'Discos <b>mecánicos (HDD)</b>: mayor capacidad/precio, partes móviles, se miden en rpm.',
+      'Discos <b>sólidos (SSD/M.2/NVMe)</b>: mucha más velocidad, sin partes móviles.',
+      'Interfaces de conexión: <b>SATA</b> (más lenta) y <b>M.2/NVMe</b> (mucho más rápida, vía PCIe).',
+      'Tablas de partición: <b>MBR</b> (heredada, límite 2 TB) y <b>GPT</b> (moderna, necesaria para UEFI y discos grandes).',
+      'El mantenimiento incluye monitorizar el estado con <b>S.M.A.R.T.</b> y hacer copias de seguridad periódicas.'
+    ]},
+    {title:'Cajas y refrigeración', bullets:[
+      'El formato de la caja debe ser compatible con el formato de la placa base.',
+      'La <b>ventilación</b> (flujo de aire entrada/salida) condiciona las temperaturas de todo el sistema.',
+      'El <b>modding</b> es la personalización estética o funcional de la caja y sus componentes.'
+    ]}
+  ],
+  glossary:[
+    {t:'ALU', d:'Unidad Aritmético-Lógica: parte de la CPU que ejecuta cálculos y comparaciones.'},
+    {t:'Chipset', d:'Circuito(s) que gestionan la comunicación entre CPU, memoria, almacenamiento y periféricos.'},
+    {t:'TDP', d:'Potencia térmica de diseño: calor máximo que debe disipar la refrigeración, en vatios.'},
+    {t:'JEDEC', d:'Organismo que estandariza los tipos y velocidades de memoria RAM.'},
+    {t:'GPT', d:'Tabla de particiones moderna (GUID Partition Table), necesaria para UEFI y discos >2 TB.'},
+    {t:'PCIe', d:'Bus de expansión de alta velocidad usado por gráficas, SSD M.2 y tarjetas de red actuales.'}
+  ]
+},
+{
+  id:'ra2', num:2, icon:'screwdriver',
+  title:'Ensamblado de equipos',
+  competencia:'Ensambla un equipo microinformático interpretando planos e instrucciones del fabricante y aplicando técnicas de montaje.',
+  units:[
+    {title:'Preparación del puesto de trabajo', bullets:[
+      'Usar siempre <b>protección antiestática</b> (pulsera o superficie ESD) antes de tocar componentes internos.',
+      'Reunir las <b>herramientas</b> necesarias: destornilladores adecuados, pinzas, bridas y el manual de cada componente.',
+      'Interpretar la <b>documentación técnica</b> de placa, caja y fuente antes de empezar, para evitar errores de compatibilidad.'
+    ]},
+    {title:'Secuencia de montaje habitual', bullets:[
+      'Se suele montar primero el conjunto <b>CPU + disipador + RAM sobre la placa base</b>, fuera de la caja, por comodidad.',
+      'Después: fijación de la placa dentro del chasis, instalación de discos y unidades, y conexión de la fuente de alimentación.',
+      'Por último: cables de panel frontal (power, USB, audio) y tarjetas de expansión (gráfica, red…).',
+      'Cerrado el equipo, se entra en <b>BIOS/UEFI</b> para comprobar que todo el hardware es reconocido.'
+    ]},
+    {title:'Verificación final e informe', bullets:[
+      'Se ejecutan <b>utilidades de chequeo y diagnóstico</b> (temperatura, estabilidad, reconocimiento de discos y RAM).',
+      'Se descargan y actualizan los <b>drivers</b> necesarios.',
+      'El proceso se documenta en un <b>informe de montaje</b>: componentes usados, incidencias y resultado de las pruebas.'
+    ]}
+  ],
+  glossary:[
+    {t:'ESD', d:'Descarga electrostática: riesgo de dañar componentes si se manipulan sin protección antiestática.'},
+    {t:'POST', d:'Power-On Self Test: comprobación automática de hardware que hace la placa al arrancar.'},
+    {t:'Driver', d:'Software que permite al sistema operativo comunicarse con un componente concreto.'}
+  ]
+},
+{
+  id:'ra3', num:3, icon:'gauge',
+  title:'Medida de parámetros eléctricos',
+  competencia:'Mide parámetros eléctricos, identificando el tipo de señal y relacionándola con sus unidades características.',
+  units:[
+    {title:'Magnitudes eléctricas básicas', bullets:[
+      '<b>Tensión (V)</b> en voltios, <b>intensidad (I)</b> en amperios y <b>resistencia (R)</b> en ohmios se relacionan mediante la <b>Ley de Ohm: V = I × R</b>.',
+      'La <b>potencia (P)</b>, en vatios, se calcula como P = V × I.',
+      'El <b>polímetro/multímetro</b> es el instrumento estándar para medir estas magnitudes; hay que seleccionar bien la magnitud y el rango antes de conectar.'
+    ]},
+    {title:'Fuente de alimentación (PSU)', bullets:[
+      'Convierte corriente alterna (red eléctrica) en las tensiones continuas que necesita el equipo: normalmente <b>+3.3V, +5V y +12V</b>.',
+      'Se organiza en <b>raíles</b>, cada uno con una corriente máxima admisible.',
+      'Certificaciones como <b>80 Plus</b> indican el nivel de eficiencia energética.',
+      'La potencia necesaria se calcula sumando el consumo estimado de CPU, gráfica y resto de componentes, dejando margen de seguridad.'
+    ]},
+    {title:'SAI / UPS', bullets:[
+      'Un <b>SAI (Sistema de Alimentación Ininterrumpida)</b> protege el equipo ante cortes de luz y picos de tensión.',
+      'Permite medir tensiones de entrada/salida y el estado de su batería con un polímetro.'
+    ]}
+  ],
+  glossary:[
+    {t:'Ley de Ohm', d:'V = I × R. Relaciona tensión, intensidad y resistencia en un circuito.'},
+    {t:'80 Plus', d:'Certificación de eficiencia energética de fuentes de alimentación.'},
+    {t:'SAI', d:'Sistema de Alimentación Ininterrumpida: batería de respaldo ante cortes eléctricos.'}
+  ]
+},
+{
+  id:'ra4', num:4, icon:'wrench',
+  title:'Mantenimiento de equipos',
+  competencia:'Mantiene equipos informáticos interpretando las recomendaciones de los fabricantes y relacionando las disfunciones con sus causas.',
+  units:[
+    {title:'Diagnóstico de averías', bullets:[
+      'Muchas placas emiten <b>señales acústicas (beeps)</b> o luminosas que codifican el tipo de fallo de hardware detectado.',
+      'El <b>sobrecalentamiento del procesador</b> suele deberse a pasta térmica degradada, disipador mal fijado o ventilación obstruida por polvo.',
+      'Averías típicas: componentes mal conectados, incompatibilidades, fallos en discos, suciedad acumulada.'
+    ]},
+    {title:'Sustitución y actualización', bullets:[
+      'Antes de sustituir un componente hay que verificar su <b>compatibilidad</b> con el resto del sistema (zócalo, tipo de RAM, conectores de la PSU…).',
+      'Las <b>ampliaciones</b> (más RAM, un SSD adicional…) deben respetar los límites que soporta la placa base.',
+      'Cada intervención se documenta en un <b>informe de avería</b> con la causa, la solución aplicada y las pruebas realizadas.'
+    ]}
+  ],
+  glossary:[
+    {t:'Beep code', d:'Secuencia de pitidos de la BIOS que identifica un tipo concreto de fallo de hardware.'},
+    {t:'Pasta térmica', d:'Material conductor que mejora el contacto entre CPU y disipador; se degrada con el tiempo.'}
+  ]
+},
+{
+  id:'ra5', num:5, icon:'disk',
+  title:'Instalación de software',
+  competencia:'Instala software en un equipo informático utilizando una imagen almacenada en un soporte de memoria y justificando el procedimiento a seguir.',
+  units:[
+    {title:'Instalación estándar vs. preinstalación', bullets:[
+      'Una <b>instalación estándar</b> parte de cero con el instalador del sistema operativo.',
+      'Una <b>preinstalación</b> restaura una <b>imagen</b> ya preparada de antemano, mucho más rápida para desplegar varios equipos iguales.'
+    ]},
+    {title:'Arranque e imágenes de disco', bullets:[
+      'La <b>secuencia de arranque</b> (orden de dispositivos) se configura desde la BIOS/UEFI para poder instalar desde USB, DVD o red.',
+      'Una <b>imagen de partición/disco</b> es una copia exacta que permite clonar o restaurar un sistema completo.',
+      'Herramientas de creación de imágenes permiten tanto <b>capturar</b> como <b>restaurar</b> sobre nuevo hardware.'
+    ]},
+    {title:'Gestión de software', bullets:[
+      'En Windows: instaladores modernos (<b>MSI/MSIX</b>) y gestores como <b>winget</b>.',
+      'En GNU/Linux: sistemas de empaquetado (<b>deb, rpm</b>) y gestores como <b>apt</b>, junto con repositorios oficiales.'
+    ]}
+  ],
+  glossary:[
+    {t:'Imagen de disco', d:'Copia exacta y restaurable del contenido de un disco o partición, usada para clonar o recuperar sistemas.'},
+    {t:'UEFI', d:'Firmware moderno que sustituye a la BIOS clásica; añade arranque seguro y soporte GPT.'}
+  ]
+},
+{
+  id:'ra6', num:6, icon:'rocket',
+  title:'Nuevas tendencias',
+  competencia:'Reconoce nuevas tendencias en el ensamblaje de equipos microinformáticos describiendo sus ventajas y adaptándolas a las características de uso.',
+  units:[
+    {title:'Formatos alternativos', bullets:[
+      'Un <b>barebone</b> es una plataforma semiensamblada (caja + placa + a veces CPU) lista para completar con RAM y almacenamiento.',
+      'Los <b>HTPC</b> (Home Theater PC) son equipos pensados para entretenimiento multimedia en el salón: chasis compactos y silenciosos.',
+      'El <b>modding</b> lleva la personalización de la estética del equipo a un nivel casi artístico.'
+    ]},
+    {title:'Informática móvil', bullets:[
+      'Tablets, smartphones y <b>wearables</b> representan un mercado en expansión con requisitos de diseño muy distintos al PC de sobremesa: bajo consumo, tamaño reducido, integración.'
+    ]}
+  ],
+  glossary:[
+    {t:'Barebone', d:'Kit semiensamblado (caja, placa y a veces CPU) al que solo falta añadir RAM y almacenamiento.'},
+    {t:'HTPC', d:'Home Theater PC: equipo orientado a entretenimiento multimedia en el salón.'}
+  ]
+},
+{
+  id:'ra7', num:7, icon:'mouse',
+  title:'Mantenimiento de periféricos',
+  competencia:'Mantiene periféricos, interpretando las recomendaciones de los fabricantes y relacionando disfunciones con sus causas.',
+  units:[
+    {title:'Teclado y ratón', bullets:[
+      'Teclados: mecanismo de <b>membrana</b> (económico) o <b>mecánico</b> (por switch, más duradero y personalizable).',
+      'Ratones: sensores <b>ópticos, láser o Bluetrack</b>; la sensibilidad se mide en <b>DPI/PPP</b>.',
+      'El mantenimiento habitual incluye limpieza de sensores/switches y revisión de cables o conexión inalámbrica.'
+    ]},
+    {title:'Impresoras y monitores', bullets:[
+      'Tipos de impresora: <b>inyección de tinta, láser y térmicas</b>, cada una con su propio consumible y mantenimiento.',
+      'Averías comunes en impresoras: atascos, cabezales sucios y consumibles agotados.',
+      'Tipos de panel de monitor: <b>TN</b> (rápido, peor ángulo de visión), <b>IPS</b> (mejor color y ángulos) y variantes híbridas.',
+      'Parámetros clave de un monitor: resolución, tiempo de respuesta, brillo y contraste.'
+    ]}
+  ],
+  glossary:[
+    {t:'DPI / PPP', d:'Puntos por pulgada: mide la sensibilidad de un ratón o la resolución de una impresora.'},
+    {t:'Panel IPS', d:'Tecnología de panel de monitor con mejor reproducción de color y ángulos de visión que TN.'}
+  ]
+},
+{
+  id:'ra8', num:8, icon:'shield',
+  title:'Prevención de riesgos y medio ambiente',
+  competencia:'Cumple las normas de prevención de riesgos laborales y de protección ambiental, identificando los riesgos asociados, las medidas y equipos para prevenirlos.',
+  units:[
+    {title:'Riesgos en el taller', bullets:[
+      'Identificar el <b>nivel de peligrosidad</b> al manipular herramientas, máquinas y componentes.',
+      'Usar los <b>EPI (Equipos de Protección Individual)</b> adecuados a cada tarea.',
+      'El <b>orden y la limpieza</b> del puesto de trabajo son, por normativa, el primer factor de prevención de riesgos.'
+    ]},
+    {title:'Protección ambiental', bullets:[
+      'Los residuos electrónicos deben gestionarse mediante <b>recogida selectiva</b> y canales de reciclaje especializado.',
+      'Es responsabilidad del técnico identificar posibles fuentes de contaminación derivadas de su actividad.'
+    ]}
+  ],
+  glossary:[
+    {t:'EPI', d:'Equipo de Protección Individual: elementos como guantes, calzado o protección ocular.'},
+    {t:'RAEE', d:'Residuos de Aparatos Eléctricos y Electrónicos: requieren un canal de reciclaje específico.'}
+  ]
+}
+];
+
+/* =========================================================
+   QUIZ
+   ========================================================= */
+const QUIZ_DATA = {
+  ra1:[
+    {q:'¿Dónde se ubican la UC, la ALU y los registros?', o:['En la RAM','En la CPU','En el chipset','En la fuente de alimentación'], c:1, e:'La UC, la ALU y los registros son las partes internas de la CPU.'},
+    {q:'¿Cuál de estos NO es un slot de expansión, sino un zócalo de memoria?', o:['PCIe','AGP','DIMM','ISA'], c:2, e:'DIMM es el zócalo donde se insertan los módulos de RAM; los demás son slots de expansión.'},
+    {q:'¿Qué determina principalmente el ancho de un bus?', o:['La temperatura del sistema','La cantidad de bits que transmite a la vez','El precio del componente','El tipo de sistema operativo'], c:1, e:'El ancho de bus indica cuántos bits viajan simultáneamente por él.'},
+    {q:'¿Qué tabla de particiones es necesaria para arrancar en UEFI con discos de más de 2 TB?', o:['MBR','FAT32','GPT','NTFS'], c:2, e:'GPT sustituye a MBR y elimina su límite de 2 TB, siendo requisito para UEFI.'}
+  ],
+  ra2:[
+    {q:'¿Qué se debe usar antes de manipular componentes internos para evitar dañarlos?', o:['Guantes de látex','Protección antiestática (ESD)','Gafas de protección','Ninguna medida especial'], c:1, e:'La descarga electrostática puede dañar componentes; se evita con pulsera o superficie antiestática.'},
+    {q:'En el montaje habitual, ¿qué se suele ensamblar primero fuera de la caja?', o:['El conjunto CPU + disipador + RAM sobre la placa', 'La fuente de alimentación', 'El cableado del panel frontal', 'La tarjeta gráfica'], c:0, e:'Resulta más cómodo montar CPU, disipador y RAM sobre la placa antes de fijarla en el chasis.'},
+    {q:'¿Qué documento se elabora al finalizar un montaje?', o:['Un informe de avería','Un informe de montaje','Un manual de usuario','Una factura de compra'], c:1, e:'El informe de montaje recoge los componentes usados, incidencias y resultado de las pruebas.'},
+    {q:'Tras el montaje, ¿para qué se usan las utilidades de chequeo y diagnóstico?', o:['Para instalar el sistema operativo', 'Para verificar que todo el hardware funciona correctamente', 'Para crear particiones', 'Para actualizar la BIOS automáticamente'], c:1, e:'Sirven para comprobar temperaturas, estabilidad y reconocimiento correcto de todos los componentes.'}
+  ],
+  ra3:[
+    {q:'¿Cuál es la Ley de Ohm?', o:['P = V × I','V = I × R','R = P / I','I = R × V'], c:1, e:'La Ley de Ohm establece que la tensión es igual a la intensidad multiplicada por la resistencia.'},
+    {q:'¿Cuál de estas tensiones NO suele entregar una fuente ATX típica?', o:['+3.3V','+5V','+12V','+9V'], c:3, e:'Las fuentes ATX típicas entregan +3.3V, +5V y +12V; +9V no es una tensión estándar de PSU.'},
+    {q:'¿Qué instrumento se usa para medir tensión, intensidad y resistencia?', o:['Osciloscopio','Polímetro / multímetro','Termómetro','Analizador lógico'], c:1, e:'El polímetro (o multímetro) es la herramienta estándar para estas medidas eléctricas.'},
+    {q:'¿Qué función principal cumple un SAI (UPS)?', o:['Aumentar la velocidad de la RAM','Proteger el equipo ante cortes o fluctuaciones eléctricas','Refrigerar el procesador','Aumentar el espacio de almacenamiento'], c:1, e:'El SAI aporta energía de respaldo y estabiliza la tensión ante problemas en la red eléctrica.'}
+  ],
+  ra4:[
+    {q:'¿Qué suelen indicar los pitidos (beeps) de una placa al arrancar?', o:['El volumen del sistema','Códigos de error de hardware','La temperatura ambiente','El modelo de la placa base'], c:1, e:'Los beep codes son señales acústicas que codifican distintos tipos de fallo detectados en el arranque.'},
+    {q:'Causa habitual de sobrecalentamiento del procesador:', o:['RAM insuficiente','Pasta térmica degradada o disipador obstruido','Resolución de pantalla alta','Demasiados programas instalados'], c:1, e:'La pasta térmica se degrada con el tiempo y el polvo puede obstruir la refrigeración, elevando la temperatura.'},
+    {q:'¿Qué se debe comprobar siempre tras sustituir un componente?', o:['Su color','Su compatibilidad con el resto del sistema','El precio de mercado','La fecha de fabricación'], c:1, e:'Hay que verificar que el nuevo componente es compatible (zócalo, conectores, tipo de memoria, etc.).'},
+    {q:'¿Qué documento recoge una avería y su solución?', o:['Informe de montaje','Informe de avería','Manual del fabricante','Factura de reparación'], c:1, e:'El informe de avería documenta la causa detectada, la solución aplicada y las pruebas realizadas.'}
+  ],
+  ra5:[
+    {q:'¿Qué diferencia a una preinstalación de una instalación estándar?', o:['La preinstalación restaura una imagen ya preparada', 'La preinstalación es siempre más lenta', 'La instalación estándar no necesita sistema operativo', 'No hay ninguna diferencia'], c:0, e:'La preinstalación parte de una imagen ya lista, mucho más rápida que instalar desde cero.'},
+    {q:'¿Dónde se configura la secuencia de arranque para instalar desde un USB?', o:['En el sistema operativo ya instalado','En la BIOS/UEFI','En el gestor de particiones','En el antivirus'], c:1, e:'El orden de dispositivos de arranque se define en la configuración de la BIOS/UEFI.'},
+    {q:'¿Qué permite una imagen de disco/partición?', o:['Aumentar la velocidad de la CPU','Clonar o restaurar un sistema completo','Cambiar el tipo de memoria RAM','Actualizar automáticamente los drivers'], c:1, e:'Una imagen es una copia exacta que permite clonar un sistema o restaurarlo en otro equipo.'},
+    {q:'¿Qué gestores usa GNU/Linux para instalar software empaquetado?', o:['MSI y MSIX','winget','apt (sobre paquetes deb) o herramientas equivalentes','Solo instaladores gráficos'], c:2, e:'GNU/Linux usa sistemas de empaquetado como deb/rpm y gestores como apt para instalarlos.'}
+  ],
+  ra6:[
+    {q:'¿Qué es un barebone?', o:['Un tipo de tarjeta gráfica','Una plataforma semiensamblada con componentes básicos ya integrados','Un sistema operativo ligero','Un tipo de memoria RAM'], c:1, e:'El barebone es un kit al que solo hay que añadir RAM y almacenamiento para completarlo.'},
+    {q:'¿A qué se refiere HTPC?', o:['Un procesador de alto rendimiento','Home Theater PC, equipo para entretenimiento multimedia','Un protocolo de red','Un tipo de disco duro'], c:1, e:'HTPC son equipos compactos y silenciosos pensados para el salón.'},
+    {q:'¿Qué es el "modding"?', o:['Actualizar el sistema operativo','Personalizar la estética o funcionalidad de un equipo','Un tipo de virus informático','Un protocolo de red inalámbrica'], c:1, e:'El modding lleva la personalización visual/funcional del equipo a un nivel muy elaborado.'},
+    {q:'¿Cuál de estos forma parte de la informática móvil?', o:['Servidores de rack','Tablets, smartphones y wearables','Impresoras láser profesionales','Fuentes de alimentación redundantes'], c:1, e:'La informática móvil incluye dispositivos de bajo consumo y tamaño reducido como tablets o wearables.'}
+  ],
+  ra7:[
+    {q:'¿Qué parámetro mide la sensibilidad de un ratón?', o:['Hz','DPI / PPP','Watts','Lumens'], c:1, e:'Los DPI (o PPP) indican cuánto se desplaza el cursor por cada pulgada de movimiento físico.'},
+    {q:'¿Qué tipo de panel de monitor ofrece mejor ángulo de visión y color?', o:['TN','IPS','CRT','Plasma'], c:1, e:'Los paneles IPS mejoran notablemente el color y los ángulos de visión frente a TN.'},
+    {q:'¿Cuáles son tipos comunes de impresora?', o:['Inyección de tinta, láser y térmicas','SATA, M.2 y NVMe','DDR4, DDR5 y LPDDR','TN, IPS y VA'], c:0, e:'Inyección de tinta, láser y térmicas son las tecnologías de impresión más habituales.'},
+    {q:'¿Qué tipo de mecanismo de teclado suele ser más duradero y personalizable?', o:['De membrana','Mecánico (por switches)','Óptico','Capacitivo básico'], c:1, e:'Los teclados mecánicos usan switches individuales por tecla, más duraderos y personalizables.'}
+  ],
+  ra8:[
+    {q:'¿Qué significa EPI?', o:['Equipo de Protección Individual','Estándar de Producción Informática','Elemento de Protección Inalámbrica','Equipo de Pruebas Internas'], c:0, e:'EPI son los elementos de protección personal: guantes, calzado adecuado, protección ocular, etc.'},
+    {q:'Según la normativa, ¿cuál es el primer factor de prevención de riesgos en el taller?', o:['El precio de las herramientas','El orden y la limpieza','La marca de los componentes','El horario de trabajo'], c:1, e:'El orden y la limpieza del puesto de trabajo se consideran el primer factor de prevención.'},
+    {q:'¿Cómo deben gestionarse los residuos electrónicos (RAEE)?', o:['Con la basura orgánica','Mediante recogida selectiva y reciclaje especializado','Quemándolos','No requieren gestión especial'], c:1, e:'Los RAEE deben canalizarse hacia puntos de recogida y reciclaje específicos.'},
+    {q:'¿Qué debe hacerse antes de operar una máquina o herramienta del taller?', o:['Nada en particular','Conocer y respetar sus normas de seguridad','Usarla lo más rápido posible','Pedir permiso solo si es la primera vez'], c:1, e:'Conocer y respetar las normas de seguridad de cada máquina reduce el riesgo de accidente.'}
+  ]
+};
+
+/* =========================================================
+   RENDER
+   ========================================================= */
+const raContainer = document.getElementById('ra-container');
+const sideNav = document.getElementById('side-nav');
+let totalUnits = 0, totalTerms = 0, totalQuestions = 0;
+
+function svgIcon(name){ return ICONS[name] || ''; }
+
+// Sidebar
+let navHTML = `<div class="section-label">navegación</div>
+  <a href="#top-hero" data-target="top-hero">${svgIcon('chip')}Introducción</a>
+  <div class="section-label">resultados de aprendizaje</div>`;
+RA_DATA.forEach(ra=>{
+  navHTML += `<a href="#${ra.id}" data-target="${ra.id}" id="nav-${ra.id}">${svgIcon(ra.icon)}<span>RA${ra.num}. ${ra.title}</span><span class="ra-status"></span></a>`;
+});
+sideNav.innerHTML = navHTML;
+document.getElementById('side-nav').insertAdjacentHTML('afterbegin','<a id="top-hero" style="display:none"></a>');
+
+// Sections
+let html = '';
+RA_DATA.forEach(ra=>{
+  totalUnits += ra.units.length;
+  totalTerms += ra.glossary.length;
+  const qCount = (QUIZ_DATA[ra.id]||[]).length;
+  totalQuestions += qCount;
+
+  html += `<section class="ra" id="${ra.id}" data-ra="${ra.id}">
+    <div class="ra-head">
+      <div class="ra-num mono">RA${ra.num}</div>
+      <h2>${ra.title}</h2>
+    </div>
+    <p class="ra-competencia">${ra.competencia}</p>
+    <div class="units-grid">`;
+
+  ra.units.forEach((u,i)=>{
+    html += `<details class="unit" ${i===0?'open':''}>
+      <summary>${u.title}</summary>
+      <div class="unit-body"><ul>${u.bullets.map(b=>`<li>${b}</li>`).join('')}</ul></div>
+    </details>`;
+  });
+  html += `</div>`;
+
+  if(ra.id==='ra1'){
+    html += `<div class="tool" data-tool="mem">
+      <h3>Calculadora — memoria máxima direccionable</h3>
+      <p class="desc">A partir del ancho del bus de direcciones (en bits), calcula cuánta memoria puede direccionar la CPU: 2<sup>bits</sup> bytes.</p>
+      <div class="tool-row">
+        <div class="field"><label>ANCHO DEL BUS (bits)</label><input type="number" id="mem-bits" value="32" min="1" max="64"></div>
+        <button onclick="calcMem()">Calcular</button>
+      </div>
+      <div class="tool-result" id="mem-result"></div>
+    </div>`;
+  }
+  if(ra.id==='ra3'){
+    html += `<div class="tool" data-tool="ohm">
+      <h3>Calculadora — Ley de Ohm</h3>
+      <p class="desc">Introduce dos valores conocidos y deja el tercero vacío para calcularlo: V = I × R.</p>
+      <div class="tool-row">
+        <div class="field"><label>TENSIÓN V (voltios)</label><input type="number" id="ohm-v" placeholder="ej. 12"></div>
+        <div class="field"><label>INTENSIDAD I (amperios)</label><input type="number" id="ohm-i" placeholder="ej. 2"></div>
+        <div class="field"><label>RESISTENCIA R (ohmios)</label><input type="number" id="ohm-r" placeholder="ej. 6"></div>
+        <button onclick="calcOhm()">Calcular</button>
+      </div>
+      <div class="tool-result" id="ohm-result"></div>
+    </div>`;
+  }
+
+  html += `<div class="glossary">${ra.glossary.map(g=>`<div class="term"><span>${g.t}</span><div class="tip">${g.d}</div></div>`).join('')}</div>`;
+
+  if(qCount){
+    html += `<div class="quiz" data-quiz="${ra.id}">
+      <h3>Autoevaluación RA${ra.num}</h3>
+      <div class="quiz-progress" id="${ra.id}-qp">Pregunta 1 de ${qCount}</div>
+      <div id="${ra.id}-questions"></div>
+      <div class="quiz-result" id="${ra.id}-result">
+        <div class="score" id="${ra.id}-score"></div>
+        <p>respuestas correctas</p>
+        <button onclick="resetQuiz('${ra.id}')">Repetir cuestionario</button>
+      </div>
+      <div class="quiz-nav" id="${ra.id}-nav">
+        <button onclick="prevQ('${ra.id}')" id="${ra.id}-prev" disabled>← Anterior</button>
+        <button onclick="nextQ('${ra.id}')" id="${ra.id}-next" disabled>Siguiente →</button>
+      </div>
+    </div>`;
+  }
+
+  html += `</section>`;
+});
+raContainer.innerHTML = html;
+document.getElementById('meta-units').textContent = totalUnits;
+document.getElementById('meta-terms').textContent = totalTerms;
+document.getElementById('meta-questions').textContent = totalQuestions;
+
+/* =========================================================
+   CALCULATORS
+   ========================================================= */
+function calcMem(){
+  const bits = parseFloat(document.getElementById('mem-bits').value);
+  const el = document.getElementById('mem-result');
+  if(!bits || bits<=0 || bits>64){ el.innerHTML = '<span class="err">Introduce un nº de bits válido (1–64).</span>'; return; }
+  const bytes = Math.pow(2, bits);
+  el.textContent = `2^${bits} = ${formatBytes(bytes)}`;
+}
+function formatBytes(n){
+  const units = ['bytes','KiB','MiB','GiB','TiB','PiB','EiB'];
+  let i=0;
+  while(n>=1024 && i<units.length-1){ n/=1024; i++; }
+  return `${n.toFixed(i===0?0:2)} ${units[i]}`;
+}
+function calcOhm(){
+  const v = document.getElementById('ohm-v').value;
+  const i = document.getElementById('ohm-i').value;
+  const r = document.getElementById('ohm-r').value;
+  const el = document.getElementById('ohm-result');
+  const empties = [v,i,r].filter(x=>x==='').length;
+  if(empties !== 1){ el.innerHTML = '<span class="err">Rellena exactamente dos de los tres campos y deja el tercero vacío.</span>'; return; }
+  const V=parseFloat(v), I=parseFloat(i), R=parseFloat(r);
+  if(v===''){ el.textContent = `V = I × R = ${(I*R).toFixed(3)} V`; }
+  else if(i===''){ if(R===0){ el.innerHTML='<span class="err">La resistencia no puede ser 0 para calcular I.</span>'; return;} el.textContent = `I = V / R = ${(V/R).toFixed(3)} A`; }
+  else { if(I===0){ el.innerHTML='<span class="err">La intensidad no puede ser 0 para calcular R.</span>'; return;} el.textContent = `R = V / I = ${(V/I).toFixed(3)} Ω`; }
+}
+
+/* =========================================================
+   QUIZ ENGINE
+   ========================================================= */
+const quizState = {};
+function initQuiz(raId){
+  const data = QUIZ_DATA[raId];
+  quizState[raId] = { idx:0, answers:new Array(data.length).fill(null) };
+  const qDiv = document.getElementById(`${raId}-questions`);
+  qDiv.innerHTML = data.map((q,i)=>`
+    <div class="q-block ${i===0?'active':''}" data-i="${i}">
+      <div class="q-text">${i+1}. ${q.q}</div>
+      <div class="q-options">
+        ${q.o.map((opt,oi)=>`<button class="q-option" onclick="answerQ('${raId}',${i},${oi})">${opt}</button>`).join('')}
+      </div>
+      <div class="q-explain" id="${raId}-explain-${i}">${q.e}</div>
+    </div>`).join('');
+  document.getElementById(`${raId}-next`).disabled = true;
+  document.getElementById(`${raId}-prev`).disabled = true;
+}
+function answerQ(raId, qi, oi){
+  const data = QUIZ_DATA[raId];
+  const st = quizState[raId];
+  if(st.answers[qi] !== null) return;
+  st.answers[qi] = oi;
+  const block = document.querySelector(`#${raId}-questions .q-block[data-i="${qi}"]`);
+  const opts = block.querySelectorAll('.q-option');
+  opts.forEach((btn,i)=>{
+    btn.disabled = true;
+    if(i===data[qi].c) btn.classList.add('correct');
+    else if(i===oi) btn.classList.add('incorrect');
+  });
+  document.getElementById(`${raId}-explain-${qi}`).classList.add('show');
+  document.getElementById(`${raId}-next`).disabled = false;
+}
+function nextQ(raId){
+  const st = quizState[raId];
+  const data = QUIZ_DATA[raId];
+  if(st.idx < data.length-1){
+    st.idx++;
+    showQ(raId);
+  } else {
+    finishQuiz(raId);
+  }
+}
+function prevQ(raId){
+  const st = quizState[raId];
+  if(st.idx>0){ st.idx--; showQ(raId); }
+}
+function showQ(raId){
+  const st = quizState[raId];
+  const data = QUIZ_DATA[raId];
+  document.querySelectorAll(`#${raId}-questions .q-block`).forEach(b=>b.classList.remove('active'));
+  document.querySelector(`#${raId}-questions .q-block[data-i="${st.idx}"]`).classList.add('active');
+  document.getElementById(`${raId}-qp`).textContent = `Pregunta ${st.idx+1} de ${data.length}`;
+  document.getElementById(`${raId}-prev`).disabled = st.idx===0;
+  const answered = st.answers[st.idx] !== null;
+  document.getElementById(`${raId}-next`).disabled = !answered;
+  document.getElementById(`${raId}-next`).textContent = st.idx===data.length-1 ? 'Ver resultado' : 'Siguiente →';
+}
+function finishQuiz(raId){
+  const st = quizState[raId];
+  const data = QUIZ_DATA[raId];
+  const correct = st.answers.filter((a,i)=>a===data[i].c).length;
+  document.getElementById(`${raId}-questions`).style.display='none';
+  document.getElementById(`${raId}-nav`).style.display='none';
+  document.getElementById(`${raId}-qp`).style.display='none';
+  const resultDiv = document.getElementById(`${raId}-result`);
+  resultDiv.classList.add('show');
+  document.getElementById(`${raId}-score`).textContent = `${correct} / ${data.length}`;
+  saveProgress(raId, correct, data.length);
+}
+function resetQuiz(raId){
+  document.getElementById(`${raId}-questions`).style.display='';
+  document.getElementById(`${raId}-nav`).style.display='';
+  document.getElementById(`${raId}-qp`).style.display='';
+  document.getElementById(`${raId}-result`).classList.remove('show');
+  initQuiz(raId);
+}
+Object.keys(QUIZ_DATA).forEach(initQuiz);
+
+/* =========================================================
+   PROGRESS (localStorage)
+   ========================================================= */
+const PROGRESS_KEY = 'mme_smr1_progress';
+function loadProgress(){
+  try{ return JSON.parse(localStorage.getItem(PROGRESS_KEY)) || {}; }catch(e){ return {}; }
+}
+function saveProgress(raId, correct, total){
+  const prog = loadProgress();
+  const pct = Math.round((correct/total)*100);
+  const passed = pct >= 60;
+  const prev = prog[raId];
+  if(!prev || pct > prev.pct){ prog[raId] = {pct, passed}; }
+  localStorage.setItem(PROGRESS_KEY, JSON.stringify(prog));
+  renderProgress();
+}
+function renderProgress(){
+  const prog = loadProgress();
+  const passedCount = Object.values(prog).filter(p=>p.passed).length;
+  document.getElementById('progress-pill').textContent = `${passedCount} / 8 RA superados`;
+  RA_DATA.forEach(ra=>{
+    const navA = document.getElementById(`nav-${ra.id}`);
+    if(navA){ navA.classList.toggle('done', !!(prog[ra.id] && prog[ra.id].passed)); }
+  });
+}
+renderProgress();
+
+/* =========================================================
+   SEARCH
+   ========================================================= */
+const searchInput = document.getElementById('search');
+searchInput.addEventListener('input', ()=>{
+  const q = searchInput.value.trim().toLowerCase();
+  document.querySelectorAll('details.unit').forEach(unit=>{
+    const text = unit.textContent.toLowerCase();
+    const match = q==='' || text.includes(q);
+    unit.classList.toggle('no-match', !match);
+    if(q!=='' && match) unit.open = true;
+  });
+  document.querySelectorAll('.glossary .term').forEach(term=>{
+    const text = term.textContent.toLowerCase();
+    term.classList.toggle('no-match', !(q==='' || text.includes(q)));
+  });
+  document.querySelectorAll('section.ra').forEach(sec=>{
+    const anyVisible = sec.querySelectorAll('details.unit:not(.no-match)').length > 0 || q==='';
+    sec.style.opacity = (q!=='' && !anyVisible) ? '0.35' : '1';
+  });
+});
+
+/* =========================================================
+   NAV: active state on scroll + mobile toggle
+   ========================================================= */
+const navLinks = document.querySelectorAll('nav.side a[data-target]');
+const sections = document.querySelectorAll('section.ra');
+const observer = new IntersectionObserver((entries)=>{
+  entries.forEach(entry=>{
+    if(entry.isIntersecting){
+      navLinks.forEach(l=>l.classList.remove('active'));
+      const link = document.getElementById(`nav-${entry.target.id}`);
+      if(link) link.classList.add('active');
+    }
+  });
+}, {rootMargin:'-15% 0px -70% 0px'});
+sections.forEach(s=>observer.observe(s));
+
+const navToggle = document.getElementById('nav-toggle');
+const sideNavEl = document.getElementById('side-nav');
+const navScrim = document.getElementById('nav-scrim');
+navToggle.addEventListener('click', ()=>{ sideNavEl.classList.add('open'); navScrim.classList.add('open'); });
+navScrim.addEventListener('click', ()=>{ sideNavEl.classList.remove('open'); navScrim.classList.remove('open'); });
+navLinks.forEach(l=>l.addEventListener('click', ()=>{ sideNavEl.classList.remove('open'); navScrim.classList.remove('open'); }));
+
+/* =========================================================
+   BOOT SEQUENCE
+   ========================================================= */
+(function boot(){
+  const bootEl = document.getElementById('boot');
+  const skipBtn = document.getElementById('boot-skip');
+  const reduced = window.matchMedia('(prefers-reduced-motion: reduce)').matches;
+  if(reduced){ document.body.classList.add('boot-done'); return; }
+
+  const lines = [
+    'MME-BIOS (C) IES Juan de la Cierva — Módulo Montaje y Mantenimiento de Equipos',
+    'CPU: TÉCNICO EN SISTEMAS MICROINFORMÁTICOS Y REDES  ..... OK',
+    'Comprobando memoria de contenidos ....................... 8 RA / 24 unidades OK',
+    'Detectando periféricos de repaso ........................ calculadoras OK, quiz OK',
+    'Cargando tabla de particiones del temario ............... GPT OK',
+    '',
+    'Pulsa una tecla para continuar_'
+  ];
+  let i=0;
+  function nextLine(){
+    if(i>=lines.length){ finish(); return; }
+    const div = document.createElement('div');
+    div.className='line';
+    div.textContent = lines[i];
+    bootEl.appendChild(div);
+    i++;
+    setTimeout(nextLine, i===lines.length ? 500 : 260);
+  }
+  function finish(){
+    setTimeout(()=>{ document.body.classList.add('boot-done'); }, 550);
+  }
+  nextLine();
+  skipBtn.addEventListener('click', ()=>document.body.classList.add('boot-done'));
+  document.addEventListener('keydown', ()=>document.body.classList.add('boot-done'), {once:true});
+  document.addEventListener('click', (e)=>{ if(e.target===bootEl) document.body.classList.add('boot-done'); });
+})();
+</script>
+</body>
+</html>
