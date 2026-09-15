@@ -4,7 +4,7 @@
 
 ### Componentes principales de un equipo informático
 
-* [Esquema de elementos de Hardware y buses de comunicación de un Sistema Informático (esquema interactivo)](https://github.com/ezellabor/Montaje-y-Mantenimiento-de-Equipos-MME-SMR1/blob/main/Fichas-Guias-Tablas-Resumen/esquema-componentes-hw-interactivo.html)
+* [Esquema de elementos de Hardware y Buses de Comunicación de un Sistema Informático (Mapa interactivo)](https://github.com/ezellabor/Montaje-y-Mantenimiento-de-Equipos-MME-SMR1/blob/main/Fichas-Guias-Tablas-Resumen/esquema-componentes-hw-interactivo.html)
 * [Guía Resumen de Arquitectura y Componentes de un Sistema Microinformático](https://github.com/ezellabor/Montaje-y-Mantenimiento-de-Equipos-MME-SMR1/blob/main/Fichas-Guias-Tablas-Resumen/sintesis-mme-smr1.html)
 
 --- 
