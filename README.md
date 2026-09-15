@@ -4,7 +4,7 @@
 
 ### Componentes principales de un equipo informático
 
-[Componentes principales y buses de comunicación de un PC: esquema interactivo](https://github.com/ezellabor/Montaje-y-Mantenimiento-de-Equipos-MME-SMR1/blob/main/Fichas-Guias-Tablas-Resumen/componentes-pc-buses-version-final.html)   
+[Componentes principales y buses de comunicación de un PC: esquema interactivo](https://github.com/ezellabor/Montaje-y-Mantenimiento-de-Equipos-MME-SMR1/blob/main/Fichas-Guias-Tablas-Resumen/componentes-pc-version-final.html)   
 
 --- 
 
