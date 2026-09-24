@@ -13,6 +13,8 @@
 ![Arquitectura-Von-Neumann](img/arquitectura_von_newmann.png)  
 
 ### Esquema de Buses  
+![arquitectura-buses](img/arquitectura-detalle.png)
+
 ```mermaid
 graph LR
     subgraph PERIFÉRICOS
