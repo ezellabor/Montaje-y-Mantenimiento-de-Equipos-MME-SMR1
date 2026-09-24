@@ -44,6 +44,42 @@ graph LR
     style ES fill:#1e293b,stroke:#f59e0b,stroke-width:2px,color:#fff
     style PERIFÉRICOS fill:#0f172a,stroke:#64748b,stroke-width:1px,color:#fff
 ```
+
+```mermaid
+graph TD
+    EQUIPO[Computador / Sistema Informático]
+
+    %% Ramas Principales
+    EQUIPO --> CPU[1. CPU / Procesador]
+    EQUIPO --> RAM[2. Memoria Principal - RAM]
+    EQUIPO --> BUSES[3. Buses del Sistema]
+    EQUIPO --> ES[4. Módulos de Entrada / Salida]
+
+    %% Subbloques CPU
+    CPU --> UC[Unidad de Control - UC]
+    CPU --> ALU[Unidad Aritmético-Lógica - ALU]
+    CPU --> REG[Registros Internos]
+
+    %% Subbloques Buses
+    BUSES --> B_DATOS[Bus de Datos - Bidireccional]
+    BUSES --> B_DIR[Bus de Direcciones - Unidireccional]
+    BUSES --> B_CTRL[Bus de Control - Control y Reloj]
+
+    %% Subbloques E/S
+    ES --> PERIF_E[Entrada: Teclado, Ratón]
+    ES --> PERIF_S[Salida: Monitor, Impresora]
+    ES --> PERIF_M[Almacenamiento: SSD, HDD]
+
+    %% Estilos
+    classDef main fill:#1e1b4b,stroke:#6366f1,stroke-width:2px,color:#fff;
+    classDef node fill:#1e293b,stroke:#475569,stroke-width:1px,color:#f8fafc;
+    
+    class EQUIPO main;
+    class CPU,RAM,BUSES,ES node;
+```
+
+### Esquema de placa base (Motherboard)  
+
 ![Esquema de placa base](img/placabase-esquema.jpg/)
 
 >Profesor: Ezequiel Llarena Borges
