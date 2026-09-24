@@ -1,5 +1,7 @@
 # SMR1 | Montaje y Mantenimiento de Equipos 
 
+### Introducción: Componentes de un equipo informático  
+
 ![imagen-interior-pc](img/imagen-interior-pc-smaller.png)  
 
 ### Componentes principales de un equipo informático
@@ -7,10 +9,18 @@
 * [Esquema de elementos de Hardware y Buses de Comunicación de un Sistema Informático (Mapa interactivo)](https://github.com/ezellabor/Montaje-y-Mantenimiento-de-Equipos-MME-SMR1/blob/main/Fichas-Guias-Tablas-Resumen/esquema-componentes-hw-interactivo.html)
 * [Guía Resumen de Arquitectura y Componentes de un Sistema Microinformático](https://github.com/ezellabor/Montaje-y-Mantenimiento-de-Equipos-MME-SMR1/blob/main/Fichas-Guias-Tablas-Resumen/sintesis-mme-smr1.html)
 
---- 
+---   
+
 ### Arquitectura Von-Neumann  
 
-![Arquitectura-Von-Neumann](img/arquitectura_von_newmann.png)  
+Los siguientes diagramas o esquemas detallan la arquitectura de Von Neumann, el modelo estructural que define cómo se organizan y comunican los componentes de un sistema informático.
+
+1. **Unidad Central de Proceso (CPU):** Se describen los bloques funcionales principales, destacando la CPU y su capacidad para ejecutar instrucciones mediante fases de captación y procesamiento.
+2. **Memoria Principal y E/S:** Se analiza el papel de la memoria principal como almacén temporal y la función de los módulos de entrada/salida para interactuar con dispositivos externos.
+3. **Arquitectura de Buses:** cómo estas líneas de transporte gestionan datos, direcciones y señales de control.
+4. **Tecnologías de Conexión y Rendimiento:** Se examinan las tecnologías de conexión actuales, como PCIe o USB, y cómo el ancho de banda de estos canales condiciona el rendimiento y la capacidad de direccionamiento del equipo.
+
+ ![Arquitectura-Von-Neumann](img/arquitectura_von_newmann.png)  
 
 ### Esquema de Buses  
 ![arquitectura-buses](img/arquitectura-detalle.png)
