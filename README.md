@@ -1,4 +1,4 @@
-# SMR1 | Montaje y Mantenimiento de Equipos 
+## Montaje y Mantenimiento de Equipos (Sistemas Microinformáticos y Redes)
 
 ### Introducción: Componentes de un equipo informático  
 
