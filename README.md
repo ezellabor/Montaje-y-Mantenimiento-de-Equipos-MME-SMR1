@@ -8,10 +8,11 @@
 * [Guía Resumen de Arquitectura y Componentes de un Sistema Microinformático](https://github.com/ezellabor/Montaje-y-Mantenimiento-de-Equipos-MME-SMR1/blob/main/Fichas-Guias-Tablas-Resumen/sintesis-mme-smr1.html)
 
 --- 
+### Arquitectura Von-Neumann  
 
 ![Arquitectura-Von-Neumann](img/arquitectura_von_newmann.png)  
 
-### Arquitectura Von-Neumann  
+### Esquema de Buses  
 ```mermaid
 graph LR
     subgraph PERIFÉRICOS
