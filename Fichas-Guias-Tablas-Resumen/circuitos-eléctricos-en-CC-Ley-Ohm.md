@@ -85,7 +85,7 @@ La Ley de Ohm establece una **relación directa** entre la tensión **(V), la co
 
 - _La tensión es igual en todas las ramas._  
 - _La corriente total es la suma de las corrientes parciales._  
-- _La **resistencia total** o **equvalente** se calcula como:_ $\frac{1}{R_T} = \frac{1}{R_1} + \frac{1}{R_2} + \frac{1}{R_3}$
+- _La **resistencia total** o equivalente se calcula como:_ $\frac{1}{R_T} = \frac{1}{R_1} + \frac{1}{R_2} + \frac{1}{R_3}$
 
 ### 4.2. Síntesis
 
