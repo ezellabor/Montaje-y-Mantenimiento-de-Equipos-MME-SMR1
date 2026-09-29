@@ -13,7 +13,7 @@
 
 Esta ley afirma que la **intensidad de la corriente (I)** que circula por un conductor eléctrico es *directamente proporcional* a la **diferencia de potencial (V)** y, paralelamente, *inversamente proporcional* a la **resistencia (R).**
 
-![Triangulo Ley Ohm](img/ley-ohm-triangle.jpg)
+![Triangulo Ley Ohm](../img/ley-ohm-triangle.jpg)
 
 ---
 
@@ -64,7 +64,7 @@ La Ley de Ohm establece una **relación directa** entre la tensión **(V), la co
 - $I = \text{constante}$  
 
 ### 3.3. Esquema tipo
-![Circuito en serie](img/circuito-serie.jpg)
+![Circuito en serie](../img/circuito-serie.jpg)
 
 ### 3.4. Ejercicios
 
@@ -94,7 +94,7 @@ La Ley de Ohm establece una **relación directa** entre la tensión **(V), la co
 
 ### 4.3. Esquema tipo
 
-![Circuito en paralelo](img/circuito-paralelo.jpg)
+![Circuito en paralelo](../img/circuito-paralelo.jpg)
 
 ### 4.4. Ejercicios
 
@@ -117,7 +117,7 @@ La Ley de Ohm establece una **relación directa** entre la tensión **(V), la co
 - _Se calculan primero las resistencias en paralelo, a continuación se suman en serie._
 
 ### 5.2. Esquema tipo
-![Circuito en serie](img/circuito-serie.jpg)
+![Circuito en serie](../img/circuito-serie.jpg)
 
 ### 5.3. Ejercicios
 
