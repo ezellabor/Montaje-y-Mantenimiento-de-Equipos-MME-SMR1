@@ -64,7 +64,7 @@ La Ley de Ohm establece una **relación directa** entre la tensión **(V), la co
 - $I = \text{constante}$  
 
 ### 3.3. Esquema tipo
-![Circuito en serie](../img/circuito-serie.jpg)
+![Circuito en serie](../img/circuito-dc-paralelo.png)
 
 ### 3.4. Ejercicios
 
@@ -94,7 +94,7 @@ La Ley de Ohm establece una **relación directa** entre la tensión **(V), la co
 
 ### 4.3. Esquema tipo
 
-![Circuito en paralelo](../img/circuito-paralelo.jpg)
+![Circuito en paralelo](../img/circuito-dc-mixto.png)
 
 ### 4.4. Ejercicios
 
