@@ -1,5 +1,7 @@
 ## Secuencia cronológica de prácticas  
 ---  
+
+```mermaid
 graph TD
     %% Estilos de nodos
     classDef bloque fill:#f9f6ee,stroke:#333,stroke-width:2px,font-weight:bold;
@@ -43,3 +45,4 @@ graph TD
     B2 ==> B3
     B3 ==> B4
     B4 ==> B5
+```
