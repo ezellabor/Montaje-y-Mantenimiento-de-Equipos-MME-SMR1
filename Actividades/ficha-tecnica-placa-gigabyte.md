@@ -1,4 +1,4 @@
-# FICHA TÉCNICA (DATASHEET) - GIGABYTE GA-G41MT-S2
+# FICHA TÉCNICA - GIGABYTE GA-G41MT-S2
 
 ## 1. Especificaciones Generales y Factor de Forma
 * **Modelo:** GA-G41MT-S2 (Revisiones habituales: Rev. 1.3 / 1.4)
