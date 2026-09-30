@@ -2,7 +2,7 @@
 
 ### Justificación
 
-Con el fin de favorecer la coordinación entre los módulos profesionales de primer curso del ciclo formativo de Sistemas Microinformáticos y Redes, se propone una tarea intermodular sencilla que integra un resultado de aprendizaje de cada uno de los módulos **Montaje y Mantenimiento de Equipos (MME)**, **Redes Locales (RL)** y **Sistemas Operativos Monopuesto (SOM)**. La tarea reproduce, en un único ejercicio, la secuencia real de puesta en marcha de un equipo informático: montaje del hardware, conexión a la red y puesta a punto del software base.
+Con el fin de favorecer la coordinación entre los módulos profesionales de primer curso del ciclo formativo de **Sistemas Microinformáticos y Redes,** se propone una tarea intermodular que integra un resultado de aprendizaje de cada uno de los módulos **Montaje y Mantenimiento de Equipos (MME)**, **Redes Locales (RL)** y **Sistemas Operativos Monopuesto (SOM)**. La tarea reproduce, en un único ejercicio, la secuencia real de puesta en marcha de un equipo informático: montaje del hardware, conexión a la red y puesta a punto del software base.
 
 ### Resultados de aprendizaje y criterios de evaluación implicados
 
@@ -47,7 +47,7 @@ Equipos para montar/desmontar, herramientas de taller habituales del módulo MME
 ### Entregable del alumno
 
 - Equipo ensamblado, conectado a la red del aula y con el sistema operativo instalado y arrancando correctamente.
-- Ficha de una página que recoja: componentes montados, punto de red utilizado y pasos seguidos en la instalación del sistema operativo.
+- Informe o documento que recoja: componentes montados, punto de red utilizado y pasos seguidos en la instalación del sistema operativo.
 
 ### Evaluación
 
