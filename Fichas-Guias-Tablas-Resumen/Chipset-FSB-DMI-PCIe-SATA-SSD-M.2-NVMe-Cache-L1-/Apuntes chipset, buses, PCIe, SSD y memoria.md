@@ -1,6 +1,5 @@
 # Apuntes: chipset, buses, PCIe, SSD y memoria
-
-Oct 2, 2026 · @Zeki
+```Montaje y mantenimiento de Equipos - Prof. Ezequiel LLarena Borges```  
 
 ## 1. Del Northbridge al PCH
 
