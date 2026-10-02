@@ -1,0 +1,476 @@
+<!doctype html><html><head><meta charset=utf8><meta name=viewport content="width=device-width,initial-scale=1,viewport-fit=cover"><style>:root{color-scheme:light;box-sizing:border-box;padding-top:env(safe-area-inset-top,0px);padding-bottom:env(safe-area-inset-bottom,0px)}html{scroll-padding-top:env(safe-area-inset-top,0px)}body{margin:0;padding:0;font:14px -apple-system,BlinkMacSystemFont,sans-serif;background:#faf9f5;color:#141413}img{max-width:100%}[hidden]:not([hidden=until-found i]){display:none!important}</style></head><body>
+<title>Mapa de la placa base</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=IBM+Plex+Mono:wght@500&family=IBM+Plex+Sans+Condensed:wght@600;700&family=IBM+Plex+Sans:wght@400;500;600&display=swap">
+<style>
+/* Layout: columna única tipo cuaderno técnico; cada bloque = un esquema + sus ideas clave. Color = tipo de componente. */
+:root{
+  --bg:#f2f4f7; --surface:#ffffff; --ink:#1b2330; --muted:#596476; --line:#cdd4de;
+  --cpu:#1f5fbf; --cpu-s:#e2ebfa;
+  --pch:#0b7d63; --pch-s:#dcf2eb;
+  --ram:#7046b6; --ram-s:#ebe3f8;
+  --gpu:#bf5610; --gpu-s:#fbe8da;
+  --sto:#a5303c; --sto-s:#f8e0e2;
+  --old:#77808f; --old-s:#e8ebf0;
+  --f-display:"IBM Plex Sans Condensed","Arial Narrow",system-ui,sans-serif;
+  --f-body:"IBM Plex Sans",system-ui,-apple-system,"Segoe UI",sans-serif;
+  --f-mono:"IBM Plex Mono",ui-monospace,Menlo,Consolas,monospace;
+}
+@media (prefers-color-scheme: dark){:root:not([data-theme="light"]){
+  --bg:#11151c; --surface:#19202a; --ink:#e5e9ef; --muted:#9aa4b3; --line:#323b48;
+  --cpu:#72a3ee; --cpu-s:#1a2a44; --pch:#3ec4a1; --pch-s:#11332b; --ram:#ae90f0; --ram-s:#291f40;
+  --gpu:#f09656; --gpu-s:#3a2413; --sto:#ee7c87; --sto-s:#3c1c21; --old:#8f98a6; --old-s:#242a34;
+  color-scheme:dark}}
+:root[data-theme="dark"]{
+  --bg:#11151c; --surface:#19202a; --ink:#e5e9ef; --muted:#9aa4b3; --line:#323b48;
+  --cpu:#72a3ee; --cpu-s:#1a2a44; --pch:#3ec4a1; --pch-s:#11332b; --ram:#ae90f0; --ram-s:#291f40;
+  --gpu:#f09656; --gpu-s:#3a2413; --sto:#ee7c87; --sto-s:#3c1c21; --old:#8f98a6; --old-s:#242a34;
+  color-scheme:dark}
+
+*{box-sizing:border-box}
+body{background:var(--bg);color:var(--ink);font:400 15px/1.55 var(--f-body)}
+.wrap{max-width:860px;margin:0 auto;padding-inline:16px;padding-block:20px 48px;display:grid;gap:28px}
+header{display:grid;gap:10px}
+.credit{font:500 11px/1.4 var(--f-mono);letter-spacing:.04em;color:var(--muted);text-transform:uppercase}
+h1{font:700 clamp(30px,8vw,46px)/1.02 var(--f-display);margin:0;text-wrap:balance;letter-spacing:-.01em}
+.lead{margin:0;color:var(--muted);max-width:60ch}
+.legend{display:flex;flex-wrap:wrap;gap:6px}
+.chip{display:inline-flex;align-items:center;gap:6px;font:500 11.5px/1 var(--f-mono);padding:6px 9px;border-radius:999px;border:1px solid var(--line);background:var(--surface);color:var(--ink)}
+.dot{width:10px;height:10px;border-radius:3px;border:1.5px solid}
+nav{display:flex;flex-wrap:wrap;gap:6px}
+nav a{font:600 13px/1 var(--f-body);color:var(--ink);text-decoration:none;padding:8px 11px;border-radius:8px;background:var(--surface);border:1px solid var(--line)}
+nav a:focus-visible,nav a:hover{border-color:var(--cpu);outline:none}
+nav a span{font-family:var(--f-mono);color:var(--muted);margin-right:4px}
+
+section{display:grid;gap:16px;scroll-margin-top:12px}
+.sec-head{display:grid;gap:4px;border-top:2px solid var(--ink);padding-top:12px}
+.sec-num{font:500 11px var(--f-mono);color:var(--muted);letter-spacing:.06em;text-transform:uppercase}
+h2{font:700 clamp(24px,6vw,32px)/1.1 var(--f-display);margin:0;text-wrap:balance}
+h3{font:600 15px/1.3 var(--f-body);margin:0}
+.rule{font:600 16px/1.45 var(--f-body);margin:0;padding:12px 14px;border-radius:10px;background:var(--surface);border:1px solid var(--line)}
+.rule b{color:var(--cpu)}
+
+.pair{display:grid;grid-template-columns:repeat(auto-fit,minmax(300px,1fr));gap:14px}
+figure{margin:0;background:var(--surface);border:1px solid var(--line);border-radius:12px;padding:12px;display:grid;gap:8px;min-width:0}
+figure .tag{font:500 11px var(--f-mono);text-transform:uppercase;letter-spacing:.06em;color:var(--muted)}
+figcaption{font-size:13px;color:var(--muted)}
+.fig-scroll{overflow-x:auto}
+svg{display:block;width:100%;height:auto;max-width:560px;margin:0 auto}
+
+/* SVG paint, all from tokens */
+.b-cpu{fill:var(--cpu-s);stroke:var(--cpu);stroke-width:1.6}
+.b-pch{fill:var(--pch-s);stroke:var(--pch);stroke-width:1.6}
+.b-ram{fill:var(--ram-s);stroke:var(--ram);stroke-width:1.6}
+.b-gpu{fill:var(--gpu-s);stroke:var(--gpu);stroke-width:1.6}
+.b-sto{fill:var(--sto-s);stroke:var(--sto);stroke-width:1.6}
+.b-old{fill:var(--old-s);stroke:var(--old);stroke-width:1.6}
+.b-in{fill:var(--surface);stroke:var(--cpu);stroke-width:1.2;stroke-dasharray:3 2}
+.board{fill:var(--bg);stroke:var(--line);stroke-width:1.5}
+.slot{fill:var(--old-s);stroke:var(--old);stroke-width:1.2}
+.w{stroke:var(--ink);stroke-width:1.6;fill:none}
+.w-cpu{stroke:var(--cpu);fill:none}
+.w-pch{stroke:var(--pch);fill:none}
+.w-sto{stroke:var(--sto);fill:none}
+.w-dash{stroke:var(--muted);stroke-width:1.4;fill:none;stroke-dasharray:4 3}
+.t{fill:var(--ink);font:600 13px var(--f-body)}
+.t-big{fill:var(--ink);font:700 16px var(--f-display)}
+.t-s{fill:var(--muted);font:400 10.5px var(--f-body)}
+.lbl{fill:var(--muted);font:500 10px var(--f-mono)}
+.lbl-cpu{fill:var(--cpu);font:500 10px var(--f-mono)}
+.lbl-pch{fill:var(--pch);font:500 10px var(--f-mono)}
+.lbl-sto{fill:var(--sto);font:500 10.5px var(--f-mono)}
+.ar-fill{fill:var(--muted)}
+
+/* move list */
+.moves{display:grid;gap:8px}
+.move{display:grid;grid-template-columns:minmax(0,1fr);gap:4px;background:var(--surface);border:1px solid var(--line);border-radius:10px;padding:10px 12px}
+.move .what{font:600 14px var(--f-body)}
+.path{display:flex;flex-wrap:wrap;align-items:center;gap:6px;font:500 12px var(--f-mono)}
+.pill{padding:3px 8px;border-radius:6px;border:1.5px solid}
+.p-cpu{border-color:var(--cpu);background:var(--cpu-s);color:var(--ink)}
+.p-pch{border-color:var(--pch);background:var(--pch-s);color:var(--ink)}
+.p-old{border-color:var(--old);background:var(--old-s);color:var(--ink);text-decoration:line-through;text-decoration-color:var(--old)}
+.p-ram{border-color:var(--ram);background:var(--ram-s);color:var(--ink)}
+.p-gpu{border-color:var(--gpu);background:var(--gpu-s);color:var(--ink)}
+.p-sto{border-color:var(--sto);background:var(--sto-s);color:var(--ink)}
+.arrow{color:var(--muted)}
+.move .note{font-size:12.5px;color:var(--muted)}
+
+.facts{display:grid;grid-template-columns:repeat(auto-fit,minmax(230px,1fr));gap:10px}
+.fact{background:var(--surface);border:1px solid var(--line);border-radius:10px;padding:11px 12px;display:grid;gap:4px;min-width:0}
+.fact p{margin:0;font-size:13.5px;color:var(--muted)}
+
+/* lanes */
+.lanes{display:grid;gap:10px}
+.lane{display:grid;grid-template-columns:52px minmax(0,1fr);gap:10px;align-items:start;background:var(--surface);border:1px solid var(--line);border-radius:10px;padding:10px 12px}
+.lane .x{font:700 22px/1 var(--f-display);color:var(--cpu)}
+.cells{display:grid;grid-template-columns:repeat(16,1fr);gap:2px;margin-bottom:6px}
+.cells i{height:12px;border-radius:2px;background:var(--old-s);border:1px solid var(--line)}
+.cells i.on{background:var(--cpu);border-color:var(--cpu)}
+.lane p{margin:0;font-size:13.5px}
+.lane small{display:block;color:var(--muted);font-size:12px;margin-top:2px}
+
+/* bars */
+.bars{display:grid;gap:9px}
+.bar{display:grid;grid-template-columns:118px minmax(0,1fr);gap:10px;align-items:center}
+.bar .name{font:500 12px/1.25 var(--f-mono)}
+.track{position:relative;height:22px;border-radius:5px;background:var(--old-s)}
+.fill{height:100%;border-radius:5px;min-width:5px}
+.val{position:absolute;top:50%;transform:translateY(-50%);font:500 11.5px var(--f-mono);font-variant-numeric:tabular-nums;color:var(--ink);white-space:nowrap}
+
+/* table */
+.tbl{overflow-x:auto;border:1px solid var(--line);border-radius:10px;background:var(--surface)}
+table{border-collapse:collapse;width:100%;font-size:13.5px;min-width:440px}
+th,td{text-align:left;padding:9px 11px;border-bottom:1px solid var(--line);vertical-align:top}
+th{font:500 11px var(--f-mono);text-transform:uppercase;letter-spacing:.05em;color:var(--muted)}
+tr:last-child td{border-bottom:0}
+td.speed{font-family:var(--f-mono);font-variant-numeric:tabular-nums;white-space:nowrap}
+
+/* chain */
+.chain{display:flex;flex-wrap:wrap;align-items:center;gap:6px;font:500 12.5px var(--f-mono)}
+.chain .hit{color:var(--pch);font-weight:500}
+
+.extra{background:var(--surface);border:1px dashed var(--muted);border-radius:12px;padding:14px;display:grid;gap:10px}
+.term{display:grid;grid-template-columns:minmax(0,1fr);gap:2px}
+.term b{font:700 18px/1.2 var(--f-display)}
+.term span{font-size:13.5px;color:var(--muted)}
+footer{font:500 11px var(--f-mono);color:var(--muted);text-align:center;border-top:1px solid var(--line);padding-top:14px}
+@media (prefers-reduced-motion: reduce){*{scroll-behavior:auto}}
+html{scroll-behavior:smooth}
+</style>
+
+<div class="wrap">
+<header>
+  <div class="credit">Montaje y mantenimiento de equipos · Profesor: Ezequiel Llarena Borges</div>
+  <h1>Mapa de la placa base</h1>
+  <p class="lead">Chipset, buses, ranuras PCI Express, SSD y jerarquía de memoria. Cada color es un tipo de componente y se mantiene igual en todos los esquemas.</p>
+  <div class="legend" aria-label="Leyenda de colores">
+    <span class="chip"><span class="dot" style="background:var(--cpu-s);border-color:var(--cpu)"></span>CPU</span>
+    <span class="chip"><span class="dot" style="background:var(--pch-s);border-color:var(--pch)"></span>Chipset</span>
+    <span class="chip"><span class="dot" style="background:var(--ram-s);border-color:var(--ram)"></span>RAM</span>
+    <span class="chip"><span class="dot" style="background:var(--gpu-s);border-color:var(--gpu)"></span>Gráfica</span>
+    <span class="chip"><span class="dot" style="background:var(--sto-s);border-color:var(--sto)"></span>Almacenamiento</span>
+    <span class="chip"><span class="dot" style="background:var(--old-s);border-color:var(--old)"></span>Periféricos / ya no existe</span>
+  </div>
+  <nav aria-label="Secciones">
+    <a href="#chipset"><span>1</span>Chipset</a>
+    <a href="#pcie"><span>2</span>Ranuras PCIe</a>
+    <a href="#ssd"><span>3</span>SSD</a>
+    <a href="#memoria"><span>4</span>Memoria</a>
+    <a href="#esd"><span>+</span>ESD</a>
+  </nav>
+</header>
+
+<!-- 1 CHIPSET -->
+<section id="chipset">
+  <div class="sec-head"><div class="sec-num">Bloque 1</div><h2>Del Northbridge al PCH</h2></div>
+
+  <div class="pair">
+    <figure>
+      <div class="tag">Antes · dos chipsets</div>
+      <svg viewBox="0 0 340 330" role="img" aria-label="Arquitectura antigua: la CPU se une por el FSB al Northbridge, que lleva la RAM y la gráfica; el Northbridge se une al Southbridge, que lleva SATA, USB, audio, red y PCI.">
+        <rect class="b-cpu" x="110" y="8" width="120" height="44" rx="8"/>
+        <text class="t-big" x="170" y="36" text-anchor="middle">CPU</text>
+        <line class="w" x1="170" y1="52" x2="170" y2="100"/>
+        <text class="lbl" x="178" y="80">FSB</text>
+        <rect class="b-old" x="95" y="100" width="150" height="58" rx="8"/>
+        <text class="t" x="170" y="124" text-anchor="middle">Northbridge</text>
+        <text class="t-s" x="170" y="141" text-anchor="middle">aquí vive el controlador</text>
+        <text class="t-s" x="170" y="153" text-anchor="middle">de memoria</text>
+        <rect class="b-ram" x="6" y="106" width="62" height="46" rx="8"/>
+        <text class="t" x="37" y="134" text-anchor="middle">RAM</text>
+        <line class="w" x1="68" y1="129" x2="95" y2="129"/>
+        <text class="lbl" x="81" y="122" text-anchor="middle">bus</text>
+        <rect class="b-gpu" x="272" y="106" width="62" height="46" rx="8"/>
+        <text class="t" x="303" y="134" text-anchor="middle">Gráfica</text>
+        <line class="w" x1="245" y1="129" x2="272" y2="129"/>
+        <line class="w" x1="170" y1="158" x2="170" y2="206"/>
+        <text class="lbl" x="178" y="186">enlace</text>
+        <rect class="b-old" x="95" y="206" width="150" height="46" rx="8"/>
+        <text class="t" x="170" y="226" text-anchor="middle">Southbridge</text>
+        <text class="t-s" x="170" y="242" text-anchor="middle">lo lento</text>
+        <line class="w" x1="170" y1="252" x2="170" y2="272"/>
+        <line class="w" x1="38" y1="272" x2="302" y2="272"/>
+        <g>
+          <line class="w" x1="38" y1="272" x2="38" y2="288"/><rect class="b-old" x="8" y="288" width="60" height="30" rx="6"/><text class="t-s" x="38" y="307" text-anchor="middle">SATA</text>
+          <line class="w" x1="104" y1="272" x2="104" y2="288"/><rect class="b-old" x="74" y="288" width="60" height="30" rx="6"/><text class="t-s" x="104" y="307" text-anchor="middle">USB</text>
+          <line class="w" x1="170" y1="272" x2="170" y2="288"/><rect class="b-old" x="140" y="288" width="60" height="30" rx="6"/><text class="t-s" x="170" y="307" text-anchor="middle">Audio</text>
+          <line class="w" x1="236" y1="272" x2="236" y2="288"/><rect class="b-old" x="206" y="288" width="60" height="30" rx="6"/><text class="t-s" x="236" y="307" text-anchor="middle">Red</text>
+          <line class="w" x1="302" y1="272" x2="302" y2="288"/><rect class="b-old" x="272" y="288" width="60" height="30" rx="6"/><text class="t-s" x="302" y="307" text-anchor="middle">PCI</text>
+        </g>
+      </svg>
+      <figcaption>La RAM y la gráfica dependían del Northbridge. Un dato de memoria hacía CPU → FSB → Northbridge → RAM.</figcaption>
+    </figure>
+
+    <figure>
+      <div class="tag">Ahora · un chipset</div>
+      <svg viewBox="0 0 340 330" role="img" aria-label="Arquitectura actual: la CPU lleva dentro el controlador de memoria y el PCIe de la gráfica, por eso RAM, gráfica y M.2 NVMe van directos a ella; la CPU se une por DMI al PCH, que lleva SATA, USB, red, audio y PCIe secundario.">
+        <rect class="b-sto" x="120" y="6" width="100" height="32" rx="7"/>
+        <text class="t-s" x="170" y="26" text-anchor="middle" style="fill:var(--ink)">SSD M.2 NVMe</text>
+        <line class="w-cpu" stroke-width="4" x1="170" y1="38" x2="170" y2="62"/>
+        <text class="lbl-cpu" x="178" y="54">x4</text>
+        <rect class="b-cpu" x="84" y="62" width="172" height="100" rx="10"/>
+        <text class="t-big" x="170" y="84" text-anchor="middle">CPU</text>
+        <rect class="b-in" x="96" y="94" width="148" height="26" rx="5"/>
+        <text class="t-s" x="170" y="111" text-anchor="middle" style="fill:var(--ink)">controlador de memoria</text>
+        <rect class="b-in" x="96" y="126" width="148" height="26" rx="5"/>
+        <text class="t-s" x="170" y="143" text-anchor="middle" style="fill:var(--ink)">PCIe principal (x16)</text>
+        <rect class="b-ram" x="6" y="84" width="56" height="44" rx="8"/>
+        <text class="t" x="34" y="111" text-anchor="middle">RAM</text>
+        <line class="w-cpu" stroke-width="4" x1="62" y1="107" x2="96" y2="107"/>
+        <rect class="b-gpu" x="278" y="116" width="56" height="44" rx="8"/>
+        <text class="t" x="306" y="143" text-anchor="middle">Gráfica</text>
+        <line class="w-cpu" stroke-width="6" x1="244" y1="139" x2="278" y2="139"/>
+        <text class="lbl-cpu" x="261" y="132" text-anchor="middle">x16</text>
+        <line class="w" stroke-width="3" x1="170" y1="162" x2="170" y2="206"/>
+        <text class="lbl" x="178" y="188">DMI</text>
+        <rect class="b-pch" x="95" y="206" width="150" height="46" rx="8"/>
+        <text class="t" x="170" y="226" text-anchor="middle">PCH (chipset)</text>
+        <text class="t-s" x="170" y="242" text-anchor="middle">el antiguo Southbridge</text>
+        <line class="w-pch" stroke-width="1.6" x1="170" y1="252" x2="170" y2="272"/>
+        <line class="w-pch" stroke-width="1.6" x1="38" y1="272" x2="302" y2="272"/>
+        <g>
+          <line class="w-pch" stroke-width="1.6" x1="38" y1="272" x2="38" y2="288"/><rect class="b-old" x="8" y="288" width="60" height="30" rx="6"/><text class="t-s" x="38" y="307" text-anchor="middle">SATA</text>
+          <line class="w-pch" stroke-width="1.6" x1="104" y1="272" x2="104" y2="288"/><rect class="b-old" x="74" y="288" width="60" height="30" rx="6"/><text class="t-s" x="104" y="307" text-anchor="middle">USB</text>
+          <line class="w-pch" stroke-width="1.6" x1="170" y1="272" x2="170" y2="288"/><rect class="b-old" x="140" y="288" width="60" height="30" rx="6"/><text class="t-s" x="170" y="307" text-anchor="middle">Red</text>
+          <line class="w-pch" stroke-width="1.6" x1="236" y1="272" x2="236" y2="288"/><rect class="b-old" x="206" y="288" width="60" height="30" rx="6"/><text class="t-s" x="236" y="307" text-anchor="middle">Audio</text>
+          <line class="w-pch" stroke-width="1.6" x1="302" y1="272" x2="302" y2="288"/><rect class="b-old" x="272" y="288" width="60" height="30" rx="6"/><text class="t-s" x="302" y="302" text-anchor="middle">PCIe</text><text class="t-s" x="302" y="313" text-anchor="middle">secund.</text>
+        </g>
+      </svg>
+      <figcaption>Ya no hay intermediario: RAM, gráfica principal y M.2 principal van directos a la CPU. El resto cuelga del PCH por el DMI.</figcaption>
+    </figure>
+  </div>
+
+  <h3>Qué se mudó y adónde</h3>
+  <div class="moves">
+    <div class="move">
+      <div class="what">Controlador de memoria</div>
+      <div class="path"><span class="pill p-old">Northbridge</span><span class="arrow">→</span><span class="pill p-cpu">dentro de la CPU</span></div>
+      <div class="note">AMD lo hizo en 2003 (Athlon 64); Intel en 2008 (Nehalem). Motivo: menos distancia, menos retardo, más velocidad.</div>
+    </div>
+    <div class="move">
+      <div class="what">PCIe de la gráfica</div>
+      <div class="path"><span class="pill p-old">Northbridge</span><span class="arrow">→</span><span class="pill p-cpu">dentro de la CPU</span></div>
+    </div>
+    <div class="move">
+      <div class="what">Bus principal de la CPU</div>
+      <div class="path"><span class="pill p-old">FSB · CPU ↔ Northbridge</span><span class="arrow">→</span><span class="pill p-pch">DMI · CPU ↔ PCH</span></div>
+      <div class="note">FSB = Front Side Bus. DMI = Direct Media Interface (Media, no Memory).</div>
+    </div>
+    <div class="move">
+      <div class="what">Southbridge</div>
+      <div class="path"><span class="pill p-old">Southbridge</span><span class="arrow">→</span><span class="pill p-pch">PCH · Platform Controller Hub</span></div>
+    </div>
+  </div>
+
+  <p class="rule">El chipset no es "lo lento". La diferencia es <b>directo a la CPU</b> o <b>a través del chipset</b>.</p>
+
+  <div class="facts">
+    <div class="fact"><h3>El controlador de memoria</h3><p>El "bibliotecario" de la RAM: localiza fila y columna, respeta los timings y refresca las celdas. Como vive en la CPU, es el procesador quien decide si admites DDR4 o DDR5.</p></div>
+    <div class="fact"><h3>Integrada + dedicada</h3><p>Muchas CPU traen gráfica integrada. Si hace falta más potencia se añade una dedicada en la x16. Conviven sin problema.</p></div>
+    <div class="fact"><h3>Dos gráficas</h3><p>Posible con dos ranuras x16. SLI y CrossFire (sumar potencia) están casi abandonados; hoy se usa cada una para una tarea.</p></div>
+  </div>
+</section>
+
+<!-- 2 PCIE -->
+<section id="pcie">
+  <div class="sec-head"><div class="sec-num">Bloque 2</div><h2>Ranuras PCI Express</h2></div>
+  <p class="rule">El tamaño de la ranura indica <b>carriles = ancho de banda</b>, no la función. No existe una ranura "solo de vídeo".</p>
+
+  <div class="lanes">
+    <div class="lane"><div class="x">x1</div><div>
+      <div class="cells" aria-hidden="true"><i class="on"></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i></div>
+      <p>Sonido, red de 1 Gb, wifi y bluetooth, USB extra, captura sencilla, controladora SATA.</p><small>Lo ligero. Muy común en placas de casa.</small></div></div>
+    <div class="lane"><div class="x">x4</div><div>
+      <div class="cells" aria-hidden="true"><i class="on"></i><i class="on"></i><i class="on"></i><i class="on"></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i></div>
+      <p>SSD NVMe en adaptador, RAID mediana, red de 10 Gb modesta.</p><small>Poco visible en ATX o micro ATX: suele venir disfrazada de x16 física.</small></div></div>
+    <div class="lane"><div class="x">x8</div><div>
+      <div class="cells" aria-hidden="true"><i class="on"></i><i class="on"></i><i class="on"></i><i class="on"></i><i class="on"></i><i class="on"></i><i class="on"></i><i class="on"></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i></div>
+      <p>Segunda gráfica con carriles repartidos, controladoras potentes, red rápida, aceleradoras.</p><small>Gama alta, estaciones de trabajo y servidores.</small></div></div>
+    <div class="lane"><div class="x">x16</div><div>
+      <div class="cells" aria-hidden="true"><i class="on"></i><i class="on"></i><i class="on"></i><i class="on"></i><i class="on"></i><i class="on"></i><i class="on"></i><i class="on"></i><i class="on"></i><i class="on"></i><i class="on"></i><i class="on"></i><i class="on"></i><i class="on"></i><i class="on"></i><i class="on"></i></div>
+      <p>Gráfica principal. También admite: captura profesional, RAID/HBA, red de 10–25–40 Gb, tarjeta con varios NVMe, aceleradoras de cálculo o IA, sonido de gama muy alta.</p><small>En un PC de casa o de aula, el 99 % de las veces: la gráfica.</small></div></div>
+  </div>
+
+  <figure>
+    <div class="tag">Física ≠ eléctrica</div>
+    <svg viewBox="0 0 340 232" role="img" aria-label="Placa esquemática: la ranura x16 de arriba sale directa de la CPU con 16 carriles; la segunda ranura x16 física cuelga del PCH y solo lleva 4 carriles; la x1 también cuelga del PCH; CPU y PCH se unen por DMI.">
+      <rect class="board" x="4" y="4" width="332" height="222" rx="10"/>
+      <rect class="b-cpu" x="24" y="20" width="70" height="60" rx="8"/>
+      <text class="t-big" x="59" y="55" text-anchor="middle">CPU</text>
+      <rect class="b-pch" x="262" y="146" width="62" height="56" rx="8"/>
+      <text class="t" x="293" y="179" text-anchor="middle">PCH</text>
+      <path class="w" stroke-width="3" d="M94 40 H293 V146"/>
+      <text class="lbl" x="200" y="34" text-anchor="middle">DMI</text>
+      <line class="w-cpu" stroke-width="6" x1="59" y1="80" x2="59" y2="110"/>
+      <rect class="slot" x="24" y="110" width="200" height="14" rx="3"/>
+      <text class="lbl-cpu" x="224" y="104" text-anchor="end">x16 real · directa a la CPU</text>
+      <rect class="slot" x="24" y="152" width="200" height="14" rx="3"/>
+      <text class="lbl-pch" x="224" y="146" text-anchor="end">x16 física · funciona a x4</text>
+      <line class="w-pch" stroke-width="2" x1="224" y1="159" x2="262" y2="166"/>
+      <rect class="slot" x="24" y="192" width="60" height="14" rx="3"/>
+      <text class="lbl-pch" x="24" y="186">x1</text>
+      <line class="w-pch" stroke-width="1.6" x1="84" y1="199" x2="262" y2="192"/>
+    </svg>
+    <figcaption>La ranura más cercana a la CPU es la buena para la gráfica. Las de abajo pueden parecer x16 y llevar menos carriles: lo dice el manual de la placa.</figcaption>
+  </figure>
+
+  <div class="facts">
+    <div class="fact"><h3>¿Por qué varias x16?</h3><p>Flexibilidad, no desperdicio. La CPU tiene carriles limitados y se reparten: una gráfica se lleva x16; dos tarjetas quedan en x8 + x8.</p></div>
+    <div class="fact"><h3>Red rápida en PCIe</h3><p>La red de 1 Gb va integrada. Las de 10 Gb o más necesitan una ranura con varios carriles para aprovechar el canal.</p></div>
+  </div>
+
+  <figure>
+    <div class="tag">Cada generación dobla la velocidad · mismos 4 carriles</div>
+    <div class="bars">
+      <div class="bar"><span class="name">PCIe 3.0 x4</span><div class="track"><div class="fill" style="width:25%;background:var(--cpu)"></div><span class="val" style="left:calc(25% + 6px)">≈ 3.500 MB/s</span></div></div>
+      <div class="bar"><span class="name">PCIe 4.0 x4</span><div class="track"><div class="fill" style="width:50%;background:var(--cpu)"></div><span class="val" style="left:calc(50% + 6px)">≈ 7.000 MB/s</span></div></div>
+      <div class="bar"><span class="name">PCIe 5.0 x4</span><div class="track"><div class="fill" style="width:100%;background:var(--cpu)"></div><span class="val" style="right:6px;color:var(--surface)">≈ 14.000 MB/s</span></div></div>
+    </div>
+    <figcaption>Velocidades aproximadas de un SSD NVMe. Cuatro carriles de generación 5 superan a ocho de generación 3.</figcaption>
+  </figure>
+</section>
+
+<!-- 3 SSD -->
+<section id="ssd">
+  <div class="sec-head"><div class="sec-num">Bloque 3</div><h2>Unidades SSD</h2></div>
+  <p class="rule">La velocidad la marcan <b>la tubería</b> (SATA o PCIe) y <b>el idioma</b> (AHCI o NVMe), no el enchufe.</p>
+
+  <figure>
+    <div class="tag">Tres tipos reales · analogía del grifo</div>
+    <div class="fig-scroll">
+    <svg viewBox="0 0 340 214" role="img" aria-label="Tres tipos de SSD: el SSD de 2,5 pulgadas por cable SATA y el SSD M.2 SATA van por una tubería fina con AHCI a unos 550 MB/s; el SSD M.2 NVMe va por una tubería gruesa PCIe x4 a miles de MB/s.">
+      <text class="lbl" x="44" y="12" text-anchor="middle">GRIFO</text>
+      <text class="lbl" x="128" y="12" text-anchor="middle">TUBERÍA</text>
+      <text class="lbl" x="218" y="12" text-anchor="middle">IDIOMA</text>
+      <text class="lbl" x="302" y="12" text-anchor="middle">CAUDAL</text>
+      <!-- row 1 -->
+      <rect class="b-sto" x="6" y="22" width="76" height="46" rx="7"/>
+      <text class="t-s" x="44" y="41" text-anchor="middle" style="fill:var(--ink)">SSD 2,5"</text>
+      <text class="t-s" x="44" y="56" text-anchor="middle">cable SATA</text>
+      <line class="w-sto" stroke-width="2" x1="82" y1="45" x2="176" y2="45"/>
+      <text class="lbl" x="128" y="38" text-anchor="middle">SATA</text>
+      <rect class="b-old" x="176" y="28" width="84" height="34" rx="6"/>
+      <text class="t-s" x="218" y="49" text-anchor="middle" style="fill:var(--ink)">AHCI</text>
+      <text class="lbl-sto" x="302" y="43" text-anchor="middle">≈ 550</text><text class="lbl" x="302" y="56" text-anchor="middle">MB/s</text>
+      <!-- row 2 -->
+      <rect class="b-sto" x="6" y="88" width="76" height="46" rx="7"/>
+      <text class="t-s" x="44" y="107" text-anchor="middle" style="fill:var(--ink)">SSD M.2</text>
+      <text class="t-s" x="44" y="122" text-anchor="middle">ranura M.2</text>
+      <line class="w-sto" stroke-width="2" x1="82" y1="111" x2="176" y2="111"/>
+      <text class="lbl" x="128" y="104" text-anchor="middle">SATA</text>
+      <rect class="b-old" x="176" y="94" width="84" height="34" rx="6"/>
+      <text class="t-s" x="218" y="115" text-anchor="middle" style="fill:var(--ink)">AHCI</text>
+      <text class="lbl-sto" x="302" y="109" text-anchor="middle">≈ 550</text><text class="lbl" x="302" y="122" text-anchor="middle">MB/s</text>
+      <!-- row 3 -->
+      <rect class="b-sto" x="6" y="154" width="76" height="46" rx="7"/>
+      <text class="t-s" x="44" y="173" text-anchor="middle" style="fill:var(--ink)">SSD M.2</text>
+      <text class="t-s" x="44" y="188" text-anchor="middle">ranura M.2</text>
+      <line class="w-cpu" stroke-width="12" x1="82" y1="177" x2="176" y2="177"/>
+      <text class="lbl-cpu" x="128" y="163" text-anchor="middle">PCIe x4</text>
+      <rect class="b-cpu" x="176" y="160" width="84" height="34" rx="6"/>
+      <text class="t-s" x="218" y="181" text-anchor="middle" style="fill:var(--ink)">NVMe</text>
+      <text class="lbl-cpu" x="302" y="175" text-anchor="middle">3.500 a</text><text class="lbl-cpu" x="302" y="188" text-anchor="middle">14.000 MB/s</text>
+      <path class="w-dash" d="M44 134 V154"/>
+    </svg>
+    </div>
+    <figcaption>Filas 2 y 3: el mismo grifo (M.2) con tuberías distintas. Por fuera son iguales; la ficha técnica dice cuál es.</figcaption>
+  </figure>
+
+  <figure>
+    <div class="tag">Escalera de velocidad · escala real</div>
+    <div class="bars">
+      <div class="bar"><span class="name">HDD (platos)</span><div class="track"><div class="fill" style="width:1.1%;background:var(--old)"></div><span class="val" style="left:calc(1.1% + 8px)">≈ 150 MB/s</span></div></div>
+      <div class="bar"><span class="name">SSD SATA</span><div class="track"><div class="fill" style="width:3.9%;background:var(--sto)"></div><span class="val" style="left:calc(3.9% + 6px)">≈ 550 MB/s</span></div></div>
+      <div class="bar"><span class="name">NVMe Gen3</span><div class="track"><div class="fill" style="width:25%;background:var(--cpu)"></div><span class="val" style="left:calc(25% + 6px)">≈ 3.500 MB/s</span></div></div>
+      <div class="bar"><span class="name">NVMe Gen4</span><div class="track"><div class="fill" style="width:50%;background:var(--cpu)"></div><span class="val" style="left:calc(50% + 6px)">≈ 7.000 MB/s</span></div></div>
+      <div class="bar"><span class="name">NVMe Gen5</span><div class="track"><div class="fill" style="width:100%;background:var(--cpu)"></div><span class="val" style="right:6px;color:var(--surface)">≈ 14.000 MB/s</span></div></div>
+    </div>
+    <figcaption>HDD y SSD SATA usan el mismo cable, pero el disco mecánico no llega ni al tope del SATA: lo frena la mecánica.</figcaption>
+  </figure>
+
+  <div class="tbl">
+    <table>
+      <thead><tr><th>Concepto</th><th>Qué es</th><th>Ejemplos</th></tr></thead>
+      <tbody>
+        <tr><td><b>Conector</b> (grifo)</td><td>Dónde se enchufa</td><td>Cable SATA, ranura M.2</td></tr>
+        <tr><td><b>Conexión</b> (tubería)</td><td>Por dónde viajan los datos</td><td>SATA, PCIe</td></tr>
+        <tr><td><b>Protocolo</b> (idioma)</td><td>Cómo se piden los datos</td><td>AHCI (pensado para discos mecánicos), NVMe (Non-Volatile Memory Express, para flash)</td></tr>
+      </tbody>
+    </table>
+  </div>
+
+  <div class="facts">
+    <div class="fact"><h3>Carriles compartidos</h3><p>En muchas placas, usar cierta ranura M.2 desactiva algunos puertos SATA.</p></div>
+    <div class="fact"><h3>CPU o chipset</h3><p>Un M.2 puede colgar de la CPU o del PCH. El de la CPU va algo más fino.</p></div>
+    <div class="fact"><h3>Regla de oro</h3><p>Antes de montar, manual de la placa: qué va a qué velocidad y qué se desactiva.</p></div>
+  </div>
+</section>
+
+<!-- 4 MEMORIA -->
+<section id="memoria">
+  <div class="sec-head"><div class="sec-num">Bloque 4</div><h2>Jerarquía de memoria</h2></div>
+  <p class="rule">Rápida y grande a la vez es imposible, así que se hace por capas. Tres niveles de caché son <b>el mejor equilibrio entre velocidad, tamaño y coste</b>.</p>
+
+  <figure>
+    <div class="tag">La pirámide</div>
+    <svg viewBox="0 0 340 290" role="img" aria-label="Pirámide de memoria de arriba abajo: registros, caché L1, L2, L3, RAM y almacenamiento. Cuanto más arriba, más rápida, cara y pequeña; cuanto más abajo, más grande, barata y lenta.">
+      <polygon class="b-cpu" points="135,10 205,10 220.6,52 119.4,52"/>
+      <text class="t" x="170" y="29" text-anchor="middle" style="font-size:11.5px">Registros</text><text class="t-s" x="170" y="44" text-anchor="middle">bytes</text>
+      <polygon class="b-cpu" points="118.3,55 221.7,55 237.2,97 102.8,97"/>
+      <text class="t" x="170" y="74" text-anchor="middle">Caché L1</text><text class="t-s" x="170" y="89" text-anchor="middle">decenas de KB · por núcleo</text>
+      <polygon class="b-cpu" points="101.7,100 238.3,100 253.9,142 86.1,142"/>
+      <text class="t" x="170" y="119" text-anchor="middle">Caché L2</text><text class="t-s" x="170" y="134" text-anchor="middle">cientos de KB a pocos MB</text>
+      <polygon class="b-cpu" points="85,145 255,145 270.6,187 69.4,187"/>
+      <text class="t" x="170" y="164" text-anchor="middle">Caché L3</text><text class="t-s" x="170" y="179" text-anchor="middle">MB · compartida por todos los núcleos</text>
+      <polygon class="b-ram" points="68.3,190 271.7,190 287.2,232 52.8,232"/>
+      <text class="t" x="170" y="209" text-anchor="middle">RAM</text><text class="t-s" x="170" y="224" text-anchor="middle">GB · fuera de la CPU</text>
+      <polygon class="b-sto" points="51.7,235 288.3,235 303.9,277 36.1,277"/>
+      <text class="t" x="170" y="254" text-anchor="middle">SSD / HDD</text><text class="t-s" x="170" y="269" text-anchor="middle">TB · permanente</text>
+      <line class="w-dash" x1="18" y1="270" x2="18" y2="22"/>
+      <polygon class="ar-fill" points="18,12 13,22 23,22"/>
+      <text class="lbl" transform="translate(12 150) rotate(-90)" text-anchor="middle">más rápida · cara · pequeña</text>
+      <line class="w-dash" x1="322" y1="18" x2="322" y2="266"/>
+      <polygon class="ar-fill" points="322,276 317,266 327,266"/>
+      <text class="lbl" transform="translate(332 146) rotate(90)" text-anchor="middle">más grande · barata · lenta</text>
+    </svg>
+    <figcaption>Los registros y la L1 son primos hermanos: lo más alto y pegado al núcleo.</figcaption>
+  </figure>
+
+  <figure>
+    <div class="tag">Cómo busca la CPU un dato</div>
+    <div class="chain">
+      <span class="pill p-cpu">Registros</span><span class="arrow">→</span>
+      <span class="pill p-cpu">L1</span><span class="arrow">→</span>
+      <span class="pill p-cpu">L2</span><span class="arrow">→</span>
+      <span class="pill p-cpu">L3</span><span class="arrow">→</span>
+      <span class="pill p-ram">RAM</span><span class="arrow">→</span>
+      <span class="pill p-sto">SSD</span>
+    </div>
+    <figcaption><span class="hit" style="color:var(--pch);font-weight:600">Acierto (hit)</span>: el dato está en ese nivel. <span style="color:var(--sto);font-weight:600">Fallo (miss)</span>: baja al siguiente. Lo que encuentra abajo lo sube arriba por si vuelve a necesitarlo. Funciona por la <b>localidad</b>: los programas repiten datos y usan datos cercanos.</figcaption>
+  </figure>
+
+  <div class="facts">
+    <div class="fact"><h3>¿Por qué no una sola?</h3><p>No puedes tener a la vez rápida y grande.</p></div>
+    <div class="fact"><h3>¿Por qué apareció la L3?</h3><p>Con muchos núcleos hizo falta una capa grande y compartida. Antes bastaba con L1 y L2.</p></div>
+    <div class="fact"><h3>¿Por qué no cuatro?</h3><p>Cada capa es un sitio más donde buscar. La mejora ya no compensa el coste.</p></div>
+  </div>
+</section>
+
+<!-- EXTRA -->
+<section id="esd">
+  <div class="extra">
+    <div class="sec-num">Extra · antes del taller</div>
+    <div class="facts">
+      <div class="term"><b>Descarga electrostática</b><span>El fenómeno. ESD = ElectroStatic Discharge.</span></div>
+      <div class="term"><b>Pulsera antiestática</b><span>La protección. Va contra la estática.</span></div>
+    </div>
+    <p style="margin:0;font-size:14px">La pulsera protege al <b>componente</b>, no a ti: te mantiene al mismo potencial que el equipo y drena la carga a tierra. Con el polímetro no se mide la carga, pero sí se puede <b>comparar</b> entre alumnos: quien marca más, lleva más.</p>
+  </div>
+</section>
+
+<footer>Montaje y mantenimiento de equipos · Profesor: Ezequiel Llarena Borges</footer>
+</div>
+
+</body></html>
