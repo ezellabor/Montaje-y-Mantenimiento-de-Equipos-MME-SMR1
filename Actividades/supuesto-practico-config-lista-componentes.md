@@ -196,7 +196,9 @@ Por cada configuración:
 - [ ] Tamaño placa base vs carcasa
 - [ ] Potencia PSU suficiente
 - [ ] Refrigeración adecuada
-- [ ] Conectividad necesaria (Wi-Fi, USB, etc.)
+- [ ] Chipset
+- [ ] RAM
+- [ ] Conectividad necesaria (Buses expansión: Wi-Fi, USB, etc.)
 
 ---  
 
