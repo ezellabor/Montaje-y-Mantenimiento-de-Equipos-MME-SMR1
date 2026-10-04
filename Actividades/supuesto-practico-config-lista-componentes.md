@@ -143,8 +143,7 @@ Esta herramienta te ayudará a:
 
 ## 5. Entregables
 
-Por cada configuración documento PDF con la configuración elegida que incluya enlace permamente a lista de componentes creada con PC Part Picker.  
-A continuación tienes un ejemplo de estructura del documento PDF a presentar por cada configuración.
+Documento PDF con la configuración elegida en cada caso que incluya enlace permamente a lista de componentes creada con PC Part Picker.  A continuación tienes un ejemplo de estructura del documento PDF a presentar para cada configuración.
 **Nota importante:** Haz una captura de la configuración seleccionada en PC Part Picker ya que de un día para otro los precios de los componentes pueden cambiar y consecuentemente también el total del presupuesto.
 
 ### CONFIGURACIÓN: [Número y nombre de la configuración]
