@@ -144,14 +144,14 @@ Esta herramienta te ayudará a:
 ## 5. Entregables
 
 Por cada configuración: 
-1. enlace permamente a lista de componentes creada con PC Part Picker.
-2. Documento PDF con la configuració elegida.  
+1. Enlace permamente a lista de componentes creada con PC Part Picker.
+2. Documento PDF con la configuración elegida.  
 
 ## CONFIGURACIÓN: [Número y nombre de la configuración]
 
-### Presupuesto objetivo: ______€
-### Presupuesto final: ______€
-### Diferencia: ______€
+### Presupuesto objetivo: ```     ``` €
+### Presupuesto final: ```     ``` €
+### Diferencia: ```     ``` €
 
 ### Componentes seleccionados:
 
