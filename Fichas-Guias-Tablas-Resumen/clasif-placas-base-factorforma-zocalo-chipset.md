@@ -161,7 +161,7 @@ Una placa base puede describirse combinando sus tres características principale
 
 ---
 
-## 6. Ejemplo práctico 1: placa AMD
+## 6. Ejemplo de placa base 1
 
 Supongamos una placa con estas características:
 
@@ -184,7 +184,7 @@ Supongamos una placa con estas características:
 
 ---
 
-## 7. Ejemplo:
+## 7. Ejemplo de placa base 2:
 
 Supongamos una placa con:
 
