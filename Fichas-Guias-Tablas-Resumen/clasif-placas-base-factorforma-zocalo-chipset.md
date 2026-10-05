@@ -1,12 +1,7 @@
 # Clasificación de las placas base
+```Placas base y sus características principales```  
 
-**Módulo:** Montaje y Mantenimiento de Equipos (MME)  
-**Curso:** SMR1  
-**Tema:** Placas base y sus características principales
-
----
-
-## 1. ¿Cómo podemos clasificar una placa base?
+## 1. Criterios de clasificación  
 
 Una placa base puede clasificarse atendiendo principalmente a **tres criterios**:
 
@@ -20,7 +15,7 @@ Una placa base puede clasificarse atendiendo principalmente a **tres criterios**
 
 ---
 
-# 2. Clasificación según el factor de forma
+## 2. Clasificación según el factor de forma
 
 El **factor de forma** describe principalmente las dimensiones físicas de la placa base y la distribución de sus componentes, conectores y ranuras de expansión.
 
@@ -38,19 +33,17 @@ También condiciona el tipo de caja compatible y, en general, las posibilidades 
 
 ### Idea clave
 
-> **El factor de forma NO indica qué procesador utiliza la placa.**
-
-Por ejemplo, una placa **ATX** puede utilizar un socket Intel o AMD dependiendo del modelo.
+> **El factor de forma nos indica el tamaño y distribución física.**
 
 ---
 
-# 3. Clasificación según el zócalo del procesador
+## 3. Clasificación según el zócalo del procesador
 
 El **zócalo**, **socket** o **zócalo de CPU** es la conexión física y eléctrica entre el procesador y la placa base.
 
 El socket determina qué familias de procesadores pueden instalarse físicamente en la placa.
 
-## 3.1. Principales sockets de Intel
+### 3.1. Principales sockets de Intel
 
 | Socket | Ejemplos de procesadores / generaciones |
 |---|---|
@@ -60,15 +53,9 @@ El socket determina qué familias de procesadores pueden instalarse físicamente
 | **LGA1700** | Intel Core de 12.ª, 13.ª y 14.ª generación |
 | **LGA1851** | Intel Core Ultra de escritorio |
 
-### ¿Qué significa LGA?
-
-**LGA** significa *Land Grid Array*.
-
-En este sistema, los contactos eléctricos se encuentran principalmente en el **socket de la placa base**, mientras que el procesador presenta las superficies de contacto correspondientes.
-
 ---
 
-## 3.2. Principales sockets de AMD
+### 3.2. Principales sockets de AMD
 
 | Socket | Ejemplos / plataforma |
 |---|---|
@@ -92,7 +79,7 @@ También debemos comprobar el **chipset**, el modelo concreto de procesador y, e
 
 ---
 
-# 4. Clasificación según el chipset
+## 4. Clasificación según el chipset
 
 El **chipset** es un conjunto de circuitos y funciones de la plataforma que permite gestionar buena parte de la comunicación y las características adicionales de la placa base.
 
@@ -110,7 +97,7 @@ Entre otras cuestiones, puede influir en:
 
 ---
 
-# 5. Chipsets Intel
+### 4.1 Chipsets Intel
 
 Intel utiliza diferentes familias de chipsets.
 
@@ -131,7 +118,7 @@ nos indica una plataforma orientada a equipos de altas prestaciones basada en pr
 
 ---
 
-# 6. Chipsets AMD
+### 4.2 Chipsets AMD
 
 AMD también utiliza diferentes familias de chipsets.
 
@@ -152,7 +139,7 @@ indica una placa de la plataforma **AM5**, con un chipset **B650**, orientado a 
 
 ---
 
-# 7. Los tres conceptos juntos
+## 5. Los tres conceptos juntos
 
 Una placa base puede describirse combinando sus tres características principales:
 
@@ -174,7 +161,7 @@ Una placa base puede describirse combinando sus tres características principale
 
 ---
 
-# 8. Ejemplo práctico 1: placa AMD
+## 6. Ejemplo práctico 1: placa AMD
 
 Supongamos una placa con estas características:
 
@@ -197,7 +184,7 @@ Supongamos una placa con estas características:
 
 ---
 
-# 9. Ejemplo práctico 2: placa Intel
+## 7. Ejemplo:
 
 Supongamos una placa con:
 
@@ -227,39 +214,7 @@ Por tanto:
 
 ---
 
-# 10. No confundas estos conceptos
-
-## ATX
-
-**ATX = factor de forma**
-
-Responde a:
-
-> ¿Qué tamaño y distribución física tiene la placa?
-
----
-
-## AM5
-
-**AM5 = socket**
-
-Responde a:
-
-> ¿Qué plataforma de procesador utiliza?
-
----
-
-## B650
-
-**B650 = chipset**
-
-Responde a:
-
-> ¿Qué características y posibilidades de expansión ofrece la plataforma?
-
----
-
-# 11. Tabla resumen
+## 8. Tabla resumen
 
 | Criterio | Pregunta que responde | Ejemplos |
 |---|---|---|
@@ -269,7 +224,7 @@ Responde a:
 
 ---
 
-# 12. Regla para recordar
+## 9. Regla para recordar
 
 Para identificar rápidamente una placa base debemos buscar:
 
@@ -303,7 +258,7 @@ Se interpreta como:
 
 ---
 
-# 13. Preguntas de repaso
+## 10. Preguntas de repaso
 
 ### 1. ¿Qué característica determina principalmente el tamaño físico de la placa?
 
@@ -339,7 +294,7 @@ Se interpreta como:
 
 ---
 
-# Resumen final
+## Resumen final
 
 > **FACTOR DE FORMA → tamaño físico**
 
@@ -351,4 +306,4 @@ Estos tres conceptos permiten realizar una primera identificación técnica de c
 
 ---
 
-**MME · SMR1**
+**Montaje y Mantenimiento de Equipos | Profesor: Ezequiel Llarena Borges**
