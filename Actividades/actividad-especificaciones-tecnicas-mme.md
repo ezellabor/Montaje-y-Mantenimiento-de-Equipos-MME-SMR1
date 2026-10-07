@@ -39,9 +39,7 @@ El alumno identifica las características técnicas de los componentes de un equ
 
 ---
 
-## 5. Tabla de recogida de datos
-
-**Nombre y apellidos:** ______________________________ **Grupo:** __________ **Fecha:** __________
+## 5. Tabla de recogida de datos 
 
 | Dato técnico | Configuración / msinfo32 | CPU-Z | HWiNFO |
 |---|---|---|---|
