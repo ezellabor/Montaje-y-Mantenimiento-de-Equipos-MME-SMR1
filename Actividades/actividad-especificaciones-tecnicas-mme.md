@@ -1,4 +1,4 @@
-# Actividad práctica — Identificación de las especificaciones técnicas de un equipo
+# Identificación de las especificaciones técnicas de un equipo
 
 **Módulo:** MME · 1º SMR
 **Profesor:** Ezequiel Llarena Borges
