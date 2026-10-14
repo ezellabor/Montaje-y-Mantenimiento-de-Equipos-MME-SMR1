@@ -1,5 +1,3 @@
-### Montaje y Mantenimiento de Equipos 
-
 # Configuración y verificación de memoria RAM Dual Channel
 ```Guía práctica con CPU-Z```  
 
