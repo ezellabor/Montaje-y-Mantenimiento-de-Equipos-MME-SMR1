@@ -14,13 +14,13 @@ Para realizar la configuración correctamente, se deben cumplir tres requisitos 
 
 ---
 
-## 2. Ejercicio Práctico: Verificación de Dual Channel con CPU-Z
+## 2. Ejercicio práctico: Verificación de Dual Channel con CPU-Z
 
-**Objetivo de la práctica:** Diagnosticar y verificar desde el sistema operativo Windows si la memoria RAM está operando correctamente en modo Dual Channel y a su frecuencia efectiva nominal empleando la herramienta de software CPU-Z.
+**Objetivo:** Diagnosticar y verificar desde el sistema operativo Windows si la memoria RAM está operando correctamente en modo Dual Channel y a su frecuencia efectiva nominal empleando la herramienta de software CPU-Z.
 
-**Material necesario:** Equipo informático con Windows y el software CPU-Z instalado (utilidad gratuita de diagnóstico de hardware).
+**Herramientas necesarias:** Equipo informático con Windows y el software CPU-Z instalado (utilidad gratuita de diagnóstico de hardware).
 
-### Procedimiento Paso a Paso
+### Procedimiento paso a paso
 
 #### Paso 1: Verificación del modo de canal
 1. Inicia la aplicación **CPU-Z**.
@@ -43,7 +43,7 @@ Para realizar la configuración correctamente, se deben cumplir tres requisitos 
 
 ---
 
-## 3. Ficha de Registro y Diagnóstico del Alumno
+## 3. Ficha de Registro y Diagnóstico
 
 Rellena la siguiente tabla con los datos obtenidos durante la inspección con CPU-Z:
 
@@ -53,4 +53,7 @@ Rellena la siguiente tabla con los datos obtenidos durante la inspección con CP
 | **Pestaña Memory → DRAM Frequency** | *(ej. 1600 MHz)* | Frecuencia de reloj física de bus |
 | **Velocidad Efectiva Calculada** | *(DRAM Frequency × 2)* | ¿Coincide con la velocidad nominal? (ej. 3200 MT/s) |
 | **Pestaña SPD → Slots ocupados** | *(ej. Slot #2 y Slot #4)* | ¿Los módulos están en la combinación A2 / B2? |
-| **Perfil XMP / EXPO activo** | *(ej. XMP 2.0 / JEDEC)* | ¿El perfil de rendimiento está activado en BIOS? |
+| **Perfil XMP / EXPO activo** | *(ej. XMP 2.0 / JEDEC)* | ¿El perfil de rendimiento está activado en BIOS? |   
+
+---
+MONTAJE Y MANTENIMIENTO DE EQUIPOS - Prof. Ezequiel Llarena Borges  
