@@ -1,9 +1,8 @@
-# Configuración y Verificación de Memoria RAM Dual Channel con CPU-Z  
-```guía práctica```  
+### Montaje y Mantenimiento de Equipos 
 
-**Módulo:** Montaje y Mantenimiento de Equipos 
+# Configuración y verificación de memoria RAM Dual Channel
+```Guía práctica con CPU-Z```  
 
----
 
 ## 1. Introducción Teórica: Configuración de la tecnología Dual Channel
 
