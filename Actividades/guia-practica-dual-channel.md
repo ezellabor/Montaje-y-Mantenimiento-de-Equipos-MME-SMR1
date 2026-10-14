@@ -2,7 +2,7 @@
 ```Guía práctica con CPU-Z```  
 
 
-## 1. Introducción Teórica: Configuración de la tecnología Dual Channel
+## 1. Introducción: configuración de la tecnología Dual Channel
 
 Configurar la memoria RAM en **Dual Channel** (doble canal) permite al controlador de la placa base utilizar **dos buses de 64 bits funcionando de manera concurrente**, lo que duplica el ancho de banda efectivo y optimiza sustancialmente el rendimiento general del sistema.
 
