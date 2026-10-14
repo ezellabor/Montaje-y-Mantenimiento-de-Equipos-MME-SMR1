@@ -1,6 +1,7 @@
-# Guía Práctica: Configuración y Verificación de Memoria RAM Dual Channel con CPU-Z
+# Configuración y Verificación de Memoria RAM Dual Channel con CPU-Z  
+```guía práctica```  
 
-**Módulo:** Montaje y Mantenimiento de Equipos (MME) | Grado Medio SMR
+**Módulo:** Montaje y Mantenimiento de Equipos 
 
 ---
 
