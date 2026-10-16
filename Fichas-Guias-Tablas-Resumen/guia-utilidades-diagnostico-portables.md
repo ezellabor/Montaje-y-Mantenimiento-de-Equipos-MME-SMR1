@@ -1,4 +1,5 @@
-# Utilidades de diagnóstico portables: CPU-Z, HWMonitor y AIDA64
+# Utilidades de chequeo y diagnóstico  
+```CPU-Z, HWMonitor y AIDA64 (versión portable)```  
 
 **Guía resumen para llevar en una memoria USB** · Módulo MME
 Ezequiel Llarena Borges
