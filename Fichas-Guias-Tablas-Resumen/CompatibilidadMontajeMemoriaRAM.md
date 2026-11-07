@@ -1,4 +1,4 @@
-# Hoja de Trabajo Práctica: Diagnosis, Compatibilidad y Montaje de Memoria RAM
+# Diagnosis, Compatibilidad y Montaje de Memoria RAM
 
 **Módulo Profesional:** Montaje y Mantenimiento de Equipos (MME)  
 **Ciclo Formativo:** Formación Profesional de Grado Medio en Sistemas Microinformáticos y Redes (SMR1)  
