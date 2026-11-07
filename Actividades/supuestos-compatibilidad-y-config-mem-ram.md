@@ -1,4 +1,4 @@
-# PRÁCTICA: COMPATIBILIDAD Y CONFIGURACIÓN DE MEMORIA RAM
+# COMPATIBILIDAD Y CONFIGURACIÓN DE MEMORIA RAM
 
 **Módulo:** Montaje y Mantenimiento de Equipos (MME)  
 **Ciclo:** Sistemas Microinformáticos y Redes (SMR1)
