@@ -13,7 +13,7 @@ La presente hoja de trabajo plantea **10 situaciones reales de taller**. Cada ac
 
 ---
 
-## Caso Práctico 1: Interpretación de Etiquetas Técnicas y Frecuencia de Bus Real
+## Caso práctico 1: Interpretación de etiquetas técnicas y frecuencia de bus real
 
 ### Escenario de taller
 Un cliente entrega en el taller un módulo de memoria RAM empaquetado y solicita saber si es adecuado para su equipo. La etiqueta serigrafiada en el módulo indica el código: **`32GB DDR4-3200 PC4-25600 CL16 1.35V`**.
@@ -44,7 +44,7 @@ Un cliente entrega en el taller un módulo de memoria RAM empaquetado y solicita
 
 ---
 
-## Caso práctico 2: Evaluación de Compatibilidad en Placa Base Legacy GIGABYTE GA-G41MT-S2
+## Caso práctico 2: Evaluación de compatibilidad en placa base Legacy GIGABYTE GA-G41MT-S2
 
 ### Escenario de taller
 Un centro educativo desea ampliar la memoria RAM de sus ordenadores de aula de informática equipados con la placa base **GIGABYTE GA-G41MT-S2**. El responsable de compras ha seleccionado un kit comercial compuesto por **1 módulo de 8 GB DDR3L-1600 (1.35V)**.
@@ -73,7 +73,7 @@ Un centro educativo desea ampliar la memoria RAM de sus ordenadores de aula de i
 
 ---
 
-## Caso práctico 3: Seguro Mecánico e Incompatibilidad Física entre Generaciones DDR
+## Caso práctico 3: Seguro mecánico e incompatibilidad física entre generaciones DDR
 
 ### Escenario de taller
 Durante una práctica de ensamblaje, un estudiante intenta insertar un módulo **DDR4 (288 pines, 1.2V)** en una ranura de expansión de una placa base diseñada para **DDR3 (240 pines, 1.5V)**. Al notar resistencia, el estudiante se dispone a aplicar mayor fuerza para hacer encajar las pestañas laterales.
@@ -101,7 +101,7 @@ Durante una práctica de ensamblaje, un estudiante intenta insertar un módulo *
 
 ---
 
-## Caso práctico 4: Configuración de Dual Channel y Selección de Zócalos DIMM
+## Caso práctico 4: Configuración de Dual Channel y selección de zócalos DIMM
 
 ### Escenario de taller
 Un usuario ha comprado un ordenador de sobremesa para edición de vídeo equipado con una placa base con 4 ranuras de memoria RAM serigrafiadas como **A1, A2, B1 y B2**. El usuario instaló por su cuenta un kit de **2x16 GB DDR4-3600** colocándolos en los zócalos consecutivos **A1 y A2**. Al realizar un test de rendimiento, comprueba que el equipo funciona en modo *Single Channel*.
@@ -129,7 +129,7 @@ Un usuario ha comprado un ordenador de sobremesa para edición de vídeo equipad
 
 ---
 
-## Caso práctico 5: Factores de Forma (DIMM vs. SO-DIMM) y Memorias Soldadas en Placa (LPDDR / RoC)
+## Caso práctico 5: Factores de Forma (DIMM vs. SO-DIMM) y memorias soldadas en placa (LPDDR / RoC)
 
 ### Escenario de taller
 Llega al taller un cliente con dos equipos: un ordenador de sobremesa formato semitorre y un portátil ultraportátil (*ultrabook*). El cliente ha comprado en internet dos módulos de memoria RAM **DIMM DDR4 de 16 GB** con la intención de instalar uno en el sobremesa y otro en el portátil. Además, en la ficha técnica del portátil se indica la anotación *"Row of Chips (RoC) - LPDDR4x"*.
@@ -156,7 +156,7 @@ Llega al taller un cliente con dos equipos: un ordenador de sobremesa formato se
 
 ---
 
-## Caso práctico 6: Mezcla de Módulos con Distintas Especificaciones y Ajustes JEDEC
+## Caso práctico 6: Mezcla de módulos con distintas especificaciones y ajustes JEDEC
 
 ### Escenario de taller
 Para economizar una reparación, un usuario decide reutilizar un módulo de memoria antiguo que tenía guardado y combinarlo con uno nuevo en su placa base en Dual Channel:
@@ -184,7 +184,7 @@ Para economizar una reparación, un usuario decide reutilizar un módulo de memo
 
 ---
 
-## Caso práctico 7: Configuración de Perfiles de Alto Rendimiento XMP / EXPO en BIOS/UEFI
+## Caso práctico 7: Configuración de perfiles de alto rendimiento XMP / EXPO en BIOS/UEFI
 
 ### Escenario de taller
 Un cliente ha adquirido un equipo de gama alta con memoria **DDR5-6000 CL30 (1.35V)**. Al ejecutar herramientas de prueba y supervisión en Windows, el cliente protesta porque el sistema le indica que la memoria está funcionando a **4800 MT/s a 1.1V**, creyendo que le han vendido componentes defectuosos.
@@ -242,7 +242,7 @@ En el taller de mantenimiento se recibe un ordenador que sufre bloqueos aleatori
 
 ---
 
-## Caso práctico 9: Protocolo de Seguridad Antiestática (ESD) y Secuencia Mecánica de Ensamblaje
+## Caso práctico 9: Protocolo de seguridad antiestática (ESD) y secuencia mecánica de ensamblaje
 
 ### Escenario de taller
 Un alumno en prácticas se dispone a reemplazar un módulo de memoria RAM defectuoso. Sin desconectar el cable de corriente del ordenador ni utilizar elementos de protección ESD, toma el nuevo módulo tocando directamente con los dedos los contactos dorados inferiores e intenta colocarlo con las pestañas de retención del zócalo cerradas.
@@ -273,7 +273,7 @@ Un alumno en prácticas se dispone a reemplazar un módulo de memoria RAM defect
 
 ---
 
-## Caso práctico 10: Árbol de Resolución de Averías (Pitidos de BIOS, BSOD y MemTest86)
+## Caso práctico 10: Árbol de resolución de averías (Pitidos de BIOS, BSOD y MemTest86)
 
 ### Escenario de taller
 Un cliente trae un ordenador que ha dejado de funcionar tras intentar hacer una limpieza interna en su casa. Al pulsar el botón de encendido, el equipo enciende los ventiladores pero no muestra imagen en el monitor y la placa base emite una serie de **pitidos continuos e ininterrumpidos**. Tras una primera intervención del técnico, el equipo arranca pero sufre pantallas azules (*BSOD - Blue Screen of Death*) al cabo de un tiempo de uso.
