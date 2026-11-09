@@ -153,14 +153,14 @@ Llega al taller un cliente con dos equipos: un ordenador de sobremesa formato se
   * *LPDDR (Low-Power Double Data Rate):* Memoria de bajo voltaje y alta eficiencia energética ideada para dispositivos móviles y ultraportátiles.
   * *Row of Chips (RoC):* Indica que los chips de memoria están **soldados directamente a la placa de circuito impreso (PCB)** de la placa base del equipo.
   * *Conclusión:* El portátil no dispone de ranuras de expansión de memoria y **no admite ampliación modular**.
-* **Tabla comparativa memorias SO-DIMM:**
+* **Tabla comparativa memorias SO-DIMM:**  
 | Generación DDR | Recuento de Pines | Voltaje Estándar | Posición Visual de la Muesca | Características Distintivas |
 | :--- | :--- | :--- | :--- | :--- |
 | **DDR (DDR1)** | 200 pines | 2.5 V | Ligeramente desplazada hacia la izquierda (cerca del centro) | Primera generación con doble tasa de transferencia de datos en portátiles. Muesca en posición distinta a DDR2. |
 | **DDR2** | 200 pines | 1.8 V | Desplazada hacia el centro (ligeramente ajustada respecto a DDR1) | Comparte el recuento de 200 pines con DDR1, pero la posición de la muesca impide la inserción errónea. Reducción sustancial del consumo energético. |
 | **DDR3 / DDR3L** | 204 pines | 1.5 V (DDR3) / 1.35 V (DDR3L) | Ligeramente desplazada hacia la izquierda | Incremento a 204 pines con contactos más densos. La variante DDR3L añade compatibilidad con bajo voltaje (1.35 V). |
 | **DDR4** | 260 pines | 1.2 V | Cercana al centro | Aumento importante a 260 pines. Presenta un conector con borde ligeramente curvo en el centro para facilitar la inserción y reducir la presión en el zócalo. |
-| **DDR5** | 262 pines | 1.1 V | Prácticamente en el centro | Módulo con chip integrado de gestión de energía (PMIC). Divide la arquitectura en dos canales independientes de 32 bits en el mismo módulo. |
+| **DDR5** | 262 pines | 1.1 V | Prácticamente en el centro | Módulo con chip integrado de gestión de energía (PMIC). Divide la arquitectura en dos canales independientes de 32 bits en el mismo módulo. |  
 
 ---
 
