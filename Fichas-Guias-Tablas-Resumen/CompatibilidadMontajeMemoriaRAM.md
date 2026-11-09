@@ -153,7 +153,7 @@ Llega al taller un cliente con dos equipos: un ordenador de sobremesa formato se
   * *LPDDR (Low-Power Double Data Rate):* Memoria de bajo voltaje y alta eficiencia energética ideada para dispositivos móviles y ultraportátiles.
   * *Row of Chips (RoC):* Indica que los chips de memoria están **soldados directamente a la placa de circuito impreso (PCB)** de la placa base del equipo.
   * *Conclusión:* El portátil no dispone de ranuras de expansión de memoria y **no admite ampliación modular**.
-* **Tabla comparativa memorias SO-DIMM:**  
+  * **Tabla comparativa memorias SO-DIMM:**  
 | Generación DDR | Recuento de Pines | Voltaje Estándar | Posición Visual de la Muesca | Características Distintivas |
 | :--- | :--- | :--- | :--- | :--- |
 | **DDR (DDR1)** | 200 pines | 2.5 V | Ligeramente desplazada hacia la izquierda (cerca del centro) | Primera generación con doble tasa de transferencia de datos en portátiles. Muesca en posición distinta a DDR2. |
