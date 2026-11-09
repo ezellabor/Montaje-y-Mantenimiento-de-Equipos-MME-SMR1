@@ -2,13 +2,12 @@
 
 **Módulo Profesional:** Montaje y Mantenimiento de Equipos (MME)  
 **Ciclo Formativo:** Formación Profesional de Grado Medio en Sistemas Microinformáticos y Redes (SMR1)  
-**Unidad Didáctica:** Memoria Principal: Tecnologías, Arquitectura y Mantenimiento  
 
 ---
 
-## Presentación y Metodología de Trabajo
+## Introducción
 
-En el entorno profesional del mantenimiento informático, la selección, ampliación y reparación de módulos de memoria RAM requiere interpretar especificaciones técnicas de fabricantes, hojas de datos de placas base y herramientas de diagnóstico. Un error de compatibilidad o montaje puede provocar desde la inestabilidad del sistema operativo hasta daños irreversibles en los zócalos de la placa base.
+En el entorno profesional del mantenimiento informático, la selección, ampliación y reparación de módulos de memoria RAM requiere **interpretar especificaciones técnicas de fabricantes y herramientas de diagnóstico.** Un error de compatibilidad o montaje puede provocar desde la inestabilidad del sistema operativo hasta daños irreversibles en los zócalos de la placa base.
 
 La presente hoja de trabajo plantea **10 situaciones reales de taller**. Cada actividad exige analizar el escenario propuesto, consultar los datos técnicos de los componentes, realizar los cálculos oportunos y justificar técnicamente la decisión o procedimiento a seguir.
 
